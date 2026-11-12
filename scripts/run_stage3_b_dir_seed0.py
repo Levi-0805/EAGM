@@ -367,7 +367,7 @@ def main():
         return g
 
     def mc_grad(model, start):
-        return E.gradient(model, start, model.lower, model.upper).detach().numpy()
+        return E.gradient(model, start, model.lower, model.upper)
 
     test_g = [sim_grad_masked(env, s)[0] for s in starts_test]
     cos = {}

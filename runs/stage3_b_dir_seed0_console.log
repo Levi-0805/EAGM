@@ -1,15 +1,47 @@
 collect...
 dir labels on 12 starts...
-Traceback (most recent call last):
-  File "/home/aaa/桌面/汇报/11月论文/eagm_gpu/scripts/run_stage3_b_dir_seed0.py", line 407, in <module>
-    main()
-  File "/home/aaa/桌面/汇报/11月论文/eagm_gpu/scripts/run_stage3_b_dir_seed0.py", line 269, in main
-    g, ok = sim_grad_masked(env, r["start"])
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/aaa/桌面/汇报/11月论文/eagm_gpu/scripts/run_stage3_b_dir_seed0.py", line 104, in sim_grad_masked
-    plus = E.physical(env, ep * e, start, H)[0]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/aaa/桌面/汇报/11月论文/eagm_gpu/vendor/legacy_sim/experiment.py", line 70, in physical
-    total+=.99**k*(-np.mean((newx[:14]-ref)**2)-.0005*np.mean(newx[14:]**2)-.05*np.mean((a-prev)**2))
-                                                                                         ~^~~~~
-ValueError: operands could not be broadcast together with shapes (14,) (28,) 
+train mc/mu/eagm...
+  mc it 200 loss 0.40769
+  mc it 400 loss 0.34405
+  mc it 600 loss 0.28450
+  mc it 800 loss 0.25993
+  mc it 1000 loss 0.25661
+  mu it 200 loss 0.33463
+  mu it 400 loss 0.30286
+  mu it 600 loss 0.25816
+  mu it 800 loss 0.26568
+  mu it 1000 loss 0.27396
+  eagm_base it 200 loss 0.40312
+  eagm_base it 400 loss 0.29846
+  eagm_base it 600 loss 0.27946
+  eagm_base it 800 loss 0.29790
+  eagm_base it 1000 loss 0.23501
+  eagm_dir it 200 loss 0.33032
+  eagm_dir it 400 loss 0.32533
+  eagm_dir it 600 loss 0.27552
+  eagm_dir it 800 loss 0.26071
+  eagm_dir it 1000 loss 0.25466
+policy...
+{
+  "dynamics_nmse": {
+    "mc": 0.284146249294281,
+    "mu_oracle": 0.2798900902271271,
+    "eagm_base": 0.27530112862586975,
+    "eagm_dir": 0.27581071853637695
+  },
+  "cmd_mae": {
+    "eagm_base": 0.003178903367370367,
+    "eagm_dir": 0.003080150345340371
+  },
+  "cosine_median": {
+    "mc": 0.25587584437876243,
+    "eagm_base": 0.5755895859363271,
+    "eagm_dir": 0.8328843719050487
+  },
+  "policy_return_mean": {
+    "mc": -0.005629214377211272,
+    "eagm_base": -0.0038606618191112233,
+    "eagm_dir": -0.0043207045691895886
+  },
+  "wall_seconds": 95.42905950546265
+}
