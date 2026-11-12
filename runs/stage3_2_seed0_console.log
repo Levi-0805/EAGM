@@ -1,0 +1,125 @@
+collect...
+dir labels zero-theta...
+dir labels matched-theta...
+test labels...
+train Mc...
+    mc it 200 loss 0.36537
+    mc it 400 loss 0.30983
+    mc it 600 loss 0.27526
+    mc it 800 loss 0.26265
+    mc it 1000 loss 0.24631
+    mc it 1200 loss 0.25434
+    mc it 1400 loss 0.24385
+    mc it 1600 loss 0.23282
+    mc it 1800 loss 0.24867
+    mc it 2000 loss 0.23677
+    mc it 2200 loss 0.23185
+    mc it 2400 loss 0.24447
+    mc it 2600 loss 0.21741
+    mc it 2800 loss 0.21771
+    mc it 3000 loss 0.21908
+train Markov Base/Dir pairs...
+    pair it 200 base 0.31816 dir 0.31822
+    pair it 400 base 0.28605 dir 0.28622
+    pair it 600 base 0.26374 dir 0.26431
+    pair it 800 base 0.25666 dir 0.25747
+    pair it 1000 base 0.24549 dir 0.24580
+    pair it 1200 base 0.24701 dir 0.24710
+    pair it 1400 base 0.22937 dir 0.23131
+    pair it 1600 base 0.23820 dir 0.23863
+    pair it 1800 base 0.23269 dir 0.23264
+    pair it 2000 base 0.22221 dir 0.22323
+    pair it 2200 base 0.21551 dir 0.21778
+    pair it 2400 base 0.20649 dir 0.21040
+    pair it 2600 base 0.21423 dir 0.21699
+    pair it 2800 base 0.19876 dir 0.20057
+    pair it 3000 base 0.19374 dir 0.19728
+    pair it 200 base 0.31816 dir 0.31976
+    pair it 400 base 0.28605 dir 0.28804
+    pair it 600 base 0.26374 dir 0.26503
+    pair it 800 base 0.25666 dir 0.25985
+    pair it 1000 base 0.24549 dir 0.24731
+    pair it 1200 base 0.24701 dir 0.24872
+    pair it 1400 base 0.22937 dir 0.23282
+    pair it 1600 base 0.23820 dir 0.23996
+    pair it 1800 base 0.23269 dir 0.23394
+    pair it 2000 base 0.22221 dir 0.22600
+    pair it 2200 base 0.21551 dir 0.22105
+    pair it 2400 base 0.20649 dir 0.21423
+    pair it 2600 base 0.21423 dir 0.22179
+    pair it 2800 base 0.19876 dir 0.20597
+    pair it 3000 base 0.19374 dir 0.20170
+  base twin L2^2 vs match-pair base: 0.000e+00
+train History pairs...
+    pair it 200 base 0.31692 dir 0.31781
+    pair it 400 base 0.29433 dir 0.29674
+    pair it 600 base 0.26349 dir 0.26696
+    pair it 800 base 0.23229 dir 0.23647
+    pair it 1000 base 0.23397 dir 0.24227
+    pair it 1200 base 0.22193 dir 0.22902
+    pair it 1400 base 0.20151 dir 0.20907
+    pair it 1600 base 0.20545 dir 0.21081
+    pair it 1800 base 0.19040 dir 0.19611
+    pair it 2000 base 0.17495 dir 0.18228
+    pair it 2200 base 0.17117 dir 0.18345
+    pair it 2400 base 0.15553 dir 0.16522
+    pair it 2600 base 0.15289 dir 0.16272
+    pair it 2800 base 0.13572 dir 0.14657
+    pair it 3000 base 0.13780 dir 0.14546
+eval mc...
+eval eagm_base...
+eval eagm_dir_zero...
+eval eagm_dir_matched...
+eval eagm_hist...
+eval eagm_hist_dir_matched...
+{
+  "mc": {
+    "nmse": 0.3013,
+    "cmd": null,
+    "cos": 0.525,
+    "ret": -0.001589,
+    "d_th0": 0.000926,
+    "th_l2": 5.0413
+  },
+  "eagm_base": {
+    "nmse": 0.259,
+    "cmd": 0.00282,
+    "cos": 0.553,
+    "ret": -0.002673,
+    "d_th0": -0.000158,
+    "th_l2": 4.926
+  },
+  "eagm_dir_zero": {
+    "nmse": 0.2586,
+    "cmd": 0.00291,
+    "cos": 0.846,
+    "ret": -0.00153,
+    "d_th0": 0.000985,
+    "th_l2": 5.1759
+  },
+  "eagm_dir_matched": {
+    "nmse": 0.2562,
+    "cmd": 0.00279,
+    "cos": 0.78,
+    "ret": -0.001317,
+    "d_th0": 0.001198,
+    "th_l2": 5.0754
+  },
+  "eagm_hist": {
+    "nmse": 0.1706,
+    "cmd": 0.00375,
+    "cos": 0.714,
+    "ret": -0.00221,
+    "d_th0": 0.000305,
+    "th_l2": 4.787
+  },
+  "eagm_hist_dir_matched": {
+    "nmse": 0.174,
+    "cmd": 0.00382,
+    "cos": 0.869,
+    "ret": -0.001602,
+    "d_th0": 0.000913,
+    "th_l2": 5.1962
+  }
+}
+wrote /home/aaa/桌面/汇报/11月论文/eagm_gpu/runs/stage3_2_fixedB/seed0 wall 518.7

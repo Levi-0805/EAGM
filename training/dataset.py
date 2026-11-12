@@ -137,13 +137,23 @@ def flatten_split(episodes: list[dict], ep_ids: list[int]) -> list[dict]:
     return out
 
 
-def fit_stats(rows: list[dict]) -> dict:
+def fit_stats(rows: list[dict], env_lower=None, env_upper=None) -> dict:
+    """Normalization from train rows; projection limits from the real controller.
+
+    Data min/max ±0.05 must NOT replace joint/actuator projection limits used in
+    imagined recurrence. Pass env.lower / env.upper from ArmEnv/Controller B.
+    """
     x = np.stack([r["x"] for r in rows])
     y = np.stack([r["y"] for r in rows])
     u = np.stack([r["u_exec"] for r in rows])
     delta = y - x
-    lo = np.min(np.stack([r["c"][:14] for r in rows]), 0) - 0.05
-    hi = np.max(np.stack([r["c"][:14] for r in rows]), 0) + 0.05
+    data_lo = np.min(np.stack([r["c"][:14] for r in rows]), 0) - 0.05
+    data_hi = np.max(np.stack([r["c"][:14] for r in rows]), 0) + 0.05
+    if env_lower is None or env_upper is None:
+        lo, hi = data_lo, data_hi
+    else:
+        lo = np.asarray(env_lower, dtype=np.float64).copy()
+        hi = np.asarray(env_upper, dtype=np.float64).copy()
     return dict(
         xmean=x.mean(0),
         xstd=np.maximum(x.std(0), 0.01),
@@ -154,6 +164,8 @@ def fit_stats(rows: list[dict]) -> dict:
         lower=lo,
         upper=hi,
         alpha=np.asarray(0.5),
+        data_lower_margin=data_lo,
+        data_upper_margin=data_hi,
     )
 
 
