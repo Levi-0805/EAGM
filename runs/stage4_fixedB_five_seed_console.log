@@ -1,1 +1,366 @@
 ==== seed 0 ====
+    mc it 200 loss 0.36537
+    mc it 400 loss 0.30983
+    mc it 600 loss 0.27526
+    mc it 800 loss 0.26265
+    mc it 1000 loss 0.24631
+    mc it 1200 loss 0.25434
+    mc it 1400 loss 0.24385
+    mc it 1600 loss 0.23282
+    mc it 1800 loss 0.24867
+    mc it 2000 loss 0.23677
+    mc it 2200 loss 0.23185
+    mc it 2400 loss 0.24447
+    mc it 2600 loss 0.21741
+    mc it 2800 loss 0.21771
+    mc it 3000 loss 0.21908
+    pair it 200 base 0.31816 dir 0.31976
+    pair it 400 base 0.28605 dir 0.28804
+    pair it 600 base 0.26374 dir 0.26503
+    pair it 800 base 0.25666 dir 0.25985
+    pair it 1000 base 0.24549 dir 0.24731
+    pair it 1200 base 0.24701 dir 0.24872
+    pair it 1400 base 0.22937 dir 0.23282
+    pair it 1600 base 0.23820 dir 0.23996
+    pair it 1800 base 0.23269 dir 0.23394
+    pair it 2000 base 0.22221 dir 0.22600
+    pair it 2200 base 0.21551 dir 0.22105
+    pair it 2400 base 0.20649 dir 0.21423
+    pair it 2600 base 0.21423 dir 0.22179
+    pair it 2800 base 0.19876 dir 0.20597
+    pair it 3000 base 0.19374 dir 0.20170
+    pair it 200 base 0.31692 dir 0.31781
+    pair it 400 base 0.29433 dir 0.29674
+    pair it 600 base 0.26349 dir 0.26696
+    pair it 800 base 0.23229 dir 0.23647
+    pair it 1000 base 0.23397 dir 0.24227
+    pair it 1200 base 0.22193 dir 0.22902
+    pair it 1400 base 0.20151 dir 0.20907
+    pair it 1600 base 0.20545 dir 0.21081
+    pair it 1800 base 0.19040 dir 0.19611
+    pair it 2000 base 0.17495 dir 0.18228
+    pair it 2200 base 0.17117 dir 0.18345
+    pair it 2400 base 0.15553 dir 0.16522
+    pair it 2600 base 0.15289 dir 0.16272
+    pair it 2800 base 0.13572 dir 0.14657
+    pair it 3000 base 0.13780 dir 0.14546
+  seed0 mc                     cos 0.525 ret -0.001589
+  seed0 eagm_base              cos 0.553 ret -0.002673
+  seed0 eagm_dir_matched       cos 0.780 ret -0.001317
+  seed0 eagm_hist              cos 0.714 ret -0.002210
+  seed0 eagm_hist_dir_matched  cos 0.869 ret -0.001602
+==== seed 1 ====
+    mc it 200 loss 0.35595
+    mc it 400 loss 0.28314
+    mc it 600 loss 0.25201
+    mc it 800 loss 0.24044
+    mc it 1000 loss 0.25495
+    mc it 1200 loss 0.23441
+    mc it 1400 loss 0.25398
+    mc it 1600 loss 0.25371
+    mc it 1800 loss 0.23979
+    mc it 2000 loss 0.22975
+    mc it 2200 loss 0.25229
+    mc it 2400 loss 0.22330
+    mc it 2600 loss 0.23025
+    mc it 2800 loss 0.21615
+    mc it 3000 loss 0.20507
+    pair it 200 base 0.32364 dir 0.32483
+    pair it 400 base 0.30084 dir 0.30285
+    pair it 600 base 0.26268 dir 0.26465
+    pair it 800 base 0.24352 dir 0.24725
+    pair it 1000 base 0.23157 dir 0.23428
+    pair it 1200 base 0.23750 dir 0.23942
+    pair it 1400 base 0.21779 dir 0.22148
+    pair it 1600 base 0.23539 dir 0.23926
+    pair it 1800 base 0.22568 dir 0.23062
+    pair it 2000 base 0.22425 dir 0.22913
+    pair it 2200 base 0.21237 dir 0.21926
+    pair it 2400 base 0.20676 dir 0.21598
+    pair it 2600 base 0.20889 dir 0.21867
+    pair it 2800 base 0.19171 dir 0.19921
+    pair it 3000 base 0.19974 dir 0.20481
+    pair it 200 base 0.31449 dir 0.31460
+    pair it 400 base 0.25988 dir 0.26147
+    pair it 600 base 0.26763 dir 0.27168
+    pair it 800 base 0.23384 dir 0.23593
+    pair it 1000 base 0.24719 dir 0.24779
+    pair it 1200 base 0.22208 dir 0.22390
+    pair it 1400 base 0.22198 dir 0.22805
+    pair it 1600 base 0.21029 dir 0.21933
+    pair it 1800 base 0.18296 dir 0.19126
+    pair it 2000 base 0.18545 dir 0.20320
+    pair it 2200 base 0.16754 dir 0.17600
+    pair it 2400 base 0.15752 dir 0.17275
+    pair it 2600 base 0.15007 dir 0.16685
+    pair it 2800 base 0.14201 dir 0.14910
+    pair it 3000 base 0.12927 dir 0.13935
+  seed1 mc                     cos 0.580 ret -0.002591
+  seed1 eagm_base              cos 0.696 ret -0.002984
+  seed1 eagm_dir_matched       cos 0.870 ret -0.001980
+  seed1 eagm_hist              cos 0.649 ret -0.002451
+  seed1 eagm_hist_dir_matched  cos 0.828 ret -0.001962
+==== seed 2 ====
+    mc it 200 loss 0.37032
+    mc it 400 loss 0.30238
+    mc it 600 loss 0.26407
+    mc it 800 loss 0.27115
+    mc it 1000 loss 0.24757
+    mc it 1200 loss 0.22660
+    mc it 1400 loss 0.27103
+    mc it 1600 loss 0.23473
+    mc it 1800 loss 0.22758
+    mc it 2000 loss 0.23264
+    mc it 2200 loss 0.23478
+    mc it 2400 loss 0.23088
+    mc it 2600 loss 0.21683
+    mc it 2800 loss 0.22527
+    mc it 3000 loss 0.21439
+    pair it 200 base 0.32328 dir 0.32398
+    pair it 400 base 0.27893 dir 0.28156
+    pair it 600 base 0.25056 dir 0.25157
+    pair it 800 base 0.25151 dir 0.25481
+    pair it 1000 base 0.27126 dir 0.27425
+    pair it 1200 base 0.23110 dir 0.23405
+    pair it 1400 base 0.26281 dir 0.26639
+    pair it 1600 base 0.23992 dir 0.24450
+    pair it 1800 base 0.22130 dir 0.22377
+    pair it 2000 base 0.23926 dir 0.24628
+    pair it 2200 base 0.21438 dir 0.21967
+    pair it 2400 base 0.19854 dir 0.20113
+    pair it 2600 base 0.18898 dir 0.19277
+    pair it 2800 base 0.19315 dir 0.19749
+    pair it 3000 base 0.19378 dir 0.19947
+    pair it 200 base 0.30963 dir 0.30974
+    pair it 400 base 0.28375 dir 0.28541
+    pair it 600 base 0.26819 dir 0.27079
+    pair it 800 base 0.25058 dir 0.25237
+    pair it 1000 base 0.22535 dir 0.22762
+    pair it 1200 base 0.22784 dir 0.23276
+    pair it 1400 base 0.20825 dir 0.21510
+    pair it 1600 base 0.19942 dir 0.20744
+    pair it 1800 base 0.19516 dir 0.20387
+    pair it 2000 base 0.17548 dir 0.18540
+    pair it 2200 base 0.16368 dir 0.17565
+    pair it 2400 base 0.14365 dir 0.15153
+    pair it 2600 base 0.14252 dir 0.16085
+    pair it 2800 base 0.13062 dir 0.14797
+    pair it 3000 base 0.13241 dir 0.14242
+  seed2 mc                     cos 0.374 ret -0.003421
+  seed2 eagm_base              cos 0.687 ret -0.002524
+  seed2 eagm_dir_matched       cos 0.887 ret -0.001207
+  seed2 eagm_hist              cos 0.615 ret -0.002715
+  seed2 eagm_hist_dir_matched  cos 0.893 ret -0.001780
+==== seed 3 ====
+    mc it 200 loss 0.37224
+    mc it 400 loss 0.36360
+    mc it 600 loss 0.27240
+    mc it 800 loss 0.25479
+    mc it 1000 loss 0.25154
+    mc it 1200 loss 0.23933
+    mc it 1400 loss 0.23287
+    mc it 1600 loss 0.24606
+    mc it 1800 loss 0.25603
+    mc it 2000 loss 0.23856
+    mc it 2200 loss 0.22639
+    mc it 2400 loss 0.22062
+    mc it 2600 loss 0.21987
+    mc it 2800 loss 0.22827
+    mc it 3000 loss 0.21759
+    pair it 200 base 0.35999 dir 0.36087
+    pair it 400 base 0.27913 dir 0.28118
+    pair it 600 base 0.26620 dir 0.26812
+    pair it 800 base 0.24632 dir 0.24769
+    pair it 1000 base 0.24802 dir 0.24858
+    pair it 1200 base 0.24672 dir 0.24666
+    pair it 1400 base 0.24541 dir 0.24777
+    pair it 1600 base 0.25015 dir 0.25231
+    pair it 1800 base 0.23066 dir 0.23427
+    pair it 2000 base 0.21606 dir 0.21978
+    pair it 2200 base 0.21384 dir 0.21882
+    pair it 2400 base 0.20590 dir 0.20848
+    pair it 2600 base 0.21857 dir 0.22273
+    pair it 2800 base 0.20747 dir 0.21071
+    pair it 3000 base 0.21493 dir 0.21728
+    pair it 200 base 0.32390 dir 0.32440
+    pair it 400 base 0.26892 dir 0.26887
+    pair it 600 base 0.25700 dir 0.25673
+    pair it 800 base 0.26151 dir 0.26559
+    pair it 1000 base 0.23554 dir 0.23943
+    pair it 1200 base 0.24626 dir 0.24944
+    pair it 1400 base 0.22838 dir 0.23244
+    pair it 1600 base 0.22226 dir 0.22426
+    pair it 1800 base 0.18995 dir 0.19665
+    pair it 2000 base 0.18678 dir 0.19475
+    pair it 2200 base 0.16999 dir 0.18466
+    pair it 2400 base 0.15593 dir 0.17167
+    pair it 2600 base 0.15506 dir 0.16712
+    pair it 2800 base 0.14278 dir 0.15670
+    pair it 3000 base 0.13668 dir 0.14957
+  seed3 mc                     cos 0.426 ret -0.001916
+  seed3 eagm_base              cos 0.602 ret -0.003183
+  seed3 eagm_dir_matched       cos 0.825 ret -0.002014
+  seed3 eagm_hist              cos 0.764 ret -0.001843
+  seed3 eagm_hist_dir_matched  cos 0.855 ret -0.002328
+==== seed 4 ====
+    mc it 200 loss 0.46407
+    mc it 400 loss 0.30774
+    mc it 600 loss 0.27379
+    mc it 800 loss 0.24916
+    mc it 1000 loss 0.25881
+    mc it 1200 loss 0.24972
+    mc it 1400 loss 0.26806
+    mc it 1600 loss 0.25696
+    mc it 1800 loss 0.25588
+    mc it 2000 loss 0.22691
+    mc it 2200 loss 0.23077
+    mc it 2400 loss 0.22883
+    mc it 2600 loss 0.22429
+    mc it 2800 loss 0.20738
+    mc it 3000 loss 0.23121
+    pair it 200 base 0.33727 dir 0.33814
+    pair it 400 base 0.29016 dir 0.29180
+    pair it 600 base 0.26661 dir 0.26908
+    pair it 800 base 0.27342 dir 0.27447
+    pair it 1000 base 0.25620 dir 0.25837
+    pair it 1200 base 0.24227 dir 0.24436
+    pair it 1400 base 0.23787 dir 0.24083
+    pair it 1600 base 0.23874 dir 0.24183
+    pair it 1800 base 0.22577 dir 0.22884
+    pair it 2000 base 0.22861 dir 0.23220
+    pair it 2200 base 0.21684 dir 0.22320
+    pair it 2400 base 0.21388 dir 0.22137
+    pair it 2600 base 0.19661 dir 0.20612
+    pair it 2800 base 0.19341 dir 0.20029
+    pair it 3000 base 0.19148 dir 0.19989
+    pair it 200 base 0.32936 dir 0.32965
+    pair it 400 base 0.28292 dir 0.28360
+    pair it 600 base 0.26576 dir 0.26735
+    pair it 800 base 0.23738 dir 0.23674
+    pair it 1000 base 0.23687 dir 0.24103
+    pair it 1200 base 0.22863 dir 0.23182
+    pair it 1400 base 0.20881 dir 0.21582
+    pair it 1600 base 0.22000 dir 0.22785
+    pair it 1800 base 0.18267 dir 0.19025
+    pair it 2000 base 0.16604 dir 0.17658
+    pair it 2200 base 0.16127 dir 0.17154
+    pair it 2400 base 0.15507 dir 0.16669
+    pair it 2600 base 0.14728 dir 0.15616
+    pair it 2800 base 0.14230 dir 0.14836
+    pair it 3000 base 0.12435 dir 0.13577
+  seed4 mc                     cos 0.552 ret -0.002377
+  seed4 eagm_base              cos 0.604 ret -0.002181
+  seed4 eagm_dir_matched       cos 0.768 ret -0.001999
+  seed4 eagm_hist              cos 0.693 ret -0.001859
+  seed4 eagm_hist_dir_matched  cos 0.862 ret -0.002345
+{
+  "eagm_base": {
+    "return_vs_mc": {
+      "mean": -0.00033014584979334166,
+      "median": -0.00039252278184109465,
+      "ci95": [
+        -0.0010185803244641273,
+        0.000360230602730363
+      ],
+      "n": 5,
+      "n_positive": 2
+    },
+    "cosine_vs_mc": {
+      "mean": 0.13670303803188733,
+      "median": 0.11545968669786288,
+      "ci95": [
+        0.05471050807269384,
+        0.23327106121826285
+      ],
+      "n": 5,
+      "n_positive": 5
+    }
+  },
+  "eagm_dir_matched": {
+    "return_vs_mc": {
+      "mean": 0.0006754803486723217,
+      "median": 0.00037823372595296133,
+      "ci95": [
+        0.00012392275756495098,
+        0.0014795820627130616
+      ],
+      "n": 5,
+      "n_positive": 4
+    },
+    "cosine_vs_mc": {
+      "mean": 0.3343142830654584,
+      "median": 0.2897407792168337,
+      "ci95": [
+        0.2460282494214862,
+        0.438376049568863
+      ],
+      "n": 5,
+      "n_positive": 5
+    }
+  },
+  "eagm_hist": {
+    "return_vs_mc": {
+      "mean": 0.00016317168970724172,
+      "median": 0.00014043341959689036,
+      "ci95": [
+        -0.00025436672499514027,
+        0.0005414679631556952
+      ],
+      "n": 5,
+      "n_positive": 4
+    },
+    "cosine_vs_mc": {
+      "mean": 0.19556039968257224,
+      "median": 0.18894852361421466,
+      "ci95": [
+        0.11774050504007201,
+        0.279336370263371
+      ],
+      "n": 5,
+      "n_positive": 5
+    }
+  },
+  "eagm_hist_dir_matched": {
+    "return_vs_mc": {
+      "mean": 0.0003756175483075719,
+      "median": 3.231721944134012e-05,
+      "ci95": [
+        -0.000163404645533233,
+        0.0010341082485728435
+      ],
+      "n": 5,
+      "n_positive": 3
+    },
+    "cosine_vs_mc": {
+      "mean": 0.3699384322333816,
+      "median": 0.3434800368343198,
+      "ci95": [
+        0.2919360793135781,
+        0.4591508371857844
+      ],
+      "n": 5,
+      "n_positive": 5
+    }
+  },
+  "eagm_dir_matched_vs_base": {
+    "mean": 0.0010056261984656633,
+    "median": 0.0011687576938755437,
+    "ci95": [
+      0.0005770144530324514,
+      0.0013028824528253332
+    ],
+    "n": 5,
+    "n_positive": 5
+  },
+  "eagm_hist_dir_vs_hist": {
+    "mean": 0.0002124458586003302,
+    "median": 0.0004892263319667832,
+    "ci95": [
+      -0.0002903075210052678,
+      0.0007151992382059281
+    ],
+    "n": 5,
+    "n_positive": 3
+  }
+}
+wrote /home/aaa/桌面/汇报/11月论文/eagm_gpu/runs/stage4_fixedB_five_seed wall 1886.2
