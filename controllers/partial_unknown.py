@@ -76,6 +76,25 @@ class PartialUnknownArmEnv(CompatibleArmEnv):
             dtype=np.float64,
         )
 
+    def set_active_config(
+        self,
+        *,
+        gain: float,
+        extra_lag: int,
+        rate_limit: float,
+        smooth_beta: float,
+    ) -> None:
+        """Force the next/current B parameters (used for frozen OOD test configs)."""
+        self._active = dict(
+            gain=float(gain),
+            extra_lag=int(extra_lag),
+            rate_limit=float(rate_limit),
+            smooth_beta=float(smooth_beta),
+        )
+        self._extra_queue = []
+        self._u_smooth = self.qtarget.copy() if hasattr(self, "qtarget") else None
+        self._u_prev = self.qtarget.copy() if hasattr(self, "qtarget") else None
+
     def reset(self, seed: int | None = None, delay: int | None = None, pose=None, jitter: float = 0.01):
         obs = super().reset(seed=seed, delay=delay, pose=pose, jitter=jitter)
         if not hasattr(self, "b_config"):

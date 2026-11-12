@@ -135,3 +135,25 @@ def train_mc(model, tr, updates, batch_seed=0, batch_size=128, lr=1e-3, device=t
             log.append(dict(update=it + 1, loss=float(loss.detach())))
             print(f"    mc it {it+1} loss {float(loss.detach()):.5f}", flush=True)
     return log
+
+
+def train_obs_mlp(model, tr, updates, batch_seed=0, batch_size=128, lr=1e-3, device=torch.device("cpu")):
+    """Train ObservableMemoryMLP: dynamics only on (x, c_obs, a)."""
+    model.to(device)
+    opt = torch.optim.Adam(model.parameters(), lr=lr)
+    gen = torch.Generator(device="cpu")
+    gen.manual_seed(batch_seed)
+    n = tr["x"].shape[0]
+    log = []
+    for it in range(updates):
+        b = torch.randint(0, n, (batch_size,), generator=gen)
+        y_hat, _ = model(tr["x"][b], tr["c_obs"][b], tr["a"][b])
+        loss = (((y_hat - tr["y"][b]) / model.ystd) ** 2).mean()
+        opt.zero_grad(set_to_none=True)
+        loss.backward()
+        nn.utils.clip_grad_norm_(model.parameters(), 5.0)
+        opt.step()
+        if (it + 1) % 200 == 0:
+            log.append(dict(update=it + 1, loss=float(loss.detach())))
+            print(f"    obs_mlp it {it+1} loss {float(loss.detach()):.5f}", flush=True)
+    return log

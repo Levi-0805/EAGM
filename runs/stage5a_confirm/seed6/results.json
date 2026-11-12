@@ -1,0 +1,107 @@
+{
+  "seed": 6,
+  "set_label": "stage5a_confirmatory",
+  "frozen_from": "c386ed3193bea0ea676b4d014be33a3bfe9fe24b",
+  "split": {
+    "train": [
+      0,
+      5,
+      7,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      20,
+      21,
+      22
+    ],
+    "val": [
+      1,
+      2,
+      3,
+      6,
+      11,
+      23
+    ],
+    "test": [
+      4,
+      8,
+      9,
+      10,
+      18,
+      19
+    ]
+  },
+  "sim_budget": {
+    "dynamics_collect_steps": 4800,
+    "dir_label_train_steps": 16128,
+    "dir_label_test_diagnostic_steps": 16128,
+    "train_interaction_budget": 20928,
+    "phys_eval_theta0_steps": 192,
+    "phys_eval_per_model_steps": 192,
+    "note": "Train budget = dynamics collect + train dir labels. Test FD is diagnostic-only."
+  },
+  "dir_steps_train": 16128,
+  "dir_steps_test_diagnostic": 16128,
+  "theta0_return": -0.002539430815463263,
+  "results": {
+    "mc": {
+      "dynamics_nmse": 0.29622596502304077,
+      "cmd_mae": null,
+      "cosine_median": 0.43376321085405367,
+      "cosine_mean": 0.40683837806946005,
+      "policy_return_mean": -0.002710154905301842,
+      "delta_vs_theta0": -0.000170724089838579,
+      "theta_l2_delta": 5.231422424316406,
+      "sat_frac_final": 0.9642857313156128
+    },
+    "eagm_base": {
+      "dynamics_nmse": 0.2409011721611023,
+      "cmd_mae": 0.0027604512870311737,
+      "cosine_median": 0.7173185513219769,
+      "cosine_mean": 0.7179538634523904,
+      "policy_return_mean": -0.0020063995272181444,
+      "delta_vs_theta0": 0.0005330312882451185,
+      "theta_l2_delta": 4.949708461761475,
+      "sat_frac_final": 0.7857142686843872
+    },
+    "eagm_dir_matched": {
+      "dynamics_nmse": 0.24726225435733795,
+      "cmd_mae": 0.0027884028386324644,
+      "cosine_median": 0.8560756437866603,
+      "cosine_mean": 0.8594872065899047,
+      "policy_return_mean": -0.0016296570579964573,
+      "delta_vs_theta0": 0.0009097737574668056,
+      "theta_l2_delta": 5.19636344909668,
+      "sat_frac_final": 0.9285714030265808
+    },
+    "eagm_hist": {
+      "dynamics_nmse": 0.16159693896770477,
+      "cmd_mae": 0.0038362022023648024,
+      "cosine_median": 0.7143625471871065,
+      "cosine_mean": 0.7222918701869099,
+      "policy_return_mean": -0.0017949528817547183,
+      "delta_vs_theta0": 0.0007444779337085446,
+      "theta_l2_delta": 4.096441745758057,
+      "sat_frac_final": 0.4285714328289032
+    },
+    "eagm_hist_dir_matched": {
+      "dynamics_nmse": 0.16917991638183594,
+      "cmd_mae": 0.003919859882444143,
+      "cosine_median": 0.8239816647885583,
+      "cosine_mean": 0.8341193098159727,
+      "policy_return_mean": -0.0013124924022352722,
+      "delta_vs_theta0": 0.0012269384132279908,
+      "theta_l2_delta": 5.203855037689209,
+      "sat_frac_final": 0.9642857313156128
+    }
+  },
+  "train_pair_info": {
+    "dir_applications": 300,
+    "dir_skips": 0,
+    "batch_seed": 36
+  },
+  "wall_seconds": 367.7332320213318
+}

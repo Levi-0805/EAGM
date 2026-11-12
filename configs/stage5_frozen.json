@@ -1,0 +1,25 @@
+{
+  "frozen_from_stage4_commit": "c386ed3193bea0ea676b4d014be33a3bfe9fe24b",
+  "controller_b": {
+    "gain": 1.05,
+    "extra_lag": 1,
+    "rate_limit": 0.045,
+    "smooth_beta": 0.25,
+    "episode_randomize": false
+  },
+  "world_model_updates": 3000,
+  "policy_updates": 50,
+  "imagined_horizon": 8,
+  "eval_horizon": 16,
+  "hist_len": 8,
+  "lam_u": 1.0,
+  "lam_d": 0.1,
+  "batch_size": 128,
+  "lr_model": 0.001,
+  "lr_policy": 0.03,
+  "n_episodes_collect": 24,
+  "split": {"n_train": 12, "n_val": 6, "n_test": 6},
+  "dir_starts_train": 12,
+  "dir_starts_test_diagnostic": 12,
+  "note": "Do not retune after seeing Stage 5A test outcomes. Stage4 seeds 0-4 exploratory; Stage5A seeds 5-9 confirmatory."
+}
