@@ -1,0 +1,34 @@
+labels...
+train mu_base...
+train mu_dir...
+  mx       cos 0.5653 ret -0.00264866
+  mc       cos 0.8917 ret -0.00116300
+  mu_base  cos 0.6527 ret -0.00194577
+  mu_dir   cos 0.6626 ret -0.00191554
+wrote /home/aaa/桌面/汇报/11月论文/eagm_gpu/runs/stage1_seed0_1k wall 104.2
+deltas {
+  "mx": {
+    "cosine_median_delta": 4.795463426354729e-08,
+    "return_delta": 3.016813361622628e-12,
+    "archive_cosine_median": 0.5652740037490437,
+    "archive_return": -0.0026486601654584605
+  },
+  "mc": {
+    "cosine_median_delta": 1.2193536846893949e-08,
+    "return_delta": -3.737699364424196e-11,
+    "archive_cosine_median": 0.8916702363997807,
+    "archive_return": -0.0011629967663327554
+  },
+  "mu_base": {
+    "cosine_median_delta": 4.6079720683600556e-07,
+    "return_delta": 8.843415307772245e-10,
+    "archive_cosine_median": 0.6527269291816011,
+    "archive_return": -0.0019457755013969416
+  },
+  "mu_dir": {
+    "cosine_median_delta": -1.2810758009962342e-08,
+    "return_delta": -1.0065314402264713e-10,
+    "archive_cosine_median": 0.6625913133734813,
+    "archive_return": -0.001915542606971421
+  }
+}

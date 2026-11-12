@@ -1,0 +1,15 @@
+collect...
+dir labels on 12 starts...
+Traceback (most recent call last):
+  File "/home/aaa/桌面/汇报/11月论文/eagm_gpu/scripts/run_stage3_b_dir_seed0.py", line 407, in <module>
+    main()
+  File "/home/aaa/桌面/汇报/11月论文/eagm_gpu/scripts/run_stage3_b_dir_seed0.py", line 269, in main
+    g, ok = sim_grad_masked(env, r["start"])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aaa/桌面/汇报/11月论文/eagm_gpu/scripts/run_stage3_b_dir_seed0.py", line 104, in sim_grad_masked
+    plus = E.physical(env, ep * e, start, H)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aaa/桌面/汇报/11月论文/eagm_gpu/vendor/legacy_sim/experiment.py", line 70, in physical
+    total+=.99**k*(-np.mean((newx[:14]-ref)**2)-.0005*np.mean(newx[14:]**2)-.05*np.mean((a-prev)**2))
+                                                                                         ~^~~~~
+ValueError: operands could not be broadcast together with shapes (14,) (28,) 

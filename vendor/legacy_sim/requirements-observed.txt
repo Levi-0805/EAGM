@@ -1,0 +1,6 @@
+# Versions actually used locally. This venv inherits existing site packages.
+# For a clean Windows CPU environment, install torch from its CPU wheel index.
+torch==2.10.0+cpu
+mujoco==3.5.0
+numpy==2.3.1
+matplotlib==3.10.3

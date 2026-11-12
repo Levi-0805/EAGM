@@ -1,0 +1,26 @@
+seed 0: labels
+  mx       cos 0.5653 ret -0.00264866
+  mc       cos 0.8917 ret -0.00116300
+  mu_base  cos 0.6527 ret -0.00194577
+  mu_dir   cos 0.6626 ret -0.00191554
+seed 1: labels
+  mx       cos 0.5033 ret -0.00252364
+  mc       cos 0.8839 ret -0.00111674
+  mu_base  cos 0.5774 ret -0.00236951
+  mu_dir   cos 0.5838 ret -0.00206043
+seed 2: labels
+  mx       cos 0.5924 ret -0.00272328
+  mc       cos 0.9056 ret -0.00109920
+  mu_base  cos 0.6625 ret -0.00193138
+  mu_dir   cos 0.6806 ret -0.00194489
+seed 3: labels
+  mx       cos 0.5835 ret -0.00292472
+  mc       cos 0.8904 ret -0.00110039
+  mu_base  cos 0.6003 ret -0.00239150
+  mu_dir   cos 0.6171 ret -0.00188813
+seed 4: labels
+  mx       cos 0.5648 ret -0.00264264
+  mc       cos 0.9044 ret -0.00102649
+  mu_base  cos 0.6452 ret -0.00213969
+  mu_dir   cos 0.6580 ret -0.00203527
+wrote /home/aaa/桌面/汇报/11月论文/eagm_gpu/runs/stage1_1k5 wall 532.4 max|dcos| 2.0156433995222045e-06 max|dret| 6.403557144610272e-09

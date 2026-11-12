@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+.DS_Store
+runs/**/*.pt
+!runs/**/results.json
+!runs/**/partial_results.json
+!runs/**/*_console.log
+!runs/**/environment.json
+!runs/**/learning.json
+!runs/**/seed*_learning.json
+vendor/CVPR2027_READONLY/
+third_party/openarm_mujoco/v2/

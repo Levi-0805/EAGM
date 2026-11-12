@@ -1,0 +1,18 @@
+{
+  "host": {
+    "system": "Linux",
+    "node": "aaa-QiTianM610-N000",
+    "release": "6.8.0-138-generic",
+    "version": "#138~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Aug  7 13:43:15 UTC ",
+    "machine": "x86_64",
+    "processor": "x86_64"
+  },
+  "torch": "2.11.0+cu128",
+  "cuda_available": true,
+  "device": "cpu",
+  "openarm": "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/openarm_bimanual.xml",
+  "mujoco_model": "/home/aaa/\u684c\u9762/\u6c47\u62a5/11\u6708\u8bba\u6587/eagm_gpu/assets/pilot_effective_model.linux.xml",
+  "seed": 0,
+  "updates": 1000,
+  "lam": 0.1
+}

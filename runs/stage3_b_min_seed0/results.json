@@ -1,0 +1,37 @@
+{
+  "controller": "B",
+  "config": {
+    "gain": 1.05,
+    "extra_lag": 1,
+    "rate_limit": 0.045,
+    "smooth_beta": 0.25,
+    "episode_randomize": false,
+    "gain_range": [
+      0.92,
+      1.08
+    ],
+    "extra_lag_choices": [
+      0,
+      1,
+      2
+    ],
+    "rate_limit_range": [
+      0.03,
+      0.08
+    ],
+    "smooth_beta_range": [
+      0.0,
+      0.35
+    ]
+  },
+  "n_train": 840,
+  "n_test": 360,
+  "updates": 800,
+  "mc_nmse": 0.2358846813440323,
+  "mu_oracle_nmse": 0.2451656460762024,
+  "eagm_base_nmse": 0.19882526993751526,
+  "eagm_cmd_mae": 0.012141924351453781,
+  "u0_cmd_mae": 0.016515275463461876,
+  "wall_seconds": 20.655353307724,
+  "note": "Smoke only: dynamics/cmd metrics under Controller B; not policy gains."
+}

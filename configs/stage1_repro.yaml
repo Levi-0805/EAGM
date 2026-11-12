@@ -1,0 +1,33 @@
+# Stage 1: strict baseline reproduction on GPU host (CPU FP32 training for parity)
+name: stage1_baseline_reproduction
+python_env: isaaclab50
+device: cpu  # match legacy numerical path; optional cuda parity later
+openarm_model_path: /home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/openarm_bimanual.xml
+legacy_root: vendor/legacy_sim
+data:
+  transitions: vendor/legacy_sim/runs/pilot_20261101/transitions.npz
+  starts: vendor/legacy_sim/runs/pilot_20261101/starts.pt
+  mc_1k_dir: vendor/legacy_sim/runs/extended_20261102/alpha05
+  mc_3k_dir: vendor/legacy_sim/runs/revision4_20261111/long3000
+  mu_3k_dir: vendor/legacy_sim/runs/revision4_20261111/mu3000/models
+protocol:
+  seeds: [0, 1, 2, 3, 4]
+  updates_1k: 1000
+  updates_3k: 3000
+  lam_dir: 0.1
+  policy_updates: 50
+  train_starts_delay: 2
+  n_train_starts: 12
+  test_starts_delay: 2
+tolerances:
+  # hardware/torch/mujoco differ from Windows CPU box; investigate if exceeded
+  cosine_abs: 0.02
+  return_abs: 2.0e-4
+  validation_nmse_rel: 0.05
+reference_archive:
+  stage2_1k: vendor/EAGM_archive_20261112/runs/eagm_stage2_1k5_20261112/results.json
+  mudir_3k: vendor/EAGM_archive_20261112/runs/eagm_mudir3k_20261112/results.json
+out_dirs:
+  seed0_1k: runs/stage1_seed0_1k
+  five_seed_1k: runs/stage1_1k5
+  five_seed_3k: runs/stage1_mudir3k

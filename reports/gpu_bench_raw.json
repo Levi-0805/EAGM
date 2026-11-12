@@ -1,0 +1,84 @@
+{
+  "os": {
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+    "python": "3.11.15",
+    "uname": {
+      "system": "Linux",
+      "node": "aaa-QiTianM610-N000",
+      "release": "6.8.0-138-generic",
+      "version": "#138~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Aug  7 13:43:15 UTC ",
+      "machine": "x86_64",
+      "processor": "x86_64"
+    }
+  },
+  "nvidia_smi": "NVIDIA GeForce RTX 4060, 580.178.04, 8188 MiB, 5577 MiB",
+  "torch": {
+    "version": "2.7.0+cu128",
+    "cuda_available": true,
+    "cuda_version": "12.8",
+    "device_count": 1,
+    "device_name": "NVIDIA GeForce RTX 4060",
+    "device_mem_gb": 8.18
+  },
+  "mujoco": "3.12.0",
+  "numpy": "1.26.0",
+  "train_cpu": {
+    "steps": 1000,
+    "batch": 256,
+    "seconds": 3.454,
+    "updates_per_s": 289.5,
+    "peak_mem_mb": null,
+    "amp": false
+  },
+  "train_gpu_fp32": {
+    "steps": 1000,
+    "batch": 256,
+    "seconds": 2.329,
+    "updates_per_s": 429.4,
+    "peak_mem_mb": 19.0,
+    "amp": false
+  },
+  "train_gpu_amp": {
+    "steps": 1000,
+    "batch": 256,
+    "seconds": 2.801,
+    "updates_per_s": 357.1,
+    "peak_mem_mb": 18.9,
+    "amp": true
+  },
+  "batch_gpu_4096": {
+    "batch": 4096,
+    "steps": 200,
+    "seconds": 0.461,
+    "updates_per_s": 434.2,
+    "peak_mem_mb": 31.9
+  },
+  "batch_cpu_4096": {
+    "batch": 4096,
+    "steps": 50,
+    "seconds": 1.03,
+    "updates_per_s": 48.5,
+    "peak_mem_mb": null
+  },
+  "h2d": {
+    "floats": 10000000,
+    "iters": 20,
+    "seconds": 0.237,
+    "GB_per_s": 3.37
+  },
+  "mujoco_step": {
+    "control_steps": 2000,
+    "seconds": 0.794,
+    "control_steps_per_s": 2520.2
+  },
+  "train_with_h2d_each_step": {
+    "steps": 500,
+    "seconds": 1.548,
+    "updates_per_s": 322.9
+  },
+  "train_resident_gpu": {
+    "steps": 500,
+    "seconds": 1.192,
+    "updates_per_s": 419.5
+  }
+}

@@ -1,0 +1,31 @@
+seed 0: labels
+  trained mu3k val 0.10759
+  trained mudir3k val 0.10758
+  mc3k     cos 0.9784 ret -0.00098816
+  mu3k     cos 0.9903 ret -0.00096406
+  mudir3k  cos 0.9890 ret -0.00096619
+seed 1: labels
+  trained mu3k val 0.11183
+  trained mudir3k val 0.11122
+  mc3k     cos 0.9749 ret -0.00098784
+  mu3k     cos 0.9874 ret -0.00096562
+  mudir3k  cos 0.9889 ret -0.00096880
+seed 2: labels
+  trained mu3k val 0.11808
+  trained mudir3k val 0.11670
+  mc3k     cos 0.9749 ret -0.00098352
+  mu3k     cos 0.9919 ret -0.00096014
+  mudir3k  cos 0.9906 ret -0.00096402
+seed 3: labels
+  trained mu3k val 0.10984
+  trained mudir3k val 0.10957
+  mc3k     cos 0.9763 ret -0.00097775
+  mu3k     cos 0.9895 ret -0.00096335
+  mudir3k  cos 0.9904 ret -0.00096419
+seed 4: labels
+  trained mu3k val 0.11252
+  trained mudir3k val 0.11134
+  mc3k     cos 0.9781 ret -0.00098814
+  mu3k     cos 0.9936 ret -0.00096634
+  mudir3k  cos 0.9933 ret -0.00096556
+wrote /home/aaa/桌面/汇报/11月论文/eagm_gpu/runs/stage1_mudir3k wall 772.4 max|dcos| 1.8364496168210565e-07 max|dret| 5.643591713747065e-11

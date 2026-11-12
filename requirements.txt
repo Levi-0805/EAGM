@@ -1,0 +1,5 @@
+# Locked for eagm_gpu conda env (Linux + CUDA). Not the old Windows CPU stack.
+torch==2.11.0+cu128
+numpy==2.1.3
+mujoco==3.5.0
+matplotlib==3.10.8

@@ -1,0 +1,21 @@
+{
+  "host": {
+    "system": "Linux",
+    "node": "aaa-QiTianM610-N000",
+    "release": "6.8.0-138-generic",
+    "version": "#138~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Aug  7 13:43:15 UTC ",
+    "machine": "x86_64",
+    "processor": "x86_64"
+  },
+  "torch": "2.11.0+cu128",
+  "mujoco_env": "CompatibleArmEnv",
+  "updates": 1000,
+  "lam": 0.1,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ]
+}
