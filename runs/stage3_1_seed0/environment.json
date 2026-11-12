@@ -1,0 +1,83 @@
+{
+  "seed": 0,
+  "device": "cpu",
+  "cuda_available": true,
+  "torch": "2.11.0+cu128",
+  "host": {
+    "system": "Linux",
+    "node": "aaa-QiTianM610-N000",
+    "release": "6.8.0-138-generic",
+    "version": "#138~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Aug  7 13:43:15 UTC ",
+    "machine": "x86_64",
+    "processor": "x86_64"
+  },
+  "controller_b": {
+    "gain": 1.05,
+    "extra_lag": 1,
+    "rate_limit": 0.045,
+    "smooth_beta": 0.25,
+    "episode_randomize": false,
+    "gain_range": [
+      0.92,
+      1.08
+    ],
+    "extra_lag_choices": [
+      0,
+      1,
+      2
+    ],
+    "rate_limit_range": [
+      0.03,
+      0.08
+    ],
+    "smooth_beta_range": [
+      0.0,
+      0.35
+    ]
+  },
+  "split": {
+    "train": [
+      1,
+      4,
+      6,
+      7,
+      8,
+      9,
+      11,
+      13,
+      14,
+      17,
+      21,
+      22
+    ],
+    "val": [
+      0,
+      2,
+      3,
+      5,
+      10,
+      23
+    ],
+    "test": [
+      12,
+      15,
+      16,
+      18,
+      19,
+      20
+    ]
+  },
+  "n_train_rows": 2400,
+  "n_val_rows": 1200,
+  "n_test_rows": 1200,
+  "hist_len": 8,
+  "notes": {
+    "mc": "Controller-A 57-D memory only; no B hidden FIFO/gain/lag state",
+    "mu": "Privileged one-step oracle on u_exec; not used for policy",
+    "eagm": "Deployable: x, a, c_obs=(target,filter,delay), optional x/a history; no known_config_vector",
+    "deprecated_runs": [
+      "runs/stage3_b_min_seed0",
+      "runs/stage3_b_dir_seed0"
+    ]
+  }
+}

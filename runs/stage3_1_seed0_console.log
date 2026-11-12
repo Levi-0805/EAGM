@@ -1,0 +1,216 @@
+collect 24 trajectories...
+collect held-out B configs...
+dir starts 12 test starts 12
+==== updates 1000 ====
+train mc...
+  mc               it 200 loss 0.32220
+  mc               it 400 loss 0.28416
+  mc               it 600 loss 0.27378
+  mc               it 800 loss 0.27031
+  mc               it 1000 loss 0.26592
+train mu_onestep...
+  mu               it 200 loss 0.35984
+  mu               it 400 loss 0.27165
+  mu               it 600 loss 0.27089
+  mu               it 800 loss 0.27643
+  mu               it 1000 loss 0.25800
+train eagm_base...
+  eagm_base        it 200 loss 0.39385
+  eagm_base        it 400 loss 0.30341
+  eagm_base        it 600 loss 0.26536
+  eagm_base        it 800 loss 0.26868
+  eagm_base        it 1000 loss 0.24776
+train eagm_dir...
+  eagm_dir         it 200 loss 0.31748
+  eagm_dir         it 400 loss 0.28150
+  eagm_dir         it 600 loss 0.26439
+  eagm_dir         it 800 loss 0.26487
+  eagm_dir         it 1000 loss 0.25111
+train eagm_hist...
+  eagm_hist        it 200 loss 0.29120
+  eagm_hist        it 400 loss 0.29602
+  eagm_hist        it 600 loss 0.26011
+  eagm_hist        it 800 loss 0.24949
+  eagm_hist        it 1000 loss 0.25319
+train eagm_hist_dir...
+  eagm_hist_dir    it 200 loss 0.47604
+  eagm_hist_dir    it 400 loss 0.29893
+  eagm_hist_dir    it 600 loss 0.26486
+  eagm_hist_dir    it 800 loss 0.24412
+  eagm_hist_dir    it 1000 loss 0.24533
+policy...
+{
+  "updates": 1000,
+  "dyn": {
+    "mc": 0.28285419940948486,
+    "mu_onestep": 0.2799747884273529,
+    "eagm_base": 0.27776676416397095,
+    "eagm_dir": 0.27327147126197815,
+    "eagm_hist": 0.26263150572776794,
+    "eagm_hist_dir": 0.25947532057762146
+  },
+  "cmd": {
+    "eagm_base": 0.0033563270699232817,
+    "eagm_dir": 0.002769129816442728,
+    "eagm_hist": 0.0028261293191462755,
+    "eagm_hist_dir": 0.003056325251236558
+  },
+  "cos": {
+    "mc": 0.6234733709157618,
+    "eagm_base": 0.43443831494855967,
+    "eagm_dir": 0.8841468334873421,
+    "eagm_hist": 0.7810877984500346,
+    "eagm_hist_dir": 0.8911208558825021
+  },
+  "ret": {
+    "mc": -0.0014422582825374868,
+    "eagm_base": -0.004458728159027104,
+    "eagm_dir": -0.001571646274796274,
+    "eagm_hist": -0.002772666124994371,
+    "eagm_hist_dir": -0.001571646274796274
+  },
+  "ret_hold": {
+    "mc": -0.015418134623246328,
+    "eagm_base": -0.01600511193139077,
+    "eagm_dir": -0.014990465386677636,
+    "eagm_hist": -0.014998788418444509,
+    "eagm_hist_dir": -0.014990465386677636
+  }
+}
+==== updates 3000 ====
+train mc...
+  mc               it 200 loss 0.35150
+  mc               it 400 loss 0.28323
+  mc               it 600 loss 0.27481
+  mc               it 800 loss 0.26478
+  mc               it 1000 loss 0.24821
+  mc               it 1200 loss 0.24492
+  mc               it 1400 loss 0.23783
+  mc               it 1600 loss 0.23694
+  mc               it 1800 loss 0.23121
+  mc               it 2000 loss 0.23769
+  mc               it 2200 loss 0.22531
+  mc               it 2400 loss 0.22610
+  mc               it 2600 loss 0.23619
+  mc               it 2800 loss 0.22504
+  mc               it 3000 loss 0.23961
+train mu_onestep...
+  mu               it 200 loss 0.31538
+  mu               it 400 loss 0.27996
+  mu               it 600 loss 0.25888
+  mu               it 800 loss 0.27056
+  mu               it 1000 loss 0.23835
+  mu               it 1200 loss 0.24307
+  mu               it 1400 loss 0.25011
+  mu               it 1600 loss 0.24370
+  mu               it 1800 loss 0.23611
+  mu               it 2000 loss 0.23741
+  mu               it 2200 loss 0.22373
+  mu               it 2400 loss 0.22705
+  mu               it 2600 loss 0.24790
+  mu               it 2800 loss 0.21694
+  mu               it 3000 loss 0.21056
+train eagm_base...
+  eagm_base        it 200 loss 0.37710
+  eagm_base        it 400 loss 0.30158
+  eagm_base        it 600 loss 0.23816
+  eagm_base        it 800 loss 0.24463
+  eagm_base        it 1000 loss 0.24493
+  eagm_base        it 1200 loss 0.23776
+  eagm_base        it 1400 loss 0.24433
+  eagm_base        it 1600 loss 0.24292
+  eagm_base        it 1800 loss 0.21871
+  eagm_base        it 2000 loss 0.23043
+  eagm_base        it 2200 loss 0.22486
+  eagm_base        it 2400 loss 0.22380
+  eagm_base        it 2600 loss 0.21043
+  eagm_base        it 2800 loss 0.21379
+  eagm_base        it 3000 loss 0.20056
+train eagm_dir...
+  eagm_dir         it 200 loss 0.38742
+  eagm_dir         it 400 loss 0.30480
+  eagm_dir         it 600 loss 0.26977
+  eagm_dir         it 800 loss 0.29358
+  eagm_dir         it 1000 loss 0.24673
+  eagm_dir         it 1200 loss 0.23760
+  eagm_dir         it 1400 loss 0.24586
+  eagm_dir         it 1600 loss 0.22910
+  eagm_dir         it 1800 loss 0.22004
+  eagm_dir         it 2000 loss 0.22537
+  eagm_dir         it 2200 loss 0.21390
+  eagm_dir         it 2400 loss 0.20240
+  eagm_dir         it 2600 loss 0.20708
+  eagm_dir         it 2800 loss 0.20650
+  eagm_dir         it 3000 loss 0.21556
+train eagm_hist...
+  eagm_hist        it 200 loss 0.44717
+  eagm_hist        it 400 loss 0.29152
+  eagm_hist        it 600 loss 0.24807
+  eagm_hist        it 800 loss 0.23633
+  eagm_hist        it 1000 loss 0.23898
+  eagm_hist        it 1200 loss 0.23672
+  eagm_hist        it 1400 loss 0.22789
+  eagm_hist        it 1600 loss 0.22870
+  eagm_hist        it 1800 loss 0.19633
+  eagm_hist        it 2000 loss 0.17999
+  eagm_hist        it 2200 loss 0.18001
+  eagm_hist        it 2400 loss 0.15497
+  eagm_hist        it 2600 loss 0.15204
+  eagm_hist        it 2800 loss 0.15091
+  eagm_hist        it 3000 loss 0.13389
+train eagm_hist_dir...
+  eagm_hist_dir    it 200 loss 0.38025
+  eagm_hist_dir    it 400 loss 0.28245
+  eagm_hist_dir    it 600 loss 0.26463
+  eagm_hist_dir    it 800 loss 0.25798
+  eagm_hist_dir    it 1000 loss 0.23545
+  eagm_hist_dir    it 1200 loss 0.23990
+  eagm_hist_dir    it 1400 loss 0.21577
+  eagm_hist_dir    it 1600 loss 0.21198
+  eagm_hist_dir    it 1800 loss 0.19362
+  eagm_hist_dir    it 2000 loss 0.18008
+  eagm_hist_dir    it 2200 loss 0.16818
+  eagm_hist_dir    it 2400 loss 0.16056
+  eagm_hist_dir    it 2600 loss 0.15868
+  eagm_hist_dir    it 2800 loss 0.15063
+  eagm_hist_dir    it 3000 loss 0.13993
+policy...
+{
+  "updates": 3000,
+  "dyn": {
+    "mc": 0.3008570373058319,
+    "mu_onestep": 0.29410579800605774,
+    "eagm_base": 0.2444196492433548,
+    "eagm_dir": 0.25575125217437744,
+    "eagm_hist": 0.17901889979839325,
+    "eagm_hist_dir": 0.16806632280349731
+  },
+  "cmd": {
+    "eagm_base": 0.0027958343271166086,
+    "eagm_dir": 0.0030549054499715567,
+    "eagm_hist": 0.0037937096785753965,
+    "eagm_hist_dir": 0.003916164860129356
+  },
+  "cos": {
+    "mc": 0.5908748472702299,
+    "eagm_base": 0.7218101559206154,
+    "eagm_dir": 0.893302688949037,
+    "eagm_hist": 0.7496177338055717,
+    "eagm_hist_dir": 0.9409616745637411
+  },
+  "ret": {
+    "mc": -0.0018384249003762984,
+    "eagm_base": -0.002917125166703921,
+    "eagm_dir": -0.0014860652326579406,
+    "eagm_hist": -0.0018710085812865152,
+    "eagm_hist_dir": -0.0014823307772611396
+  },
+  "ret_hold": {
+    "mc": -0.014545907609441374,
+    "eagm_base": -0.014751171239032275,
+    "eagm_dir": -0.015135220600205538,
+    "eagm_hist": -0.014979834475924202,
+    "eagm_hist_dir": -0.015152018518603864
+  }
+}
+wrote /home/aaa/桌面/汇报/11月论文/eagm_gpu/runs/stage3_1_seed0 wall 575.9

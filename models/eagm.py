@@ -1,6 +1,7 @@
-"""EAGM world model: known map U0 + learned residual command bottleneck.
+"""EAGM world models: U0 + residual; optional history encoder.
 
-Non-visual first. Inference uses c_obs only; true u may supervise training.
+Deployable models must NOT consume Controller B hidden state or known_config_vector
+unless explicitly marked privileged.
 """
 from __future__ import annotations
 
@@ -10,94 +11,126 @@ import torch
 from torch import nn
 
 
+def u0_from_cobs(c_obs: torch.Tensor, action: torch.Tensor, lower, upper, alpha: float = 0.5):
+    target = torch.maximum(torch.minimum(c_obs[..., :14] + action, upper), lower)
+    return alpha * target + (1.0 - alpha) * c_obs[..., 14:28]
+
+
 class HistoryEncoder(nn.Module):
-    def __init__(self, obs_dim: int, act_dim: int, hidden: int = 64, mem: int = 32):
+    def __init__(self, obs_dim: int = 28, act_dim: int = 14, hidden: int = 64, mem: int = 32):
         super().__init__()
         self.rnn = nn.GRU(obs_dim + act_dim, hidden, batch_first=True)
         self.out = nn.Linear(hidden, mem)
 
     def forward(self, obs_hist: torch.Tensor, act_hist: torch.Tensor) -> torch.Tensor:
-        # obs_hist: [B,T,obs], act_hist: [B,T,act]
         x = torch.cat([obs_hist, act_hist], dim=-1)
         y, _ = self.rnn(x)
         return self.out(y[:, -1])
 
 
-class CommandBottleneck(nn.Module):
-    """u_hat = U0(c_obs, a) + Delta(m, a)."""
+class EAGMBase(nn.Module):
+    """Markov residual on (c_obs, a) only — NOT history-aware."""
 
-    def __init__(self, mem_dim: int, act_dim: int = 14, width: int = 64):
+    def __init__(self, stats: dict, width: int = 160):
         super().__init__()
-        self.delta = nn.Sequential(
-            nn.Linear(mem_dim + act_dim, width),
-            nn.SiLU(),
-            nn.Linear(width, act_dim),
-        )
-
-    def forward(
-        self,
-        u0: torch.Tensor,
-        mem: torch.Tensor,
-        action: torch.Tensor,
-    ) -> torch.Tensor:
-        return u0 + self.delta(torch.cat([mem, action], dim=-1))
-
-
-class EAGMWorld(nn.Module):
-    def __init__(
-        self,
-        stats: dict,
-        width: int = 160,
-        mem_dim: int = 32,
-        history: bool = True,
-    ):
-        super().__init__()
-        self.use_history = history
-        self.encoder = HistoryEncoder(28, 14, hidden=64, mem=mem_dim) if history else None
-        self.bottleneck = CommandBottleneck(mem_dim if history else 0, 14, 64)
-        in_dim = 28 + 14  # x + u_hat
+        self.kind = "eagm_base"
+        self.delta = nn.Sequential(nn.Linear(29 + 14, 64), nn.SiLU(), nn.Linear(64, 14))
+        nn.init.zeros_(self.delta[-1].weight)
+        nn.init.zeros_(self.delta[-1].bias)
         self.net = nn.Sequential(
-            nn.Linear(in_dim, width),
-            nn.SiLU(),
-            nn.Linear(width, width),
-            nn.SiLU(),
+            nn.Linear(42, width), nn.SiLU(),
+            nn.Linear(width, width), nn.SiLU(),
             nn.Linear(width, 28),
         )
         for name, val in stats.items():
             self.register_buffer(name, torch.as_tensor(val, dtype=torch.float32))
 
-    @staticmethod
-    def u0_from_cobs(c_obs: torch.Tensor, action: torch.Tensor, lower, upper, alpha: float = 0.5):
-        """Known partial map: accumulate+filter, ignore hidden lag/gain."""
-        target = torch.maximum(
-            torch.minimum(c_obs[..., :14] + action, upper), lower
-        )
-        filt = alpha * target + (1.0 - alpha) * c_obs[..., 14:28]
-        # Without true delay/queue, use filter as nominal command.
-        return filt
+    def command(self, c_obs, a):
+        u0 = u0_from_cobs(c_obs, a, self.lower, self.upper, float(self.alpha))
+        return u0 + self.delta(torch.cat([c_obs, a], -1))
 
-    def forward(
-        self,
-        x: torch.Tensor,
-        c_obs: torch.Tensor,
-        a: torch.Tensor,
-        obs_hist: Optional[torch.Tensor] = None,
-        act_hist: Optional[torch.Tensor] = None,
-        mem: Optional[torch.Tensor] = None,
-    ):
-        if mem is None:
-            if self.use_history:
-                if obs_hist is None or act_hist is None:
-                    raise ValueError("history tensors required")
-                mem = self.encoder(obs_hist, act_hist)
-            else:
-                mem = x.new_zeros(x.shape[0], 0)
-        u0 = self.u0_from_cobs(c_obs, a, self.lower, self.upper, float(self.alpha))
-        if self.use_history:
-            u_hat = self.bottleneck(u0, mem, a)
-        else:
-            u_hat = u0
+    def forward(self, x, c_obs, a, obs_hist=None, act_hist=None):
+        u_hat = self.command(c_obs, a)
         xx = (x - self.xmean) / self.xstd
         uu = (u_hat - self.umean) / self.ustd
-        delta = self.net(torch.cat([xx, uu], dim=-1)) * self.ystd + self.ymean
-        return x + delta, u_hat, mem
+        y = x + self.net(torch.cat([xx, uu], -1)) * self.ystd + self.ymean
+        return y, u_hat
+
+
+class EAGMHistory(nn.Module):
+    """m_t = H(x hist, a hist); u_hat = U0 + Delta(m, a)."""
+
+    def __init__(self, stats: dict, width: int = 160, mem_dim: int = 32, hist_len: int = 8):
+        super().__init__()
+        self.kind = "eagm_history"
+        self.hist_len = hist_len
+        self.encoder = HistoryEncoder(28, 14, hidden=64, mem=mem_dim)
+        self.delta = nn.Sequential(
+            nn.Linear(mem_dim + 14, 64), nn.SiLU(), nn.Linear(64, 14)
+        )
+        nn.init.zeros_(self.delta[-1].weight)
+        nn.init.zeros_(self.delta[-1].bias)
+        self.net = nn.Sequential(
+            nn.Linear(42, width), nn.SiLU(),
+            nn.Linear(width, width), nn.SiLU(),
+            nn.Linear(width, 28),
+        )
+        for name, val in stats.items():
+            self.register_buffer(name, torch.as_tensor(val, dtype=torch.float32))
+
+    def encode(self, obs_hist, act_hist):
+        return self.encoder(obs_hist, act_hist)
+
+    def command(self, c_obs, a, mem):
+        u0 = u0_from_cobs(c_obs, a, self.lower, self.upper, float(self.alpha))
+        return u0 + self.delta(torch.cat([mem, a], -1))
+
+    def forward(self, x, c_obs, a, obs_hist, act_hist):
+        mem = self.encode(obs_hist, act_hist)
+        u_hat = self.command(c_obs, a, mem)
+        xx = (x - self.xmean) / self.xstd
+        uu = (u_hat - self.umean) / self.ustd
+        y = x + self.net(torch.cat([xx, uu], -1)) * self.ystd + self.ymean
+        return y, u_hat, mem
+
+
+class McWorld(nn.Module):
+    """Full Controller-A 57-D memory. Does NOT include Controller-B hidden state."""
+
+    def __init__(self, stats: dict, width: int = 160):
+        super().__init__()
+        self.kind = "mc_controller_a_memory"
+        self.net = nn.Sequential(
+            nn.Linear(28 + 14 + 57, width), nn.SiLU(),
+            nn.Linear(width, width), nn.SiLU(),
+            nn.Linear(width, 28),
+        )
+        for name, val in stats.items():
+            self.register_buffer(name, torch.as_tensor(val, dtype=torch.float32))
+
+    def forward(self, x, c, a, h=None):
+        xx = (x - self.xmean) / self.xstd
+        return x + self.net(torch.cat([xx, a, c], -1)) * self.ystd + self.ymean
+
+
+class MuOneStepOracle(nn.Module):
+    """Privileged one-step dynamics upper bound: consumes true u_exec for that step.
+
+    Must NOT be used for imagined multi-step policy rollouts with future true u.
+    """
+
+    def __init__(self, stats: dict, width: int = 160):
+        super().__init__()
+        self.kind = "mu_onestep_oracle"
+        self.net = nn.Sequential(
+            nn.Linear(42, width), nn.SiLU(),
+            nn.Linear(width, width), nn.SiLU(),
+            nn.Linear(width, 28),
+        )
+        for name, val in stats.items():
+            self.register_buffer(name, torch.as_tensor(val, dtype=torch.float32))
+
+    def forward_u(self, x, u):
+        xx = (x - self.xmean) / self.xstd
+        uu = (u - self.umean) / self.ustd
+        return x + self.net(torch.cat([xx, uu], -1)) * self.ystd + self.ymean

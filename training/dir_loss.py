@@ -1,11 +1,7 @@
-"""Directional consistency loss with numerical stability masking.
-
-Fixes the Stage-2 audit finding: sim_grad returns a stability mask, but the
-legacy eagm_pilot.train_model never applied it to the training loss.
-"""
+"""Directional consistency loss with numerical stability masking."""
 from __future__ import annotations
 
-from typing import Sequence
+from typing import Optional, Sequence
 
 import numpy as np
 import torch
@@ -19,16 +15,22 @@ def huber_dir_loss(
     s0: float,
     tau: float | None = None,
     delta: float = 1.0,
-) -> torch.Tensor:
-    """g_* shaped [B, D]; stable_mask bool/float [B, D] or [D]."""
+) -> Optional[torch.Tensor]:
+    """Return Huber loss over stable components, or None if none are stable.
+
+    Returning None lets callers skip the term instead of inventing a zero loss
+    that still participates in autograd graphs incorrectly.
+    """
     if tau is None:
         tau = max(float(s0) * 0.1, 1e-8)
     scale = torch.clamp(g_sim.abs(), min=tau)
     err = (g_model - g_sim) / scale
     per = nn.functional.huber_loss(err, torch.zeros_like(err), delta=delta, reduction="none")
     w = stable_mask.to(dtype=per.dtype)
-    denom = w.sum().clamp_min(1.0)
-    return (per * w).sum() / denom
+    n = w.sum()
+    if float(n.detach()) < 1.0:
+        return None
+    return (per * w).sum() / n
 
 
 def stack_labels(

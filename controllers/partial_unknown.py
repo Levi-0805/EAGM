@@ -65,7 +65,11 @@ class PartialUnknownArmEnv(CompatibleArmEnv):
         }
 
     def known_config_vector(self) -> np.ndarray:
-        """Declared partial config visible at train/test (not hidden states)."""
+        """ORACLE/debug only: exposes true B parameters.
+
+        Deployable EAGM models must NOT consume this vector — feeding it would
+        leak the 'unknown' execution map and invalidate Controller-B claims.
+        """
         a = self._active
         return np.asarray(
             [a["gain"], a["extra_lag"], a["rate_limit"], a["smooth_beta"]],
