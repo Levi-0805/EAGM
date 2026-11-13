@@ -1,0 +1,42 @@
+{
+  "task_id": "reach",
+  "robot": "openarm_bimanual_pilot_effective",
+  "sites": ["left_ee_control_point", "right_ee_control_point"],
+  "reward": {
+    "form": "-W_ee * mean(||ee - goal||^2) - W_vel * mean(qd^2) - W_da * mean((a-a_prev)^2)",
+    "W_ee": 1.0,
+    "W_vel": 0.0005,
+    "W_da": 0.05,
+    "discount": 0.99,
+    "matched_imagined_physical": "fk_surrogate_mlp",
+    "secondary_physical_metric": "true_mujoco_ee_return"
+  },
+  "actor": {
+    "unchanged": true,
+    "joint_refs": "damped_least_squares_ik_blend_then_hold_or_sine"
+  },
+  "world_model": {
+    "architecture_frozen": true,
+    "predicts": "x_next (28D proprioceptive state)"
+  },
+  "reach_config_default": {
+    "goal_mode": "random",
+    "goal_noise": 0.06,
+    "init_joint_jitter": 0.02,
+    "ref_blend_horizon": 80,
+    "traj_shape": "hold",
+    "controller_b_randomize": true
+  },
+  "ablations_planned": {
+    "B1_fixed_goal": {"goal_mode": "fixed"},
+    "B2_random_goal": {"goal_mode": "random"},
+    "B3_init_jitter": {"init_joint_jitter": 0.05},
+    "B4_traj_shape": {"traj_shape": "sine_perturb"},
+    "B5_controller_b": {"controller_b_randomize": true}
+  },
+  "fk_surrogate": {
+    "n_samples": 4000,
+    "fit_steps": 800,
+    "accept_rmse_m": 0.02
+  }
+}

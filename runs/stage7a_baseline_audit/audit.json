@@ -1,0 +1,169 @@
+{
+  "stage": "7A",
+  "git_head": "43cfc79c0c38c9e2a322f7f4a75d8a100dc04aea",
+  "reference_commit": "43cfc79c0c38c9e2a322f7f4a75d8a100dc04aea",
+  "stage6c_parent_recorded": "1f25a971bf42d2dbe600e4b62d9870e8e4a870d7",
+  "platform": {
+    "python": "3.11.18 (main, Oct 26 2026, 18:19:35) [GCC 14.3.0]",
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+    "torch": "2.11.0+cu128",
+    "cuda": true,
+    "gpu": "NVIDIA GeForce RTX 4060",
+    "mujoco": "3.5.0"
+  },
+  "frozen_method": {
+    "primary": "eagm_dir_random",
+    "retain": [
+      "Mc",
+      "EAGM-Base",
+      "EAGM-Dir-Random",
+      "AuxCommandMLP"
+    ],
+    "dropped": [
+      "HistC",
+      "ExecState",
+      "Path-Dir",
+      "LR-desaturation-as-method"
+    ],
+    "lr_policy": 0.03,
+    "theta_box": [
+      -1.0,
+      1.0
+    ],
+    "world_model_updates": 3000,
+    "policy_updates": 50,
+    "imagined_horizon": 8,
+    "eval_horizon": 16,
+    "lam_u": 1.0,
+    "lam_d": 0.1,
+    "batch_size": 128,
+    "lr_model": 0.001,
+    "dir_probe": "random_theta_N(0,0.3)_union_zero",
+    "feasible_fd_for_new_labels": true
+  },
+  "path_dir_pilot_resolution": {
+    "stage6c2_code_pilot_model": "trained_Base",
+    "stage6c0_audit_path_probes_model": "stage6b1_Dir_checkpoint_for_diagnostics_only",
+    "saturation_report_originally_said_frozen_Dir": false,
+    "saturation_report_clarified": true,
+    "pathdir_results_consistent_with_code": true,
+    "paper_safe_statement": "Path-Dir labels in Stage 6C.2/6C.3 were generated from a policy-optimization pilot on a frozen trained EAGM-Base; Stage 6C.0 used a Dir checkpoint only for saturation/projection smoke diagnostics.",
+    "resolved": true
+  },
+  "artifacts": {
+    "runs/stage6c2_pathdir/results.json": {
+      "exists": true,
+      "sha256": "2ba9490fb9256447bd3ff1bca08af0a2dda5a1e59f9c2e86abd89ac24de5a736",
+      "bytes": 57085
+    },
+    "runs/stage6c2_pathdir/protocol.json": {
+      "exists": true,
+      "sha256": "a710caeab2eeffcc7b6f515d60e4febee1c2fe50a21d379fe17b4c6835df9789",
+      "bytes": 363
+    },
+    "runs/stage6c1_lr_ablation/results.json": {
+      "exists": true,
+      "sha256": "554c37012d87b7ee7cffb98ea3ebbba17c571abc73bb9785a3ea5028ed0b188e",
+      "bytes": 150342
+    },
+    "runs/stage6c_manifest.json": {
+      "exists": true,
+      "sha256": "5e8c263fd074f877196e4c749bc617edabbc6f7ccbc44dc165a3240d8dac8a6e",
+      "bytes": 2001
+    },
+    "reports/stage6c_research_decision.md": {
+      "exists": true,
+      "sha256": "48e2df03df1d01b6947309f4cb5ca79b067f8eacc822641bb27751fa3af51d84",
+      "bytes": 3439
+    },
+    "tests/test_stage6c_fd_boundary.py": {
+      "exists": true,
+      "sha256": "186cbfc5bb4522659881239391c853459fd76ed078f9d56c95081f923d5f975e",
+      "bytes": 6022
+    }
+  },
+  "seed_json": {
+    "seed15": {
+      "exists": true,
+      "has_pt": true
+    },
+    "seed16": {
+      "exists": true,
+      "has_pt": true
+    },
+    "seed17": {
+      "exists": true,
+      "has_pt": true
+    },
+    "seed18": {
+      "exists": true,
+      "has_pt": true
+    },
+    "seed19": {
+      "exists": true,
+      "has_pt": true
+    }
+  },
+  "stage6c2_protocol": {
+    "parent_commit": "1f25a971bf42d2dbe600e4b62d9870e8e4a870d7",
+    "seeds": [
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "n_dir_labels": 12,
+    "feasible_fd": true,
+    "path_fracs": [
+      0.0,
+      0.2,
+      0.4,
+      0.6,
+      0.8,
+      1.0
+    ],
+    "matched": [
+      "arch",
+      "init",
+      "batch_seed",
+      "updates",
+      "lam",
+      "fd_eps",
+      "label_count"
+    ]
+  },
+  "stage6c0_status": "PASS",
+  "recompute_path_minus_random": {
+    "mean": -0.0003907187651460948,
+    "n_positive": 2,
+    "matches_report_mean": true,
+    "matches_report_n_pos": true,
+    "decision": "STOP_PATHDIR"
+  },
+  "model_inventory": {
+    "mc": {
+      "kind": "mc_controller_a_memory",
+      "n_params": 46268
+    },
+    "eagm_base": {
+      "kind": "eagm_base",
+      "n_params": 40874
+    },
+    "eagm_dir_random": {
+      "kind": "eagm_base",
+      "n_params": 40874
+    },
+    "aux_command_mlp": {
+      "kind": "aux_command_mlp",
+      "n_params": 53002
+    }
+  },
+  "notes": [
+    ".pt checkpoints remain gitignored; local seed*.pt exist for restore when present.",
+    "Do not launch Stage 7D multi-seed until 7B unit tests + 7C single-seed gate pass.",
+    "Dir-Random is the frozen primary method; Path-Dir remains STOP."
+  ],
+  "wall_seconds": 0.191375732421875,
+  "status": "PASS"
+}

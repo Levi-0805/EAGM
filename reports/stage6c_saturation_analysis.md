@@ -61,7 +61,12 @@ Saturation at lr=0.03 is therefore **not** shown to be the binding constraint on
 
 - Feasible FD at θ=+1 → all backward one-sided; stability mask separate.
 - Paired Base/Dir init digest match; diverge after train.
-- Path probes at fractions 0…1.0; pilot final sat ≈0.96 on frozen Dir.
+- Path probes at fractions 0…1.0; pilot final sat ≈0.96.
+  **Clarification (Stage 7A):** this 6C.0 smoke used a frozen **Stage-6B.1 Dir**
+  checkpoint only for projection/saturation diagnostics. The **Path-Dir label
+  pilot in Stage 6C.2** (`scripts/run_stage6c2_pathdir.py`) used a frozen
+  **trained Base**, not Dir — see `reports/stage6c_pathdir_results.md` and
+  `reports/stage7a_baseline_audit.md`.
 - Physical return improves through u=40 even as sat jumps ~0→0.89.
 
 ## Next

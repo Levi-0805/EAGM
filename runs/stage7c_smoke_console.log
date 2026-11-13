@@ -1,0 +1,31 @@
+fitting FK surrogate...
+FK RMSE=0.0388 m
+collecting Reach episodes...
+    mc it 200 loss 0.25251
+    mc it 400 loss 0.34018
+    pair it 200 base 0.38795 dir 0.45976
+    pair it 400 base 0.22898 dir 0.34175
+    pair it 200 base 0.44256
+    pair it 400 base 0.34675
+  mc                 cos 0.038 ret -0.069896 Δ -0.000108
+  eagm_base          cos 0.163 ret -0.064773 Δ 0.005015
+  eagm_dir_random    cos 0.100 ret -0.065415 Δ 0.004373
+  aux_command_mlp    cos 0.084 ret -0.066606 Δ 0.003182
+{
+  "contrasts": {
+    "dir_minus_base": -0.000642007917286247,
+    "dir_minus_mc": 0.004480420486430728,
+    "dir_minus_aux": 0.0011906021933863614,
+    "base_minus_aux": 0.0018326101106726084
+  },
+  "gate": {
+    "models_trained": true,
+    "dir_labels_ok": true,
+    "fk_rmse": 0.038766808807849884,
+    "physical_finite": true,
+    "no_privileged_inputs": true,
+    "note": "SMOKE only \u2014 not confirmatory. Human must approve before Stage 7D (10 seeds, 3000 updates).",
+    "recommend_proceed_to_7d": false
+  }
+}
+Wrote /home/aaa/桌面/汇报/11月论文/eagm_gpu/runs/stage7c_reach_smoke/results.json

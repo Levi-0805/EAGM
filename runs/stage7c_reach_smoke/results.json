@@ -1,0 +1,85 @@
+{
+  "stage": "7C_smoke",
+  "seed": 20,
+  "updates_smoke": 400,
+  "locked_full_updates": 3000,
+  "fk_rmse": 0.038766808807849884,
+  "dir_label_steps": 10752,
+  "reach_cfg": {
+    "goal_mode": "random",
+    "fixed_goal_left": [
+      0.25,
+      0.25,
+      -0.25
+    ],
+    "fixed_goal_right": [
+      0.25,
+      -0.25,
+      -0.25
+    ],
+    "goal_noise": 0.06,
+    "init_joint_jitter": 0.02,
+    "ref_blend_horizon": 80,
+    "traj_shape": "hold",
+    "sine_amp": 0.03,
+    "controller_b_randomize": true
+  },
+  "results": {
+    "mc": {
+      "n_params": 46268,
+      "cosine_full_median": 0.03812202784636981,
+      "policy_return_mean": -0.06989565490910228,
+      "delta_vs_theta0": -0.00010751394146570059,
+      "fail_rate_vs_theta0": 0.6666666666666666,
+      "theta_param_sat_frac": 0.8214285714285714,
+      "mean_action_clip_frac": 0.0,
+      "true_mujoco_ee_return_start0": -0.016713229225885615
+    },
+    "eagm_base": {
+      "n_params": 40874,
+      "cosine_full_median": 0.16296948724584898,
+      "policy_return_mean": -0.0647732265053853,
+      "delta_vs_theta0": 0.0050149144622512855,
+      "fail_rate_vs_theta0": 0.0,
+      "theta_param_sat_frac": 0.9285714285714286,
+      "mean_action_clip_frac": 0.0,
+      "true_mujoco_ee_return_start0": -0.013640494716823524
+    },
+    "eagm_dir_random": {
+      "n_params": 40874,
+      "cosine_full_median": 0.10010251344687705,
+      "policy_return_mean": -0.06541523442267155,
+      "delta_vs_theta0": 0.004372906544965032,
+      "fail_rate_vs_theta0": 0.0,
+      "theta_param_sat_frac": 0.6785714285714286,
+      "mean_action_clip_frac": 0.0,
+      "true_mujoco_ee_return_start0": -0.016531558293449867
+    },
+    "aux_command_mlp": {
+      "n_params": 53002,
+      "cosine_full_median": 0.08380633860637306,
+      "policy_return_mean": -0.06660583661605791,
+      "delta_vs_theta0": 0.003182304351578666,
+      "fail_rate_vs_theta0": 0.0,
+      "theta_param_sat_frac": 0.39285714285714285,
+      "mean_action_clip_frac": 0.0,
+      "true_mujoco_ee_return_start0": -0.01733598867376367
+    }
+  },
+  "contrasts": {
+    "dir_minus_base": -0.000642007917286247,
+    "dir_minus_mc": 0.004480420486430728,
+    "dir_minus_aux": 0.0011906021933863614,
+    "base_minus_aux": 0.0018326101106726084
+  },
+  "gate": {
+    "models_trained": true,
+    "dir_labels_ok": true,
+    "fk_rmse": 0.038766808807849884,
+    "physical_finite": true,
+    "no_privileged_inputs": true,
+    "note": "SMOKE only \u2014 not confirmatory. Human must approve before Stage 7D (10 seeds, 3000 updates).",
+    "recommend_proceed_to_7d": false
+  },
+  "wall_seconds": 116.92343950271606
+}

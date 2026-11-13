@@ -1,0 +1,37 @@
+{
+  "branch": "stage7-cross-task-generalization",
+  "parent_commit": "43cfc79c0c38c9e2a322f7f4a75d8a100dc04aea",
+  "parent_branch": "stage6c-path-aware-saturation",
+  "frozen_method": {
+    "primary": "eagm_dir_random",
+    "retain": ["Mc", "EAGM-Base", "EAGM-Dir-Random", "AuxCommandMLP"],
+    "dropped": ["HistC", "ExecState", "Path-Dir", "LR-desaturation-as-method"],
+    "lr_policy": 0.03,
+    "theta_box": [-1.0, 1.0],
+    "world_model_updates": 3000,
+    "policy_updates": 50,
+    "imagined_horizon": 8,
+    "eval_horizon": 16,
+    "lam_u": 1.0,
+    "lam_d": 0.1,
+    "batch_size": 128,
+    "lr_model": 0.001,
+    "dir_probe": "random_theta_N(0,0.3)_union_zero",
+    "feasible_fd_for_new_labels": true
+  },
+  "diagnostics_not_objectives": [
+    "theta_param_sat_frac",
+    "rho_proj",
+    "outward_pressure_frac",
+    "action_clip_frac"
+  ],
+  "stage7_gates": {
+    "7A": "baseline_audit_pass",
+    "7B": "reach_env_unit_tests_pass",
+    "7C": "single_seed_smoke_pass_before_multiseed",
+    "7D": "human_review_before_10_seeds",
+    "7E": "reach_confirmatory_gate_before_pick_place",
+    "7F": "separate_visual_branch"
+  },
+  "note": "Do not merge Stage 6C Path-Dir into the paper method. Do not auto-launch Stage 7D/E/F."
+}
