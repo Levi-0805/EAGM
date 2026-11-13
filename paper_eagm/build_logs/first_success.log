@@ -1,0 +1,89 @@
+note: Running TeX ...
+note: downloading size10.clo
+note: downloading t1lmr.fd
+note: downloading ec-lmr10.tfm
+note: downloading color.sty
+note: downloading ec-lmr17.tfm
+note: downloading ec-lmr12.tfm
+note: downloading ec-lmbx12.tfm
+warning: sections/01_introduction:12: Underfull \hbox (badness 2065) in paragraph at lines 11--12
+warning: sections/02_related_work:1: Underfull \hbox (badness 5064) in paragraph at lines 1--1
+note: downloading ec-lmbx10.tfm
+note: downloading ec-lmri10.tfm
+warning: sections/03_formulation:20: Underfull \hbox (badness 2142) in paragraph at lines 19--20
+warning: sections/04_method:15: Underfull \hbox (badness 2005) in paragraph at lines 13--15
+warning: sections/05_setup:7: Underfull \hbox (badness 1009) in paragraph at lines 6--7
+warning: sections/05_setup:10: Underfull \hbox (badness 10000) in paragraph at lines 9--10
+warning: sections/05_setup:22: Underfull \hbox (badness 7415) in paragraph at lines 21--22
+note: downloading ec-lmr9.tfm
+warning: main.tex:26: Underfull \hbox (badness 4913) in paragraph at lines 17--26
+warning: sections/07_generalization:4: Underfull \hbox (badness 2126) in paragraph at lines 3--4
+warning: sections/07_generalization:7: Underfull \hbox (badness 1383) in paragraph at lines 6--7
+warning: sections/07_generalization:13: Underfull \hbox (badness 4013) in paragraph at lines 12--13
+warning: sections/07_generalization:15: Underfull \hbox (badness 1694) in paragraph at lines 14--15
+warning: sections/08_analysis:4: Underfull \hbox (badness 2671) in paragraph at lines 3--4
+warning: sections/08_analysis:10: Overfull \hbox (22.78336pt too wide) in paragraph at lines 6--10
+note: Running BibTeX on main.aux ...
+note: downloading plain.bst
+note: Rerunning TeX because bibtex was run ...
+warning: sections/01_introduction:12: Underfull \hbox (badness 2065) in paragraph at lines 11--12
+warning: sections/02_related_work:1: Underfull \hbox (badness 5064) in paragraph at lines 1--1
+warning: sections/03_formulation:20: Underfull \hbox (badness 2142) in paragraph at lines 19--20
+warning: sections/04_method:15: Underfull \hbox (badness 2005) in paragraph at lines 13--15
+warning: sections/05_setup:7: Underfull \hbox (badness 1009) in paragraph at lines 6--7
+warning: sections/05_setup:10: Underfull \hbox (badness 10000) in paragraph at lines 9--10
+warning: sections/05_setup:22: Underfull \hbox (badness 7415) in paragraph at lines 21--22
+warning: main.tex:26: Underfull \hbox (badness 4913) in paragraph at lines 17--26
+warning: sections/07_generalization:4: Underfull \hbox (badness 2126) in paragraph at lines 3--4
+warning: sections/07_generalization:7: Underfull \hbox (badness 1383) in paragraph at lines 6--7
+warning: sections/07_generalization:13: Underfull \hbox (badness 4013) in paragraph at lines 12--13
+warning: sections/07_generalization:15: Underfull \hbox (badness 1694) in paragraph at lines 14--15
+warning: sections/08_analysis:4: Underfull \hbox (badness 2671) in paragraph at lines 3--4
+warning: sections/08_analysis:10: Overfull \hbox (22.78336pt too wide) in paragraph at lines 6--10
+warning: main.bbl:7: Underfull \hbox (badness 10000) in paragraph at lines 4--7
+warning: main.bbl:7: Underfull \hbox (badness 5077) in paragraph at lines 4--7
+warning: main.bbl:7: Underfull \hbox (badness 10000) in paragraph at lines 4--7
+warning: main.bbl:13: Underfull \hbox (badness 1412) in paragraph at lines 9--13
+warning: main.bbl:30: Underfull \hbox (badness 6380) in paragraph at lines 27--30
+warning: main.bbl:30: Underfull \hbox (badness 3482) in paragraph at lines 27--30
+note: Rerunning TeX because "main.aux" changed ...
+warning: sections/01_introduction:12: Underfull \hbox (badness 2065) in paragraph at lines 11--12
+warning: sections/02_related_work:1: Underfull \hbox (badness 5064) in paragraph at lines 1--1
+warning: sections/03_formulation:20: Underfull \hbox (badness 2142) in paragraph at lines 19--20
+warning: sections/04_method:15: Underfull \hbox (badness 2005) in paragraph at lines 13--15
+warning: sections/05_setup:7: Underfull \hbox (badness 1009) in paragraph at lines 6--7
+warning: sections/05_setup:10: Underfull \hbox (badness 10000) in paragraph at lines 9--10
+warning: sections/05_setup:22: Underfull \hbox (badness 7415) in paragraph at lines 21--22
+warning: main.tex:26: Underfull \hbox (badness 4913) in paragraph at lines 17--26
+warning: sections/07_generalization:4: Underfull \hbox (badness 2126) in paragraph at lines 3--4
+warning: sections/07_generalization:7: Underfull \hbox (badness 1383) in paragraph at lines 6--7
+warning: sections/07_generalization:13: Underfull \hbox (badness 4013) in paragraph at lines 12--13
+warning: sections/07_generalization:15: Underfull \hbox (badness 1694) in paragraph at lines 14--15
+warning: sections/08_analysis:4: Underfull \hbox (badness 2671) in paragraph at lines 3--4
+warning: sections/08_analysis:10: Overfull \hbox (22.78336pt too wide) in paragraph at lines 6--10
+warning: main.bbl:7: Underfull \hbox (badness 10000) in paragraph at lines 4--7
+warning: main.bbl:7: Underfull \hbox (badness 5077) in paragraph at lines 4--7
+warning: main.bbl:7: Underfull \hbox (badness 10000) in paragraph at lines 4--7
+warning: main.bbl:13: Underfull \hbox (badness 1412) in paragraph at lines 9--13
+warning: main.bbl:30: Underfull \hbox (badness 6380) in paragraph at lines 27--30
+warning: main.bbl:30: Underfull \hbox (badness 3482) in paragraph at lines 27--30
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+note: Running xdvipdfmx ...
+note: downloading lm-ec.enc
+note: downloading lmr17.pfb
+note: downloading lmr12.pfb
+note: downloading lmbx12.pfb
+note: downloading lmr10.pfb
+note: downloading lmbx10.pfb
+note: downloading cmmi7.pfb
+note: downloading lmri10.pfb
+note: downloading cmmi5.pfb
+note: downloading cmr5.pfb
+note: downloading lmr9.pfb
+note: downloading cmr9.pfb
+note: downloading cmsy6.pfb
+note: downloading cmr6.pfb
+note: Writing `paper_eagm/main.blg` (191 B)
+note: Writing `paper_eagm/main.pdf` (106.4091796875 KiB)
+note: Writing `paper_eagm/main.log` (14.8427734375 KiB)
+note: Skipped writing 3 intermediate files (use --keep-intermediates to keep them)

@@ -1,0 +1,32 @@
+\section{Problem Formulation}
+Let $x_t\in\R^{28}$ contain the positions and velocities of fourteen controlled joints. The actor emits an incremental command $a_t\in\R^{14}$. Execution state $c_t=(c_t^{\rm obs},c_t^{\rm hid})$ includes observable target/filter states and potentially hidden memory. With execution parameters $\xi$,
+\begin{align}
+ u_t&=U(c_t,a_t;\xi),\\
+ c_{t+1}&=C(c_t,a_t;\xi),\\
+ x_{t+1}&=F(x_t,u_t).
+\end{align}
+The predictor does not receive hidden controller parameters as deployment inputs. Executed commands can be logged as training labels. This is distinct from assuming that all future executed commands are known during planning.
+
+The actor $\pi_\theta$ uses the physical state, observed target and task reference. For starting snapshot $z$ drawn from distribution $\mu$, define
+\begin{equation}
+ J_\mu(\theta)=\E_{z\sim\mu}\sum_{t=0}^{H-1}\gamma^t r(x_{t+1},a_t,a_{t-1};z).
+\end{equation}
+A snapshot must specify execution memory as well as physical state. Restoring only joint positions does not define the same finite-difference experiment. In the simulator audit, integrator warm-start state is also retained; it is numerical context, not an additional deployable observation.
+
+\paragraph{Three errors.}
+Prediction error compares $\hat x_{t+1}$ to $x_{t+1}$. Gradient error compares $\nabla_\theta\hat J$ with a reference for $J$. Update utility evaluates $J(\theta+\Delta\theta)-J(\theta)$. These quantities are neither interchangeable nor necessarily monotone. Coordinate normalization and controller discontinuities further affect their interpretation.
+
+For a locally differentiable augmented transition $z_{t+1}=f(z_t,\pi_\theta(z_t))$, the complete sensitivity obeys
+\begin{equation}
+ S_{t+1}=(f_z+f_a\pi_z)S_t+f_a\pi_\theta,
+ \qquad S_0=0.
+\end{equation}
+The policy feedback term cannot be dropped when analyzing a closed-loop actor. A correct reward derivative can be distorted by inaccurate transition sensitivities before it reaches policy-parameter space.
+
+\paragraph{A limited local statement.}
+If the evaluation objective has an $L$-Lipschitz gradient along the proposed update segment, the smoothness inequality gives
+\begin{equation}
+ J_\nu(\theta+d)-J_\nu(\theta)
+ \geq \nabla J_\nu(\theta)^\top d-\tfrac L2\|d\|^2.
+\end{equation}
+An accurate $\nabla J_\mu$ does not ensure positive alignment with $d$ under another distribution $\nu$. An optimizer may also rotate the update relative to its input gradient. This inequality is a conditional explanatory tool, not a theorem of EAGM convergence: clipping and rate limits can violate smoothness, and we do not estimate $L$ in the experiments.

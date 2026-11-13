@@ -1,0 +1,11 @@
+{
+  "preregistration_commit": "0c5a2fe",
+  "branch": "stage8-3-optimizer-data-alignment",
+  "python": "/home/aaa/miniconda3/envs/eagm_gpu/bin/python",
+  "env": {
+    "OPENARM_MODEL_PATH": "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/openarm_bimanual.xml"
+  },
+  "no_model_training": true,
+  "budget_control_steps": 18240,
+  "no_five_seed_launch": true
+}

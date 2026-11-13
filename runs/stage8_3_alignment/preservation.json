@@ -1,0 +1,11 @@
+{
+  "base": "348d0b262f6a9b445211e00051e4e024619c3881",
+  "tracked_changes_since_base": [
+    "README.md",
+    "configs/stage8_3_preregistered.json",
+    "reports/stage8_3_preregistration.md"
+  ],
+  "historical_run_or_code_changes": [],
+  "cvpr2027_unchanged": true,
+  "source_checkpoint_hashes_verified": true
+}

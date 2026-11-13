@@ -1,0 +1,62 @@
+note: Running TeX ...
+note: downloading size10.clo
+warning: failure fetching "size10.clo" from network (1/3)
+caused by: error sending request for url (https://relay.fullyjustified.net/default_bundle_v33.tar)
+caused by: client error (Connect)
+caused by: tunnel error: failed to create underlying connection
+caused by: tcp open error
+caused by: Operation not permitted (os error 1)
+warning: failure fetching "size10.clo" from network (2/3)
+caused by: error sending request for url (https://relay.fullyjustified.net/default_bundle_v33.tar)
+caused by: client error (Connect)
+caused by: tunnel error: failed to create underlying connection
+caused by: tcp open error
+caused by: Operation not permitted (os error 1)
+warning: failure fetching "size10.clo" from network (3/3)
+caused by: error sending request for url (https://relay.fullyjustified.net/default_bundle_v33.tar)
+caused by: client error (Connect)
+caused by: tunnel error: failed to create underlying connection
+caused by: tcp open error
+caused by: Operation not permitted (os error 1)
+warning: open of input size10.clo failed
+caused by: failed to download "size10.clo"; please check your network connection.
+note: downloading size10.clo
+warning: failure fetching "size10.clo" from network (1/3)
+caused by: error sending request for url (https://relay.fullyjustified.net/default_bundle_v33.tar)
+caused by: client error (Connect)
+caused by: tunnel error: failed to create underlying connection
+caused by: tcp open error
+caused by: Operation not permitted (os error 1)
+warning: failure fetching "size10.clo" from network (2/3)
+caused by: error sending request for url (https://relay.fullyjustified.net/default_bundle_v33.tar)
+caused by: client error (Connect)
+caused by: tunnel error: failed to create underlying connection
+caused by: tcp open error
+caused by: Operation not permitted (os error 1)
+warning: failure fetching "size10.clo" from network (3/3)
+caused by: error sending request for url (https://relay.fullyjustified.net/default_bundle_v33.tar)
+caused by: client error (Connect)
+caused by: tunnel error: failed to create underlying connection
+caused by: tcp open error
+caused by: Operation not permitted (os error 1)
+warning: open of input size10.clo failed
+caused by: failed to download "size10.clo"; please check your network connection.
+error: article.cls:113: ! LaTeX Error: File `size10.clo' not found.
+note: Writing `paper_eagm/main.log` (399 B)
+error: something bad happened inside XeTeX; its output follows:
+
+===============================================================================
+(main.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-02-24> (article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+! ! LaTeX Error: File `size10.clo' not found..
+\@missingfileerror ...or: File `#1.#2' not found.}
+                                                  
+l.113 \input{size1\@ptsize.clo}
+                               
+No pages of output.
+Transcript written on main.log.
+===============================================================================
+error: the XeTeX engine had an unrecoverable error
+caused by: halted on potentially-recoverable error as specified

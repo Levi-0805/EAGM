@@ -1,0 +1,9 @@
+{
+  "cached_K2_gradient_max_abs_difference": {
+    "learned": 8.526512829121202e-14,
+    "oracle": 5.343281372915953e-12
+  },
+  "all_update_norms_equal": true,
+  "physical_control_steps_added": 0,
+  "raw_adam_test": "PASS torch Adam equivalence; tests/test_stage8_3_update.py"
+}

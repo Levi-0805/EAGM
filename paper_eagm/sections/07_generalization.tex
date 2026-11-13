@@ -1,0 +1,16 @@
+\section{Ablations, Distribution Shift, and Failure Boundaries}
+\paragraph{Controller shift.}
+Controller-randomized interpolation and extrapolation experiments provide positive Dir--Base differences across the five independent Stage6B.1 seeds. Against Mc, however, uncertainty remains: extrapolation and interpolation bootstrap intervals can include zero. We therefore distinguish improvement over an architecture-matched Base from superiority over a stronger memory baseline. Neither establishes arbitrary-controller robustness.
+
+\paragraph{Rejected extensions.}
+History alone can improve some dynamics prediction metrics without a matching return improvement. HistC, which adds observed control-state history, did not show a reliable independent temporal-structure benefit against capacity and ordering controls. Path-Dir did not consistently improve over Dir-Random; only two of five seed differences were positive. Reduced policy learning rates removed parameter saturation without producing a reliable performance gain. These are reasons to retain a smaller supported method, not modules to be repackaged as contributions.
+
+\paragraph{Reach protocol correction.}
+The initial reaching experiments used a learned FK surrogate for both imagined reward and the reported physical finite-difference objective. A surrogate-path parity check could not establish agreement with the actual end-effector objective. The corrected experiment regenerated direction labels using true MuJoCo geometry and retrained Dir. On seed20, Dir's mean true return was approximately $-0.015714$, versus Base $-0.015449$; Dir's change from initialization was negative. This is a failed transfer experiment, not evidence of task generalization.
+
+\paragraph{Geometry decomposition.}
+The geometry audit measured position RMSE around 2.24 cm, relative Jacobian error around 30\%, and Jacobian cosine 0.964 on its held-out trajectory-state subset. These metrics use a different state distribution from the earlier FK-fit acceptance test and must not be substituted for it. Replacing the position residual while retaining the FK Jacobian improved state-level reward-gradient cosine from 0.441 to 0.957. Replacing the Jacobian alone did not help. Thus, a large relative derivative error did not imply a comparably large directional error.
+
+Complete true-reward derivative replacement still left the mean policy-gradient cosine negative (about $-0.116$). It partially improved the 50-update physical return but did not restore the initial-policy return. This distinguishes state-level reward geometry from full policy-gradient propagation and motivates the next analysis; it does not support a Geometry-aware EAGM method.
+
+\draftnote{The supplement should include stage-specific OOD tables, all seed differences, capacity counts, and failed-module controls. Their archived raw results are retained; no new module or cross-task success is inferred.}

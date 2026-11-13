@@ -1,0 +1,14 @@
+{
+  "status": "completed",
+  "control_steps": 18240,
+  "cap": 20000,
+  "phases": {
+    "collection": 400,
+    "training_gradients": 10784,
+    "reference_fd": 5048,
+    "evaluation": 2008
+  },
+  "wall_seconds": 16.717246294021606,
+  "device": "CPU",
+  "geometry_calls": 7456
+}

@@ -1,0 +1,15 @@
+{
+  "status": "compiled",
+  "pages": 9,
+  "body_pages": 8,
+  "reference_pages": 1,
+  "engine": "Tectonic 0.17.0",
+  "overfull_boxes": 0,
+  "undefined_references": 0,
+  "remaining_warnings": "underfull hbox spacing; draft layout",
+  "visually_inspected_pages": [
+    6,
+    8
+  ],
+  "note": "Eight explicitly separated draft body pages, not venue template compliance; page8 overflow fixed and recompiled."
+}

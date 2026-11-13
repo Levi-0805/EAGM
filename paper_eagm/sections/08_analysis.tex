@@ -1,0 +1,23 @@
+\section{Gradient Propagation and Update Utility}
+\paragraph{Frozen dynamics intervention.}
+A local audit augments physical state with execution memory and solver warm-start, producing a 154-dimensional diagnostic state. The learned state Jacobian has mean cosine 0.073 on six starts. A conditional physical-dynamics probe using actual executed commands also finds poor command derivatives (cosine about0.079). The full oracle replaces both execution and physical-transition derivatives; their separate causal shares are not fully identified.
+
+Holding forward states and reward values identical, the H8 policy-gradient cosines are:
+\begin{center}\begin{tabular}{lrr}\toprule
+Reward derivative & Learned $f$ & Oracle $f$\\\midrule
+FK & $-0.132$ & $0.795$\\
+True & $-0.116$ & $0.987$\\\bottomrule
+\end{tabular}\end{center}
+Local physical-chain differentiation agrees with whole-policy finite differences at cosine 0.999999 on the predefined implementation-check start. The oracle is privileged and diagnostic, not an implementable learned-policy algorithm. Its gradient recovery did not imply better held-out return after the budgeted one-step Adam update.
+
+\paragraph{Optimizer--data alignment.}
+A preregistered follow-up compares K2/K4 training starts and raw/first-Adam updates rescaled to the same L2 norm. Both gradient sources use true reward derivatives. It collects two new test episodes and retains two validation episodes independent of training; historical test starts remain exploratory.
+
+\input{tables/stage8_3}
+
+The true aggregate training-gradient cosine with validation changes from $-0.290$ at K2 to $-0.830$ at K4, while alignment with the fresh test changes from $-0.177$ to 0.381. Increasing coverage improves one sampled distribution while hurting another. Both preregistered joint screens fail. We do not select the apparent fresh-test winner as a method.
+
+\paragraph{Limitations and conclusion.}
+EAGM has multi-seed tracking evidence within a restricted execution setting, but no demonstrated public-benchmark SOTA result, visual contribution, or physical-robot validation. Reach remains a failure boundary. The diagnostic phases use one frozen checkpoint, small start sets, and privileged simulator access. Local smoothness, exact reset access and numerical finite differences are additional assumptions. Extra model parameters are not a substitute for independent validation.
+
+The evidence supports execution-aware gradient supervision as a useful restricted approach and transition derivatives as one causal source of gradient distortion. It does not establish that accurate gradients guarantee useful updates across start distributions. A deployable method addressing that remaining gap requires new, independently validated evidence; the present oracle analyses do not supply it.

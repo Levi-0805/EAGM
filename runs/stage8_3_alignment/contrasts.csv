@@ -1,0 +1,13 @@
+hypothesis,level,group,a,b,return_difference,alignment_difference,positive_starts,n
+H1,raw,validation,K4_oracle_raw,K2_oracle_raw,-8.851799302778476e-05,-0.42169332554702993,1,2
+H1,raw,fresh_test,K4_oracle_raw,K2_oracle_raw,0.0001015873906049158,0.583642326884917,2,2
+H1,raw,historical_test,K4_oracle_raw,K2_oracle_raw,4.051588871264594e-05,0.16381994327069394,3,6
+H1,adam_first,validation,K4_oracle_adam_first,K2_oracle_adam_first,-8.050201663730924e-05,-0.376434166470931,1,2
+H1,adam_first,fresh_test,K4_oracle_adam_first,K2_oracle_adam_first,5.519319961719716e-05,0.25847479591429207,2,2
+H1,adam_first,historical_test,K4_oracle_adam_first,K2_oracle_adam_first,4.0347801067785495e-05,0.2957459192107422,4,6
+H2,2,validation,K2_oracle_raw,K2_oracle_adam_first,-6.363951102371194e-05,-0.2960090210286298,1,2
+H2,2,fresh_test,K2_oracle_raw,K2_oracle_adam_first,-1.2266174896022504e-05,-0.13669467233205623,1,2
+H2,2,historical_test,K2_oracle_raw,K2_oracle_adam_first,2.6828095958686894e-05,0.41998798646088925,4,6
+H2,4,validation,K4_oracle_raw,K4_oracle_adam_first,-7.165548741418747e-05,-0.34126818010472876,0,2
+H2,4,fresh_test,K4_oracle_raw,K4_oracle_adam_first,3.412801609169614e-05,0.18847285863856875,2,2
+H2,4,historical_test,K4_oracle_raw,K4_oracle_adam_first,2.6996183603547348e-05,0.28806201052084096,4,6

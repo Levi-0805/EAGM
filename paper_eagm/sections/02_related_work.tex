@@ -1,0 +1,20 @@
+\section{Related Work and Novelty Boundary}
+\paragraph{Policy-aware model fitting.}
+PAML explicitly seeks agreement between true and model-derived policy gradients~\cite{paml}. Its population discrepancy in Eqs.~(7)--(8) compares policy-gradient functionals, and its empirical construction uses real and model trajectories with a critic estimated from real transitions. Thus, direct interest in policy-gradient quality predates EAGM. Our resettable finite-difference target and executed-command bottleneck instantiate a different experimental interface; they do not by themselves establish novelty over all PAML variants.
+
+GAMPS learns a model through a weighted transition-likelihood objective~\cite{gamps}. Its Eq.~(3) uses weights combining discounting, trajectory importance ratios, and cumulative policy-score norms. In schematic notation,
+\begin{equation}
+ \max_{\hat p}\sum_{i,t}w^i_t\log\hat p(s^i_{t+1}\mid s^i_t,a^i_t).
+\end{equation}
+This differs from EAGM's coordinate-level discrepancy between a differentiated imagined return and resettable-simulator finite differences. A fair empirical comparison still requires matching policy class, command semantics, observations, reset access, and interaction cost; no such external-baseline result is currently available.
+
+\paragraph{Value and gradient propagation.}
+VaGraM weights model errors using value gradients~\cite{vagram}, emphasizing that prediction objectives should reflect downstream decisions. Action-conditioned world models (AWMs) address the path through which policy gradients propagate, rather than merely changing a prediction loss~\cite{awm}. Their results make architecture-based gradient routing a serious alternative explanation and baseline. We use AWM to mean the action-conditioned models of Ma et al., not unrelated algorithms sharing the acronym.
+
+\paragraph{Execution interfaces and differentiable control.}
+\emph{Mind the Execution Gap} studies action-semantic mismatch in asynchronous world-model control and proposes interfaces for future action sequences and applied-action attribution~\cite{executiongap}. This overlaps with the broad motivation of execution consistency. EAGM's proposed distinction is supervised gradient quality under partially unknown execution dynamics, not the discovery that execution interfaces matter.
+
+SuperMimic uses a differentiable learned model and short imagined backpropagation for humanoid tracking~\cite{supermimic}. Its controller inputs and code-level actuator assumptions have not yet been fully audited here; we therefore make no claim that it lacks execution information and no numerical comparison to its reported performance.
+
+\paragraph{What remains unresolved.}
+The present comparison identifies objective-level differences for PAML and GAMPS, not a completed novelty certification. Matching their objectives on the same command interface is an outstanding experiment. Full implementation review of recent execution-interface and humanoid methods is also pending. External results must never be inserted into EAGM tables as if evaluated on the same tasks or budgets. The cited sources are primary papers; the reference audit records which claims were inspected and which remain open.

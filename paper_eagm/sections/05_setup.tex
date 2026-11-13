@@ -1,0 +1,23 @@
+\section{Experimental Setup and Evidence Protocol}
+\paragraph{Platform and tasks.}
+Experiments use a bimanual OpenArm MuJoCo environment with fourteen actions and a 28-dimensional physical state. Controller B introduces partially unknown gain, extra lag, rate limiting and smoothing. Observable execution state is provided consistently, while hidden parameters are unavailable to deployable predictors. Tracking is the main method-evaluation task. Reach changes the objective to two-arm end-effector position control with a one-time inverse-kinematics reference; it introduces neither visual observations nor contact manipulation.
+
+\paragraph{Models and budgets.}
+Main comparisons include a memory-conditioned baseline Mc, EAGM-Base, EAGM-Dir, and ordinary/auxiliary-command MLP controls where available. The fixed main protocol uses 3000 world-model updates and 50 policy updates. The budget control reallocates direction-label simulator steps to additional dynamics data for Base. Exact stage-specific configurations and source CSVs are frozen; experiments with differing controllers or pools are never merged into a larger nominal sample.
+
+\paragraph{Splits and pairing.}
+Trajectory-level train/validation/test isolation replaces earlier transition-level splitting. Base/Dir pairing requires the same initialization, data split and minibatch stream. A later audit found different Base versus Dir minibatch streams in Stage6C; that contrast is exploratory, whereas Random versus Path retains its relevant pairing. Superseded Stage3 protocols and surrogate-only Reach results are not main performance evidence.
+
+\paragraph{Physical reward and numerical references.}
+Reach primary evaluation uses current MuJoCo end-effector positions, with separate scratch geometry to avoid stale post-integration site caches. Its reward is
+\begin{align}
+ r={}&-\tfrac16\|p_{\rm EE}-p^*\|^2
+       -\tfrac{0.0005}{14}\|\dot q\|^2\nonumber\\
+     &-\tfrac{0.05}{14}\|a_t-a_{t-1}\|^2.
+\end{align}
+The velocity term is joint velocity, not end-effector velocity. Discount is 0.99. H8 gradient diagnostics and H16 physical returns are reported separately. Surrogate-scored physical rollouts are diagnostic only.
+
+\paragraph{Statistics and evidence classes.}
+Within-seed, paired returns are aggregated before seed-level statistics. We report seed wins and percentile bootstrap intervals, plus cluster and leave-one-seed sensitivity. Five seeds are few: a two-sided exact sign-flip test cannot achieve $p<0.05$ with five observations even when every difference is positive. Bootstrap intervals excluding zero do not remove this limitation or account for historical experiment selection.
+
+We distinguish repeated policy-return evidence within the tested setting; exploratory gradient/mechanism evidence; and failed task generalization. Starts within one frozen checkpoint are not independent model seeds. The new optimizer audit preregisters its start selection and update norm before collecting two fresh test episodes; even those episodes are only an exploratory evaluation, not confirmation.

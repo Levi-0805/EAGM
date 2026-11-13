@@ -1,0 +1,114 @@
+{
+  "stage": "8.3",
+  "base_commit": "348d0b262f6a9b445211e00051e4e024619c3881",
+  "registered_utc": "2026-11-13T17:22:49.907998+00:00",
+  "limit_control_steps": 20000,
+  "model": "dir_random",
+  "theta0": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "train_episode_ids": [
+    0,
+    2,
+    3,
+    5
+  ],
+  "train_frames": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "K": [
+    2,
+    4
+  ],
+  "validation_episode_ids": [
+    22,
+    30
+  ],
+  "validation_frame": 0,
+  "fresh_test_seed": 83017,
+  "fresh_test_episodes": 2,
+  "collection_horizon": 200,
+  "fresh_test_frame": 0,
+  "gradient_horizon": 8,
+  "evaluation_horizon": 16,
+  "reward_gradient": "true geometry in BOTH learned/oracle conditions",
+  "gradient_conditions": [
+    "B",
+    "D"
+  ],
+  "optimizers": [
+    "raw",
+    "adam_first"
+  ],
+  "adam_lr": 0.03,
+  "adam_eps": 1e-08,
+  "adam_betas": [
+    0.9,
+    0.999
+  ],
+  "update_l2": 0.15874507866387544,
+  "policy_fd_train_eps": [
+    0.01
+  ],
+  "policy_fd_val_fresh_eps": [
+    0.005,
+    0.01
+  ],
+  "local_fd": "unchanged stage8.2",
+  "true_evaluation": "current MuJoCo EE",
+  "historical_test": "six previously viewed starts; exploratory only",
+  "max_budget": {
+    "training_oracle_and_learned": 10784,
+    "train_direct_fd": 1792,
+    "val_new_test_direct_fd": 3584,
+    "collection": 400,
+    "all_returns": 2016
+  },
+  "source_sha256": {
+    "runs/stage7c2_true_ee_current_sites_seed20/data.pt": "2b02863c65c67e01920e4eeb7e19a13c8067921532ba38a8a9461c2e90c1b42d",
+    "runs/stage7c2_true_ee_current_sites_seed20/dir_random.pt": "8d129ade5688bdbe233aae9fff10e87dcf2fd89f16e618798ba4bb43ccf9db98",
+    "runs/stage7c2_true_ee_current_sites_seed20/fk.pt": "409c37e019cc8a91f56ede1b49b6cf1f4986cc58caf692206711ca83df91e1ff",
+    "training/stage8_2_dynamics.py": "579e4a5dc45c264d4b16001025876a9b4f473000d666b3b2e37f36015ef56aaf"
+  },
+  "decision_gates": {
+    "H1": "oracle raw and Adam: K4-K2 alignment and mean true return improve in BOTH validation and fresh-test groups, with both fresh starts positive",
+    "H2": "at BOTH K2 and K4, oracle raw-adam alignment and mean return improve in BOTH validation and fresh-test groups, with both fresh starts positive",
+    "scope": "screening only; no significance, no seed expansion, no model tuning; failed gate stops this route"
+  },
+  "prohibited": [
+    "test-based step/epsilon/start selection",
+    "training new models",
+    "five-seed launch",
+    "CVPR2027 edits"
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "train": [
+    {
+      "episode": 0,
+      "frame": 0,
+      "collection_seed": 20
+    },
+    {
+      "episode": 2,
+      "frame": 0,
+      "collection_seed": 20
+    },
+    {
+      "episode": 3,
+      "frame": 0,
+      "collection_seed": 20
+    },
+    {
+      "episode": 5,
+      "frame": 0,
+      "collection_seed": 20
+    }
+  ],
+  "validation": [
+    {
+      "episode": 22,
+      "frame": 0,
+      "collection_seed": 20
+    },
+    {
+      "episode": 30,
+      "frame": 0,
+      "collection_seed": 20
+    }
+  ],
+  "fresh_test": [
+    {
+      "episode": 0,
+      "frame": 0,
+      "collection_seed": 83017
+    },
+    {
+      "episode": 1,
+      "frame": 0,
+      "collection_seed": 83017
+    }
+  ],
+  "historical_test": [
+    {
+      "episode": 1,
+      "frame": 0,
+      "collection_seed": 20
+    },
+    {
+      "episode": 6,
+      "frame": 0,
+      "collection_seed": 20
+    },
+    {
+      "episode": 12,
+      "frame": 0,
+      "collection_seed": 20
+    },
+    {
+      "episode": 23,
+      "frame": 0,
+      "collection_seed": 20
+    },
+    {
+      "episode": 25,
+      "frame": 0,
+      "collection_seed": 20
+    },
+    {
+      "episode": 26,
+      "frame": 0,
+      "collection_seed": 20
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+stage,contrast,seed,paired_delta,n_paired_starts
+stage4_fixedB_five_seed,4: Dir--Mc,0,0.0002719148721451711,12
+stage4_fixedB_five_seed,4: Dir--Mc,1,0.0006115042723490603,12
+stage4_fixedB_five_seed,4: Dir--Mc,2,0.0022138142872197954,12
+stage4_fixedB_five_seed,4: Dir--Mc,3,-9.806541430537904e-05,12
+stage4_fixedB_five_seed,4: Dir--Mc,4,0.00037823372595296117,12
+stage4_fixedB_five_seed,4: Dir--Base,0,0.001355281184204019,12
+stage4_fixedB_five_seed,4: Dir--Base,1,0.001004027054190155,12
+stage4_fixedB_five_seed,4: Dir--Base,2,0.001317546100921542,12
+stage4_fixedB_five_seed,4: Dir--Base,3,0.001168757693875544,12
+stage4_fixedB_five_seed,4: Dir--Base,4,0.0001825189591370569,12
+stage5a_confirm,5A: Dir--Mc,5,0.0009875628084245753,12
+stage5a_confirm,5A: Dir--Mc,6,0.0010804978473053844,12
+stage5a_confirm,5A: Dir--Mc,7,0.0004924428596133665,12
+stage5a_confirm,5A: Dir--Mc,8,0.00026238213084490053,12
+stage5a_confirm,5A: Dir--Mc,9,0.001475639948522474,12
+stage5a_confirm,5A: Dir--Base,5,0.0002532010238230608,12
+stage5a_confirm,5A: Dir--Base,6,0.00037674246922168717,12
+stage5a_confirm,5A: Dir--Base,7,0.0010238639529658057,12
+stage5a_confirm,5A: Dir--Base,8,0.0007540029128838963,12
+stage5a_confirm,5A: Dir--Base,9,0.00016296600900260848,12
+stage5b_budget,5B: budget,5,0.0002766678117133867,12
+stage5b_budget,5B: budget,6,0.00028418230729553983,12
+stage5b_budget,5B: budget,7,0.0001970436286569968,12
+stage5b_budget,5B: budget,8,0.00019279757756288692,12
+stage5b_budget,5B: budget,9,0.00034519669353778973,12

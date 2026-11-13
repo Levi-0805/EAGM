@@ -1,0 +1,5 @@
+{
+  "passed": true,
+  "rule": "cosine>.999 and >=26/28 stable for all validation/fresh starts",
+  "test_selected": false
+}

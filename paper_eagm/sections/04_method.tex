@@ -1,0 +1,29 @@
+\section{EAGM Method}
+\paragraph{Structured executed-command bottleneck.}
+The command model is
+\begin{equation}
+ \hat u_t=U_0(c_t^{\rm obs},a_t)+\Delta_\omega(c_t^{\rm obs},a_t).
+\end{equation}
+For the tested interface, $U_0$ adds an incremental action to the target, clips it to joint limits, and applies the nominal observable filter. The residual compensates for discrepancies left by this nominal map. It does not read hidden gain, extra-lag, rate-limit or smoothing parameters. The physical predictor is $\hat x_{t+1}=F_\phi(x_t,\hat u_t)$, implemented as a normalized state-increment network. Passing only the command bottleneck to this network distinguishes it from a general MLP with an auxiliary command head.
+
+\paragraph{Targets at matched policy parameters.}
+At a sampled policy vector $\theta^k$ and restored training snapshot, generate a physical finite-difference reference
+\begin{equation}
+ g^{\rm FD}_j=\frac{J(\theta^k+\epsilon e_j)-J(\theta^k-\epsilon e_j)}{2\epsilon}.
+\end{equation}
+Boundary-aware protocols use feasible stencils and record one-sided modes separately. The model gradient $\hat g=\nabla_\theta\hat J(\theta^k)$ must be computed at the same policy vector. Direction labels are not reusable across arbitrarily changed rewards: the Reach correction regenerated them under the true end-effector objective.
+
+\paragraph{Implemented training objective.}
+Normalized dynamics and command losses are combined with
+\begin{align}
+ \mathcal L&=\mathcal L_{\rm dyn}+\lambda_u\mathcal L_{\rm cmd}
+             +\lambda_d\mathcal L_{\rm dir},\\
+ \mathcal L_{\rm dir}&=\frac{\sum_j m_j\,h_1\left(
+ \frac{\hat g_j-g^{\rm FD}_j}{\max(|g^{\rm FD}_j|,\tau)}\right)}{\sum_jm_j},
+\end{align}
+where $h_1$ is the unit-threshold Huber loss and $m_j$ indicates finite-difference numerical stability. The scale floor is $\tau=\max(0.1s_0,10^{-8})$, with stored label scale $s_0$. This objective supervises normalized gradient discrepancies, including magnitude, rather than pure signs or a cosine. If no coordinate is stable, the term is skipped. Boundary and numerical masks have different meanings.
+
+The retained implementation applies a label every ten world-model updates and differentiates through the policy gradient to train the model. The paired trainer shares initialization and minibatches between Base and Dir. It uses $\lambda_u=1$ and $\lambda_d=0.1$ in the frozen protocol. Base omits $\mathcal L_{\rm dir}$. Dir-Random retains randomly sampled policy probes; path-conditioned probes did not yield reliable gains.
+
+\paragraph{Deployment and cost.}
+Finite-difference labels require resettable simulator access and consume physical control steps. They are not free labels or online hardware gradients. Deployment uses the learned command/dynamics model, not the full-state Jacobian oracle used in later diagnostics. The current evidence does not establish how to obtain comparable supervision safely on a physical robot.

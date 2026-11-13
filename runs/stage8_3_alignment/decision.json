@@ -1,0 +1,10 @@
+{
+  "gates": {
+    "H1": false,
+    "H2": false
+  },
+  "stage8_4_authorized": false,
+  "five_seeds": false,
+  "interpretation": "fresh-test improvements conflict with validation; neither mechanism screen passes",
+  "preregistered_commit": "0c5a2fe"
+}

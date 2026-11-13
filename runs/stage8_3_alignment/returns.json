@@ -1,0 +1,884 @@
+[
+  {
+    "group": "train",
+    "start": 0,
+    "policy": "theta0",
+    "return_h8": -0.006351452225388832,
+    "return_h16": -0.012279680498152003
+  },
+  {
+    "group": "train",
+    "start": 0,
+    "policy": "K2_learned_raw",
+    "return_h8": -0.006351749507887135,
+    "return_h16": -0.012281442172059575
+  },
+  {
+    "group": "train",
+    "start": 0,
+    "policy": "K2_learned_adam_first",
+    "return_h8": -0.006351382129121224,
+    "return_h16": -0.012279611145968742
+  },
+  {
+    "group": "train",
+    "start": 0,
+    "policy": "K2_oracle_raw",
+    "return_h8": -0.006351444034812472,
+    "return_h16": -0.012279175959471533
+  },
+  {
+    "group": "train",
+    "start": 0,
+    "policy": "K2_oracle_adam_first",
+    "return_h8": -0.006351870627479878,
+    "return_h16": -0.012281906201048097
+  },
+  {
+    "group": "train",
+    "start": 0,
+    "policy": "K4_learned_raw",
+    "return_h8": -0.0063516481874863594,
+    "return_h16": -0.012280947053031531
+  },
+  {
+    "group": "train",
+    "start": 0,
+    "policy": "K4_learned_adam_first",
+    "return_h8": -0.006351581982245253,
+    "return_h16": -0.012280581287469039
+  },
+  {
+    "group": "train",
+    "start": 0,
+    "policy": "K4_oracle_raw",
+    "return_h8": -0.006350287052733536,
+    "return_h16": -0.012273788690355539
+  },
+  {
+    "group": "train",
+    "start": 0,
+    "policy": "K4_oracle_adam_first",
+    "return_h8": -0.006350738674612758,
+    "return_h16": -0.01227546608504295
+  },
+  {
+    "group": "train",
+    "start": 1,
+    "policy": "theta0",
+    "return_h8": -0.004447112550264356,
+    "return_h16": -0.008355834936180284
+  },
+  {
+    "group": "train",
+    "start": 1,
+    "policy": "K2_learned_raw",
+    "return_h8": -0.004450698928790318,
+    "return_h16": -0.008391382920950303
+  },
+  {
+    "group": "train",
+    "start": 1,
+    "policy": "K2_learned_adam_first",
+    "return_h8": -0.004452466268584363,
+    "return_h16": -0.008408311347491924
+  },
+  {
+    "group": "train",
+    "start": 1,
+    "policy": "K2_oracle_raw",
+    "return_h8": -0.004432292706742872,
+    "return_h16": -0.008217016423266605
+  },
+  {
+    "group": "train",
+    "start": 1,
+    "policy": "K2_oracle_adam_first",
+    "return_h8": -0.004441346984580656,
+    "return_h16": -0.0082977511460273
+  },
+  {
+    "group": "train",
+    "start": 1,
+    "policy": "K4_learned_raw",
+    "return_h8": -0.0044518425322865995,
+    "return_h16": -0.008402681489562936
+  },
+  {
+    "group": "train",
+    "start": 1,
+    "policy": "K4_learned_adam_first",
+    "return_h8": -0.004452465555692318,
+    "return_h16": -0.008407459150237719
+  },
+  {
+    "group": "train",
+    "start": 1,
+    "policy": "K4_oracle_raw",
+    "return_h8": -0.004454156568067008,
+    "return_h16": -0.008426532389216273
+  },
+  {
+    "group": "train",
+    "start": 1,
+    "policy": "K4_oracle_adam_first",
+    "return_h8": -0.004452453989347129,
+    "return_h16": -0.008409276164087697
+  },
+  {
+    "group": "train",
+    "start": 2,
+    "policy": "theta0",
+    "return_h8": -0.004920958839707846,
+    "return_h16": -0.00958677720310201
+  },
+  {
+    "group": "train",
+    "start": 2,
+    "policy": "K2_learned_raw",
+    "return_h8": -0.004924707305088293,
+    "return_h16": -0.009599159298444423
+  },
+  {
+    "group": "train",
+    "start": 2,
+    "policy": "K2_learned_adam_first",
+    "return_h8": -0.004912526374850269,
+    "return_h16": -0.00956085606271607
+  },
+  {
+    "group": "train",
+    "start": 2,
+    "policy": "K2_oracle_raw",
+    "return_h8": -0.0049158292165382075,
+    "return_h16": -0.00956903886969879
+  },
+  {
+    "group": "train",
+    "start": 2,
+    "policy": "K2_oracle_adam_first",
+    "return_h8": -0.004919885004156254,
+    "return_h16": -0.00958273743903926
+  },
+  {
+    "group": "train",
+    "start": 2,
+    "policy": "K4_learned_raw",
+    "return_h8": -0.004927152655183218,
+    "return_h16": -0.009606651115738225
+  },
+  {
+    "group": "train",
+    "start": 2,
+    "policy": "K4_learned_adam_first",
+    "return_h8": -0.004940032294757137,
+    "return_h16": -0.009648191841622526
+  },
+  {
+    "group": "train",
+    "start": 2,
+    "policy": "K4_oracle_raw",
+    "return_h8": -0.004875600699449037,
+    "return_h16": -0.009437970844788698
+  },
+  {
+    "group": "train",
+    "start": 2,
+    "policy": "K4_oracle_adam_first",
+    "return_h8": -0.0049004937184448484,
+    "return_h16": -0.009513266507196881
+  },
+  {
+    "group": "train",
+    "start": 3,
+    "policy": "theta0",
+    "return_h8": -0.002079641307219015,
+    "return_h16": -0.0036842517173764186
+  },
+  {
+    "group": "train",
+    "start": 3,
+    "policy": "K2_learned_raw",
+    "return_h8": -0.002070475810943437,
+    "return_h16": -0.0036502952146666642
+  },
+  {
+    "group": "train",
+    "start": 3,
+    "policy": "K2_learned_adam_first",
+    "return_h8": -0.002065670729515962,
+    "return_h16": -0.0036328252086289706
+  },
+  {
+    "group": "train",
+    "start": 3,
+    "policy": "K2_oracle_raw",
+    "return_h8": -0.0021139310376358453,
+    "return_h16": -0.003812159231650283
+  },
+  {
+    "group": "train",
+    "start": 3,
+    "policy": "K2_oracle_adam_first",
+    "return_h8": -0.002098113101231271,
+    "return_h16": -0.0037510934234539213
+  },
+  {
+    "group": "train",
+    "start": 3,
+    "policy": "K4_learned_raw",
+    "return_h8": -0.0020692306894332323,
+    "return_h16": -0.00364557806846538
+  },
+  {
+    "group": "train",
+    "start": 3,
+    "policy": "K4_learned_adam_first",
+    "return_h8": -0.0020704765079484267,
+    "return_h16": -0.0036509417684119825
+  },
+  {
+    "group": "train",
+    "start": 3,
+    "policy": "K4_oracle_raw",
+    "return_h8": -0.002061244499897117,
+    "return_h16": -0.0036149422225121523
+  },
+  {
+    "group": "train",
+    "start": 3,
+    "policy": "K4_oracle_adam_first",
+    "return_h8": -0.0020630133254660446,
+    "return_h16": -0.003620926093045668
+  },
+  {
+    "group": "validation",
+    "start": 0,
+    "policy": "theta0",
+    "return_h8": -0.010404696235295373,
+    "return_h16": -0.01998371455877079
+  },
+  {
+    "group": "validation",
+    "start": 0,
+    "policy": "K2_learned_raw",
+    "return_h8": -0.010407951707723975,
+    "return_h16": -0.019997372510057485
+  },
+  {
+    "group": "validation",
+    "start": 0,
+    "policy": "K2_learned_adam_first",
+    "return_h8": -0.010422409098575726,
+    "return_h16": -0.020069541800120008
+  },
+  {
+    "group": "validation",
+    "start": 0,
+    "policy": "K2_oracle_raw",
+    "return_h8": -0.010390657141735668,
+    "return_h16": -0.019914888510252787
+  },
+  {
+    "group": "validation",
+    "start": 0,
+    "policy": "K2_oracle_adam_first",
+    "return_h8": -0.010391634850553519,
+    "return_h16": -0.019918990901011745
+  },
+  {
+    "group": "validation",
+    "start": 0,
+    "policy": "K4_learned_raw",
+    "return_h8": -0.010405670769890268,
+    "return_h16": -0.019987455093254714
+  },
+  {
+    "group": "validation",
+    "start": 0,
+    "policy": "K4_learned_adam_first",
+    "return_h8": -0.010396614561265793,
+    "return_h16": -0.019944752337902282
+  },
+  {
+    "group": "validation",
+    "start": 0,
+    "policy": "K4_oracle_raw",
+    "return_h8": -0.010447194287623713,
+    "return_h16": -0.02018769671383961
+  },
+  {
+    "group": "validation",
+    "start": 0,
+    "policy": "K4_oracle_adam_first",
+    "return_h8": -0.010430108235439961,
+    "return_h16": -0.020107669879046608
+  },
+  {
+    "group": "validation",
+    "start": 1,
+    "policy": "theta0",
+    "return_h8": -0.010089276817642545,
+    "return_h16": -0.019088506424783463
+  },
+  {
+    "group": "validation",
+    "start": 1,
+    "policy": "K2_learned_raw",
+    "return_h8": -0.010078476836652864,
+    "return_h16": -0.019037115729913925
+  },
+  {
+    "group": "validation",
+    "start": 1,
+    "policy": "K2_learned_adam_first",
+    "return_h8": -0.010085353731058082,
+    "return_h16": -0.019073686854218955
+  },
+  {
+    "group": "validation",
+    "start": 1,
+    "policy": "K2_oracle_raw",
+    "return_h8": -0.010127293672416039,
+    "return_h16": -0.01926552360861728
+  },
+  {
+    "group": "validation",
+    "start": 1,
+    "policy": "K2_oracle_adam_first",
+    "return_h8": -0.010098358599523858,
+    "return_h16": -0.0191341421958109
+  },
+  {
+    "group": "validation",
+    "start": 1,
+    "policy": "K4_learned_raw",
+    "return_h8": -0.010076155006845692,
+    "return_h16": -0.01902657480158774
+  },
+  {
+    "group": "validation",
+    "start": 1,
+    "policy": "K4_learned_adam_first",
+    "return_h8": -0.010070947364753951,
+    "return_h16": -0.019006417874206163
+  },
+  {
+    "group": "validation",
+    "start": 1,
+    "policy": "K4_oracle_raw",
+    "return_h8": -0.010107866671536849,
+    "return_h16": -0.019169751391086027
+  },
+  {
+    "group": "validation",
+    "start": 1,
+    "policy": "K4_oracle_adam_first",
+    "return_h8": -0.01009404369646466,
+    "return_h16": -0.019106467251050654
+  },
+  {
+    "group": "fresh_test",
+    "start": 0,
+    "policy": "theta0",
+    "return_h8": -0.007165341335785687,
+    "return_h16": -0.012598493652218172
+  },
+  {
+    "group": "fresh_test",
+    "start": 0,
+    "policy": "K2_learned_raw",
+    "return_h8": -0.007165419563048928,
+    "return_h16": -0.012597027169551541
+  },
+  {
+    "group": "fresh_test",
+    "start": 0,
+    "policy": "K2_learned_adam_first",
+    "return_h8": -0.007157045528996804,
+    "return_h16": -0.012554207748184719
+  },
+  {
+    "group": "fresh_test",
+    "start": 0,
+    "policy": "K2_oracle_raw",
+    "return_h8": -0.007166206019987249,
+    "return_h16": -0.01260384528577308
+  },
+  {
+    "group": "fresh_test",
+    "start": 0,
+    "policy": "K2_oracle_adam_first",
+    "return_h8": -0.007170315085729696,
+    "return_h16": -0.012620437819825275
+  },
+  {
+    "group": "fresh_test",
+    "start": 0,
+    "policy": "K4_learned_raw",
+    "return_h8": -0.007166700490183706,
+    "return_h16": -0.01260608570711916
+  },
+  {
+    "group": "fresh_test",
+    "start": 0,
+    "policy": "K4_learned_adam_first",
+    "return_h8": -0.007174507548277918,
+    "return_h16": -0.012645195020393454
+  },
+  {
+    "group": "fresh_test",
+    "start": 0,
+    "policy": "K4_oracle_raw",
+    "return_h8": -0.007135277574924496,
+    "return_h16": -0.012457451518048286
+  },
+  {
+    "group": "fresh_test",
+    "start": 0,
+    "policy": "K4_oracle_adam_first",
+    "return_h8": -0.007149594090970355,
+    "return_h16": -0.012521534347959945
+  },
+  {
+    "group": "fresh_test",
+    "start": 1,
+    "policy": "theta0",
+    "return_h8": -0.010985573787087182,
+    "return_h16": -0.020149056139613358
+  },
+  {
+    "group": "fresh_test",
+    "start": 1,
+    "policy": "K2_learned_raw",
+    "return_h8": -0.010984204919078925,
+    "return_h16": -0.020153768294417947
+  },
+  {
+    "group": "fresh_test",
+    "start": 1,
+    "policy": "K2_learned_adam_first",
+    "return_h8": -0.010987722526482903,
+    "return_h16": -0.02016807068285668
+  },
+  {
+    "group": "fresh_test",
+    "start": 1,
+    "policy": "K2_oracle_raw",
+    "return_h8": -0.011002335802807703,
+    "return_h16": -0.020193344546626354
+  },
+  {
+    "group": "fresh_test",
+    "start": 1,
+    "policy": "K2_oracle_adam_first",
+    "return_h8": -0.010986500790518806,
+    "return_h16": -0.020152219662782113
+  },
+  {
+    "group": "fresh_test",
+    "start": 1,
+    "policy": "K4_learned_raw",
+    "return_h8": -0.010972745615897912,
+    "return_h16": -0.020118223965957423
+  },
+  {
+    "group": "fresh_test",
+    "start": 1,
+    "policy": "K4_learned_adam_first",
+    "return_h8": -0.010956246594776798,
+    "return_h16": -0.02007007151930583
+  },
+  {
+    "group": "fresh_test",
+    "start": 1,
+    "policy": "K4_oracle_raw",
+    "return_h8": -0.010983780808852001,
+    "return_h16": -0.020136563533141316
+  },
+  {
+    "group": "fresh_test",
+    "start": 1,
+    "policy": "K4_oracle_adam_first",
+    "return_h8": -0.01098605066112678,
+    "return_h16": -0.02014073673541305
+  },
+  {
+    "group": "historical_test",
+    "start": 0,
+    "policy": "theta0",
+    "return_h8": -0.002694215355691991,
+    "return_h16": -0.004916315121696107
+  },
+  {
+    "group": "historical_test",
+    "start": 0,
+    "policy": "K2_learned_raw",
+    "return_h8": -0.0026996547773358247,
+    "return_h16": -0.004937331535736878
+  },
+  {
+    "group": "historical_test",
+    "start": 0,
+    "policy": "K2_learned_adam_first",
+    "return_h8": -0.0027052923724502132,
+    "return_h16": -0.0049590038539611145
+  },
+  {
+    "group": "historical_test",
+    "start": 0,
+    "policy": "K2_oracle_raw",
+    "return_h8": -0.002676206894949424,
+    "return_h16": -0.004843685132818317
+  },
+  {
+    "group": "historical_test",
+    "start": 0,
+    "policy": "K2_oracle_adam_first",
+    "return_h8": -0.0026936572411354687,
+    "return_h16": -0.004914607585690995
+  },
+  {
+    "group": "historical_test",
+    "start": 0,
+    "policy": "K4_learned_raw",
+    "return_h8": -0.0026984828090506193,
+    "return_h16": -0.004933585870277931
+  },
+  {
+    "group": "historical_test",
+    "start": 0,
+    "policy": "K4_learned_adam_first",
+    "return_h8": -0.0026913677776079815,
+    "return_h16": -0.0049062161124670415
+  },
+  {
+    "group": "historical_test",
+    "start": 0,
+    "policy": "K4_oracle_raw",
+    "return_h8": -0.0027169754907783368,
+    "return_h16": -0.005004706338423918
+  },
+  {
+    "group": "historical_test",
+    "start": 0,
+    "policy": "K4_oracle_adam_first",
+    "return_h8": -0.002704657469540984,
+    "return_h16": -0.004956820004634927
+  },
+  {
+    "group": "historical_test",
+    "start": 1,
+    "policy": "theta0",
+    "return_h8": -0.010267458373653535,
+    "return_h16": -0.018790476743310563
+  },
+  {
+    "group": "historical_test",
+    "start": 1,
+    "policy": "K2_learned_raw",
+    "return_h8": -0.010291778462235758,
+    "return_h16": -0.018857623965167124
+  },
+  {
+    "group": "historical_test",
+    "start": 1,
+    "policy": "K2_learned_adam_first",
+    "return_h8": -0.01026756430744947,
+    "return_h16": -0.018796689567062864
+  },
+  {
+    "group": "historical_test",
+    "start": 1,
+    "policy": "K2_oracle_raw",
+    "return_h8": -0.010182811464829626,
+    "return_h16": -0.018561469969289663
+  },
+  {
+    "group": "historical_test",
+    "start": 1,
+    "policy": "K2_oracle_adam_first",
+    "return_h8": -0.010263785999917526,
+    "return_h16": -0.01877992594319893
+  },
+  {
+    "group": "historical_test",
+    "start": 1,
+    "policy": "K4_learned_raw",
+    "return_h8": -0.010306959858584281,
+    "return_h16": -0.0188972417581206
+  },
+  {
+    "group": "historical_test",
+    "start": 1,
+    "policy": "K4_learned_adam_first",
+    "return_h8": -0.01033325796095336,
+    "return_h16": -0.018967326272735778
+  },
+  {
+    "group": "historical_test",
+    "start": 1,
+    "policy": "K4_oracle_raw",
+    "return_h8": -0.010223129851063242,
+    "return_h16": -0.018676888661276547
+  },
+  {
+    "group": "historical_test",
+    "start": 1,
+    "policy": "K4_oracle_adam_first",
+    "return_h8": -0.010244637079749859,
+    "return_h16": -0.01873081234291513
+  },
+  {
+    "group": "historical_test",
+    "start": 2,
+    "policy": "theta0",
+    "return_h8": -0.007701426207488879,
+    "return_h16": -0.01456707703635122
+  },
+  {
+    "group": "historical_test",
+    "start": 2,
+    "policy": "K2_learned_raw",
+    "return_h8": -0.007703078991756781,
+    "return_h16": -0.014574236060877913
+  },
+  {
+    "group": "historical_test",
+    "start": 2,
+    "policy": "K2_learned_adam_first",
+    "return_h8": -0.007702015764760744,
+    "return_h16": -0.014569513439471661
+  },
+  {
+    "group": "historical_test",
+    "start": 2,
+    "policy": "K2_oracle_raw",
+    "return_h8": -0.007695993897129451,
+    "return_h16": -0.014543998913878572
+  },
+  {
+    "group": "historical_test",
+    "start": 2,
+    "policy": "K2_oracle_adam_first",
+    "return_h8": -0.007697742120356267,
+    "return_h16": -0.014553835689867557
+  },
+  {
+    "group": "historical_test",
+    "start": 2,
+    "policy": "K4_learned_raw",
+    "return_h8": -0.007705224707553961,
+    "return_h16": -0.014583050997792052
+  },
+  {
+    "group": "historical_test",
+    "start": 2,
+    "policy": "K4_learned_adam_first",
+    "return_h8": -0.007709439650041553,
+    "return_h16": -0.014600426942386079
+  },
+  {
+    "group": "historical_test",
+    "start": 2,
+    "policy": "K4_oracle_raw",
+    "return_h8": -0.007698535935133881,
+    "return_h16": -0.014554772434652637
+  },
+  {
+    "group": "historical_test",
+    "start": 2,
+    "policy": "K4_oracle_adam_first",
+    "return_h8": -0.007701773447110909,
+    "return_h16": -0.014569571300693137
+  },
+  {
+    "group": "historical_test",
+    "start": 3,
+    "policy": "theta0",
+    "return_h8": -0.012783936212381735,
+    "return_h16": -0.024053907445636177
+  },
+  {
+    "group": "historical_test",
+    "start": 3,
+    "policy": "K2_learned_raw",
+    "return_h8": -0.012778461219999607,
+    "return_h16": -0.024011443067310286
+  },
+  {
+    "group": "historical_test",
+    "start": 3,
+    "policy": "K2_learned_adam_first",
+    "return_h8": -0.012776311405336324,
+    "return_h16": -0.023998251025506054
+  },
+  {
+    "group": "historical_test",
+    "start": 3,
+    "policy": "K2_oracle_raw",
+    "return_h8": -0.01280251575206089,
+    "return_h16": -0.024190775672513133
+  },
+  {
+    "group": "historical_test",
+    "start": 3,
+    "policy": "K2_oracle_adam_first",
+    "return_h8": -0.012793352300196351,
+    "return_h16": -0.024123727071025777
+  },
+  {
+    "group": "historical_test",
+    "start": 3,
+    "policy": "K4_learned_raw",
+    "return_h8": -0.012777489228929982,
+    "return_h16": -0.024004669309153133
+  },
+  {
+    "group": "historical_test",
+    "start": 3,
+    "policy": "K4_learned_adam_first",
+    "return_h8": -0.012776952964078719,
+    "return_h16": -0.024004601375305565
+  },
+  {
+    "group": "historical_test",
+    "start": 3,
+    "policy": "K4_oracle_raw",
+    "return_h8": -0.01277731525837346,
+    "return_h16": -0.02399982860566451
+  },
+  {
+    "group": "historical_test",
+    "start": 3,
+    "policy": "K4_oracle_adam_first",
+    "return_h8": -0.012776871809265284,
+    "return_h16": -0.023998209842123103
+  },
+  {
+    "group": "historical_test",
+    "start": 4,
+    "policy": "theta0",
+    "return_h8": -0.006971132629634896,
+    "return_h16": -0.013560678047231807
+  },
+  {
+    "group": "historical_test",
+    "start": 4,
+    "policy": "K2_learned_raw",
+    "return_h8": -0.006972105498282267,
+    "return_h16": -0.013570993743114948
+  },
+  {
+    "group": "historical_test",
+    "start": 4,
+    "policy": "K2_learned_adam_first",
+    "return_h8": -0.006970304133226662,
+    "return_h16": -0.013555627501437021
+  },
+  {
+    "group": "historical_test",
+    "start": 4,
+    "policy": "K2_oracle_raw",
+    "return_h8": -0.006967128072883995,
+    "return_h16": -0.013523929044422376
+  },
+  {
+    "group": "historical_test",
+    "start": 4,
+    "policy": "K2_oracle_adam_first",
+    "return_h8": -0.0069706830568040225,
+    "return_h16": -0.013555205959277502
+  },
+  {
+    "group": "historical_test",
+    "start": 4,
+    "policy": "K4_learned_raw",
+    "return_h8": -0.0069726874726389245,
+    "return_h16": -0.013575003077964115
+  },
+  {
+    "group": "historical_test",
+    "start": 4,
+    "policy": "K4_learned_adam_first",
+    "return_h8": -0.006974314093462866,
+    "return_h16": -0.013587621728658555
+  },
+  {
+    "group": "historical_test",
+    "start": 4,
+    "policy": "K4_oracle_raw",
+    "return_h8": -0.00696561992628389,
+    "return_h16": -0.013515513800408043
+  },
+  {
+    "group": "historical_test",
+    "start": 4,
+    "policy": "K4_oracle_adam_first",
+    "return_h8": -0.00696876582954819,
+    "return_h16": -0.013541985920865333
+  },
+  {
+    "group": "historical_test",
+    "start": 5,
+    "policy": "theta0",
+    "return_h8": -0.00920606702331275,
+    "return_h16": -0.016848654870181643
+  },
+  {
+    "group": "historical_test",
+    "start": 5,
+    "policy": "K2_learned_raw",
+    "return_h8": -0.009199768149030485,
+    "return_h16": -0.016822096813085084
+  },
+  {
+    "group": "historical_test",
+    "start": 5,
+    "policy": "K2_learned_adam_first",
+    "return_h8": -0.009189851096579365,
+    "return_h16": -0.016780311308624153
+  },
+  {
+    "group": "historical_test",
+    "start": 5,
+    "policy": "K2_oracle_raw",
+    "return_h8": -0.009234613778847458,
+    "return_h16": -0.016969300818847448
+  },
+  {
+    "group": "historical_test",
+    "start": 5,
+    "policy": "K2_oracle_adam_first",
+    "return_h8": -0.009208632564554765,
+    "return_h16": -0.01686682587846087
+  },
+  {
+    "group": "historical_test",
+    "start": 5,
+    "policy": "K4_learned_raw",
+    "return_h8": -0.009194696680296027,
+    "return_h16": -0.016798887977775845
+  },
+  {
+    "group": "historical_test",
+    "start": 5,
+    "policy": "K4_learned_adam_first",
+    "return_h8": -0.009198726194879952,
+    "return_h16": -0.0168142516359475
+  },
+  {
+    "group": "historical_test",
+    "start": 5,
+    "policy": "K4_oracle_raw",
+    "return_h8": -0.009155626409871694,
+    "return_h16": -0.01663835437906798
+  },
+  {
+    "group": "historical_test",
+    "start": 5,
+    "policy": "K4_oracle_adam_first",
+    "return_h8": -0.009184487388431079,
+    "return_h16": -0.016754641909883287
+  }
+]
