@@ -15,7 +15,7 @@ Do **not** overwrite Stage 5 frozen artifacts under `runs/stage5*`.
 - [x] Architecture doc update
 - [x] Re-eval Stage 5E with corrected metrics → `runs/stage6a_stage5e_corrected/`
 - [x] Write `reports/stage5e_corrected_stats.md`
-- [ ] Push branch
+- [x] Push branch (`f80c69d`)
 
 **Reproduce**
 ```bash
