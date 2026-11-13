@@ -1,0 +1,1140 @@
+==== Stage6B.2 HistC seed 10 ====
+  seed10 param match: HistC=69450 HistWide(h=74)=69662 Hist64=63882
+    mc it 200 loss 0.37460
+    mc it 400 loss 0.26831
+    mc it 600 loss 0.22893
+    mc it 800 loss 0.20570
+    mc it 1000 loss 0.24700
+    mc it 1200 loss 0.28247
+    mc it 1400 loss 0.26865
+    mc it 1600 loss 0.22191
+    mc it 1800 loss 0.20849
+    mc it 2000 loss 0.28540
+    mc it 2200 loss 0.21589
+    mc it 2400 loss 0.27404
+    mc it 2600 loss 0.25619
+    mc it 2800 loss 0.22726
+    mc it 3000 loss 0.23527
+    pair it 200 base 0.36777 dir 0.36888
+    pair it 400 base 0.35865 dir 0.35971
+    pair it 600 base 0.35739 dir 0.35962
+    pair it 800 base 0.36545 dir 0.36540
+    pair it 1000 base 0.33997 dir 0.34263
+    pair it 1200 base 0.29614 dir 0.29706
+    pair it 1400 base 0.34824 dir 0.34849
+    pair it 1600 base 0.30980 dir 0.31144
+    pair it 1800 base 0.42249 dir 0.42288
+    pair it 2000 base 0.30255 dir 0.30402
+    pair it 2200 base 0.33059 dir 0.32934
+    pair it 2400 base 0.28050 dir 0.28298
+    pair it 2600 base 0.36135 dir 0.36308
+    pair it 2800 base 0.27778 dir 0.28195
+    pair it 3000 base 0.31408 dir 0.31510
+    pair it 200 base 0.38655 dir 0.38887
+    pair it 400 base 0.31691 dir 0.31948
+    pair it 600 base 0.29910 dir 0.30327
+    pair it 800 base 0.27841 dir 0.28551
+    pair it 1000 base 0.23175 dir 0.23507
+    pair it 1200 base 0.26160 dir 0.26450
+    pair it 1400 base 0.26667 dir 0.26944
+    pair it 1600 base 0.23221 dir 0.23550
+    pair it 1800 base 0.22050 dir 0.22102
+    pair it 2000 base 0.23197 dir 0.23507
+    pair it 2200 base 0.23817 dir 0.23976
+    pair it 2400 base 0.22686 dir 0.23084
+    pair it 2600 base 0.27295 dir 0.28141
+    pair it 2800 base 0.21016 dir 0.21472
+    pair it 3000 base 0.20908 dir 0.21424
+    pair it 200 base 0.32697 dir 0.32693
+    pair it 400 base 0.32079 dir 0.32050
+    pair it 600 base 0.30312 dir 0.29963
+    pair it 800 base 0.23313 dir 0.23492
+    pair it 1000 base 0.22933 dir 0.23032
+    pair it 1200 base 0.24578 dir 0.24574
+    pair it 1400 base 0.23036 dir 0.23140
+    pair it 1600 base 0.34264 dir 0.34323
+    pair it 1800 base 0.19782 dir 0.20067
+    pair it 2000 base 0.25489 dir 0.25044
+    pair it 2200 base 0.18308 dir 0.19434
+    pair it 2400 base 0.20641 dir 0.21222
+    pair it 2600 base 0.18810 dir 0.19186
+    pair it 2800 base 0.20661 dir 0.21344
+    pair it 3000 base 0.22185 dir 0.22724
+    pair it 200 base 0.40340 dir 0.40404
+    pair it 400 base 0.28990 dir 0.29003
+    pair it 600 base 0.29066 dir 0.29333
+    pair it 800 base 0.26189 dir 0.26534
+    pair it 1000 base 0.24717 dir 0.24870
+    pair it 1200 base 0.23974 dir 0.24205
+    pair it 1400 base 0.22672 dir 0.22646
+    pair it 1600 base 0.27725 dir 0.27990
+    pair it 1800 base 0.26470 dir 0.26904
+    pair it 2000 base 0.25447 dir 0.25640
+    pair it 2200 base 0.23259 dir 0.23487
+    pair it 2400 base 0.20703 dir 0.21255
+    pair it 2600 base 0.22602 dir 0.22887
+    pair it 2800 base 0.23024 dir 0.23356
+    pair it 3000 base 0.24577 dir 0.25327
+    pair it 200 base 0.30768 dir 0.30721
+    pair it 400 base 0.29778 dir 0.29894
+    pair it 600 base 0.28420 dir 0.28593
+    pair it 800 base 0.27637 dir 0.28068
+    pair it 1000 base 0.23037 dir 0.23005
+    pair it 1200 base 0.24266 dir 0.24395
+    pair it 1400 base 0.25644 dir 0.26018
+    pair it 1600 base 0.24648 dir 0.24880
+    pair it 1800 base 0.25644 dir 0.26270
+    pair it 2000 base 0.19498 dir 0.19734
+    pair it 2200 base 0.22998 dir 0.23770
+    pair it 2400 base 0.23955 dir 0.24736
+    pair it 2600 base 0.21722 dir 0.22455
+    pair it 2800 base 0.18575 dir 0.19081
+    pair it 3000 base 0.20957 dir 0.21644
+  seed10 k8 inter mc                     nmse 0.242 cosF 0.761 ret -0.003698 fail 0.00 ΔR 0.00188496
+  seed10 k8 extra mc                     nmse 0.475 cosF 0.775 ret -0.005263 fail 0.17 ΔR 0.00152486
+  seed10 k8 inter eagm_base              nmse 0.227 cosF 0.246 ret -0.006444 fail 0.67 ΔR -0.000861249
+  seed10 k8 extra eagm_base              nmse 0.464 cosF 0.232 ret -0.008272 fail 0.83 ΔR -0.00148467
+  seed10 k8 inter eagm_dir_matched       nmse 0.229 cosF 0.685 ret -0.002995 fail 0.00 ΔR 0.00258804
+  seed10 k8 extra eagm_dir_matched       nmse 0.460 cosF 0.641 ret -0.004538 fail 0.17 ΔR 0.00224987
+  seed10 k8 inter eagm_hist              nmse 0.220 cosF 0.694 ret -0.003775 fail 0.00 ΔR 0.00180814
+  seed10 k8 extra eagm_hist              nmse 0.436 cosF 0.717 ret -0.005324 fail 0.17 ΔR 0.00146349
+    probe eagm_hist: mean|corr|=0.49178666281283456
+  seed10 k8 inter eagm_hist_dir          nmse 0.225 cosF 0.794 ret -0.003817 fail 0.00 ΔR 0.00176619
+  seed10 k8 extra eagm_hist_dir          nmse 0.446 cosF 0.762 ret -0.005094 fail 0.00 ΔR 0.00169351
+    probe eagm_hist_dir: mean|corr|=0.4907466255480092
+  seed10 k8 inter eagm_histc_dir         nmse 0.208 cosF 0.774 ret -0.003749 fail 0.00 ΔR 0.00183341
+  seed10 k8 extra eagm_histc_dir         nmse 0.416 cosF 0.735 ret -0.005104 fail 0.00 ΔR 0.00168374
+    probe eagm_histc_dir: mean|corr|=0.541932275186869
+  seed10 k8 inter eagm_hist_wide_dir     nmse 0.223 cosF 0.811 ret -0.003716 fail 0.00 ΔR 0.00186684
+  seed10 k8 extra eagm_hist_wide_dir     nmse 0.438 cosF 0.756 ret -0.004956 fail 0.00 ΔR 0.00183151
+    probe eagm_hist_wide_dir: mean|corr|=0.505126006110858
+  seed10 k8 inter eagm_histc_shuf_dir    nmse 0.212 cosF 0.774 ret -0.003693 fail 0.00 ΔR 0.00189025
+  seed10 k8 extra eagm_histc_shuf_dir    nmse 0.421 cosF 0.752 ret -0.005033 fail 0.00 ΔR 0.00175467
+    probe eagm_histc_shuf_dir: mean|corr|=0.5620828392359892
+    pair it 200 base 0.37835 dir 0.37957
+    pair it 400 base 0.34600 dir 0.34424
+    pair it 600 base 0.29921 dir 0.30686
+    pair it 800 base 0.27038 dir 0.27955
+    pair it 1000 base 0.26590 dir 0.26587
+    pair it 1200 base 0.28331 dir 0.28774
+    pair it 1400 base 0.26742 dir 0.27172
+    pair it 1600 base 0.31452 dir 0.31601
+    pair it 1800 base 0.24412 dir 0.25204
+    pair it 2000 base 0.23013 dir 0.23202
+    pair it 2200 base 0.26792 dir 0.27049
+    pair it 2400 base 0.26198 dir 0.26737
+    pair it 2600 base 0.22123 dir 0.22296
+    pair it 2800 base 0.25016 dir 0.25752
+    pair it 3000 base 0.22475 dir 0.23024
+    pair it 200 base 0.38402 dir 0.38616
+    pair it 400 base 0.25190 dir 0.26069
+    pair it 600 base 0.23124 dir 0.23762
+    pair it 800 base 0.25076 dir 0.25194
+    pair it 1000 base 0.24995 dir 0.25413
+    pair it 1200 base 0.19840 dir 0.19904
+    pair it 1400 base 0.22964 dir 0.22884
+    pair it 1600 base 0.23791 dir 0.24193
+    pair it 1800 base 0.21278 dir 0.21610
+    pair it 2000 base 0.22109 dir 0.22498
+    pair it 2200 base 0.24320 dir 0.24211
+    pair it 2400 base 0.19282 dir 0.19496
+    pair it 2600 base 0.23821 dir 0.24669
+    pair it 2800 base 0.19506 dir 0.19845
+    pair it 3000 base 0.17377 dir 0.17597
+  seed10 k4 inter eagm_hist_dir          ret -0.003620 fail 0.00
+  seed10 k4 extra eagm_hist_dir          ret -0.004795 fail 0.00
+  seed10 k4 inter eagm_histc_dir         ret -0.003806 fail 0.00
+  seed10 k4 extra eagm_histc_dir         ret -0.005121 fail 0.00
+    pair it 200 base 0.44118 dir 0.44265
+    pair it 400 base 0.29358 dir 0.29579
+    pair it 600 base 0.28197 dir 0.28169
+    pair it 800 base 0.27726 dir 0.27979
+    pair it 1000 base 0.24915 dir 0.25070
+    pair it 1200 base 0.23761 dir 0.23954
+    pair it 1400 base 0.20786 dir 0.21084
+    pair it 1600 base 0.22814 dir 0.22960
+    pair it 1800 base 0.27225 dir 0.27776
+    pair it 2000 base 0.19824 dir 0.19986
+    pair it 2200 base 0.23144 dir 0.22908
+    pair it 2400 base 0.25561 dir 0.25993
+    pair it 2600 base 0.23287 dir 0.23727
+    pair it 2800 base 0.20246 dir 0.20354
+    pair it 3000 base 0.26242 dir 0.26938
+    pair it 200 base 0.42972 dir 0.40974
+    pair it 400 base 0.26149 dir 0.26487
+    pair it 600 base 0.26602 dir 0.26938
+    pair it 800 base 0.30548 dir 0.31016
+    pair it 1000 base 0.23562 dir 0.24002
+    pair it 1200 base 0.25480 dir 0.25479
+    pair it 1400 base 0.20800 dir 0.20888
+    pair it 1600 base 0.22565 dir 0.22669
+    pair it 1800 base 0.22315 dir 0.22731
+    pair it 2000 base 0.24688 dir 0.24985
+    pair it 2200 base 0.23157 dir 0.23738
+    pair it 2400 base 0.29506 dir 0.30330
+    pair it 2600 base 0.22071 dir 0.22855
+    pair it 2800 base 0.21545 dir 0.22075
+    pair it 3000 base 0.18220 dir 0.18505
+  seed10 k16 inter eagm_hist_dir          ret -0.002672 fail 0.00
+  seed10 k16 extra eagm_hist_dir          ret -0.004066 fail 0.17
+  seed10 k16 inter eagm_histc_dir         ret -0.002613 fail 0.00
+  seed10 k16 extra eagm_histc_dir         ret -0.003888 fail 0.00
+==== Stage6B.2 HistC seed 11 ====
+  seed11 param match: HistC=69450 HistWide(h=74)=69662 Hist64=63882
+    mc it 200 loss 0.33614
+    mc it 400 loss 0.30670
+    mc it 600 loss 0.26096
+    mc it 800 loss 0.24170
+    mc it 1000 loss 0.18859
+    mc it 1200 loss 0.21085
+    mc it 1400 loss 0.23237
+    mc it 1600 loss 0.26590
+    mc it 1800 loss 0.23911
+    mc it 2000 loss 0.22569
+    mc it 2200 loss 0.23266
+    mc it 2400 loss 0.20241
+    mc it 2600 loss 0.20513
+    mc it 2800 loss 0.19695
+    mc it 3000 loss 0.21694
+    pair it 200 base 0.35523 dir 0.35694
+    pair it 400 base 0.33671 dir 0.34364
+    pair it 600 base 0.30446 dir 0.30782
+    pair it 800 base 0.27387 dir 0.27643
+    pair it 1000 base 0.24647 dir 0.25383
+    pair it 1200 base 0.25863 dir 0.26130
+    pair it 1400 base 0.24116 dir 0.24378
+    pair it 1600 base 0.25511 dir 0.25813
+    pair it 1800 base 0.23773 dir 0.23957
+    pair it 2000 base 0.28069 dir 0.28220
+    pair it 2200 base 0.24503 dir 0.25122
+    pair it 2400 base 0.24084 dir 0.24597
+    pair it 2600 base 0.25169 dir 0.25720
+    pair it 2800 base 0.22039 dir 0.22529
+    pair it 3000 base 0.27054 dir 0.27743
+    pair it 200 base 0.46651 dir 0.47372
+    pair it 400 base 0.30976 dir 0.31149
+    pair it 600 base 0.26290 dir 0.26576
+    pair it 800 base 0.26712 dir 0.26846
+    pair it 1000 base 0.21837 dir 0.22370
+    pair it 1200 base 0.21826 dir 0.22825
+    pair it 1400 base 0.24809 dir 0.25582
+    pair it 1600 base 0.19629 dir 0.20568
+    pair it 1800 base 0.22743 dir 0.23066
+    pair it 2000 base 0.21074 dir 0.22267
+    pair it 2200 base 0.22630 dir 0.23120
+    pair it 2400 base 0.21867 dir 0.22329
+    pair it 2600 base 0.23576 dir 0.24390
+    pair it 2800 base 0.19315 dir 0.20369
+    pair it 3000 base 0.22005 dir 0.22808
+    pair it 200 base 0.41957 dir 0.42035
+    pair it 400 base 0.26482 dir 0.27094
+    pair it 600 base 0.20862 dir 0.21196
+    pair it 800 base 0.23352 dir 0.23727
+    pair it 1000 base 0.21133 dir 0.21499
+    pair it 1200 base 0.24355 dir 0.24708
+    pair it 1400 base 0.22050 dir 0.22061
+    pair it 1600 base 0.26938 dir 0.27770
+    pair it 1800 base 0.21474 dir 0.21189
+    pair it 2000 base 0.20645 dir 0.21879
+    pair it 2200 base 0.24738 dir 0.24202
+    pair it 2400 base 0.18827 dir 0.19325
+    pair it 2600 base 0.21898 dir 0.23028
+    pair it 2800 base 0.20468 dir 0.21823
+    pair it 3000 base 0.16026 dir 0.16383
+    pair it 200 base 0.50840 dir 0.51321
+    pair it 400 base 0.33200 dir 0.34400
+    pair it 600 base 0.32653 dir 0.32691
+    pair it 800 base 0.22783 dir 0.23178
+    pair it 1000 base 0.25396 dir 0.26099
+    pair it 1200 base 0.24295 dir 0.24808
+    pair it 1400 base 0.25640 dir 0.26125
+    pair it 1600 base 0.22094 dir 0.23350
+    pair it 1800 base 0.20568 dir 0.20844
+    pair it 2000 base 0.22773 dir 0.23256
+    pair it 2200 base 0.22266 dir 0.22922
+    pair it 2400 base 0.19163 dir 0.19750
+    pair it 2600 base 0.22411 dir 0.23250
+    pair it 2800 base 0.18383 dir 0.19205
+    pair it 3000 base 0.18824 dir 0.19663
+    pair it 200 base 0.30678 dir 0.30998
+    pair it 400 base 0.30243 dir 0.30523
+    pair it 600 base 0.26233 dir 0.26120
+    pair it 800 base 0.19978 dir 0.20138
+    pair it 1000 base 0.22287 dir 0.22652
+    pair it 1200 base 0.22516 dir 0.22398
+    pair it 1400 base 0.22037 dir 0.22210
+    pair it 1600 base 0.24001 dir 0.24587
+    pair it 1800 base 0.18843 dir 0.19288
+    pair it 2000 base 0.21050 dir 0.21663
+    pair it 2200 base 0.21694 dir 0.22148
+    pair it 2400 base 0.22994 dir 0.23872
+    pair it 2600 base 0.17943 dir 0.19172
+    pair it 2800 base 0.19423 dir 0.20211
+    pair it 3000 base 0.17309 dir 0.17973
+  seed11 k8 inter mc                     nmse 0.273 cosF 0.534 ret -0.005056 fail 0.08 ΔR 0.000524239
+  seed11 k8 extra mc                     nmse 0.536 cosF 0.556 ret -0.006431 fail 0.17 ΔR 0.000308213
+  seed11 k8 inter eagm_base              nmse 0.264 cosF 0.171 ret -0.006882 fail 1.00 ΔR -0.00130236
+  seed11 k8 extra eagm_base              nmse 0.515 cosF 0.148 ret -0.008395 fail 1.00 ΔR -0.00165605
+  seed11 k8 inter eagm_dir_matched       nmse 0.266 cosF 0.661 ret -0.004437 fail 0.00 ΔR 0.00114336
+  seed11 k8 extra eagm_dir_matched       nmse 0.519 cosF 0.675 ret -0.005790 fail 0.08 ΔR 0.000949592
+  seed11 k8 inter eagm_hist              nmse 0.235 cosF 0.719 ret -0.004332 fail 0.00 ΔR 0.00124835
+  seed11 k8 extra eagm_hist              nmse 0.465 cosF 0.719 ret -0.005502 fail 0.08 ΔR 0.00123729
+    probe eagm_hist: mean|corr|=0.458626038063096
+  seed11 k8 inter eagm_hist_dir          nmse 0.245 cosF 0.617 ret -0.004881 fail 0.00 ΔR 0.000698555
+  seed11 k8 extra eagm_hist_dir          nmse 0.483 cosF 0.631 ret -0.006225 fail 0.33 ΔR 0.00051473
+    probe eagm_hist_dir: mean|corr|=0.4609070077615952
+  seed11 k8 inter eagm_histc_dir         nmse 0.233 cosF 0.713 ret -0.004530 fail 0.00 ΔR 0.00105026
+  seed11 k8 extra eagm_histc_dir         nmse 0.457 cosF 0.727 ret -0.005887 fail 0.17 ΔR 0.000852336
+    probe eagm_histc_dir: mean|corr|=0.5490669057473095
+  seed11 k8 inter eagm_hist_wide_dir     nmse 0.239 cosF 0.728 ret -0.003936 fail 0.00 ΔR 0.00164405
+  seed11 k8 extra eagm_hist_wide_dir     nmse 0.476 cosF 0.721 ret -0.005110 fail 0.00 ΔR 0.00162926
+    probe eagm_hist_wide_dir: mean|corr|=0.4495843014842127
+  seed11 k8 inter eagm_histc_shuf_dir    nmse 0.236 cosF 0.810 ret -0.003046 fail 0.00 ΔR 0.00253355
+  seed11 k8 extra eagm_histc_shuf_dir    nmse 0.466 cosF 0.805 ret -0.004395 fail 0.08 ΔR 0.00234435
+    probe eagm_histc_shuf_dir: mean|corr|=0.5712842595328257
+    pair it 200 base 0.30169 dir 0.30242
+    pair it 400 base 0.26811 dir 0.26699
+    pair it 600 base 0.33669 dir 0.33798
+    pair it 800 base 0.23179 dir 0.23307
+    pair it 1000 base 0.28479 dir 0.29361
+    pair it 1200 base 0.29005 dir 0.29681
+    pair it 1400 base 0.25398 dir 0.25918
+    pair it 1600 base 0.24700 dir 0.25853
+    pair it 1800 base 0.22939 dir 0.23061
+    pair it 2000 base 0.24244 dir 0.24518
+    pair it 2200 base 0.24767 dir 0.25070
+    pair it 2400 base 0.22939 dir 0.23376
+    pair it 2600 base 0.19091 dir 0.19505
+    pair it 2800 base 0.23344 dir 0.24167
+    pair it 3000 base 0.18158 dir 0.18832
+    pair it 200 base 0.38314 dir 0.38268
+    pair it 400 base 0.28980 dir 0.29445
+    pair it 600 base 0.25790 dir 0.26195
+    pair it 800 base 0.28681 dir 0.28649
+    pair it 1000 base 0.24232 dir 0.24530
+    pair it 1200 base 0.21228 dir 0.22020
+    pair it 1400 base 0.22298 dir 0.22670
+    pair it 1600 base 0.20229 dir 0.20946
+    pair it 1800 base 0.19143 dir 0.19461
+    pair it 2000 base 0.16283 dir 0.17096
+    pair it 2200 base 0.16345 dir 0.17423
+    pair it 2400 base 0.18509 dir 0.18568
+    pair it 2600 base 0.16816 dir 0.17595
+    pair it 2800 base 0.22081 dir 0.23534
+    pair it 3000 base 0.16212 dir 0.16858
+  seed11 k4 inter eagm_hist_dir          ret -0.004181 fail 0.00
+  seed11 k4 extra eagm_hist_dir          ret -0.005420 fail 0.00
+  seed11 k4 inter eagm_histc_dir         ret -0.004231 fail 0.00
+  seed11 k4 extra eagm_histc_dir         ret -0.005508 fail 0.00
+    pair it 200 base 0.35477 dir 0.35341
+    pair it 400 base 0.30558 dir 0.32607
+    pair it 600 base 0.27643 dir 0.28000
+    pair it 800 base 0.24617 dir 0.25134
+    pair it 1000 base 0.27487 dir 0.28626
+    pair it 1200 base 0.25754 dir 0.26545
+    pair it 1400 base 0.20887 dir 0.21055
+    pair it 1600 base 0.26165 dir 0.27219
+    pair it 1800 base 0.21485 dir 0.22340
+    pair it 2000 base 0.27790 dir 0.28432
+    pair it 2200 base 0.23139 dir 0.23975
+    pair it 2400 base 0.21095 dir 0.21707
+    pair it 2600 base 0.20863 dir 0.21625
+    pair it 2800 base 0.19391 dir 0.20882
+    pair it 3000 base 0.14748 dir 0.15123
+    pair it 200 base 0.31106 dir 0.31059
+    pair it 400 base 0.21990 dir 0.22859
+    pair it 600 base 0.28361 dir 0.28563
+    pair it 800 base 0.25193 dir 0.25261
+    pair it 1000 base 0.21970 dir 0.22176
+    pair it 1200 base 0.20186 dir 0.20488
+    pair it 1400 base 0.19954 dir 0.19988
+    pair it 1600 base 0.20346 dir 0.20749
+    pair it 1800 base 0.19559 dir 0.19752
+    pair it 2000 base 0.20242 dir 0.20752
+    pair it 2200 base 0.21971 dir 0.22088
+    pair it 2400 base 0.17057 dir 0.17650
+    pair it 2600 base 0.16983 dir 0.17284
+    pair it 2800 base 0.17072 dir 0.18136
+    pair it 3000 base 0.23713 dir 0.25150
+  seed11 k16 inter eagm_hist_dir          ret -0.004494 fail 0.00
+  seed11 k16 extra eagm_hist_dir          ret -0.005823 fail 0.08
+  seed11 k16 inter eagm_histc_dir         ret -0.004569 fail 0.00
+  seed11 k16 extra eagm_histc_dir         ret -0.005912 fail 0.17
+==== Stage6B.2 HistC seed 12 ====
+  seed12 param match: HistC=69450 HistWide(h=74)=69662 Hist64=63882
+    mc it 200 loss 0.32141
+    mc it 400 loss 0.30437
+    mc it 600 loss 0.25693
+    mc it 800 loss 0.24388
+    mc it 1000 loss 0.23802
+    mc it 1200 loss 0.23909
+    mc it 1400 loss 0.22705
+    mc it 1600 loss 0.20326
+    mc it 1800 loss 0.20330
+    mc it 2000 loss 0.20583
+    mc it 2200 loss 0.19890
+    mc it 2400 loss 0.18764
+    mc it 2600 loss 0.21805
+    mc it 2800 loss 0.17870
+    mc it 3000 loss 0.20521
+    pair it 200 base 0.40268 dir 0.40415
+    pair it 400 base 0.40169 dir 0.41296
+    pair it 600 base 0.35904 dir 0.37031
+    pair it 800 base 0.34070 dir 0.34177
+    pair it 1000 base 0.33892 dir 0.34483
+    pair it 1200 base 0.27658 dir 0.28274
+    pair it 1400 base 0.29868 dir 0.30230
+    pair it 1600 base 0.29777 dir 0.30140
+    pair it 1800 base 0.27468 dir 0.28763
+    pair it 2000 base 0.30668 dir 0.30939
+    pair it 2200 base 0.29613 dir 0.30744
+    pair it 2400 base 0.34142 dir 0.34942
+    pair it 2600 base 0.27246 dir 0.27705
+    pair it 2800 base 0.25060 dir 0.25614
+    pair it 3000 base 0.29932 dir 0.31139
+    pair it 200 base 0.39023 dir 0.39158
+    pair it 400 base 0.28698 dir 0.30268
+    pair it 600 base 0.26510 dir 0.27699
+    pair it 800 base 0.29345 dir 0.30270
+    pair it 1000 base 0.22740 dir 0.22994
+    pair it 1200 base 0.22458 dir 0.23357
+    pair it 1400 base 0.23282 dir 0.23034
+    pair it 1600 base 0.22971 dir 0.23810
+    pair it 1800 base 0.24121 dir 0.25697
+    pair it 2000 base 0.22751 dir 0.23649
+    pair it 2200 base 0.20493 dir 0.21499
+    pair it 2400 base 0.21560 dir 0.23039
+    pair it 2600 base 0.18504 dir 0.19656
+    pair it 2800 base 0.21041 dir 0.21696
+    pair it 3000 base 0.19053 dir 0.19912
+    pair it 200 base 0.41381 dir 0.41901
+    pair it 400 base 0.27653 dir 0.28687
+    pair it 600 base 0.24744 dir 0.25751
+    pair it 800 base 0.20123 dir 0.20521
+    pair it 1000 base 0.27795 dir 0.28341
+    pair it 1200 base 0.20483 dir 0.21349
+    pair it 1400 base 0.22702 dir 0.23042
+    pair it 1600 base 0.24089 dir 0.24629
+    pair it 1800 base 0.20509 dir 0.20842
+    pair it 2000 base 0.19773 dir 0.20631
+    pair it 2200 base 0.21873 dir 0.23123
+    pair it 2400 base 0.17722 dir 0.18779
+    pair it 2600 base 0.20720 dir 0.22120
+    pair it 2800 base 0.18239 dir 0.19620
+    pair it 3000 base 0.20487 dir 0.22334
+    pair it 200 base 0.67492 dir 0.69039
+    pair it 400 base 0.31488 dir 0.31219
+    pair it 600 base 0.27267 dir 0.27780
+    pair it 800 base 0.22297 dir 0.22504
+    pair it 1000 base 0.28516 dir 0.28720
+    pair it 1200 base 0.26993 dir 0.28515
+    pair it 1400 base 0.21798 dir 0.22458
+    pair it 1600 base 0.22458 dir 0.23052
+    pair it 1800 base 0.26597 dir 0.27683
+    pair it 2000 base 0.22637 dir 0.23238
+    pair it 2200 base 0.21959 dir 0.22644
+    pair it 2400 base 0.20397 dir 0.21420
+    pair it 2600 base 0.17840 dir 0.18829
+    pair it 2800 base 0.22363 dir 0.23638
+    pair it 3000 base 0.25962 dir 0.27800
+    pair it 200 base 0.40656 dir 0.41284
+    pair it 400 base 0.24122 dir 0.25017
+    pair it 600 base 0.25531 dir 0.26876
+    pair it 800 base 0.24705 dir 0.25005
+    pair it 1000 base 0.21399 dir 0.21718
+    pair it 1200 base 0.22205 dir 0.22672
+    pair it 1400 base 0.28387 dir 0.28532
+    pair it 1600 base 0.33739 dir 0.34210
+    pair it 1800 base 0.18726 dir 0.19534
+    pair it 2000 base 0.18172 dir 0.18847
+    pair it 2200 base 0.17941 dir 0.18573
+    pair it 2400 base 0.20015 dir 0.21225
+    pair it 2600 base 0.15872 dir 0.16177
+    pair it 2800 base 0.16927 dir 0.17237
+    pair it 3000 base 0.15784 dir 0.17145
+  seed12 k8 inter mc                     nmse 0.268 cosF 0.634 ret -0.003489 fail 0.00 ΔR 0.00212482
+  seed12 k8 extra mc                     nmse 0.494 cosF 0.622 ret -0.004792 fail 0.17 ΔR 0.00190345
+  seed12 k8 inter eagm_base              nmse 0.259 cosF 0.210 ret -0.005184 fail 0.33 ΔR 0.00042951
+  seed12 k8 extra eagm_base              nmse 0.479 cosF 0.238 ret -0.006771 fail 0.33 ΔR -7.58036e-05
+  seed12 k8 inter eagm_dir_matched       nmse 0.262 cosF 0.514 ret -0.003951 fail 0.00 ΔR 0.00166211
+  seed12 k8 extra eagm_dir_matched       nmse 0.486 cosF 0.491 ret -0.005684 fail 0.17 ΔR 0.00101102
+  seed12 k8 inter eagm_hist              nmse 0.235 cosF 0.565 ret -0.005104 fail 0.33 ΔR 0.000509119
+  seed12 k8 extra eagm_hist              nmse 0.435 cosF 0.586 ret -0.006745 fail 0.50 ΔR -4.95619e-05
+    probe eagm_hist: mean|corr|=0.4996829635480901
+  seed12 k8 inter eagm_hist_dir          nmse 0.242 cosF 0.512 ret -0.005036 fail 0.00 ΔR 0.000577594
+  seed12 k8 extra eagm_hist_dir          nmse 0.449 cosF 0.494 ret -0.006415 fail 0.17 ΔR 0.000280042
+    probe eagm_hist_dir: mean|corr|=0.5106980345764565
+  seed12 k8 inter eagm_histc_dir         nmse 0.241 cosF 0.393 ret -0.004016 fail 0.00 ΔR 0.00159702
+  seed12 k8 extra eagm_histc_dir         nmse 0.449 cosF 0.382 ret -0.005619 fail 0.25 ΔR 0.00107649
+    probe eagm_histc_dir: mean|corr|=0.6124887661076625
+  seed12 k8 inter eagm_hist_wide_dir     nmse 0.248 cosF 0.640 ret -0.003789 fail 0.00 ΔR 0.00182475
+  seed12 k8 extra eagm_hist_wide_dir     nmse 0.453 cosF 0.601 ret -0.005207 fail 0.17 ΔR 0.00148824
+    probe eagm_hist_wide_dir: mean|corr|=0.5206187723225084
+  seed12 k8 inter eagm_histc_shuf_dir    nmse 0.241 cosF 0.536 ret -0.003919 fail 0.00 ΔR 0.0016949
+  seed12 k8 extra eagm_histc_shuf_dir    nmse 0.446 cosF 0.464 ret -0.005457 fail 0.17 ΔR 0.00123835
+    probe eagm_histc_shuf_dir: mean|corr|=0.6146952773183763
+    pair it 200 base 0.46756 dir 0.47049
+    pair it 400 base 0.31932 dir 0.33308
+    pair it 600 base 0.29887 dir 0.31616
+    pair it 800 base 0.26547 dir 0.27377
+    pair it 1000 base 0.28999 dir 0.29243
+    pair it 1200 base 0.25351 dir 0.26404
+    pair it 1400 base 0.26332 dir 0.27340
+    pair it 1600 base 0.24329 dir 0.25001
+    pair it 1800 base 0.25494 dir 0.26959
+    pair it 2000 base 0.21357 dir 0.21985
+    pair it 2200 base 0.25866 dir 0.27194
+    pair it 2400 base 0.23151 dir 0.24625
+    pair it 2600 base 0.22348 dir 0.23834
+    pair it 2800 base 0.24059 dir 0.25982
+    pair it 3000 base 0.20504 dir 0.21442
+    pair it 200 base 0.40925 dir 0.41291
+    pair it 400 base 0.31912 dir 0.33961
+    pair it 600 base 0.26589 dir 0.29065
+    pair it 800 base 0.26315 dir 0.26133
+    pair it 1000 base 0.22215 dir 0.22330
+    pair it 1200 base 0.29225 dir 0.29077
+    pair it 1400 base 0.21591 dir 0.22021
+    pair it 1600 base 0.20189 dir 0.20216
+    pair it 1800 base 0.14863 dir 0.15689
+    pair it 2000 base 0.19173 dir 0.20511
+    pair it 2200 base 0.20359 dir 0.21059
+    pair it 2400 base 0.20297 dir 0.21536
+    pair it 2600 base 0.18469 dir 0.20293
+    pair it 2800 base 0.17977 dir 0.19143
+    pair it 3000 base 0.18196 dir 0.20058
+  seed12 k4 inter eagm_hist_dir          ret -0.003904 fail 0.00
+  seed12 k4 extra eagm_hist_dir          ret -0.005416 fail 0.25
+  seed12 k4 inter eagm_histc_dir         ret -0.003955 fail 0.00
+  seed12 k4 extra eagm_histc_dir         ret -0.005353 fail 0.25
+    pair it 200 base 0.52155 dir 0.53674
+    pair it 400 base 0.28767 dir 0.29599
+    pair it 600 base 0.24040 dir 0.25919
+    pair it 800 base 0.30884 dir 0.31379
+    pair it 1000 base 0.24382 dir 0.25064
+    pair it 1200 base 0.22705 dir 0.24349
+    pair it 1400 base 0.27606 dir 0.27177
+    pair it 1600 base 0.24520 dir 0.25026
+    pair it 1800 base 0.19572 dir 0.19810
+    pair it 2000 base 0.23826 dir 0.23940
+    pair it 2200 base 0.26329 dir 0.27340
+    pair it 2400 base 0.23267 dir 0.24374
+    pair it 2600 base 0.18870 dir 0.19077
+    pair it 2800 base 0.17999 dir 0.18678
+    pair it 3000 base 0.18403 dir 0.19386
+    pair it 200 base 0.32907 dir 0.33081
+    pair it 400 base 0.23123 dir 0.23649
+    pair it 600 base 0.24017 dir 0.25434
+    pair it 800 base 0.20549 dir 0.20833
+    pair it 1000 base 0.20146 dir 0.20523
+    pair it 1200 base 0.21202 dir 0.21923
+    pair it 1400 base 0.25585 dir 0.25941
+    pair it 1600 base 0.22225 dir 0.22666
+    pair it 1800 base 0.22264 dir 0.22825
+    pair it 2000 base 0.19128 dir 0.19381
+    pair it 2200 base 0.20461 dir 0.21384
+    pair it 2400 base 0.17281 dir 0.18810
+    pair it 2600 base 0.17544 dir 0.18274
+    pair it 2800 base 0.17375 dir 0.17759
+    pair it 3000 base 0.15922 dir 0.17394
+  seed12 k16 inter eagm_hist_dir          ret -0.004529 fail 0.00
+  seed12 k16 extra eagm_hist_dir          ret -0.005974 fail 0.25
+  seed12 k16 inter eagm_histc_dir         ret -0.003896 fail 0.00
+  seed12 k16 extra eagm_histc_dir         ret -0.005405 fail 0.25
+==== Stage6B.2 HistC seed 13 ====
+  seed13 param match: HistC=69450 HistWide(h=74)=69662 Hist64=63882
+    mc it 200 loss 0.38429
+    mc it 400 loss 0.30011
+    mc it 600 loss 0.25532
+    mc it 800 loss 0.29379
+    mc it 1000 loss 0.33347
+    mc it 1200 loss 0.14777
+    mc it 1400 loss 0.20442
+    mc it 1600 loss 0.18287
+    mc it 1800 loss 0.20795
+    mc it 2000 loss 0.32723
+    mc it 2200 loss 0.22043
+    mc it 2400 loss 0.33851
+    mc it 2600 loss 0.19543
+    mc it 2800 loss 0.17683
+    mc it 3000 loss 0.18525
+    pair it 200 base 0.50415 dir 0.50789
+    pair it 400 base 0.55179 dir 0.56635
+    pair it 600 base 0.38627 dir 0.39209
+    pair it 800 base 0.33517 dir 0.33917
+    pair it 1000 base 0.33020 dir 0.33292
+    pair it 1200 base 0.37135 dir 0.37344
+    pair it 1400 base 0.33965 dir 0.34228
+    pair it 1600 base 0.34855 dir 0.35094
+    pair it 1800 base 0.29813 dir 0.30044
+    pair it 2000 base 0.33428 dir 0.33836
+    pair it 2200 base 0.36764 dir 0.42112
+    pair it 2400 base 0.36552 dir 0.37735
+    pair it 2600 base 0.34403 dir 0.35595
+    pair it 2800 base 0.31142 dir 0.31769
+    pair it 3000 base 0.35711 dir 0.39893
+    pair it 200 base 0.50549 dir 0.50489
+    pair it 400 base 0.32240 dir 0.31307
+    pair it 600 base 0.30288 dir 0.30738
+    pair it 800 base 0.27844 dir 0.29051
+    pair it 1000 base 0.38676 dir 0.41269
+    pair it 1200 base 0.26521 dir 0.26895
+    pair it 1400 base 0.30894 dir 0.30579
+    pair it 1600 base 0.24920 dir 0.25492
+    pair it 1800 base 0.21675 dir 0.22752
+    pair it 2000 base 0.22038 dir 0.22539
+    pair it 2200 base 0.20500 dir 0.21338
+    pair it 2400 base 0.28590 dir 0.29128
+    pair it 2600 base 0.20218 dir 0.20699
+    pair it 2800 base 0.26068 dir 0.26176
+    pair it 3000 base 0.17530 dir 0.18361
+    pair it 200 base 0.42442 dir 0.42817
+    pair it 400 base 0.36214 dir 0.38576
+    pair it 600 base 0.21392 dir 0.23008
+    pair it 800 base 0.27971 dir 0.27867
+    pair it 1000 base 0.33700 dir 0.33146
+    pair it 1200 base 0.19206 dir 0.19249
+    pair it 1400 base 0.19998 dir 0.20958
+    pair it 1600 base 0.19524 dir 0.19751
+    pair it 1800 base 0.17681 dir 0.17733
+    pair it 2000 base 0.24126 dir 0.24850
+    pair it 2200 base 0.16554 dir 0.17003
+    pair it 2400 base 0.19580 dir 0.20355
+    pair it 2600 base 0.30766 dir 0.31198
+    pair it 2800 base 0.22579 dir 0.23762
+    pair it 3000 base 0.20989 dir 0.21037
+    pair it 200 base 0.68725 dir 0.68911
+    pair it 400 base 0.35214 dir 0.35466
+    pair it 600 base 0.29124 dir 0.30387
+    pair it 800 base 0.32120 dir 0.33581
+    pair it 1000 base 0.26090 dir 0.27038
+    pair it 1200 base 0.25382 dir 0.26398
+    pair it 1400 base 0.23975 dir 0.24890
+    pair it 1600 base 0.24831 dir 0.25709
+    pair it 1800 base 0.23274 dir 0.24293
+    pair it 2000 base 0.26348 dir 0.25847
+    pair it 2200 base 0.24258 dir 0.25108
+    pair it 2400 base 0.18812 dir 0.19367
+    pair it 2600 base 0.34466 dir 0.36989
+    pair it 2800 base 0.20098 dir 0.20868
+    pair it 3000 base 0.19645 dir 0.21031
+    pair it 200 base 0.29361 dir 0.29463
+    pair it 400 base 0.31687 dir 0.31661
+    pair it 600 base 0.30459 dir 0.29780
+    pair it 800 base 0.23378 dir 0.24449
+    pair it 1000 base 0.28647 dir 0.29552
+    pair it 1200 base 0.22353 dir 0.22395
+    pair it 1400 base 0.17508 dir 0.18120
+    pair it 1600 base 0.28347 dir 0.28894
+    pair it 1800 base 0.21581 dir 0.21775
+    pair it 2000 base 0.20378 dir 0.20721
+    pair it 2200 base 0.19700 dir 0.19565
+    pair it 2400 base 0.18847 dir 0.19465
+    pair it 2600 base 0.16783 dir 0.17220
+    pair it 2800 base 0.19676 dir 0.20156
+    pair it 3000 base 0.18047 dir 0.19225
+  seed13 k8 inter mc                     nmse 0.276 cosF 0.456 ret -0.004845 fail 0.00 ΔR 0.000746179
+  seed13 k8 extra mc                     nmse 0.556 cosF 0.428 ret -0.006158 fail 0.17 ΔR 0.000566371
+  seed13 k8 inter eagm_base              nmse 0.269 cosF 0.292 ret -0.005928 fail 0.83 ΔR -0.000335952
+  seed13 k8 extra eagm_base              nmse 0.536 cosF 0.236 ret -0.007305 fail 0.92 ΔR -0.000580505
+  seed13 k8 inter eagm_dir_matched       nmse 0.265 cosF 0.680 ret -0.004222 fail 0.00 ΔR 0.00136921
+  seed13 k8 extra eagm_dir_matched       nmse 0.539 cosF 0.643 ret -0.005673 fail 0.25 ΔR 0.00105136
+  seed13 k8 inter eagm_hist              nmse 0.256 cosF 0.461 ret -0.004765 fail 0.00 ΔR 0.000826219
+  seed13 k8 extra eagm_hist              nmse 0.512 cosF 0.426 ret -0.006069 fail 0.33 ΔR 0.000654857
+    probe eagm_hist: mean|corr|=0.5546825707149702
+  seed13 k8 inter eagm_hist_dir          nmse 0.265 cosF 0.480 ret -0.004333 fail 0.00 ΔR 0.0012589
+  seed13 k8 extra eagm_hist_dir          nmse 0.528 cosF 0.459 ret -0.005729 fail 0.17 ΔR 0.000995632
+    probe eagm_hist_dir: mean|corr|=0.5728990254387106
+  seed13 k8 inter eagm_histc_dir         nmse 0.256 cosF 0.605 ret -0.004753 fail 0.08 ΔR 0.000838555
+  seed13 k8 extra eagm_histc_dir         nmse 0.515 cosF 0.604 ret -0.005920 fail 0.17 ΔR 0.000804695
+    probe eagm_histc_dir: mean|corr|=0.6765202620028773
+  seed13 k8 inter eagm_hist_wide_dir     nmse 0.261 cosF 0.555 ret -0.003855 fail 0.00 ΔR 0.00173674
+  seed13 k8 extra eagm_hist_wide_dir     nmse 0.524 cosF 0.523 ret -0.005077 fail 0.00 ΔR 0.00164755
+    probe eagm_hist_wide_dir: mean|corr|=0.6046560324031192
+  seed13 k8 inter eagm_histc_shuf_dir    nmse 0.259 cosF 0.719 ret -0.004702 fail 0.00 ΔR 0.000889935
+  seed13 k8 extra eagm_histc_shuf_dir    nmse 0.521 cosF 0.707 ret -0.005854 fail 0.17 ΔR 0.00086989
+    probe eagm_histc_shuf_dir: mean|corr|=0.6600184876648834
+    pair it 200 base 0.45045 dir 0.45195
+    pair it 400 base 0.42458 dir 0.44134
+    pair it 600 base 0.28686 dir 0.30484
+    pair it 800 base 0.31318 dir 0.32349
+    pair it 1000 base 0.30808 dir 0.31284
+    pair it 1200 base 0.29073 dir 0.30868
+    pair it 1400 base 0.29317 dir 0.29552
+    pair it 1600 base 0.27013 dir 0.27618
+    pair it 1800 base 0.23716 dir 0.24433
+    pair it 2000 base 0.34333 dir 0.35652
+    pair it 2200 base 0.22967 dir 0.23940
+    pair it 2400 base 0.23961 dir 0.24751
+    pair it 2600 base 0.28576 dir 0.28404
+    pair it 2800 base 0.26073 dir 0.27364
+    pair it 3000 base 0.22272 dir 0.23128
+    pair it 200 base 0.35350 dir 0.34990
+    pair it 400 base 0.26755 dir 0.27609
+    pair it 600 base 0.20172 dir 0.21466
+    pair it 800 base 0.25278 dir 0.25875
+    pair it 1000 base 0.21079 dir 0.20931
+    pair it 1200 base 0.23236 dir 0.23794
+    pair it 1400 base 0.19083 dir 0.19407
+    pair it 1600 base 0.25296 dir 0.25466
+    pair it 1800 base 0.19985 dir 0.19825
+    pair it 2000 base 0.19151 dir 0.18917
+    pair it 2200 base 0.30137 dir 0.31319
+    pair it 2400 base 0.20987 dir 0.21880
+    pair it 2600 base 0.16689 dir 0.16634
+    pair it 2800 base 0.18148 dir 0.18628
+    pair it 3000 base 0.14423 dir 0.14706
+  seed13 k4 inter eagm_hist_dir          ret -0.003863 fail 0.00
+  seed13 k4 extra eagm_hist_dir          ret -0.005247 fail 0.00
+  seed13 k4 inter eagm_histc_dir         ret -0.004215 fail 0.00
+  seed13 k4 extra eagm_histc_dir         ret -0.005519 fail 0.08
+    pair it 200 base 0.55160 dir 0.56002
+    pair it 400 base 0.40019 dir 0.43377
+    pair it 600 base 0.27285 dir 0.28362
+    pair it 800 base 0.29182 dir 0.28078
+    pair it 1000 base 0.25063 dir 0.23842
+    pair it 1200 base 0.21477 dir 0.21879
+    pair it 1400 base 0.20324 dir 0.20139
+    pair it 1600 base 0.20981 dir 0.21661
+    pair it 1800 base 0.20791 dir 0.20991
+    pair it 2000 base 0.20788 dir 0.21263
+    pair it 2200 base 0.24439 dir 0.24222
+    pair it 2400 base 0.23472 dir 0.24226
+    pair it 2600 base 0.20322 dir 0.20826
+    pair it 2800 base 0.18550 dir 0.20100
+    pair it 3000 base 0.16482 dir 0.16853
+    pair it 200 base 0.37264 dir 0.36966
+    pair it 400 base 0.23806 dir 0.24097
+    pair it 600 base 0.21093 dir 0.21261
+    pair it 800 base 0.20791 dir 0.21393
+    pair it 1000 base 0.21556 dir 0.21632
+    pair it 1200 base 0.23046 dir 0.23288
+    pair it 1400 base 0.18290 dir 0.18312
+    pair it 1600 base 0.17427 dir 0.17498
+    pair it 1800 base 0.19955 dir 0.20249
+    pair it 2000 base 0.20414 dir 0.20928
+    pair it 2200 base 0.20224 dir 0.20721
+    pair it 2400 base 0.19281 dir 0.19692
+    pair it 2600 base 0.18269 dir 0.18637
+    pair it 2800 base 0.16787 dir 0.17416
+    pair it 3000 base 0.15482 dir 0.16073
+  seed13 k16 inter eagm_hist_dir          ret -0.003939 fail 0.00
+  seed13 k16 extra eagm_hist_dir          ret -0.005209 fail 0.00
+  seed13 k16 inter eagm_histc_dir         ret -0.003964 fail 0.00
+  seed13 k16 extra eagm_histc_dir         ret -0.005283 fail 0.00
+==== Stage6B.2 HistC seed 14 ====
+  seed14 param match: HistC=69450 HistWide(h=74)=69662 Hist64=63882
+    mc it 200 loss 0.34913
+    mc it 400 loss 0.31563
+    mc it 600 loss 0.35230
+    mc it 800 loss 0.21991
+    mc it 1000 loss 0.24342
+    mc it 1200 loss 0.22577
+    mc it 1400 loss 0.24185
+    mc it 1600 loss 0.20923
+    mc it 1800 loss 0.22505
+    mc it 2000 loss 0.22496
+    mc it 2200 loss 0.31430
+    mc it 2400 loss 0.31413
+    mc it 2600 loss 0.22980
+    mc it 2800 loss 0.23198
+    mc it 3000 loss 0.23796
+    pair it 200 base 0.44796 dir 0.44826
+    pair it 400 base 0.38700 dir 0.39082
+    pair it 600 base 0.37316 dir 0.37605
+    pair it 800 base 0.35373 dir 0.36274
+    pair it 1000 base 0.37708 dir 0.37914
+    pair it 1200 base 0.35702 dir 0.36040
+    pair it 1400 base 0.36990 dir 0.37064
+    pair it 1600 base 0.32303 dir 0.32451
+    pair it 1800 base 0.33946 dir 0.34212
+    pair it 2000 base 0.34203 dir 0.34649
+    pair it 2200 base 0.37251 dir 0.37398
+    pair it 2400 base 0.33551 dir 0.33763
+    pair it 2600 base 0.33219 dir 0.33478
+    pair it 2800 base 0.35949 dir 0.36210
+    pair it 3000 base 0.31469 dir 0.31525
+    pair it 200 base 0.46303 dir 0.46473
+    pair it 400 base 0.32613 dir 0.34869
+    pair it 600 base 0.26924 dir 0.28172
+    pair it 800 base 0.27215 dir 0.27783
+    pair it 1000 base 0.26015 dir 0.26928
+    pair it 1200 base 0.27939 dir 0.28294
+    pair it 1400 base 0.26029 dir 0.26480
+    pair it 1600 base 0.26235 dir 0.26640
+    pair it 1800 base 0.29250 dir 0.30336
+    pair it 2000 base 0.24679 dir 0.25405
+    pair it 2200 base 0.26402 dir 0.27127
+    pair it 2400 base 0.24225 dir 0.24961
+    pair it 2600 base 0.23342 dir 0.24229
+    pair it 2800 base 0.27763 dir 0.28885
+    pair it 3000 base 0.24663 dir 0.25319
+    pair it 200 base 0.39987 dir 0.40211
+    pair it 400 base 0.31754 dir 0.31737
+    pair it 600 base 0.22983 dir 0.23782
+    pair it 800 base 0.27175 dir 0.27291
+    pair it 1000 base 0.24414 dir 0.24469
+    pair it 1200 base 0.24153 dir 0.24231
+    pair it 1400 base 0.39410 dir 0.39325
+    pair it 1600 base 0.26059 dir 0.26154
+    pair it 1800 base 0.23185 dir 0.23382
+    pair it 2000 base 0.30926 dir 0.31021
+    pair it 2200 base 0.18576 dir 0.19114
+    pair it 2400 base 0.21990 dir 0.22265
+    pair it 2600 base 0.22413 dir 0.22735
+    pair it 2800 base 0.17210 dir 0.18116
+    pair it 3000 base 0.19993 dir 0.20518
+    pair it 200 base 0.55445 dir 0.55640
+    pair it 400 base 0.35223 dir 0.35189
+    pair it 600 base 0.31028 dir 0.32037
+    pair it 800 base 0.24490 dir 0.25041
+    pair it 1000 base 0.28928 dir 0.28898
+    pair it 1200 base 0.31036 dir 0.30950
+    pair it 1400 base 0.26138 dir 0.26335
+    pair it 1600 base 0.29674 dir 0.30181
+    pair it 1800 base 0.23007 dir 0.23843
+    pair it 2000 base 0.23616 dir 0.24186
+    pair it 2200 base 0.25157 dir 0.25411
+    pair it 2400 base 0.25641 dir 0.26202
+    pair it 2600 base 0.20237 dir 0.20951
+    pair it 2800 base 0.23793 dir 0.25233
+    pair it 3000 base 0.22787 dir 0.23724
+    pair it 200 base 0.50896 dir 0.50862
+    pair it 400 base 0.27037 dir 0.27152
+    pair it 600 base 0.26946 dir 0.27482
+    pair it 800 base 0.32955 dir 0.33374
+    pair it 1000 base 0.28155 dir 0.28275
+    pair it 1200 base 0.23240 dir 0.23336
+    pair it 1400 base 0.25359 dir 0.25518
+    pair it 1600 base 0.20513 dir 0.20742
+    pair it 1800 base 0.23426 dir 0.24230
+    pair it 2000 base 0.19586 dir 0.19839
+    pair it 2200 base 0.22026 dir 0.22265
+    pair it 2400 base 0.21480 dir 0.22583
+    pair it 2600 base 0.22451 dir 0.22957
+    pair it 2800 base 0.15922 dir 0.16460
+    pair it 3000 base 0.20709 dir 0.21220
+  seed14 k8 inter mc                     nmse 0.251 cosF 0.300 ret -0.006798 fail 1.00 ΔR -0.0012087
+  seed14 k8 extra mc                     nmse 0.493 cosF 0.304 ret -0.008294 fail 1.00 ΔR -0.00157997
+  seed14 k8 inter eagm_base              nmse 0.243 cosF 0.212 ret -0.005927 fail 0.50 ΔR -0.000337498
+  seed14 k8 extra eagm_base              nmse 0.471 cosF 0.177 ret -0.007212 fail 0.83 ΔR -0.000498297
+  seed14 k8 inter eagm_dir_matched       nmse 0.243 cosF 0.855 ret -0.002940 fail 0.00 ΔR 0.00264936
+  seed14 k8 extra eagm_dir_matched       nmse 0.471 cosF 0.850 ret -0.004231 fail 0.17 ΔR 0.00248301
+  seed14 k8 inter eagm_hist              nmse 0.215 cosF 0.579 ret -0.004963 fail 0.00 ΔR 0.00062632
+  seed14 k8 extra eagm_hist              nmse 0.435 cosF 0.568 ret -0.006331 fail 0.17 ΔR 0.000382567
+    probe eagm_hist: mean|corr|=0.5246656473997173
+  seed14 k8 inter eagm_hist_dir          nmse 0.224 cosF 0.674 ret -0.003278 fail 0.00 ΔR 0.00231132
+  seed14 k8 extra eagm_hist_dir          nmse 0.448 cosF 0.661 ret -0.004637 fail 0.17 ΔR 0.00207722
+    probe eagm_hist_dir: mean|corr|=0.5489052173626036
+  seed14 k8 inter eagm_histc_dir         nmse 0.209 cosF 0.811 ret -0.002730 fail 0.00 ΔR 0.00285963
+  seed14 k8 extra eagm_histc_dir         nmse 0.425 cosF 0.816 ret -0.003979 fail 0.00 ΔR 0.00273485
+    probe eagm_histc_dir: mean|corr|=0.6507684750994754
+  seed14 k8 inter eagm_hist_wide_dir     nmse 0.222 cosF 0.827 ret -0.003991 fail 0.00 ΔR 0.00159814
+  seed14 k8 extra eagm_hist_wide_dir     nmse 0.444 cosF 0.806 ret -0.005237 fail 0.08 ΔR 0.00147717
+    probe eagm_hist_wide_dir: mean|corr|=0.6682232703069735
+  seed14 k8 inter eagm_histc_shuf_dir    nmse 0.214 cosF 0.810 ret -0.003711 fail 0.00 ΔR 0.00187827
+  seed14 k8 extra eagm_histc_shuf_dir    nmse 0.430 cosF 0.799 ret -0.005030 fail 0.00 ΔR 0.00168422
+    probe eagm_histc_shuf_dir: mean|corr|=0.652520344364775
+    pair it 200 base 0.41136 dir 0.41302
+    pair it 400 base 0.36184 dir 0.36994
+    pair it 600 base 0.32791 dir 0.34756
+    pair it 800 base 0.31029 dir 0.31920
+    pair it 1000 base 0.30100 dir 0.31072
+    pair it 1200 base 0.26483 dir 0.27008
+    pair it 1400 base 0.32901 dir 0.32963
+    pair it 1600 base 0.30428 dir 0.31625
+    pair it 1800 base 0.29928 dir 0.30054
+    pair it 2000 base 0.25977 dir 0.26330
+    pair it 2200 base 0.40835 dir 0.41108
+    pair it 2400 base 0.27356 dir 0.27721
+    pair it 2600 base 0.26934 dir 0.27309
+    pair it 2800 base 0.27089 dir 0.27604
+    pair it 3000 base 0.22763 dir 0.23410
+    pair it 200 base 0.46937 dir 0.46894
+    pair it 400 base 0.30149 dir 0.30041
+    pair it 600 base 0.28726 dir 0.28984
+    pair it 800 base 0.31293 dir 0.31382
+    pair it 1000 base 0.21660 dir 0.21792
+    pair it 1200 base 0.24837 dir 0.25627
+    pair it 1400 base 0.32403 dir 0.32485
+    pair it 1600 base 0.23458 dir 0.23709
+    pair it 1800 base 0.22711 dir 0.22699
+    pair it 2000 base 0.22753 dir 0.23129
+    pair it 2200 base 0.20121 dir 0.19972
+    pair it 2400 base 0.19718 dir 0.20074
+    pair it 2600 base 0.18157 dir 0.18697
+    pair it 2800 base 0.21032 dir 0.21521
+    pair it 3000 base 0.19389 dir 0.19703
+  seed14 k4 inter eagm_hist_dir          ret -0.003507 fail 0.00
+  seed14 k4 extra eagm_hist_dir          ret -0.004881 fail 0.17
+  seed14 k4 inter eagm_histc_dir         ret -0.002837 fail 0.00
+  seed14 k4 extra eagm_histc_dir         ret -0.004295 fail 0.17
+    pair it 200 base 0.46079 dir 0.46161
+    pair it 400 base 0.38642 dir 0.37603
+    pair it 600 base 0.25685 dir 0.26505
+    pair it 800 base 0.23408 dir 0.22948
+    pair it 1000 base 0.22519 dir 0.20997
+    pair it 1200 base 0.24794 dir 0.24677
+    pair it 1400 base 0.22929 dir 0.23137
+    pair it 1600 base 0.23365 dir 0.23881
+    pair it 1800 base 0.24301 dir 0.24577
+    pair it 2000 base 0.27761 dir 0.28012
+    pair it 2200 base 0.24538 dir 0.25028
+    pair it 2400 base 0.24478 dir 0.25047
+    pair it 2600 base 0.20982 dir 0.21699
+    pair it 2800 base 0.27530 dir 0.28935
+    pair it 3000 base 0.21015 dir 0.22005
+    pair it 200 base 0.30857 dir 0.31047
+    pair it 400 base 0.28374 dir 0.29024
+    pair it 600 base 0.26193 dir 0.26591
+    pair it 800 base 0.23607 dir 0.23608
+    pair it 1000 base 0.30940 dir 0.31167
+    pair it 1200 base 0.26371 dir 0.26439
+    pair it 1400 base 0.20365 dir 0.20420
+    pair it 1600 base 0.21230 dir 0.21537
+    pair it 1800 base 0.31100 dir 0.30274
+    pair it 2000 base 0.18934 dir 0.19269
+    pair it 2200 base 0.19678 dir 0.19907
+    pair it 2400 base 0.19322 dir 0.20455
+    pair it 2600 base 0.22151 dir 0.22441
+    pair it 2800 base 0.17870 dir 0.18085
+    pair it 3000 base 0.22377 dir 0.22597
+  seed14 k16 inter eagm_hist_dir          ret -0.002663 fail 0.00
+  seed14 k16 extra eagm_hist_dir          ret -0.004069 fail 0.17
+  seed14 k16 inter eagm_histc_dir         ret -0.002581 fail 0.00
+  seed14 k16 extra eagm_histc_dir         ret -0.003932 fail 0.17
+{
+  "interpolation": {
+    "histc_dir_minus_hist_dir": {
+      "mean": 0.00031326362807081366,
+      "std": 0.0005371489762372998,
+      "median": 0.00035170489669248024,
+      "ci95": [
+        -0.00012780656217017847,
+        0.0007347632288959618
+      ],
+      "n": 5,
+      "n_positive": 4,
+      "per_seed": [
+        6.722103922232906e-05,
+        0.00035170489669248024,
+        0.0010194274682796406,
+        -0.0004203479642589398,
+        0.0005483127004185582
+      ],
+      "note": "Seed-level paired bootstrap (n=5)."
+    },
+    "histc_dir_minus_mc": {
+      "mean": 0.0008214757397780027,
+      "std": 0.0018536225985451532,
+      "median": 9.237585083182991e-05,
+      "ci95": [
+        -0.00022178491808283782,
+        0.0024779490984850887
+      ],
+      "n": 5,
+      "n_positive": 3,
+      "per_seed": [
+        -5.155122895891904e-05,
+        0.000526020900872397,
+        -0.0005277980874425557,
+        9.237585083182991e-05,
+        0.004068331263587261
+      ],
+      "note": "Seed-level paired bootstrap (n=5)."
+    },
+    "histc_dir_minus_hist_wide": {
+      "mean": -9.833098396169531e-05,
+      "std": 0.0008299577590767746,
+      "median": -0.00022773011441247406,
+      "ci95": [
+        -0.0006423399112475652,
+        0.0005925870473944983
+      ],
+      "n": 5,
+      "n_positive": 1,
+      "per_seed": [
+        -3.342673263271017e-05,
+        -0.0005937945930631853,
+        -0.00022773011441247406,
+        -0.0008981901278494906,
+        0.0012614866481493836
+      ],
+      "note": "Seed-level paired bootstrap (n=5)."
+    },
+    "histc_dir_minus_histc_shuf": {
+      "mean": -0.000141606717954807,
+      "std": 0.0008772673578184499,
+      "median": -5.683974277340305e-05,
+      "ci95": [
+        -0.0009127090240781861,
+        0.000557869136056661
+      ],
+      "n": 5,
+      "n_positive": 1,
+      "per_seed": [
+        -5.683974277340305e-05,
+        -0.0014832885449480413,
+        -9.788046086007477e-05,
+        -5.138013583144349e-05,
+        0.0009813552946389276
+      ],
+      "note": "Seed-level paired bootstrap (n=5)."
+    },
+    "hist_dir_minus_mc": {
+      "mean": 0.0005082121117071889,
+      "std": 0.00185744572494502,
+      "median": 0.0001743160041799167,
+      "ci95": [
+        -0.0007909273695791806,
+        0.0021231198851009553
+      ],
+      "n": 5,
+      "n_positive": 3,
+      "per_seed": [
+        -0.0001187722681812481,
+        0.0001743160041799167,
+        -0.0015472255557221963,
+        0.0005127238150907697,
+        0.0035200185631687024
+      ],
+      "note": "Seed-level paired bootstrap (n=5)."
+    },
+    "dir_minus_base": {
+      "mean": 0.0023639277563153364,
+      "std": 0.0009064508895186562,
+      "median": 0.0024457257905628514,
+      "ci95": [
+        0.0016642511059459636,
+        0.003063604406684709
+      ],
+      "n": 5,
+      "n_positive": 5,
+      "per_seed": [
+        0.0034492915429929966,
+        0.0024457257905628514,
+        0.0012326041877970635,
+        0.0017051606817864206,
+        0.0029868565784373505
+      ],
+      "note": "Seed-level paired bootstrap (n=5)."
+    }
+  },
+  "extrapolation": {
+    "histc_dir_minus_hist_dir": {
+      "mean": 0.00031819612268468335,
+      "std": 0.00042163233828213675,
+      "median": 0.00033760585052821247,
+      "ci95": [
+        -1.27608939457605e-05,
+        0.0006491531393151272
+      ],
+      "n": 5,
+      "n_positive": 3,
+      "per_seed": [
+        -9.768369906030562e-06,
+        0.00033760585052821247,
+        0.0007964480903823144,
+        -0.00019093679022247692,
+        0.0006576318326413973
+      ],
+      "note": "Seed-level paired bootstrap (n=5)."
+    },
+    "histc_dir_minus_mc": {
+      "mean": 0.0008858396242175584,
+      "std": 0.0019846966607887546,
+      "median": 0.00023832404800397562,
+      "ci95": [
+        -0.00034008119381746425,
+        0.0026842216997930023
+      ],
+      "n": 5,
+      "n_positive": 4,
+      "per_seed": [
+        0.00015888621681087785,
+        0.0005441236185866139,
+        -0.000826955896632695,
+        0.00023832404800397562,
+        0.00431482013431902
+      ],
+      "note": "Seed-level paired bootstrap (n=5)."
+    },
+    "histc_dir_minus_hist_wide": {
+      "mean": -0.00018432518471839243,
+      "std": 0.0008540021909344595,
+      "median": -0.00041175183166124955,
+      "ci95": [
+        -0.0007302649428470408,
+        0.0005564821030365904
+      ],
+      "n": 5,
+      "n_positive": 1,
+      "per_seed": [
+        -0.00014776637848896643,
+        -0.0007769271514232023,
+        -0.00041175183166124955,
+        -0.000842859289863775,
+        0.001257678727845231
+      ],
+      "note": "Seed-level paired bootstrap (n=5)."
+    },
+    "histc_dir_minus_histc_shuf": {
+      "mean": -0.00014787275437119063,
+      "std": 0.0009022302592022991,
+      "median": -7.092863397408205e-05,
+      "ci95": [
+        -0.000923578258569778,
+        0.0005838218334035009
+      ],
+      "n": 5,
+      "n_positive": 1,
+      "per_seed": [
+        -7.092863397408205e-05,
+        -0.0014920113416335753,
+        -0.0001618628964698077,
+        -6.519446559895281e-05,
+        0.0010506335658204647
+      ],
+      "note": "Seed-level paired bootstrap (n=5)."
+    },
+    "hist_dir_minus_mc": {
+      "mean": 0.0005676435015328751,
+      "std": 0.0019140748339733689,
+      "median": 0.0002065177680584014,
+      "ci95": [
+        -0.0008468866709520349,
+        0.0022693474519616353
+      ],
+      "n": 5,
+      "n_positive": 4,
+      "per_seed": [
+        0.00016865458671690842,
+        0.0002065177680584014,
+        -0.0016234039870150095,
+        0.00042926083822645254,
+        0.0036571883016776226
+      ],
+      "note": "Seed-level paired bootstrap (n=5)."
+    },
+    "dir_minus_base": {
+      "mean": 0.0024080358084228393,
+      "std": 0.0010577481640111283,
+      "median": 0.0026056431981083495,
+      "ci95": [
+        0.0015747299509890913,
+        0.003207465527489783
+      ],
+      "n": 5,
+      "n_positive": 5,
+      "per_seed": [
+        0.0037345367949323804,
+        0.0026056431981083495,
+        0.001086825352935996,
+        0.0016318682713995667,
+        0.002981305424737902
+      ],
+      "note": "Seed-level paired bootstrap (n=5)."
+    }
+  }
+}
+wrote /home/aaa/桌面/汇报/11月论文/eagm_gpu/runs/stage6b2_histc wall 11868.5

@@ -54,10 +54,17 @@ def train_pair(
 
     def eagm_step(model, b, add_dir: bool, it: int):
         nonlocal dir_apps, dir_skips
+        uses_c = bool(getattr(model, "uses_c_obs_hist", False))
         if use_history:
-            y_hat, u_hat, _ = model(
-                tr["x"][b], tr["c_obs"][b], tr["a"][b], tr["x_hist"][b], tr["a_hist"][b]
-            )
+            if uses_c:
+                y_hat, u_hat, _ = model(
+                    tr["x"][b], tr["c_obs"][b], tr["a"][b],
+                    tr["x_hist"][b], tr["a_hist"][b], tr["c_obs_hist"][b],
+                )
+            else:
+                y_hat, u_hat, _ = model(
+                    tr["x"][b], tr["c_obs"][b], tr["a"][b], tr["x_hist"][b], tr["a_hist"][b]
+                )
         else:
             y_hat, u_hat = model(tr["x"][b], tr["c_obs"][b], tr["a"][b])
         dyn = (((y_hat - tr["y"][b]) / model.ystd) ** 2).mean()

@@ -33,10 +33,11 @@ python scripts/run_stage6a_reeval_stage5e.py
 - [x] Reports: `stage6b1_results.md`, `stage6b1_analysis.md`; **stop for human review** (no auto 6B.2).
 - **Outcome (Case C):** Dir−Base **5/5** interp+extrap; Hist+Dir−Mc **3/5** interp (CI includes 0). θ-sat Dir≈0.89 remains high.
 
-## Issue 3 — Stage 6B.2 HistC ablation (P0)
+## Issue 3 — Stage 6B.2 HistC ablation (P0 · approved after Case C)
 
-- Add `c_obs` history to encoder; k ∈ {4,8,16}.
-- Compare Base / Dir / Hist / Hist+Dir / HistC+Dir / Mc.
+- [x] `c_obs` history encoder; k ∈ {4,8,16}; capacity + shuffle controls; exec-state probe.
+- [x] Reports `stage6b2_*.md`; **no auto 6B.3 / 6C**.
+- **Outcome (DROP_HISTC):** HistC fails capacity/shuffle controls; Dir−Base still 5/5. Do not start ExecState.
 
 ## Issue 4 — Stage 6B.3 ExecState prototype (P1 after HistC)
 

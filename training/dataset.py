@@ -53,9 +53,11 @@ def collect_trajectories(
             2 * np.pi * (0.1 + 0.02 * (np.arange(14) % 5))[None, :] * tt[:, None]
         )
         prev_a = np.zeros(14, dtype=np.float64)
-        # Rolling history buffers (pre-step state / previous actions)
+        # Rolling history buffers (pre-step state / previous actions / c_obs)
+        c0 = env.observed_control_state().copy()
         x_buf = [x.copy()] * hist_len
         a_buf = [np.zeros(14, dtype=np.float64)] * hist_len
+        c_obs_buf = [c0.copy()] * hist_len
         h_stack = np.zeros((8, 42), dtype=np.float64)
         h_stack[:, :28] = x
         rows = []
@@ -63,15 +65,20 @@ def collect_trajectories(
             c_full = env.control_state().copy()
             c_obs = env.observed_control_state().copy()
             snap = env.snapshot()
+            # Train-only privileged labels for Stage 6B.2 probes (never model inputs)
+            priv = None
+            if hasattr(env, "privileged_exec_state"):
+                priv = env.privileged_exec_state()
             ctrl_before = env.data.ctrl[env.actuator_ids].copy()
             a = np.clip(
                 0.55 * (refs[t_i] - c_full[:14]) + rng.normal(0, 0.003, 14),
                 -0.03,
                 0.03,
             )
-            # History aligned as (x_{t-k+1:t}, a_{t-k:t-1})
+            # History aligned as (x_{t-k+1:t}, a_{t-k:t-1}, c_obs_{t-k+1:t})
             x_hist = np.stack(x_buf[-hist_len:], axis=0)
             a_hist = np.stack(a_buf[-hist_len:], axis=0)
+            c_obs_hist = np.stack(c_obs_buf[-hist_len:], axis=0)
 
             start = dict(
                 x=x.copy(),
@@ -87,33 +94,42 @@ def collect_trajectories(
                 config_id=config_id,
                 x_hist=x_hist.copy(),
                 a_hist=a_hist.copy(),
+                c_obs_hist=c_obs_hist.copy(),
             )
             x_next = env.step(a)
             u_exec = env.last_true_command.copy()
             ctrl_after = env.data.ctrl[env.actuator_ids].copy()
             if not np.allclose(u_exec, ctrl_after, atol=1e-12):
                 raise RuntimeError("u_exec != data.ctrl after step")
-            rows.append(
-                dict(
-                    x=x.copy(),
-                    y=x_next.copy(),
-                    a=a.copy(),
-                    c=c_full,
-                    c_obs=c_obs,
-                    u_exec=u_exec,
-                    delay=delay,
-                    episode_id=ep,
-                    frame=t_i,
-                    config_id=config_id,
-                    start=start,
-                    x_hist=x_hist,
-                    a_hist=a_hist,
-                    ctrl_before=ctrl_before,
-                )
+            row = dict(
+                x=x.copy(),
+                y=x_next.copy(),
+                a=a.copy(),
+                c=c_full,
+                c_obs=c_obs,
+                u_exec=u_exec,
+                delay=delay,
+                episode_id=ep,
+                frame=t_i,
+                config_id=config_id,
+                start=start,
+                x_hist=x_hist,
+                a_hist=a_hist,
+                c_obs_hist=c_obs_hist,
+                ctrl_before=ctrl_before,
             )
+            if priv is not None:
+                row["exec_state_vector"] = priv["vector"].copy()
+                row["exec_state_scalars"] = np.asarray(
+                    [priv["gain"], priv["extra_lag"], priv["rate_limit"], priv["smooth_beta"]],
+                    dtype=np.float64,
+                )
+                start["exec_state_scalars"] = row["exec_state_scalars"].copy()
+            rows.append(row)
             h_stack = np.concatenate([h_stack[1:], np.concatenate([x, a])[None]], 0)
             x_buf.append(x_next.copy())
             a_buf.append(a.copy())
+            c_obs_buf.append(c_obs.copy())
             prev_a = a.copy()
             x = x_next
         episodes.append(

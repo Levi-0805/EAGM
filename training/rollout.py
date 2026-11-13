@@ -48,15 +48,21 @@ def c_full_step(c, a, lo, hi):
     return torch.cat([target, filt, c[..., 42:56], filt, c[..., 56:57]], -1)
 
 
-def history_shift(obs_hist, act_hist, x_new, a_new):
+def history_shift(obs_hist, act_hist, x_new, a_new, c_obs_hist=None, c_obs_new=None):
     # obs_hist/act_hist: [T, D] or [B,T,D]
     if obs_hist.dim() == 2:
         oh = torch.cat([obs_hist[1:], x_new.unsqueeze(0)], 0)
         ah = torch.cat([act_hist[1:], a_new.unsqueeze(0)], 0)
-        return oh, ah
+        if c_obs_hist is None:
+            return oh, ah
+        ch = torch.cat([c_obs_hist[1:], c_obs_new.unsqueeze(0)], 0)
+        return oh, ah, ch
     oh = torch.cat([obs_hist[:, 1:], x_new.unsqueeze(1)], 1)
     ah = torch.cat([act_hist[:, 1:], a_new.unsqueeze(1)], 1)
-    return oh, ah
+    if c_obs_hist is None:
+        return oh, ah
+    ch = torch.cat([c_obs_hist[:, 1:], c_obs_new.unsqueeze(1)], 1)
+    return oh, ah, ch
 
 
 def imagined_eagm(model, theta, start, horizon=8, use_history: bool = False):
@@ -64,24 +70,42 @@ def imagined_eagm(model, theta, start, horizon=8, use_history: bool = False):
     c_obs = torch.as_tensor(start["c_obs"], dtype=DTYPE)
     prev = torch.as_tensor(start["prev"], dtype=DTYPE)
     refs = torch.as_tensor(start["refs"][:horizon], dtype=DTYPE)
+    uses_c = bool(getattr(model, "uses_c_obs_hist", False))
     if use_history:
         obs_hist = torch.as_tensor(start["x_hist"], dtype=DTYPE)
         act_hist = torch.as_tensor(start["a_hist"], dtype=DTYPE)
+        if uses_c:
+            if "c_obs_hist" not in start:
+                raise KeyError("HistC rollout requires start['c_obs_hist']")
+            c_obs_hist = torch.as_tensor(start["c_obs_hist"], dtype=DTYPE)
     total = theta.sum() * 0
     for k in range(horizon):
         a = actor(theta, x, c_obs[:14], refs[k])
         if use_history:
-            newx, _, _ = model(
-                x.unsqueeze(0), c_obs.unsqueeze(0), a.unsqueeze(0),
-                obs_hist.unsqueeze(0), act_hist.unsqueeze(0),
-            )
+            if uses_c:
+                newx, _, _ = model(
+                    x.unsqueeze(0), c_obs.unsqueeze(0), a.unsqueeze(0),
+                    obs_hist.unsqueeze(0), act_hist.unsqueeze(0), c_obs_hist.unsqueeze(0),
+                )
+            else:
+                newx, _, _ = model(
+                    x.unsqueeze(0), c_obs.unsqueeze(0), a.unsqueeze(0),
+                    obs_hist.unsqueeze(0), act_hist.unsqueeze(0),
+                )
             newx = newx.squeeze(0)
-            obs_hist, act_hist = history_shift(obs_hist, act_hist, newx, a)
+            c_obs_next = c_obs_step(c_obs, a, model.lower, model.upper, float(model.alpha))
+            if uses_c:
+                obs_hist, act_hist, c_obs_hist = history_shift(
+                    obs_hist, act_hist, newx, a, c_obs_hist, c_obs_next
+                )
+            else:
+                obs_hist, act_hist = history_shift(obs_hist, act_hist, newx, a)
+            c_obs = c_obs_next
         else:
             newx, _ = model(x.unsqueeze(0), c_obs.unsqueeze(0), a.unsqueeze(0))
             newx = newx.squeeze(0)
+            c_obs = c_obs_step(c_obs, a, model.lower, model.upper, float(model.alpha))
         total = total + (DISCOUNT ** k) * reward_torch(newx, a, refs[k], prev)
-        c_obs = c_obs_step(c_obs, a, model.lower, model.upper, float(model.alpha))
         x = newx
         prev = a
     return total
