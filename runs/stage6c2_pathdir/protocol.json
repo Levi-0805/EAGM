@@ -1,0 +1,29 @@
+{
+  "parent_commit": "1f25a971bf42d2dbe600e4b62d9870e8e4a870d7",
+  "seeds": [
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "n_dir_labels": 12,
+  "feasible_fd": true,
+  "path_fracs": [
+    0.0,
+    0.2,
+    0.4,
+    0.6,
+    0.8,
+    1.0
+  ],
+  "matched": [
+    "arch",
+    "init",
+    "batch_seed",
+    "updates",
+    "lam",
+    "fd_eps",
+    "label_count"
+  ]
+}

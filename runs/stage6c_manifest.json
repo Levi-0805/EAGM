@@ -1,0 +1,63 @@
+{
+  "stage": "6C",
+  "branch": "stage6c-path-aware-saturation",
+  "parent_commit": "1f25a971bf42d2dbe600e4b62d9870e8e4a870d7",
+  "decision": {
+    "path_dir": "STOP_PATHDIR",
+    "dir_random": "RETAIN",
+    "stage6d": "DO_NOT_LAUNCH",
+    "paper": "keep_as_independent_branch_not_merge_into_main_manuscript_yet"
+  },
+  "artifacts": {
+    "runs/stage6c0_audit/audit.json": {
+      "sha256": "a23b9c65f37e466766f0ceede2e6af4592871f4b284683c38ee8da80d8cb3a60",
+      "bytes": 3004
+    },
+    "runs/stage6c1_lr_ablation/results.json": {
+      "sha256": "554c37012d87b7ee7cffb98ea3ebbba17c571abc73bb9785a3ea5028ed0b188e",
+      "bytes": 150342
+    },
+    "runs/stage6c1_lr_ablation/protocol.json": {
+      "sha256": "4274110b50e2b0d2f6f18e62ccbc40662849846028ddd9bf926d9afda4fdbf61",
+      "bytes": 224
+    },
+    "runs/stage6c2_pathdir/results.json": {
+      "sha256": "2ba9490fb9256447bd3ff1bca08af0a2dda5a1e59f9c2e86abd89ac24de5a736",
+      "bytes": 57085
+    },
+    "runs/stage6c2_pathdir/protocol.json": {
+      "sha256": "a710caeab2eeffcc7b6f515d60e4febee1c2fe50a21d379fe17b4c6835df9789",
+      "bytes": 363
+    }
+  },
+  "config_hashes": {
+    "stage6c0": "0dd50cbde2ec681f",
+    "stage6c1": "a92f06aca125728d",
+    "stage6c2": "2b577be1c0b14bbf"
+  },
+  "decisions_from_runs": {
+    "stage6c2_gate": {
+      "primary": "interp_path_minus_random",
+      "rule": "mean>0 and ci95_lo>0 and n_positive>=4 \u2192 KEEP; else if n_pos>=4 & mean>0 \u2192 SOFT; else STOP",
+      "decision": "STOP_PATHDIR",
+      "primary_stats": {
+        "mean": -0.0003907187651460948,
+        "std": 0.0009205050673941116,
+        "median": -0.0005148770952624381,
+        "ci95": [
+          -0.0010893657279619784,
+          0.00032671849610552644
+        ],
+        "n": 5,
+        "n_positive": 2,
+        "per_seed": [
+          0.00026336919413137705,
+          -0.0015445295156470405,
+          -0.0005148770952624381,
+          0.0007638898476743138,
+          -0.0009214462566266863
+        ]
+      }
+    }
+  }
+}

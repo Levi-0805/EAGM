@@ -1,0 +1,768 @@
+{
+  "seed": 13,
+  "stage": "6C.1",
+  "parent_commit": "1f25a971bf42d2dbe600e4b62d9870e8e4a870d7",
+  "source_ckpts": "/home/aaa/\u684c\u9762/\u6c47\u62a5/11\u6708\u8bba\u6587/eagm_gpu/runs/stage6b1_confirm/seed13",
+  "policy_updates": 50,
+  "lrs": [
+    0.03,
+    0.015,
+    0.0075
+  ],
+  "results": {
+    "mc": {
+      "0.03": {
+        "lr": 0.03,
+        "val_return_mean": -0.0038485814352809834,
+        "val_action_clip": 0.0,
+        "interpolation": {
+          "policy_return_mean": -0.005012102227235867,
+          "delta_vs_theta0": 0.0008015283508955453,
+          "fail_rate_vs_theta0": 0.0,
+          "theta_param_sat_frac": 0.8571428571428571,
+          "mean_action_clip_frac": 0.0
+        },
+        "extrapolation": {
+          "policy_return_mean": -0.006291762644295957,
+          "delta_vs_theta0": 0.0006807104196275898,
+          "fail_rate_vs_theta0": 0.08333333333333333,
+          "theta_param_sat_frac": 0.8571428571428571,
+          "mean_action_clip_frac": 0.0
+        },
+        "diagnostics": {
+          "final_theta_param_sat_frac": 0.8571428571428571,
+          "mean_rho_proj": 0.2941941802795047,
+          "final_rho_proj": 0.9829773096870618,
+          "mean_outward_pressure": 0.34,
+          "mean_theta_param_sat_frac": 0.24857142857142858,
+          "first_hit_mean": 36.5,
+          "sat_at_updates": {
+            "1": 0.0,
+            "10": 0.0,
+            "20": 0.0,
+            "30": 0.0,
+            "40": 0.7857142857142857,
+            "50": 0.8571428571428571
+          },
+          "rho_at_updates": {
+            "1": 0.0,
+            "10": 0.0,
+            "20": 0.0,
+            "30": 0.0,
+            "40": 0.9506466841819903,
+            "50": 0.9829773096870618
+          },
+          "lr": 0.03,
+          "updates": 50
+        },
+        "physical_curve": [
+          {
+            "mean_return": -0.004721912113312362,
+            "action_clip": 0.0,
+            "update": 0,
+            "theta_param_sat_frac": 0.0
+          },
+          {
+            "mean_return": -0.004342036935971787,
+            "action_clip": 0.0,
+            "update": 10,
+            "theta_param_sat_frac": 0.0
+          },
+          {
+            "mean_return": -0.004106401261059363,
+            "action_clip": 0.0,
+            "update": 20,
+            "theta_param_sat_frac": 0.0
+          },
+          {
+            "mean_return": -0.0039720604225284796,
+            "action_clip": 0.0,
+            "update": 30,
+            "theta_param_sat_frac": 0.0
+          },
+          {
+            "mean_return": -0.003909557011150152,
+            "action_clip": 0.0,
+            "update": 40,
+            "theta_param_sat_frac": 0.7857142857142857
+          },
+          {
+            "mean_return": -0.0038485814352809834,
+            "action_clip": 0.0,
+            "update": 50,
+            "theta_param_sat_frac": 0.8571428571428571
+          }
+        ]
+      },
+      "0.015": {
+        "lr": 0.015,
+        "val_return_mean": -0.004017932599071968,
+        "val_action_clip": 0.0,
+        "interpolation": {
+          "policy_return_mean": -0.005105767924603206,
+          "delta_vs_theta0": 0.0007078626535282066,
+          "fail_rate_vs_theta0": 0.0,
+          "theta_param_sat_frac": 0.0,
+          "mean_action_clip_frac": 0.0
+        },
+        "extrapolation": {
+          "policy_return_mean": -0.006302876598953277,
+          "delta_vs_theta0": 0.0006695964649702689,
+          "fail_rate_vs_theta0": 0.0,
+          "theta_param_sat_frac": 0.0,
+          "mean_action_clip_frac": 0.0
+        },
+        "diagnostics": {
+          "final_theta_param_sat_frac": 0.0,
+          "mean_rho_proj": 0.0,
+          "final_rho_proj": 0.0,
+          "mean_outward_pressure": 0.0,
+          "mean_theta_param_sat_frac": 0.0,
+          "first_hit_mean": null,
+          "sat_at_updates": {
+            "1": 0.0,
+            "10": 0.0,
+            "20": 0.0,
+            "30": 0.0,
+            "40": 0.0,
+            "50": 0.0
+          },
+          "rho_at_updates": {
+            "1": 0.0,
+            "10": 0.0,
+            "20": 0.0,
+            "30": 0.0,
+            "40": 0.0,
+            "50": 0.0
+          },
+          "lr": 0.015,
+          "updates": 50
+        },
+        "physical_curve": [
+          {
+            "mean_return": -0.004721912113312362,
+            "action_clip": 0.0,
+            "update": 0,
+            "theta_param_sat_frac": 0.0
+          },
+          {
+            "mean_return": -0.0045127134868239,
+            "action_clip": 0.0,
+            "update": 10,
+            "theta_param_sat_frac": 0.0
+          },
+          {
+            "mean_return": -0.004342005951295812,
+            "action_clip": 0.0,
+            "update": 20,
+            "theta_param_sat_frac": 0.0
+          },
+          {
+            "mean_return": -0.004206843577959664,
+            "action_clip": 0.0,
+            "update": 30,
+            "theta_param_sat_frac": 0.0
+          },
+          {
+            "mean_return": -0.004100911030924087,
+            "action_clip": 0.0,
+            "update": 40,
+            "theta_param_sat_frac": 0.0
+          },
+          {
+            "mean_return": -0.004017932599071968,
+            "action_clip": 0.0,
+            "update": 50,
+            "theta_param_sat_frac": 0.0
+          }
+        ]
+      },
+      "0.0075": {
+        "lr": 0.0075,
+        "val_return_mean": -0.004269814700605549,
+        "val_action_clip": 0.0,
+        "interpolation": {
+          "policy_return_mean": -0.005318947447001586,
+          "delta_vs_theta0": 0.0004946831311298267,
+          "fail_rate_vs_theta0": 0.0,
+          "theta_param_sat_frac": 0.0,
+          "mean_action_clip_frac": 0.0
+        },
+        "extrapolation": {
+          "policy_return_mean": -0.006454387046808414,
+          "delta_vs_theta0": 0.0005180860171151326,
+          "fail_rate_vs_theta0": 0.0,
+          "theta_param_sat_frac": 0.0,
+          "mean_action_clip_frac": 0.0
+        },
+        "diagnostics": {
+          "final_theta_param_sat_frac": 0.0,
+          "mean_rho_proj": 0.0,
+          "final_rho_proj": 0.0,
+          "mean_outward_pressure": 0.0,
+          "mean_theta_param_sat_frac": 0.0,
+          "first_hit_mean": null,
+          "sat_at_updates": {
+            "1": 0.0,
+            "10": 0.0,
+            "20": 0.0,
+            "30": 0.0,
+            "40": 0.0,
+            "50": 0.0
+          },
+          "rho_at_updates": {
+            "1": 0.0,
+            "10": 0.0,
+            "20": 0.0,
+            "30": 0.0,
+            "40": 0.0,
+            "50": 0.0
+          },
+          "lr": 0.0075,
+          "updates": 50
+        },
+        "physical_curve": [
+          {
+            "mean_return": -0.004721912113312362,
+            "action_clip": 0.0,
+            "update": 0,
+            "theta_param_sat_frac": 0.0
+          },
+          {
+            "mean_return": -0.004612604388432527,
+            "action_clip": 0.0,
+            "update": 10,
+            "theta_param_sat_frac": 0.0
+          },
+          {
+            "mean_return": -0.00451280621757857,
+            "action_clip": 0.0,
+            "update": 20,
+            "theta_param_sat_frac": 0.0
+          },
+          {
+            "mean_return": -0.0044227529506929856,
+            "action_clip": 0.0,
+            "update": 30,
+            "theta_param_sat_frac": 0.0
+          },
+          {
+            "mean_return": -0.004341991943174827,
+            "action_clip": 0.0,
+            "update": 40,
+            "theta_param_sat_frac": 0.0
+          },
+          {
+            "mean_return": -0.004269814700605549,
+            "action_clip": 0.0,
+            "update": 50,
+            "theta_param_sat_frac": 0.0
+          }
+        ]
+      }
+    },
+    "eagm_base": {
+      "0.03": {
+        "lr": 0.03,
+        "val_return_mean": -0.005015814860486487,
+        "val_action_clip": 0.0,
+        "interpolation": {
+          "policy_return_mean": -0.006121607011770836,
+          "delta_vs_theta0": -0.00030797643363942337,
+          "fail_rate_vs_theta0": 0.8333333333333334,
+          "theta_param_sat_frac": 0.6785714285714286,
+          "mean_action_clip_frac": 0.0
+        },
+        "extrapolation": {
+          "policy_return_mean": -0.007505228796749037,
+          "delta_vs_theta0": -0.0005327557328254888,
+          "fail_rate_vs_theta0": 0.9166666666666666,
+          "theta_param_sat_frac": 0.6785714285714286,
+          "mean_action_clip_frac": 0.0
+        },
+        "diagnostics": {
+          "final_theta_param_sat_frac": 0.6785714285714286,
+          "mean_rho_proj": 0.24372342915720818,
+          "final_rho_proj": 0.8507813898645222,
+          "mean_outward_pressure": 0.35311532507739934,
+          "mean_theta_param_sat_frac": 0.16,
+          "first_hit_mean": 39.21052631578947,
+          "sat_at_updates": {
+            "1": 0.0,
+            "10": 0.0,
+            "20": 0.0,
+            "30": 0.0,
+            "40": 0.42857142857142855,
+            "50": 0.6785714285714286
+          },
+          "rho_at_updates": {
+            "1": 0.0,
+            "10": 0.0,
+            "20": 0.0,
+            "30": 0.0,
+            "40": 0.7119338713235749,
+            "50": 0.8507813898645222
+          },
+          "lr": 0.03,
+          "updates": 50
+        },
+        "physical_curve": [
+          {
+            "mean_return": -0.004721912113312362,
+            "action_clip": 0.0,
+            "update": 0,
+            "theta_param_sat_frac": 0.0
+          },
+          {
+            "mean_return": -0.0046658834816709314,
+            "action_clip": 0.0,
+            "update": 10,
+            "theta_param_sat_frac": 0.0
+          },
+          {
+            "mean_return": -0.004732944852420232,
+            "action_clip": 0.0,
+            "update": 20,
+            "theta_param_sat_frac": 0.0
+          },
+          {
+            "mean_return": -0.004882322413597692,
+            "action_clip": 0.0,
+            "update": 30,
+            "theta_param_sat_frac": 0.0
+          },
+          {
+            "mean_return": -0.004984711483652933,
+            "action_clip": 0.0,
+            "update": 40,
+            "theta_param_sat_frac": 0.42857142857142855
+          },
+          {
+            "mean_return": -0.005015814860486487,
+            "action_clip": 0.0,
+            "update": 50,
+            "theta_param_sat_frac": 0.6785714285714286
+          }
+        ]
+      },
+      "0.015": {
+        "lr": 0.015,
+        "val_return_mean": -0.0048094827042706725,
+        "val_action_clip": 0.0,
+        "interpolation": {
+          "policy_return_mean": -0.0059694271747266605,
+          "delta_vs_theta0": -0.00015579659659524782,
+          "fail_rate_vs_theta0": 0.8333333333333334,
+          "theta_param_sat_frac": 0.0,
+          "mean_action_clip_frac": 0.0
+        },
+        "extrapolation": {
+          "policy_return_mean": -0.0072058853637718715,
+          "delta_vs_theta0": -0.00023341229984832307,
+          "fail_rate_vs_theta0": 1.0,
+          "theta_param_sat_frac": 0.0,
+          "mean_action_clip_frac": 0.0
+        },
+        "diagnostics": {
+          "final_theta_param_sat_frac": 0.0,
+          "mean_rho_proj": 0.0,
+          "final_rho_proj": 0.0,
+          "mean_outward_pressure": 0.0,
+          "mean_theta_param_sat_frac": 0.0,
+          "first_hit_mean": null,
+          "sat_at_updates": {
+            "1": 0.0,
+            "10": 0.0,
+            "20": 0.0,
+            "30": 0.0,
+            "40": 0.0,
+            "50": 0.0
+          },
+          "rho_at_updates": {
+            "1": 0.0,
+            "10": 0.0,
+            "20": 0.0,
+            "30": 0.0,
+            "40": 0.0,
+            "50": 0.0
+          },
+          "lr": 0.015,
+          "updates": 50
+        },
+        "physical_curve": [
+          {
+            "mean_return": -0.004721912113312362,
+            "action_clip": 0.0,
+            "update": 0,
+            "theta_param_sat_frac": 0.0
+          },
+          {
+            "mean_return": -0.00467172393040394,
+            "action_clip": 0.0,
+            "update": 10,
+            "theta_param_sat_frac": 0.0
+          },
+          {
+            "mean_return": -0.004674532976319299,
+            "action_clip": 0.0,
+            "update": 20,
+            "theta_param_sat_frac": 0.0
+          },
+          {
+            "mean_return": -0.0046993796338802634,
+            "action_clip": 0.0,
+            "update": 30,
+            "theta_param_sat_frac": 0.0
+          },
+          {
+            "mean_return": -0.004745457685569965,
+            "action_clip": 0.0,
+            "update": 40,
+            "theta_param_sat_frac": 0.0
+          },
+          {
+            "mean_return": -0.0048094827042706725,
+            "action_clip": 0.0,
+            "update": 50,
+            "theta_param_sat_frac": 0.0
+          }
+        ]
+      },
+      "0.0075": {
+        "lr": 0.0075,
+        "val_return_mean": -0.004696441539665048,
+        "val_action_clip": 0.0,
+        "interpolation": {
+          "policy_return_mean": -0.005818673063422024,
+          "delta_vs_theta0": -5.0424852906113225e-06,
+          "fail_rate_vs_theta0": 0.5833333333333334,
+          "theta_param_sat_frac": 0.0,
+          "mean_action_clip_frac": 0.0
+        },
+        "extrapolation": {
+          "policy_return_mean": -0.006991306065333849,
+          "delta_vs_theta0": -1.8833001410301564e-05,
+          "fail_rate_vs_theta0": 0.6666666666666666,
+          "theta_param_sat_frac": 0.0,
+          "mean_action_clip_frac": 0.0
+        },
+        "diagnostics": {
+          "final_theta_param_sat_frac": 0.0,
+          "mean_rho_proj": 0.0,
+          "final_rho_proj": 0.0,
+          "mean_outward_pressure": 0.0,
+          "mean_theta_param_sat_frac": 0.0,
+          "first_hit_mean": null,
+          "sat_at_updates": {
+            "1": 0.0,
+            "10": 0.0,
+            "20": 0.0,
+            "30": 0.0,
+            "40": 0.0,
+            "50": 0.0
+          },
+          "rho_at_updates": {
+            "1": 0.0,
+            "10": 0.0,
+            "20": 0.0,
+            "30": 0.0,
+            "40": 0.0,
+            "50": 0.0
+          },
+          "lr": 0.0075,
+          "updates": 50
+        },
+        "physical_curve": [
+          {
+            "mean_return": -0.004721912113312362,
+            "action_clip": 0.0,
+            "update": 0,
+            "theta_param_sat_frac": 0.0
+          },
+          {
+            "mean_return": -0.004684364754981492,
+            "action_clip": 0.0,
+            "update": 10,
+            "theta_param_sat_frac": 0.0
+          },
+          {
+            "mean_return": -0.004677082793505556,
+            "action_clip": 0.0,
+            "update": 20,
+            "theta_param_sat_frac": 0.0
+          },
+          {
+            "mean_return": -0.00467904088452942,
+            "action_clip": 0.0,
+            "update": 30,
+            "theta_param_sat_frac": 0.0
+          },
+          {
+            "mean_return": -0.004685448322213611,
+            "action_clip": 0.0,
+            "update": 40,
+            "theta_param_sat_frac": 0.0
+          },
+          {
+            "mean_return": -0.004696441539665048,
+            "action_clip": 0.0,
+            "update": 50,
+            "theta_param_sat_frac": 0.0
+          }
+        ]
+      }
+    },
+    "eagm_dir_matched": {
+      "0.03": {
+        "lr": 0.03,
+        "val_return_mean": -0.003547964407723406,
+        "val_action_clip": 0.0,
+        "interpolation": {
+          "policy_return_mean": -0.004349381096130176,
+          "delta_vs_theta0": 0.0014642494820012372,
+          "fail_rate_vs_theta0": 0.0,
+          "theta_param_sat_frac": 0.8928571428571429,
+          "mean_action_clip_frac": 0.0
+        },
+        "extrapolation": {
+          "policy_return_mean": -0.005731181107140971,
+          "delta_vs_theta0": 0.0012412919567825766,
+          "fail_rate_vs_theta0": 0.08333333333333333,
+          "theta_param_sat_frac": 0.8928571428571429,
+          "mean_action_clip_frac": 0.0
+        },
+        "diagnostics": {
+          "final_theta_param_sat_frac": 0.8928571428571429,
+          "mean_rho_proj": 0.3055209271029225,
+          "final_rho_proj": 0.9937211338475043,
+          "mean_outward_pressure": 0.36,
+          "mean_theta_param_sat_frac": 0.2614285714285714,
+          "first_hit_mean": 36.36,
+          "sat_at_updates": {
+            "1": 0.0,
+            "10": 0.0,
+            "20": 0.0,
+            "30": 0.0,
+            "40": 0.7857142857142857,
+            "50": 0.8928571428571429
+          },
+          "rho_at_updates": {
+            "1": 0.0,
+            "10": 0.0,
+            "20": 0.0,
+            "30": 0.0,
+            "40": 0.9407618752086251,
+            "50": 0.9937211338475043
+          },
+          "lr": 0.03,
+          "updates": 50
+        },
+        "physical_curve": [
+          {
+            "mean_return": -0.004721912113312362,
+            "action_clip": 0.0,
+            "update": 0,
+            "theta_param_sat_frac": 0.0
+          },
+          {
+            "mean_return": -0.004141231695440684,
+            "action_clip": 0.0,
+            "update": 10,
+            "theta_param_sat_frac": 0.0
+          },
+          {
+            "mean_return": -0.003755146459471679,
+            "action_clip": 0.0,
+            "update": 20,
+            "theta_param_sat_frac": 0.0
+          },
+          {
+            "mean_return": -0.003558880371012282,
+            "action_clip": 0.0,
+            "update": 30,
+            "theta_param_sat_frac": 0.0
+          },
+          {
+            "mean_return": -0.003547014990426199,
+            "action_clip": 0.0,
+            "update": 40,
+            "theta_param_sat_frac": 0.7857142857142857
+          },
+          {
+            "mean_return": -0.003547964407723406,
+            "action_clip": 0.0,
+            "update": 50,
+            "theta_param_sat_frac": 0.8928571428571429
+          }
+        ]
+      },
+      "0.015": {
+        "lr": 0.015,
+        "val_return_mean": -0.0036352705749337394,
+        "val_action_clip": 0.0,
+        "interpolation": {
+          "policy_return_mean": -0.004429380062636961,
+          "delta_vs_theta0": 0.0013842505154944517,
+          "fail_rate_vs_theta0": 0.0,
+          "theta_param_sat_frac": 0.0,
+          "mean_action_clip_frac": 0.0
+        },
+        "extrapolation": {
+          "policy_return_mean": -0.005661523796789681,
+          "delta_vs_theta0": 0.0013109492671338665,
+          "fail_rate_vs_theta0": 0.0,
+          "theta_param_sat_frac": 0.0,
+          "mean_action_clip_frac": 0.0
+        },
+        "diagnostics": {
+          "final_theta_param_sat_frac": 0.0,
+          "mean_rho_proj": 0.0,
+          "final_rho_proj": 0.0,
+          "mean_outward_pressure": 0.0,
+          "mean_theta_param_sat_frac": 0.0,
+          "first_hit_mean": null,
+          "sat_at_updates": {
+            "1": 0.0,
+            "10": 0.0,
+            "20": 0.0,
+            "30": 0.0,
+            "40": 0.0,
+            "50": 0.0
+          },
+          "rho_at_updates": {
+            "1": 0.0,
+            "10": 0.0,
+            "20": 0.0,
+            "30": 0.0,
+            "40": 0.0,
+            "50": 0.0
+          },
+          "lr": 0.015,
+          "updates": 50
+        },
+        "physical_curve": [
+          {
+            "mean_return": -0.004721912113312362,
+            "action_clip": 0.0,
+            "update": 0,
+            "theta_param_sat_frac": 0.0
+          },
+          {
+            "mean_return": -0.004407741058066427,
+            "action_clip": 0.0,
+            "update": 10,
+            "theta_param_sat_frac": 0.0
+          },
+          {
+            "mean_return": -0.004141821197833277,
+            "action_clip": 0.0,
+            "update": 20,
+            "theta_param_sat_frac": 0.0
+          },
+          {
+            "mean_return": -0.003924746071238912,
+            "action_clip": 0.0,
+            "update": 30,
+            "theta_param_sat_frac": 0.0
+          },
+          {
+            "mean_return": -0.0037565921424712926,
+            "action_clip": 0.0,
+            "update": 40,
+            "theta_param_sat_frac": 0.0
+          },
+          {
+            "mean_return": -0.0036352705749337394,
+            "action_clip": 0.0,
+            "update": 50,
+            "theta_param_sat_frac": 0.0
+          }
+        ]
+      },
+      "0.0075": {
+        "lr": 0.0075,
+        "val_return_mean": -0.0040286867537430915,
+        "val_action_clip": 0.0,
+        "interpolation": {
+          "policy_return_mean": -0.004912958572391407,
+          "delta_vs_theta0": 0.0009006720057400052,
+          "fail_rate_vs_theta0": 0.0,
+          "theta_param_sat_frac": 0.0,
+          "mean_action_clip_frac": 0.0
+        },
+        "extrapolation": {
+          "policy_return_mean": -0.0060510041089772695,
+          "delta_vs_theta0": 0.0009214689549462784,
+          "fail_rate_vs_theta0": 0.0,
+          "theta_param_sat_frac": 0.0,
+          "mean_action_clip_frac": 0.0
+        },
+        "diagnostics": {
+          "final_theta_param_sat_frac": 0.0,
+          "mean_rho_proj": 0.0,
+          "final_rho_proj": 0.0,
+          "mean_outward_pressure": 0.0,
+          "mean_theta_param_sat_frac": 0.0,
+          "first_hit_mean": null,
+          "sat_at_updates": {
+            "1": 0.0,
+            "10": 0.0,
+            "20": 0.0,
+            "30": 0.0,
+            "40": 0.0,
+            "50": 0.0
+          },
+          "rho_at_updates": {
+            "1": 0.0,
+            "10": 0.0,
+            "20": 0.0,
+            "30": 0.0,
+            "40": 0.0,
+            "50": 0.0
+          },
+          "lr": 0.0075,
+          "updates": 50
+        },
+        "physical_curve": [
+          {
+            "mean_return": -0.004721912113312362,
+            "action_clip": 0.0,
+            "update": 0,
+            "theta_param_sat_frac": 0.0
+          },
+          {
+            "mean_return": -0.004558882000990294,
+            "action_clip": 0.0,
+            "update": 10,
+            "theta_param_sat_frac": 0.0
+          },
+          {
+            "mean_return": -0.004407927846504146,
+            "action_clip": 0.0,
+            "update": 20,
+            "theta_param_sat_frac": 0.0
+          },
+          {
+            "mean_return": -0.004269161215969343,
+            "action_clip": 0.0,
+            "update": 30,
+            "theta_param_sat_frac": 0.0
+          },
+          {
+            "mean_return": -0.004142801535060559,
+            "action_clip": 0.0,
+            "update": 40,
+            "theta_param_sat_frac": 0.0
+          },
+          {
+            "mean_return": -0.0040286867537430915,
+            "action_clip": 0.0,
+            "update": 50,
+            "theta_param_sat_frac": 0.0
+          }
+        ]
+      }
+    }
+  },
+  "wall_seconds": 198.49576377868652
+}

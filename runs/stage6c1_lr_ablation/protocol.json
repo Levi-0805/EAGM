@@ -1,0 +1,11 @@
+{
+  "parent_commit": "1f25a971bf42d2dbe600e4b62d9870e8e4a870d7",
+  "frozen_wm_from": "runs/stage6b1_confirm",
+  "lrs": [
+    0.03,
+    0.015,
+    0.0075
+  ],
+  "policy_updates": 50,
+  "selection": "val_return_only_not_ood"
+}

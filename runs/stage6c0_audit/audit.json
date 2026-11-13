@@ -1,0 +1,120 @@
+{
+  "stage": "6C.0",
+  "parent_commit": "1f25a971bf42d2dbe600e4b62d9870e8e4a870d7",
+  "checks": {
+    "feasible_fd_upper": {
+      "n_boundary": 28,
+      "n_onesided": 28,
+      "all_backward": true,
+      "control_steps": 672,
+      "g_finite": true,
+      "stable_mask_sum": 25.0,
+      "note": "stability_mask_separate_from_boundary"
+    },
+    "policy_diagnostics": {
+      "ckpt": "stage6b1_seed10_eagm_dir_matched",
+      "final_theta_param_sat_frac": 0.9642857142857143,
+      "mean_rho_proj": 0.3130203908621716,
+      "final_rho_proj": 0.9995020320510761,
+      "mean_outward_pressure": 0.36,
+      "mean_theta_param_sat_frac": 0.29142857142857137,
+      "first_hit_mean": 35.888888888888886,
+      "sat_at_updates": {
+        "1": 0.0,
+        "10": 0.0,
+        "20": 0.0,
+        "30": 0.0,
+        "40": 0.8928571428571429,
+        "50": 0.9642857142857143
+      },
+      "rho_at_updates": {
+        "1": 0.0,
+        "10": 0.0,
+        "20": 0.0,
+        "30": 0.0,
+        "40": 0.9725267031733806,
+        "50": 0.9995020320510761
+      },
+      "lr": 0.03,
+      "updates": 50,
+      "physical_curve": [
+        {
+          "mean_return": -0.0018733626113538273,
+          "action_clip": 0.0,
+          "update": 0,
+          "theta_param_sat_frac": 0.0
+        },
+        {
+          "mean_return": -0.0017177999741444638,
+          "action_clip": 0.0,
+          "update": 10,
+          "theta_param_sat_frac": 0.0
+        },
+        {
+          "mean_return": -0.0015698548555705804,
+          "action_clip": 0.0,
+          "update": 20,
+          "theta_param_sat_frac": 0.0
+        },
+        {
+          "mean_return": -0.0014570343147390294,
+          "action_clip": 0.0,
+          "update": 30,
+          "theta_param_sat_frac": 0.0
+        },
+        {
+          "mean_return": -0.0014084816714555254,
+          "action_clip": 0.0,
+          "update": 40,
+          "theta_param_sat_frac": 0.8928571428571429
+        },
+        {
+          "mean_return": -0.0014096160431151747,
+          "action_clip": 0.0,
+          "update": 50,
+          "theta_param_sat_frac": 0.9642857142857143
+        }
+      ],
+      "n_checkpoints": 6
+    },
+    "paired_smoke": {
+      "init_digest_match": true,
+      "dir_label_steps": 1344,
+      "n_labels": 2,
+      "base_digest_after": "41610719001fa102",
+      "dir_digest_after": "af803326c18057f1",
+      "diverged_after_train": true
+    },
+    "path_probes": {
+      "n_thetas": 6,
+      "fracs": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ],
+      "norms": [
+        0.0,
+        1.5239696612031293,
+        3.042819608834861,
+        4.524337307207805,
+        5.249830397341128,
+        5.25569631647303
+      ],
+      "sat": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.8928571428571429,
+        0.9642857142857143
+      ],
+      "pilot_final_sat": 0.9642857142857143
+    }
+  },
+  "config_hash": "0dd50cbde2ec681f",
+  "wall_seconds": 38.020312547683716,
+  "status": "PASS"
+}
