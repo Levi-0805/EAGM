@@ -1,0 +1,35 @@
+{
+  "branch": "stage6-exec-generalization",
+  "frozen_from_stage5_commit": "6f66823c64d719fa4fa0c06fd6a892ace7db3e45",
+  "stage5_hypers_locked": {
+    "world_model_updates": 3000,
+    "policy_updates": 50,
+    "imagined_horizon": 8,
+    "eval_horizon": 16,
+    "hist_len": 8,
+    "lam_u": 1.0,
+    "lam_d": 0.1,
+    "batch_size": 128,
+    "lr_model": 0.001,
+    "lr_policy": 0.03
+  },
+  "controller_b_train_ranges": {
+    "gain_range": [0.92, 1.08],
+    "extra_lag_choices": [0, 1, 2],
+    "rate_limit_range": [0.03, 0.08],
+    "smooth_beta_range": [0.0, 0.35]
+  },
+  "ood_eval": {
+    "episodes_per_config_stage5e_legacy": 2,
+    "episodes_per_config_stage6": 5,
+    "policy_starts_cap": null,
+    "grad_diag_starts": 12,
+    "fail_eps": 0.0,
+    "report_separately": ["interpolation", "single_factor_extrapolation", "compound_extrapolation", "iid_holdout"]
+  },
+  "budget_rules": {
+    "train_interaction": ["dynamics_train_steps", "dir_label_train_steps"],
+    "excluded_from_train": ["dynamics_val_steps", "dynamics_iid_holdout_steps", "ood_fd_diagnostic_steps", "test_physical_eval"]
+  },
+  "note": "Do not retune Stage-5 locked hypers after seeing Stage-6 confirmatory tests. Stage 6A fixes metrics only."
+}

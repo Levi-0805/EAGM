@@ -1,0 +1,42 @@
+{
+  "mean_final_sat_base": 0.7357142857142858,
+  "mean_final_sat_dir": 0.9214285714285715,
+  "per_seed": [
+    {
+      "seed": 5,
+      "base_final_sat": 0.6785714285714286,
+      "dir_final_sat": 0.9642857142857143,
+      "base_final_cos": 0.5778906746537735,
+      "dir_final_cos": 0.37944344056408974
+    },
+    {
+      "seed": 6,
+      "base_final_sat": 0.7857142857142857,
+      "dir_final_sat": 0.9285714285714286,
+      "base_final_cos": 0.21843334647436471,
+      "dir_final_cos": 0.3599684854125976
+    },
+    {
+      "seed": 7,
+      "base_final_sat": 0.75,
+      "dir_final_sat": 0.8571428571428571,
+      "base_final_cos": 0.13570487196084086,
+      "dir_final_cos": 0.5116544211066351
+    },
+    {
+      "seed": 8,
+      "base_final_sat": 0.7857142857142857,
+      "dir_final_sat": 0.9285714285714286,
+      "base_final_cos": 0.3431669228585821,
+      "dir_final_cos": 0.4778346128268304
+    },
+    {
+      "seed": 9,
+      "base_final_sat": 0.6785714285714286,
+      "dir_final_sat": 0.9285714285714286,
+      "base_final_cos": 0.5297150966537244,
+      "dir_final_cos": 0.422475782672065
+    }
+  ],
+  "hypothesis": "Dir ends with higher \u03b8-bound saturation (~92%) than Base (~74%); co-occurs with weakened \u03b8_final cosine advantage. Causal test deferred to Stage 6C."
+}

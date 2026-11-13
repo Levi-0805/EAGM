@@ -1,8 +1,11 @@
 """Finite-difference policy gradients with stability masks at a given θ."""
 from __future__ import annotations
 
+from typing import Any, Optional
+
 import numpy as np
 
+from training.eval_metrics import gradient_quality
 from training.rollout import physical_return
 
 
@@ -37,3 +40,12 @@ def sim_grad_masked(
         spread = max(vals) - min(vals)
         stable.append(spread <= max(1e-9, 0.1 * abs(v)))
     return np.asarray(out, dtype=np.float64), np.asarray(stable, dtype=np.float64), steps
+
+
+def diagnose_grad_pair(
+    g_hat: np.ndarray,
+    g_sim: np.ndarray,
+    mask: Optional[np.ndarray] = None,
+) -> dict[str, Any]:
+    """Report full-dim and stable-mask cosine / directional metrics together."""
+    return gradient_quality(g_hat, g_sim, mask)

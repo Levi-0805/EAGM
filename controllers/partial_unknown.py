@@ -62,6 +62,39 @@ class PartialUnknownArmEnv(CompatibleArmEnv):
             "u_nominal": self.last_nominal_command.copy(),
             "b_active": dict(self._active),
             "full_c": self.control_state().copy(),
+            # Train-only execution-state targets for Stage 6 ExecState (never deploy inputs)
+            "exec_state": self.privileged_exec_state(),
+        }
+
+    def privileged_exec_state(self) -> dict[str, Any]:
+        """Hidden Controller-B execution state — TRAIN LABELS ONLY.
+
+        Deployable models must NOT consume these fields as inputs.
+        """
+        a = self._active
+        queue = [q.copy() for q in self._extra_queue]
+        # Fixed-width lag buffer pad for supervised heads (max lag considered = 3)
+        max_lag = 3
+        lag_pad = np.zeros((max_lag, 14), dtype=np.float64)
+        for i, q in enumerate(queue[-max_lag:]):
+            lag_pad[i] = q
+        return {
+            "gain": float(a["gain"]),
+            "extra_lag": int(a["extra_lag"]),
+            "rate_limit": float(a["rate_limit"]),
+            "smooth_beta": float(a["smooth_beta"]),
+            "u_prev": self._u_prev.copy(),
+            "u_smooth": self._u_smooth.copy(),
+            "extra_queue": queue,
+            "lag_pad": lag_pad,
+            "vector": np.concatenate(
+                [
+                    [a["gain"], a["extra_lag"], a["rate_limit"], a["smooth_beta"]],
+                    self._u_prev.ravel(),
+                    self._u_smooth.ravel(),
+                    lag_pad.ravel(),
+                ]
+            ).astype(np.float64),
         }
 
     def known_config_vector(self) -> np.ndarray:

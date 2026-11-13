@@ -1,0 +1,59 @@
+{
+  "train_ranges": {
+    "gain_range": [0.92, 1.08],
+    "extra_lag_choices": [0, 1, 2],
+    "rate_limit_range": [0.03, 0.08],
+    "smooth_beta_range": [0.0, 0.35]
+  },
+  "interpolation": [
+    {"id": "interp_0", "gain": 0.95, "extra_lag": 0, "rate_limit": 0.035, "smooth_beta": 0.10},
+    {"id": "interp_1", "gain": 1.02, "extra_lag": 1, "rate_limit": 0.055, "smooth_beta": 0.20},
+    {"id": "interp_2", "gain": 1.06, "extra_lag": 2, "rate_limit": 0.070, "smooth_beta": 0.05},
+    {"id": "interp_3", "gain": 0.98, "extra_lag": 2, "rate_limit": 0.040, "smooth_beta": 0.30},
+    {"id": "interp_4", "gain": 1.04, "extra_lag": 0, "rate_limit": 0.065, "smooth_beta": 0.15},
+    {"id": "interp_5", "gain": 0.93, "extra_lag": 1, "rate_limit": 0.050, "smooth_beta": 0.25}
+  ],
+  "single_factor_extrapolation": [
+    {"id": "extrap_gain_lo", "gain": 0.85, "extra_lag": 0, "rate_limit": 0.045, "smooth_beta": 0.20},
+    {"id": "extrap_gain_hi", "gain": 1.15, "extra_lag": 1, "rate_limit": 0.045, "smooth_beta": 0.20},
+    {"id": "extrap_lag_hi", "gain": 1.00, "extra_lag": 3, "rate_limit": 0.045, "smooth_beta": 0.20},
+    {"id": "extrap_rate_lo", "gain": 1.00, "extra_lag": 1, "rate_limit": 0.020, "smooth_beta": 0.20},
+    {"id": "extrap_rate_hi", "gain": 1.00, "extra_lag": 1, "rate_limit": 0.100, "smooth_beta": 0.20},
+    {"id": "extrap_smooth_hi", "gain": 1.00, "extra_lag": 1, "rate_limit": 0.045, "smooth_beta": 0.50}
+  ],
+  "compound_extrapolation": [
+    {
+      "id": "compound_0",
+      "gain": 0.88,
+      "extra_lag": 3,
+      "rate_limit": 0.025,
+      "smooth_beta": 0.40,
+      "safety_note": "combined gain-lo + lag-hi + rate-lo + smooth-hi; within actuator limits of CompatibleArmEnv"
+    },
+    {
+      "id": "compound_1",
+      "gain": 1.12,
+      "extra_lag": 3,
+      "rate_limit": 0.090,
+      "smooth_beta": 0.45,
+      "safety_note": "combined gain-hi + lag-hi + rate-hi + smooth-hi"
+    },
+    {
+      "id": "compound_2",
+      "gain": 0.86,
+      "extra_lag": 2,
+      "rate_limit": 0.095,
+      "smooth_beta": 0.05,
+      "safety_note": "gain-lo + rate-hi (aggressive increments)"
+    },
+    {
+      "id": "compound_3",
+      "gain": 1.14,
+      "extra_lag": 0,
+      "rate_limit": 0.022,
+      "smooth_beta": 0.48,
+      "safety_note": "gain-hi + rate-lo + heavy smooth"
+    }
+  ],
+  "note": "Interp / single-factor extrap match Stage 5E for direct comparison. Compound configs are Stage-6-only and must be reported separately."
+}

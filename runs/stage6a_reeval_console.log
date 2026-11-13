@@ -1,0 +1,158 @@
+==== Stage6A reeval Stage5E seed 5 ====
+  seed5 inter mc                     ret -0.005348 ΔR 0.000485073 fail 0.00 θsat 0.89 aclip 0.00
+  seed5 extra mc                     ret -0.006702 ΔR 0.000300054 fail 0.33 θsat 0.89 aclip 0.00
+  seed5 inter eagm_base              ret -0.005605 ΔR 0.00022743 fail 0.25 θsat 0.18 aclip 0.00
+  seed5 extra eagm_base              ret -0.006938 ΔR 6.34406e-05 fail 0.42 θsat 0.18 aclip 0.00
+  seed5 inter eagm_dir_matched       ret -0.004593 ΔR 0.00123965 fail 0.00 θsat 0.89 aclip 0.00
+  seed5 extra eagm_dir_matched       ret -0.005699 ΔR 0.00130232 fail 0.00 θsat 0.89 aclip 0.00
+  seed5 inter eagm_hist              ret -0.003773 ΔR 0.00206005 fail 0.00 θsat 0.96 aclip 0.00
+  seed5 extra eagm_hist              ret -0.005278 ΔR 0.00172365 fail 0.17 θsat 0.96 aclip 0.00
+  seed5 inter eagm_hist_dir_matched  ret -0.003674 ΔR 0.00215858 fail 0.00 θsat 0.79 aclip 0.00
+  seed5 extra eagm_hist_dir_matched  ret -0.005137 ΔR 0.00186491 fail 0.17 θsat 0.79 aclip 0.00
+==== Stage6A reeval Stage5E seed 6 ====
+  seed6 inter mc                     ret -0.004304 ΔR 0.00154159 fail 0.00 θsat 0.96 aclip 0.00
+  seed6 extra mc                     ret -0.005453 ΔR 0.00155423 fail 0.00 θsat 0.96 aclip 0.00
+  seed6 inter eagm_base              ret -0.005161 ΔR 0.000684734 fail 0.25 θsat 0.32 aclip 0.00
+  seed6 extra eagm_base              ret -0.006586 ΔR 0.00042149 fail 0.33 θsat 0.32 aclip 0.00
+  seed6 inter eagm_dir_matched       ret -0.002714 ΔR 0.00313148 fail 0.00 θsat 0.93 aclip 0.00
+  seed6 extra eagm_dir_matched       ret -0.003866 ΔR 0.00314152 fail 0.08 θsat 0.93 aclip 0.00
+  seed6 inter eagm_hist              ret -0.004071 ΔR 0.00177464 fail 0.00 θsat 0.79 aclip 0.00
+  seed6 extra eagm_hist              ret -0.005353 ΔR 0.00165396 fail 0.17 θsat 0.79 aclip 0.00
+  seed6 inter eagm_hist_dir_matched  ret -0.003564 ΔR 0.00228153 fail 0.00 θsat 0.93 aclip 0.00
+  seed6 extra eagm_hist_dir_matched  ret -0.004794 ΔR 0.00221306 fail 0.08 θsat 0.93 aclip 0.00
+==== Stage6A reeval Stage5E seed 7 ====
+  seed7 inter mc                     ret -0.005149 ΔR 0.000686091 fail 0.00 θsat 0.96 aclip 0.00
+  seed7 extra mc                     ret -0.006565 ΔR 0.000439583 fail 0.17 θsat 0.96 aclip 0.00
+  seed7 inter eagm_base              ret -0.004646 ΔR 0.00118981 fail 0.00 θsat 0.39 aclip 0.00
+  seed7 extra eagm_base              ret -0.006045 ΔR 0.000959102 fail 0.17 θsat 0.39 aclip 0.00
+  seed7 inter eagm_dir_matched       ret -0.002735 ΔR 0.0031001 fail 0.00 θsat 0.82 aclip 0.00
+  seed7 extra eagm_dir_matched       ret -0.003932 ΔR 0.00307192 fail 0.00 θsat 0.82 aclip 0.00
+  seed7 inter eagm_hist              ret -0.004725 ΔR 0.00110982 fail 0.00 θsat 0.89 aclip 0.00
+  seed7 extra eagm_hist              ret -0.005909 ΔR 0.00109477 fail 0.08 θsat 0.89 aclip 0.00
+  seed7 inter eagm_hist_dir_matched  ret -0.002879 ΔR 0.00295585 fail 0.00 θsat 0.82 aclip 0.00
+  seed7 extra eagm_hist_dir_matched  ret -0.004035 ΔR 0.00296876 fail 0.00 θsat 0.82 aclip 0.00
+==== Stage6A reeval Stage5E seed 8 ====
+  seed8 inter mc                     ret -0.003102 ΔR 0.002744 fail 0.00 θsat 1.00 aclip 0.00
+  seed8 extra mc                     ret -0.004460 ΔR 0.00256956 fail 0.00 θsat 1.00 aclip 0.00
+  seed8 inter eagm_base              ret -0.007178 ΔR -0.00133186 fail 1.00 θsat 0.86 aclip 0.00
+  seed8 extra eagm_base              ret -0.008766 ΔR -0.00173681 fail 0.83 θsat 0.86 aclip 0.00
+  seed8 inter eagm_dir_matched       ret -0.004839 ΔR 0.00100782 fail 0.00 θsat 0.82 aclip 0.00
+  seed8 extra eagm_dir_matched       ret -0.006136 ΔR 0.00089407 fail 0.08 θsat 0.82 aclip 0.00
+  seed8 inter eagm_hist              ret -0.005396 ΔR 0.000450084 fail 0.25 θsat 0.93 aclip 0.00
+  seed8 extra eagm_hist              ret -0.006800 ΔR 0.000230114 fail 0.42 θsat 0.93 aclip 0.00
+  seed8 inter eagm_hist_dir_matched  ret -0.004105 ΔR 0.00174098 fail 0.00 θsat 0.86 aclip 0.00
+  seed8 extra eagm_hist_dir_matched  ret -0.005231 ΔR 0.001799 fail 0.00 θsat 0.86 aclip 0.00
+==== Stage6A reeval Stage5E seed 9 ====
+  seed9 inter mc                     ret -0.004004 ΔR 0.0018416 fail 0.00 θsat 0.93 aclip 0.00
+  seed9 extra mc                     ret -0.005488 ΔR 0.00151869 fail 0.17 θsat 0.93 aclip 0.00
+  seed9 inter eagm_base              ret -0.005440 ΔR 0.000405513 fail 0.25 θsat 0.50 aclip 0.00
+  seed9 extra eagm_base              ret -0.007009 ΔR -2.63185e-06 fail 0.33 θsat 0.50 aclip 0.00
+  seed9 inter eagm_dir_matched       ret -0.003631 ΔR 0.00221462 fail 0.00 θsat 0.82 aclip 0.00
+  seed9 extra eagm_dir_matched       ret -0.005035 ΔR 0.001971 fail 0.17 θsat 0.82 aclip 0.00
+  seed9 inter eagm_hist              ret -0.004108 ΔR 0.00173794 fail 0.00 θsat 0.79 aclip 0.00
+  seed9 extra eagm_hist              ret -0.005419 ΔR 0.00158785 fail 0.17 θsat 0.79 aclip 0.00
+  seed9 inter eagm_hist_dir_matched  ret -0.004516 ΔR 0.00133032 fail 0.00 θsat 0.82 aclip 0.00
+  seed9 extra eagm_hist_dir_matched  ret -0.006052 ΔR 0.000954503 fail 0.17 θsat 0.82 aclip 0.00
+{
+  "interp_hist_dir_minus_mc": {
+    "mean": 0.0006337817259731666,
+    "median": 0.0007399450161602698,
+    "ci95": [
+      -0.00045773255874586373,
+      0.001725296010692197
+    ],
+    "n": 5,
+    "n_positive": 3,
+    "note": "n=5 seed percentile bootstrap is unstable."
+  },
+  "interp_dir_minus_base": {
+    "mean": 0.001903609021567112,
+    "median": 0.0019102925026196925,
+    "ci95": [
+      0.001437087393768095,
+      0.002297805813183414
+    ],
+    "n": 5,
+    "n_positive": 5,
+    "note": "n=5 seed percentile bootstrap is unstable."
+  },
+  "extrap_hist_dir_minus_mc": {
+    "mean": 0.000683622576624375,
+    "median": 0.0006588282320887139,
+    "ci95": [
+      -0.0004021336946854621,
+      0.0017693788479342123
+    ],
+    "n": 5,
+    "n_positive": 3,
+    "note": "n=5 seed percentile bootstrap is unstable."
+  },
+  "extrap_dir_minus_base": {
+    "mean": 0.002135246001631096,
+    "median": 0.002112816066765188,
+    "ci95": [
+      0.001664229706174423,
+      0.00256292491926348
+    ],
+    "n": 5,
+    "n_positive": 5,
+    "note": "n=5 seed percentile bootstrap is unstable."
+  }
+}
+{
+  "interpolation": {
+    "mc": {
+      "mean_fail_rate": 0.0,
+      "mean_theta_param_sat": 0.95,
+      "mean_action_clip": 0.0
+    },
+    "eagm_base": {
+      "mean_fail_rate": 0.35,
+      "mean_theta_param_sat": 0.45,
+      "mean_action_clip": 0.0
+    },
+    "eagm_dir_matched": {
+      "mean_fail_rate": 0.0,
+      "mean_theta_param_sat": 0.8571428571428571,
+      "mean_action_clip": 0.0
+    },
+    "eagm_hist": {
+      "mean_fail_rate": 0.05,
+      "mean_theta_param_sat": 0.8714285714285713,
+      "mean_action_clip": 0.0
+    },
+    "eagm_hist_dir_matched": {
+      "mean_fail_rate": 0.0,
+      "mean_theta_param_sat": 0.8428571428571429,
+      "mean_action_clip": 0.0
+    }
+  },
+  "extrapolation": {
+    "mc": {
+      "mean_fail_rate": 0.13333333333333333,
+      "mean_theta_param_sat": 0.95,
+      "mean_action_clip": 0.0
+    },
+    "eagm_base": {
+      "mean_fail_rate": 0.4166666666666667,
+      "mean_theta_param_sat": 0.45,
+      "mean_action_clip": 0.0
+    },
+    "eagm_dir_matched": {
+      "mean_fail_rate": 0.06666666666666667,
+      "mean_theta_param_sat": 0.8571428571428571,
+      "mean_action_clip": 0.0
+    },
+    "eagm_hist": {
+      "mean_fail_rate": 0.19999999999999998,
+      "mean_theta_param_sat": 0.8714285714285713,
+      "mean_action_clip": 0.0
+    },
+    "eagm_hist_dir_matched": {
+      "mean_fail_rate": 0.08333333333333333,
+      "mean_theta_param_sat": 0.8428571428571429,
+      "mean_action_clip": 0.0
+    }
+  }
+}
+wrote /home/aaa/桌面/汇报/11月论文/eagm_gpu/runs/stage6a_stage5e_corrected wall 1148.4

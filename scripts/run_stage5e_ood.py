@@ -24,7 +24,8 @@ from models.eagm import EAGMBase, EAGMHistory, McWorld
 from training.dataset import fit_stats, flatten_split, make_split, pick_starts
 from training.gradients import sim_grad_masked
 from training.paired_train import clone_model, train_mc, train_pair
-from training.policy_opt import eval_physical, policy_optimize
+from training.eval_metrics import stage5e_budget_breakdown
+from training.policy_opt import eval_physical_paired_vs_theta0, policy_optimize
 from training.rollout import imagined_eagm, imagined_mc
 from training.seeds import seed_everything
 
@@ -237,28 +238,23 @@ def eval_on_pool(model, te_rows, labels, train_pol, env_eval, test_starts, seed,
         model, train_pol, use_history=use_h, is_mc=is_mc,
         updates=int(FROZEN["policy_updates"]), lr=float(FROZEN["lr_policy"]), seed=seed + 50,
     )
-    # Physical eval must use an env that can restore snapshots from test starts
-    # (snapshots embed B state). Use a randomize-capable env shell.
-    phys = eval_physical(env_eval, pol["theta"], test_starts, horizon=H_EVAL)
-    th0 = eval_physical(env_eval, np.zeros(28), test_starts, horizon=H_EVAL)
-    # Per-config failure: return worse than θ0 by > 0 (cost higher)
-    by_cfg = {}
-    for ps in phys["per_start"]:
-        cid = ps.get("config_id") or "unk"
-        by_cfg.setdefault(cid, []).append(ps["return_"])
-    cfg_stats = {
-        cid: dict(mean=float(np.mean(v)), n=len(v),
-                  fail_frac=float(np.mean(np.asarray(v) > 0)))  # returns are negative costs-ish; keep raw
-        for cid, v in by_cfg.items()
-    }
+    # Paired physical eval on identical starts: ΔR_i = R_i(θ_final) − R_i(θ_0)
+    paired = eval_physical_paired_vs_theta0(
+        env_eval, pol["theta"], test_starts, horizon=H_EVAL, theta0=pol["theta0"], fail_eps=0.0
+    )
     return dict(
         dynamics_nmse=nmse,
         cmd_mae=cmd,
         cosine_median=float(np.median(cos)) if cos else None,
-        policy_return_mean=phys["mean"],
-        delta_vs_theta0=phys["mean"] - th0["mean"],
-        per_config=cfg_stats,
-        per_start=phys["per_start"],
+        policy_return_mean=paired["policy_return_mean"],
+        theta0_return_mean=paired["theta0_return_mean"],
+        delta_vs_theta0=paired["delta_vs_theta0_mean"],
+        fail_rate_vs_theta0=paired["fail_rate_vs_theta0"],
+        theta_param_sat_frac=paired["theta_param_sat_frac"],
+        mean_action_clip_frac=paired["mean_action_clip_frac"],
+        per_config=paired["per_config"],
+        per_start=paired["per_start"],
+        policy_checkpoints={k: v for k, v in pol.get("checkpoints", {}).items() if k.startswith("theta")},
     )
 
 
@@ -343,31 +339,55 @@ def run_seed(seed: int, out_dir: Path) -> dict:
                     seed=seed, pool=pool_name, model=name,
                     episode_id=ps["episode_id"], config_id=ps.get("config_id"),
                     return_=ps["return_"],
+                    return_theta0=ps.get("return_theta0"),
+                    delta_vs_theta0=ps.get("delta_vs_theta0"),
                 ))
             print(
                 f"  seed{seed} {pool_name[:5]} {name:22s} "
                 f"nmse {results[pool_name][name]['dynamics_nmse']:.3f} "
                 f"cos {results[pool_name][name]['cosine_median']:.3f} "
-                f"ret {results[pool_name][name]['policy_return_mean']:.6f}",
+                f"ret {results[pool_name][name]['policy_return_mean']:.6f} "
+                f"fail {results[pool_name][name]['fail_rate_vs_theta0']:.2f} "
+                f"θsat {results[pool_name][name]['theta_param_sat_frac']:.2f}",
                 flush=True,
             )
-        torch.save({"state": m.state_dict(), "kind": name, "seed": seed}, out_dir / f"{name}.pt")
+        torch.save({"state": m.state_dict(), "kind": name, "seed": seed, "stats": stats}, out_dir / f"{name}.pt")
 
+    budget = stage5e_budget_breakdown(
+        n_train_eps=len(split.train_eps),
+        n_val_eps=len(split.val_eps),
+        n_iid_hold_eps=len(split.test_eps),
+        horizon=200,
+        dir_label_train_steps=steps_tr,
+        ood_fd_diagnostic_steps=steps_interp + steps_extrap,
+    )
+    budget.update(
+        dict(
+            # legacy aliases for readers of older Stage5E JSON
+            dynamics_train_collect=n_collect * 200,
+            dir_label_train_steps=steps_tr,
+            interp_fd_diagnostic=steps_interp,
+            extrap_fd_diagnostic=steps_extrap,
+            val_rows=len(val_rows),
+            note_legacy=(
+                "Previously dynamics_train_collect counted all 36 collected episodes; "
+                "train_interaction_budget now uses 24 train eps only + dir labels."
+            ),
+        )
+    )
     payload = dict(
         seed=seed,
         stage="5E",
+        protocol_version="stage6a_corrected_metrics",
         train_ranges=TRAIN_RANGES,
         interp_configs=INTERP_CONFIGS,
         extrap_configs=EXTRAP_CONFIGS,
         split=dict(train=split.train_eps, val=split.val_eps, iid_hold=split.test_eps),
         n_train_episodes=len(split.train_eps),
+        n_val_episodes=len(split.val_eps),
+        n_iid_hold_episodes=len(split.test_eps),
         train_b_actives=[ep["b_active"] for ep in episodes if ep["episode_id"] in set(split.train_eps)],
-        sim_budget=dict(
-            dynamics_train_collect=n_collect * 200,
-            dir_label_train_steps=steps_tr,
-            interp_fd_diagnostic=steps_interp,
-            extrap_fd_diagnostic=steps_extrap,
-        ),
+        sim_budget=budget,
         results=results,
         contrasts=dict(
             interp_hist_dir_minus_mc=results["interpolation"]["eagm_hist_dir_matched"]["policy_return_mean"]

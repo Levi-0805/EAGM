@@ -1,22 +1,36 @@
 """Imagined rollouts with unified reward (matches physical eval)."""
 from __future__ import annotations
 
+from typing import Any
+
 import numpy as np
 import torch
 
 from training.reward import DISCOUNT, reward_numpy, reward_torch
 
 DTYPE = torch.float32
+ACTION_LIMIT = 0.03
+
+
+def actor_raw_torch(theta, x, c_or_obs_target14, ref):
+    """Unclipped actor output (for saturation diagnostics)."""
+    return (
+        0.55 * (ref - c_or_obs_target14)
+        + 0.01 * theta[:14]
+        + 0.08 * theta[14:] * (ref - x[..., :14])
+    )
 
 
 def actor(theta, x, c_or_obs_target14, ref):
     # c_or_obs_target14: first 14 dims are joint targets (c[:14] or c_obs[:14])
-    return torch.clamp(
-        0.55 * (ref - c_or_obs_target14)
+    return torch.clamp(actor_raw_torch(theta, x, c_or_obs_target14, ref), -ACTION_LIMIT, ACTION_LIMIT)
+
+
+def actor_raw_numpy(theta, x, c_target14, ref):
+    return (
+        0.55 * (ref - c_target14)
         + 0.01 * theta[:14]
-        + 0.08 * theta[14:] * (ref - x[..., :14]),
-        -0.03,
-        0.03,
+        + 0.08 * theta[14:] * (ref - x[:14])
     )
 
 
@@ -93,20 +107,45 @@ def imagined_mc(model, theta, start, horizon=8):
 
 
 def physical_return(env, theta, start, horizon=16):
-    """Same reward definition as imagined_*; uses NumPy on real env."""
+    """Same reward definition as imagined_*; uses NumPy on real env.
+
+    Returns (total_return, action_clip_frac) for backward compatibility.
+    Prefer physical_return_detailed for Stage-6 saturation diagnostics.
+    """
+    detail = physical_return_detailed(env, theta, start, horizon=horizon)
+    return detail["return_"], detail["action_clip_frac"]
+
+
+def physical_return_detailed(env, theta, start, horizon=16) -> dict[str, Any]:
+    """Physical rollout with separate raw-action vs clipped-action saturation."""
     env.restore(start["snapshot"])
+    theta = np.asarray(theta, dtype=np.float64).reshape(28)
     total = 0.0
     prev = np.asarray(start["prev"], dtype=np.float64).copy()
-    sat = 0
+    n_dims = 14 * horizon
+    raw_exceed = 0
+    clipped = 0
+    per_joint_clip = np.zeros(14, dtype=np.int64)
     for k in range(horizon):
         x = env.observe()
         c = env.control_state()
         ref = start["refs"][k]
-        raw = 0.55 * (ref - c[:14]) + 0.01 * theta[:14] + 0.08 * theta[14:] * (ref - x[:14])
-        sat += np.count_nonzero(np.abs(raw) >= 0.03)
-        a = np.clip(raw, -0.03, 0.03)
+        raw = actor_raw_numpy(theta, x, c[:14], ref)
+        a = np.clip(raw, -ACTION_LIMIT, ACTION_LIMIT)
+        raw_exceed += int(np.count_nonzero(np.abs(raw) >= ACTION_LIMIT))
+        was_clip = np.abs(raw) > ACTION_LIMIT + 1e-12
+        clipped += int(np.count_nonzero(was_clip))
+        per_joint_clip += was_clip.astype(np.int64)
         env.step(a)
         newx = env.observe()
         total += (DISCOUNT ** k) * reward_numpy(newx, a, ref, prev)
         prev = a
-    return float(total), sat / (14 * horizon)
+    return dict(
+        return_=float(total),
+        action_raw_exceed_frac=raw_exceed / n_dims,
+        action_clip_frac=clipped / n_dims,
+        # alias kept for callers that used sat_frac as action clip
+        sat_frac=clipped / n_dims,
+        per_joint_clip_frac=(per_joint_clip / horizon).tolist(),
+        theta_param_sat_frac=float(np.mean(np.abs(theta) >= 1.0 - 1e-8)),
+    )
