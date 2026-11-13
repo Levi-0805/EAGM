@@ -1,0 +1,151 @@
+{
+  "static_state_compare": [
+    {
+      "start_index": 0,
+      "r_surrogate": -0.0016265333282262865,
+      "r_true_mujoco": -0.0009245432265785539,
+      "abs_diff": 0.0007019901016477326,
+      "rel_diff": 0.7592823376828346,
+      "fk_ee_l2": 0.056602192872682144,
+      "r_joint_at_zero_error": -0.0,
+      "W_ee": 1.0,
+      "W_vel": 0.0005,
+      "W_da": 0.05,
+      "discount": 0.99
+    },
+    {
+      "start_index": 1,
+      "r_surrogate": -0.0015013067728564926,
+      "r_true_mujoco": -0.0006165830616870411,
+      "abs_diff": 0.0008847237111694515,
+      "rel_diff": 1.4348793070465544,
+      "fk_ee_l2": 0.05859506267828111,
+      "r_joint_at_zero_error": -0.0,
+      "W_ee": 1.0,
+      "W_vel": 0.0005,
+      "W_da": 0.05,
+      "discount": 0.99
+    },
+    {
+      "start_index": 2,
+      "r_surrogate": -0.0015944509561866922,
+      "r_true_mujoco": -0.0006460916094021863,
+      "abs_diff": 0.0009483593467845059,
+      "rel_diff": 1.4678380977952985,
+      "fk_ee_l2": 0.05702739461336082,
+      "r_joint_at_zero_error": -0.0,
+      "W_ee": 1.0,
+      "W_vel": 0.0005,
+      "W_da": 0.05,
+      "discount": 0.99
+    },
+    {
+      "start_index": 3,
+      "r_surrogate": -0.0008453937563358754,
+      "r_true_mujoco": -0.00025991220126187864,
+      "abs_diff": 0.0005854815550739967,
+      "rel_diff": 2.252604147197925,
+      "fk_ee_l2": 0.057119745420148055,
+      "r_joint_at_zero_error": -0.0,
+      "W_ee": 1.0,
+      "W_vel": 0.0005,
+      "W_da": 0.05,
+      "discount": 0.99
+    },
+    {
+      "start_index": 4,
+      "r_surrogate": -0.0013512471570475669,
+      "r_true_mujoco": -0.0008309281133761494,
+      "abs_diff": 0.0005203190436714175,
+      "rel_diff": 0.6261894490100466,
+      "fk_ee_l2": 0.057261506389630325,
+      "r_joint_at_zero_error": -0.0,
+      "W_ee": 1.0,
+      "W_vel": 0.0005,
+      "W_da": 0.05,
+      "discount": 0.99
+    },
+    {
+      "start_index": 5,
+      "r_surrogate": -0.001471433627989346,
+      "r_true_mujoco": -0.0008136678792724679,
+      "abs_diff": 0.000657765748716878,
+      "rel_diff": 0.8083948710254364,
+      "fk_ee_l2": 0.057100419470314044,
+      "r_joint_at_zero_error": -0.0,
+      "W_ee": 1.0,
+      "W_vel": 0.0005,
+      "W_da": 0.05,
+      "discount": 0.99
+    },
+    {
+      "start_index": 6,
+      "r_surrogate": -0.0012190528130535281,
+      "r_true_mujoco": -0.0013456184631644415,
+      "abs_diff": 0.00012656565011091338,
+      "rel_diff": 0.09405753526578295,
+      "fk_ee_l2": 0.05741209677765115,
+      "r_joint_at_zero_error": -0.0,
+      "W_ee": 1.0,
+      "W_vel": 0.0005,
+      "W_da": 0.05,
+      "discount": 0.99
+    },
+    {
+      "start_index": 7,
+      "r_surrogate": -0.0015175077051466596,
+      "r_true_mujoco": -0.0012340630758321829,
+      "abs_diff": 0.0002834446293144767,
+      "rel_diff": 0.22968388341046048,
+      "fk_ee_l2": 0.05721328167046635,
+      "r_joint_at_zero_error": -0.0,
+      "W_ee": 1.0,
+      "W_vel": 0.0005,
+      "W_da": 0.05,
+      "discount": 0.99
+    }
+  ],
+  "mean_abs_reward_diff": 0.0005885812233111716,
+  "max_abs_reward_diff": 0.0009483593467845059,
+  "mean_fk_ee_l2": 0.05729146248656675,
+  "max_fk_ee_l2": 0.05859506267828111,
+  "rollout_step_compare": [
+    {
+      "k": 0,
+      "r_surr": -0.001568432468776041,
+      "r_true": -0.0009040517919845467,
+      "abs_diff": 0.0006643806767914943
+    },
+    {
+      "k": 1,
+      "r_surr": -0.0014382432244985834,
+      "r_true": -0.0008549909845326584,
+      "abs_diff": 0.000583252239965925
+    },
+    {
+      "k": 2,
+      "r_surr": -0.001312359897061324,
+      "r_true": -0.0008103716159986185,
+      "abs_diff": 0.0005019882810627055
+    },
+    {
+      "k": 3,
+      "r_surr": -0.0012444267116555022,
+      "r_true": -0.0007865813541535426,
+      "abs_diff": 0.0004578453575019596
+    }
+  ],
+  "physical_surrogate_return_h4": -0.0054860031900320644,
+  "physical_true_mujoco_return_h4": -0.0033079571888659526,
+  "constants": {
+    "W_ee": 1.0,
+    "W_vel": 0.0005,
+    "W_da": 0.05,
+    "discount": 0.99,
+    "h_imag": 8,
+    "h_eval": 16
+  },
+  "left_right_weights_equal": true,
+  "same_code_path_imagined_physical": "_step_reward(task_id=reach) via FK surrogate",
+  "parity_pass": true
+}

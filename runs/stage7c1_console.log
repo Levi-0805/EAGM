@@ -1,0 +1,63 @@
+=== 7C.1 fit FK + collect ===
+FK RMSE=0.0285
+=== Task1 reward parity ===
+  mean|ΔR|=0.000589 mean FK L2=0.0573 parity_pass=True
+=== Task3 full-budget train seed20 ===
+    mc it 200 loss 0.22384
+    mc it 400 loss 0.18347
+    mc it 600 loss 0.33434
+    mc it 800 loss 0.42874
+    mc it 1000 loss 0.19489
+    mc it 1200 loss 0.25461
+    mc it 1400 loss 0.20256
+    mc it 1600 loss 0.18756
+    mc it 1800 loss 0.16414
+    mc it 2000 loss 0.20036
+    mc it 2200 loss 0.20203
+    mc it 2400 loss 0.19363
+    mc it 2600 loss 0.16195
+    mc it 2800 loss 0.19538
+    mc it 3000 loss 0.15052
+    pair it 200 base 0.28617 dir 0.31227
+    pair it 400 base 0.36086 dir 0.46985
+    pair it 600 base 0.31690 dir 0.41231
+    pair it 800 base 0.26686 dir 0.29395
+    pair it 1000 base 0.21800 dir 0.32480
+    pair it 1200 base 0.25432 dir 0.33745
+    pair it 1400 base 0.20664 dir 0.24691
+    pair it 1600 base 0.20103 dir 0.23334
+    pair it 1800 base 0.20808 dir 0.24838
+    pair it 2000 base 0.21476 dir 0.27214
+    pair it 2200 base 0.17144 dir 0.21455
+    pair it 2400 base 0.17617 dir 0.21955
+    pair it 2600 base 0.18970 dir 0.22677
+    pair it 2800 base 0.16921 dir 0.19486
+    pair it 3000 base 0.16766 dir 0.20109
+=== Task4 physical eval ===
+  mc               nmse 1.034 cosF -0.063 cosS -0.072 ret -0.031453 Δ -0.000008 fail 0.67
+  eagm_base        nmse 0.851 cosF 0.103 cosS 0.157 ret -0.031873 Δ -0.000428 fail 0.83
+  eagm_dir_random  nmse 1.160 cosF 0.113 cosS 0.132 ret -0.031288 Δ 0.000156 fail 0.50
+=== Task2 gradient audit ===
+{
+  "contrasts": {
+    "dir_minus_base": 0.0005843825202090577,
+    "dir_minus_mc": 0.000164734772316745,
+    "base_minus_mc": -0.00041964774789231274,
+    "dir_delta": 0.00015644728723887094,
+    "base_delta": -0.0004279352329701914,
+    "mc_delta": -8.28748507788127e-06
+  },
+  "decision": {
+    "reward_parity_pass": true,
+    "dir_beats_base_full_budget": true,
+    "dir_beats_mc_full_budget": true,
+    "recommend_three_seed_pilot": true,
+    "recommend_stage7d": false,
+    "rationale": [
+      "Dir > Base on seed20 full budget \u2014 may propose seeds 20\u201322 pilot only."
+    ],
+    "grad_cosine_final_dir": 0.1915507748694766,
+    "grad_cosine_final_base": 0.14456836297447762
+  }
+}
+Wrote /home/aaa/桌面/汇报/11月论文/eagm_gpu/runs/stage7c1_diagnosis wall=183.7s
