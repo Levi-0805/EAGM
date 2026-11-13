@@ -234,3 +234,32 @@ def physical_return_detailed(env, theta, start, horizon=16) -> dict[str, Any]:
             prev2 = a
         out["true_mujoco_ee_return"] = float(true_total)
     return out
+
+
+def _physical_return_reach_objective(env, theta, start, horizon, objective):
+    from tasks.reach import reach_reward_true_mujoco, reach_reward_surrogate
+    if start.get("task_id") != "reach":
+        raise ValueError("Explicit Reach objective requires a Reach start")
+    env.restore(start["snapshot"])
+    prev = np.asarray(start["prev"]).copy()
+    total = 0.0
+    for k in range(horizon):
+        x, c = env.observe(), env.control_state()
+        a = np.clip(actor_raw_numpy(theta, x, c[:14], start["refs"][k]), -ACTION_LIMIT, ACTION_LIMIT)
+        env.step(a)
+        x = env.observe()
+        if objective == "true_ee":
+            r = reach_reward_true_mujoco(env, x, a, prev, start["ee_goals"])
+        else:
+            r = reach_reward_surrogate(_REACH_FK, x, a, prev, start["ee_goals"])
+        total += DISCOUNT ** k * r
+        prev = a
+    return float(total), {"control_steps": horizon, "objective": objective}
+
+
+def physical_return_true_ee(env, theta, start, horizon=16):
+    return _physical_return_reach_objective(env, theta, start, horizon, "true_ee")
+
+
+def physical_return_surrogate(env, theta, start, horizon=16):
+    return _physical_return_reach_objective(env, theta, start, horizon, "surrogate")

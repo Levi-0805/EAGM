@@ -1,0 +1,124 @@
+{
+  "changed_prior_files": [],
+  "missing_prior_files": [],
+  "runs": {
+    "stage7c2_true_ee_seed20": {
+      "files": 19,
+      "checkpoints": 7
+    },
+    "stage5e_ood": {
+      "files": 38,
+      "checkpoints": 25
+    },
+    "stage8_c1_seed40": {
+      "files": 7,
+      "checkpoints": 5
+    },
+    "stage6b2_histc": {
+      "files": 72,
+      "checkpoints": 60
+    },
+    "stage3_1_seed0": {
+      "files": 14,
+      "checkpoints": 10
+    },
+    "stage7c_reach_smoke": {
+      "files": 1,
+      "checkpoints": 0
+    },
+    "stage3_b_dir_seed0": {
+      "files": 3,
+      "checkpoints": 1
+    },
+    "stage5c_baselines": {
+      "files": 32,
+      "checkpoints": 20
+    },
+    "stage1_seed0_1k": {
+      "files": 5,
+      "checkpoints": 2
+    },
+    "stage7a_baseline_audit": {
+      "files": 1,
+      "checkpoints": 0
+    },
+    "stage6a_stage5e_corrected": {
+      "files": 12,
+      "checkpoints": 0
+    },
+    "stage5b_budget": {
+      "files": 27,
+      "checkpoints": 15
+    },
+    "deprecated_stage3_protocol": {
+      "files": 0,
+      "checkpoints": 0
+    },
+    "stage1_mudir3k": {
+      "files": 13,
+      "checkpoints": 10
+    },
+    "stage3_2_fixedB": {
+      "files": 7,
+      "checkpoints": 6
+    },
+    "stage3_b_min_seed0": {
+      "files": 2,
+      "checkpoints": 0
+    },
+    "stage6c0_audit": {
+      "files": 1,
+      "checkpoints": 0
+    },
+    "stage8_c1_seed41": {
+      "files": 1,
+      "checkpoints": 1
+    },
+    "stage7c2_true_ee_current_sites_seed20": {
+      "files": 21,
+      "checkpoints": 7
+    },
+    "stage5a_confirm": {
+      "files": 43,
+      "checkpoints": 25
+    },
+    "stage7c1_diagnosis": {
+      "files": 7,
+      "checkpoints": 3
+    },
+    "stage8_failure": {
+      "files": 5,
+      "checkpoints": 0
+    },
+    "stage4_fixedB_five_seed": {
+      "files": 37,
+      "checkpoints": 25
+    },
+    "stage1_1k5": {
+      "files": 18,
+      "checkpoints": 10
+    },
+    "stage6c2_pathdir": {
+      "files": 38,
+      "checkpoints": 20
+    },
+    "stage6b1_confirm": {
+      "files": 38,
+      "checkpoints": 25
+    },
+    "stage6c1_lr_ablation": {
+      "files": 13,
+      "checkpoints": 0
+    },
+    "stage6a_diagnostics": {
+      "files": 1,
+      "checkpoints": 0
+    },
+    "stage5d_gradpath": {
+      "files": 17,
+      "checkpoints": 0
+    }
+  },
+  "branch": "stage8-research-consolidation",
+  "remote": "TLS CA verification failed; actual remote HEAD not verified"
+}

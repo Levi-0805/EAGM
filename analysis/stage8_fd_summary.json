@@ -1,0 +1,50 @@
+[
+  {
+    "theta": "zero",
+    "epsilon": 0.001,
+    "mean_cosine_vs_001": 0.9999930244746199,
+    "stable_fraction": 1.0
+  },
+  {
+    "theta": "zero",
+    "epsilon": 0.003,
+    "mean_cosine_vs_001": 0.9999964566838452,
+    "stable_fraction": 1.0
+  },
+  {
+    "theta": "zero",
+    "epsilon": 0.01,
+    "mean_cosine_vs_001": 1.0,
+    "stable_fraction": 1.0
+  },
+  {
+    "theta": "zero",
+    "epsilon": 0.03,
+    "mean_cosine_vs_001": 0.9999971504177911,
+    "stable_fraction": 0.9821428571428572
+  },
+  {
+    "theta": "dir_final",
+    "epsilon": 0.001,
+    "mean_cosine_vs_001": 0.9999987037956583,
+    "stable_fraction": 1.0
+  },
+  {
+    "theta": "dir_final",
+    "epsilon": 0.003,
+    "mean_cosine_vs_001": 0.9999985060257278,
+    "stable_fraction": 0.9940476190476191
+  },
+  {
+    "theta": "dir_final",
+    "epsilon": 0.01,
+    "mean_cosine_vs_001": 1.0,
+    "stable_fraction": 0.9880952380952381
+  },
+  {
+    "theta": "dir_final",
+    "epsilon": 0.03,
+    "mean_cosine_vs_001": 0.9999979529735888,
+    "stable_fraction": 0.9880952380952381
+  }
+]

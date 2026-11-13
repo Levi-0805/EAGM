@@ -1,0 +1,55 @@
+{
+  "mechanism_case": "A: learned transition Jacobian erroneous; oracle restores gradient",
+  "performance_case": "D: full oracle does not improve held-out mean return",
+  "new_method_success": false,
+  "five_seed_launch": false,
+  "geometry_method_reopened": false,
+  "train_test_gradient_cosine": 0.43979574474488575,
+  "budget": {
+    "ABC_control_steps": 31372,
+    "ABC_limit": 40000,
+    "D_control_steps": 17432,
+    "D_limit": 20000,
+    "replay_test_control_steps": 96,
+    "failed_attempt_steps": 1,
+    "failed_attempt_included_in_ABC": true,
+    "total_control_steps": 48900,
+    "device": "cpu",
+    "measured_successful_run_seconds": 53.679678201675415,
+    "raw_budgets": {
+      "stage8_2a_single_step": {
+        "control_steps": 21777,
+        "limit": 40000,
+        "wall_seconds": 24.410170555114746,
+        "geometry_calls": 2936,
+        "device": "cpu",
+        "state_dim": 154,
+        "discrete_context": "delay/B parameters/queue occupancy fixed from snapshot"
+      },
+      "stage8_2_numerical": {
+        "control_steps": 9078,
+        "wall_seconds": 8.935205698013306,
+        "geometry_calls": 5376
+      },
+      "stage8_2d_frozen_policy": {
+        "control_steps": 15952,
+        "training_control_steps": 5392,
+        "evaluation_and_final_fd_steps": 10560,
+        "limit": 20000,
+        "wall_seconds": 16.57428812980652,
+        "geometry_calls": 11296,
+        "device": "cpu",
+        "cache": "shared exact state/action queries, all methods same stencils and updates",
+        "success_rate_status": "no preregistered task threshold; not fabricated",
+        "final_gradient_status": "direct true FD, single-scale; initial full/stable cosines in ABC"
+      },
+      "stage8_2_localization_v2": {
+        "ABC_extra_steps": 516,
+        "D_extra_steps": 1480,
+        "D_total_steps": 17432,
+        "wall_seconds": 3.7600138187408447,
+        "geometry_calls": 1536
+      }
+    }
+  }
+}

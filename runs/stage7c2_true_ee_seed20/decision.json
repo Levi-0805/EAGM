@@ -1,0 +1,10 @@
+{
+  "dir_true_return_beats_base": false,
+  "dir_true_gradient_beats_base_at_common_theta0": false,
+  "dir_beats_mc": false,
+  "fk_accepted": false,
+  "rankings_equal": false,
+  "propose_pilot": false,
+  "launch_pilot": false,
+  "launch_stage7d": false
+}

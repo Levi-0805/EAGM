@@ -1,0 +1,46 @@
+    pair it 200 base 0.47006 dir 0.50067
+    pair it 400 base 0.45922 dir 0.47558
+    pair it 600 base 0.37746 dir 0.47311
+    pair it 800 base 0.37820 dir 0.41928
+    pair it 1000 base 0.44767 dir 0.44625
+    pair it 1200 base 0.34871 dir 0.36976
+    pair it 1400 base 0.35361 dir 0.36027
+    pair it 1600 base 0.32587 dir 0.34181
+    pair it 1800 base 0.37747 dir 0.38829
+    pair it 2000 base 0.35151 dir 0.36705
+    pair it 2200 base 0.32837 dir 0.34240
+    pair it 2400 base 0.35521 dir 0.36582
+    pair it 2600 base 0.42662 dir 0.42939
+    pair it 2800 base 0.35348 dir 0.43753
+    pair it 3000 base 0.32822 dir 0.34163
+    pair it 200 base 0.47006 dir 0.50053
+    pair it 400 base 0.45922 dir 0.47571
+    pair it 600 base 0.37746 dir 0.47276
+    pair it 800 base 0.37820 dir 0.41924
+    pair it 1000 base 0.44767 dir 0.44509
+    pair it 1200 base 0.34871 dir 0.36938
+    pair it 1400 base 0.35361 dir 0.36019
+    pair it 1600 base 0.32587 dir 0.34008
+    pair it 1800 base 0.37747 dir 0.39065
+    pair it 2000 base 0.35151 dir 0.36818
+    pair it 2200 base 0.32837 dir 0.35333
+    pair it 2400 base 0.35521 dir 0.36656
+    pair it 2600 base 0.42662 dir 0.43090
+    pair it 2800 base 0.35348 dir 0.37574
+    pair it 3000 base 0.32822 dir 0.34156
+    mc it 200 loss 0.36119
+    mc it 400 loss 0.35181
+    mc it 600 loss 0.32799
+    mc it 800 loss 0.30836
+    mc it 1000 loss 0.32634
+    mc it 1200 loss 0.26889
+    mc it 1400 loss 0.24727
+    mc it 1600 loss 0.22492
+    mc it 1800 loss 0.26770
+    mc it 2000 loss 0.23985
+    mc it 2200 loss 0.24747
+    mc it 2400 loss 0.26900
+    mc it 2600 loss 0.30720
+    mc it 2800 loss 0.28189
+    mc it 3000 loss 0.24606
+DONE gate True wins 6

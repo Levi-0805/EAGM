@@ -1,0 +1,22 @@
+{
+  "runs/stage8_1_geometry/summary.json": "7a87b4e7694c63c92287e0e6b24153d87cddf386130d6fd140f255fda0f51ef5",
+  "runs/stage8_1_geometry/reward_derivative_checks.json": "8ae7ec5ba1819aad6206ee18a9b81ad3d929ada102b886ee56e7419f53d69992",
+  "runs/stage8_1_geometry/gate.json": "b5449c3e106fdff74c027c384e7bfd82bfc707440e5eb726192dd86f17e4888c",
+  "runs/stage8_1_geometry/intervention.json": "c3c90cab82a5a23e73cf65657b142c7c0dc250c65e3964424dd54fb54ed1443e",
+  "runs/stage8_1_geometry/geometry_fd_checks.json": "b61adf92a7c747930fabb823dbafb09906dbb6c6933331586cce2bcdae659ae0",
+  "runs/stage8_1_geometry/geometry_metadata.json": "47ac6f500c1dbd22471bf750094e036171d9b528a7907afdaaf217a4180283ae",
+  "runs/stage8_1_geometry/final_gradients.json": "526fdf8835536910bed16f451e5fb8b91834ad17c7a978c57381e1db8e0a7c3b",
+  "runs/stage8_1_geometry/policies.json": "1d2e58abf0cef438960d3e3edbe03510724e8429950de0a2e36afdd9fa56a75e",
+  "runs/stage8_1_geometry/theta0_references.json": "2109be07f0d55f5ac6cc795acfaf6412396b3af196510d77d16dfa59a74fe73e",
+  "runs/stage8_1_geometry/config.json": "7e893fa9cad57b1ca1320c70e2894fbb6bc10ef58ce7aaf1b2035757e7e58792",
+  "runs/stage8_1_geometry/static.json": "252600c35c29f5a27c969f02a4f2d80ef89a2c946be8dd815a45bbf17fb20dc8",
+  "runs/stage8_1_geometry/per_start.csv": "ab5f2e8e14409e01c704b9ae682a60bd5ae75298edb10fe22669e4f53ec3f097",
+  "runs/stage8_1_geometry/budget.json": "c21c723d284984d05a51d48048c715b7a238a543393eaba3e3a23d4d5eb28970",
+  "runs/stage7c2_true_ee_current_sites_seed20/dir_random.pt": "8d129ade5688bdbe233aae9fff10e87dcf2fd89f16e618798ba4bb43ccf9db98",
+  "runs/stage7c2_true_ee_current_sites_seed20/base.pt": "4ac577ce9d5071b10e05c61dfba2addb16117f64f145539253fa465df6ebec76",
+  "runs/stage7c2_true_ee_current_sites_seed20/mc.pt": "5d054f9f1f80ce180a40299d3a354c48a0948ad924e28755eb9ebc77d1be0d5d",
+  "runs/stage7c2_true_ee_current_sites_seed20/fk.pt": "409c37e019cc8a91f56ede1b49b6cf1f4986cc58caf692206711ca83df91e1ff",
+  "runs/stage7c2_true_ee_current_sites_seed20/data.pt": "2b02863c65c67e01920e4eeb7e19a13c8067921532ba38a8a9461c2e90c1b42d",
+  "training/stage8_1_geometry.py": "fedad2827251536d183daf4cb37517efe33d5b71d34dc4d2152e7d162c3909cd",
+  "analysis/stage8_1_run.py": "5610c5746feeb9638259e8c4966ced6ab9d2e34f397601310db5e760587351bd"
+}

@@ -1,0 +1,35 @@
+{
+  "current_action": {
+    "validation_command_mae": 0.03528356571789622,
+    "parameters": 616,
+    "per_episode": {
+      "4": 0.033530622290447336,
+      "9": 0.0529340958420658,
+      "19": 0.040070278627621546,
+      "21": 0.02262480814325812,
+      "22": 0.02689557235587419,
+      "30": 0.035646017048110316
+    }
+  },
+  "lagged_action": {
+    "validation_command_mae": 0.03504237574418191,
+    "parameters": 616,
+    "per_episode": {
+      "4": 0.03339858923959716,
+      "9": 0.052605076362608055,
+      "19": 0.03964037137211758,
+      "21": 0.022473206308662966,
+      "22": 0.02672380050795086,
+      "30": 0.035413210674154844
+    }
+  },
+  "C3": {
+    "independent_training_labels": 12,
+    "target_dimension": 28,
+    "decision": "DEFER: 12 episode labels cannot support a flexible calibrated reliability model plus an independent calibration split; no test-derived fit performed",
+    "minimum_next_design": "train-only leave-episode-out scalar calibration, validated before any update gating"
+  },
+  "wall_seconds": 2.1718239784240723,
+  "simulator_steps": 0,
+  "note": "C2 linear feature replacement is a feasibility ablation, not an EAGM architecture win; same feature count/ridge fixed before validation; no hyperparameter search."
+}

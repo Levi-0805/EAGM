@@ -307,3 +307,28 @@ def collect_reach_episodes(
 
 def flatten_reach(episodes: list[dict]) -> list[dict]:
     return [r for ep in episodes for r in ep["rows"]]
+
+
+def reach_reward_surrogate(fk, x, a, prev, goals):
+    """Differentiable imagined objective; FK parameters must be frozen."""
+    if torch.is_tensor(x):
+        return reach_reward_torch(fk(x[..., :14]), torch.as_tensor(goals, dtype=x.dtype, device=x.device), x, a, prev)
+    ee = fk(torch.as_tensor(x[:14], dtype=torch.float32)).detach().cpu().numpy()
+    return reach_reward_numpy(ee[:3], ee[3:], goals, x, a, prev)
+
+
+def reach_reward_true_mujoco(env, x, a, prev, goals):
+    """Physical objective evaluated at current simulated site positions."""
+    # mj_step's derived site cache can precede the final integration update.
+    # Refresh FK in separate data, never mutate live warm-start/integration state.
+    data = getattr(env, "_true_ee_fk_data", None)
+    if data is None:
+        data = mujoco.MjData(env.model)
+        env._true_ee_fk_data = data
+    data.qpos[:] = env.data.qpos
+    data.mocap_pos[:] = env.data.mocap_pos
+    data.mocap_quat[:] = env.data.mocap_quat
+    mujoco.mj_fwdPosition(env.model, data)
+    left = data.site_xpos[site_id(env.model, SITE_LEFT)].copy()
+    right = data.site_xpos[site_id(env.model, SITE_RIGHT)].copy()
+    return reach_reward_numpy(left, right, goals, x, a, prev)

@@ -1,0 +1,7 @@
+start 0 steps 3798
+start 1 steps 6922
+start 2 steps 10046
+start 3 steps 13170
+start 4 steps 16294
+start 5 steps 19418
+DONE gate True gains [0.7842121891553253, 1.2954194230058942, 1.207974740461435, 1.2280038825362039, 1.223764739300434, 0.8779956222569857] chain {'cosine_full': 0.9999992062320405, 'cosine_stable': 0.9999992062320405, 'balanced_dir_acc': 1.0, 'directional_error': 0.0012599745707214422, 'n_stable_dims': 28, 'n_dims': 28, 'grad_norm_hat': 0.00021419959410844063, 'grad_norm_true': 0.00021420558463972417, 'relative_error': 0.0012602672807194696} steps 21777

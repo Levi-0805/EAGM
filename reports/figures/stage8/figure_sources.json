@@ -1,0 +1,38 @@
+{
+  "historical_core": [
+    "analysis/stage8_master_results.csv"
+  ],
+  "gradient_return": [
+    "/home/aaa/\u684c\u9762/\u6c47\u62a5/11\u6708\u8bba\u6587/eagm_gpu/runs/stage7c2_true_ee_current_sites_seed20/results.json"
+  ],
+  "objective_ranking": [
+    "/home/aaa/\u684c\u9762/\u6c47\u62a5/11\u6708\u8bba\u6587/eagm_gpu/runs/stage7c2_true_ee_current_sites_seed20/results.json"
+  ],
+  "ood": [
+    "analysis/stage8_master_results.csv"
+  ],
+  "ablation": [
+    "analysis/stage8_master_results.csv"
+  ],
+  "fk_scatter": [
+    "/home/aaa/\u684c\u9762/\u6c47\u62a5/11\u6708\u8bba\u6587/eagm_gpu/runs/stage8_failure/geometry.json"
+  ],
+  "fk_joint": [
+    "/home/aaa/\u684c\u9762/\u6c47\u62a5/11\u6708\u8bba\u6587/eagm_gpu/runs/stage8_failure/geometry.json"
+  ],
+  "fk_gradient": [
+    "/home/aaa/\u684c\u9762/\u6c47\u62a5/11\u6708\u8bba\u6587/eagm_gpu/runs/stage7c2_true_ee_current_sites_seed20/reward_audit.json",
+    "/home/aaa/\u684c\u9762/\u6c47\u62a5/11\u6708\u8bba\u6587/eagm_gpu/runs/stage7c2_true_ee_current_sites_seed20/gradients.json"
+  ],
+  "fk_return": [
+    "/home/aaa/\u684c\u9762/\u6c47\u62a5/11\u6708\u8bba\u6587/eagm_gpu/runs/stage7c2_true_ee_current_sites_seed20/per_start.csv",
+    "/home/aaa/\u684c\u9762/\u6c47\u62a5/11\u6708\u8bba\u6587/eagm_gpu/runs/stage7c2_true_ee_current_sites_seed20/reward_audit.json"
+  ],
+  "candidate_comparison": [
+    "/home/aaa/\u684c\u9762/\u6c47\u62a5/11\u6708\u8bba\u6587/eagm_gpu/runs/stage8_c1_seed40/results.json",
+    "runs/stage8_c1_seed41/results.json"
+  ],
+  "budget": [
+    "/home/aaa/\u684c\u9762/\u6c47\u62a5/11\u6708\u8bba\u6587/eagm_gpu/runs/stage8_c1_seed40/results.json"
+  ]
+}

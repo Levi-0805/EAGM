@@ -1,0 +1,21 @@
+{
+  "base_commit": "bcdce42f7f93cda2dc3b9b090c241b0809660187",
+  "seed": 20,
+  "torch": "2.11.0+cu128",
+  "files": {
+    "training/stage5_common.py": "f795032b55b13a6e36b07b7cd56df25076bee661c84b89489be4f53a404aeeca",
+    "training/paired_train.py": "0a59ef217c0d73f8320f3c531a4dfdf73e8a9a57560ed5780f6e4a620a0509b7",
+    "training/exec_state_probe.py": "8fd1984e5321f7e75fb4b4b8ee78c6e8680dfdfe91835dde77915dcec79d3437",
+    "training/__init__.py": "3bba6cb40f4a2b8e9e085745ccc6c1d8a4cde2ac7f556dfea4091db30d1ce9d8",
+    "training/stage6c_common.py": "af8a51ae6b90f4d675eb648de1d673d848924dc1856dec48cd349f27c85cd62c",
+    "training/gradients.py": "4b5c67828afda41a9f1a24f34230ff85a969a07d1c0d97386491ab06306bf080",
+    "training/eval_metrics.py": "6b0c1d4c17307b0034c038b59fdd4e5571736919b045d3183d0ec00aff85bdc8",
+    "training/policy_opt.py": "afda59bca816a170869931f1b3feca56245c84f9fe3808617d9482cf819d050b",
+    "training/reward.py": "1cf2eef6a63cf4321a777779bd29ab38ebee7f8146aa6c9e0f8403596663280d",
+    "training/dir_loss.py": "7fac8e74c9d78ba705ddaff7885727b4b38e819810e460eac651f9e3814f84c6",
+    "training/seeds.py": "f7290c1bdc7a40730accd27a58eab8f2aa585010ce8aa3b08bc9e036aa7b7044",
+    "training/dataset.py": "c23a162275a4de9fc1bcf7bc66a961f1ba7d050fbbdd127562fefbd75a7f989b",
+    "training/rollout.py": "0745ad48b72f81feca2a7fc15cb39991eef6d676711e385c034053ad2aa71fdc",
+    "scripts/run_stage7c2_true_ee.py": "470c9f5d4e5965bc9ae54b37faf24de3be28cc784139be441b4c735db1eadb7a"
+  }
+}

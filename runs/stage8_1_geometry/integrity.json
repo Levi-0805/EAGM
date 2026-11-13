@@ -1,0 +1,7 @@
+{
+  "prior_files_checked": 692,
+  "changed": [],
+  "branch": "stage8-1-geometry-jacobian-audit",
+  "tests": "analytic FD, Torch gradcheck, reward component derivatives, stop-gradient identities, native rollout parity, live state/warm-start unchanged; all PASS",
+  "failures": "No execution failures. Scientific recovery hypothesis not supported sufficiently; all negative outcomes retained."
+}

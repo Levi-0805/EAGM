@@ -1,0 +1,26 @@
+{
+  "runs/stage8_failure/console.log": {
+    "bytes": 81,
+    "sha256": "4770ed0d272176231d53d3f039fc4ba0f65d6f81c8865405f623b6b0d1d62e7d"
+  },
+  "runs/stage8_failure/path.json": {
+    "bytes": 21229,
+    "sha256": "c9ea7a5c32af70c278a9e21b94e060811891c7642cf2ebdb62640a3d0cc46d9b"
+  },
+  "runs/stage8_failure/geometry.json": {
+    "bytes": 500161,
+    "sha256": "68b5a71a8dace33673a97805680efe1ad7569827c3a5e5d6575a7ec6e9a937f9"
+  },
+  "runs/stage8_failure/fd.json": {
+    "bytes": 463692,
+    "sha256": "642395d3f7dfa6ea4a802d77bc61f9553bce193e3876a41af92e9d8c0c20febc"
+  },
+  "runs/stage8_failure/multistep.json": {
+    "bytes": 38707,
+    "sha256": "280069483ddfff7dc5fea5bf99419abddd9492b6b8c32a098787158ae9a6aa5a"
+  },
+  "runs/stage8_failure/budget.json": {
+    "bytes": 173,
+    "sha256": "94882aa2e2b73a0ee016dfba505a9646fa9c89ac3f731a228c81f5cf36336159"
+  }
+}

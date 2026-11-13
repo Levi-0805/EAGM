@@ -1,0 +1,8 @@
+{
+  "case": "B",
+  "common_theta_gradient_improved": true,
+  "mean_return_improved": true,
+  "positive_starts": 4,
+  "five_seed_launch": false,
+  "independent_confirmation": false
+}

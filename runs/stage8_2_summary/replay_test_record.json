@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "test": "tests/test_stage8_2_dynamics.py",
+  "control_steps": 96,
+  "max_observation_replay_error": 0.0,
+  "note": "Recorded from test execution before A-C; not rerun during finalization."
+}

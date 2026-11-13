@@ -1,0 +1,9 @@
+{
+  "control_steps": 68928,
+  "wall_seconds": 45.07142758369446,
+  "device": "cpu",
+  "fd_queries": 8232,
+  "geometry_queries": 600,
+  "repeat_max_abs": 0.0,
+  "seed": 808
+}

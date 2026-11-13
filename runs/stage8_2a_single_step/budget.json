@@ -1,0 +1,9 @@
+{
+  "control_steps": 21777,
+  "limit": 40000,
+  "wall_seconds": 24.410170555114746,
+  "geometry_calls": 2936,
+  "device": "cpu",
+  "state_dim": 154,
+  "discrete_context": "delay/B parameters/queue occupancy fixed from snapshot"
+}

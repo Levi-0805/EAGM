@@ -1,0 +1,34 @@
+{
+  "runs/stage8_c1_seed40/reliability.pt": {
+    "bytes": 173860,
+    "sha256": "923f153bad0f9d661594ffca8dc4842784d6a1be827be2273f85a557d66d5b9c"
+  },
+  "runs/stage8_c1_seed40/console.log": {
+    "bytes": 1690,
+    "sha256": "c258306ef9c18e7e27534ce24301c4a0fa9412f074885d2eed0643c913e8d1ff"
+  },
+  "runs/stage8_c1_seed40/runner.py": {
+    "bytes": 3308,
+    "sha256": "aed081c3cf4fe88e0df1153ced765587ff1c3926f174d451cb268d22c9e168a8"
+  },
+  "runs/stage8_c1_seed40/results.json": {
+    "bytes": 26433,
+    "sha256": "34364a96322e93fbb4acf6f677b897ad1977f831041a65c8bbb089ae85957838"
+  },
+  "runs/stage8_c1_seed40/mc.pt": {
+    "bytes": 194224,
+    "sha256": "a80bb14d72c4332254e3812823da48fe435f4bd23eb52223db5ae6833ac47941"
+  },
+  "runs/stage8_c1_seed40/dir.pt": {
+    "bytes": 173860,
+    "sha256": "bfe23cf7a39102158ce893bb98525e171a1363a403c1affec512a409bbd24959"
+  },
+  "runs/stage8_c1_seed40/base.pt": {
+    "bytes": 173860,
+    "sha256": "0b7f6ba7a4420f496a2f7e3645aae5335c0a0b9a58b610ecd92138442447e198"
+  },
+  "runs/stage8_c1_seed40/data.pt": {
+    "bytes": 168406189,
+    "sha256": "81f18223bd5b52de681f079572287f180a721df59d6bd71ca833d00d60f766e4"
+  }
+}

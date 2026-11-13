@@ -1,0 +1,7 @@
+{
+  "jacobian_error": "static.json",
+  "position_reward_gradient": "static.json",
+  "intervention_cosine": "intervention.json",
+  "physical_return": "per_start.csv",
+  "paired_return": "per_start.csv"
+}

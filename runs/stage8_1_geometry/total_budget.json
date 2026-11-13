@@ -1,0 +1,17 @@
+{
+  "control_steps": 19488,
+  "by_phase": {
+    "theta0_fd": 8064,
+    "physical_evaluation": 480,
+    "final_fd": 10752,
+    "physical_state_coverage": 192
+  },
+  "limit": 20000,
+  "remaining": 512,
+  "main_geometry_calls": 20897,
+  "supplemental_geometry_calls": 192,
+  "geometry_seconds": 1.22132957400936,
+  "wall_seconds": 56.224820137023926,
+  "unit_tests_control_steps": 0,
+  "note": "Geometry call counters cover main and supplemental scripts; separate unit-test geometry queries are validation overhead, not physics steps."
+}

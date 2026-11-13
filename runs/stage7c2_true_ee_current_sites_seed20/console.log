@@ -1,0 +1,59 @@
+labels complete {'collection_steps': 7200, 'fk_fit_samples': 4000, 'fk_fit_steps': 800, 'train_label_steps': 16128, 'train_label_queries': 2016}
+    mc it 200 loss 0.22381
+    mc it 400 loss 0.37709
+    mc it 600 loss 0.35319
+    mc it 800 loss 0.23898
+    mc it 1000 loss 0.21025
+    mc it 1200 loss 0.26132
+    mc it 1400 loss 0.18635
+    mc it 1600 loss 0.18264
+    mc it 1800 loss 0.20084
+    mc it 2000 loss 0.21254
+    mc it 2200 loss 0.16501
+    mc it 2400 loss 0.16197
+    mc it 2600 loss 0.19379
+    mc it 2800 loss 0.16414
+    mc it 3000 loss 0.14327
+    pair it 200 base 0.28617 dir 0.33511
+    pair it 400 base 0.36086 dir 0.49411
+    pair it 600 base 0.31690 dir 0.42334
+    pair it 800 base 0.26686 dir 0.30290
+    pair it 1000 base 0.21800 dir 0.37761
+    pair it 1200 base 0.25432 dir 0.34294
+    pair it 1400 base 0.20664 dir 0.30409
+    pair it 1600 base 0.20103 dir 0.25260
+    pair it 1800 base 0.20808 dir 0.26506
+    pair it 2000 base 0.21476 dir 0.28601
+    pair it 2200 base 0.17144 dir 0.23488
+    pair it 2400 base 0.17617 dir 0.23853
+    pair it 2600 base 0.18970 dir 0.24805
+    pair it 2800 base 0.16921 dir 0.20879
+    pair it 3000 base 0.16766 dir 0.20570
+    pair it 200 base 0.32187
+    pair it 400 base 0.45268
+    pair it 600 base 0.37674
+    pair it 800 base 0.26467
+    pair it 1000 base 0.31310
+    pair it 1200 base 0.30755
+    pair it 1400 base 0.24079
+    pair it 1600 base 0.21168
+    pair it 1800 base 0.22655
+    pair it 2000 base 0.25069
+    pair it 2200 base 0.20678
+    pair it 2400 base 0.21826
+    pair it 2600 base 0.22831
+    pair it 2800 base 0.19727
+    pair it 3000 base 0.17792
+policy complete mc
+policy complete base
+policy complete dir_random
+policy complete aux
+gradient complete mc theta0
+gradient complete mc final
+gradient complete base theta0
+gradient complete base final
+gradient complete dir_random theta0
+gradient complete dir_random final
+gradient complete aux theta0
+gradient complete aux final
+DONE {'mc': {'nmse': 1.4978787899017334, 'command_mae': None, 'theta_sat': 0.8571428571428571, 'rho_proj': 0.30730671346906024, 'true_return': -0.015488914785156986, 'surrogate_return': -0.03105087765057774, 'true_theta0': -0.015456184877401252, 'delta': -3.2729907755731556e-05, 'fail_rate': 0.5, 'rank_correlation': 0.3714285714285715, 'theta0_gradient': {'cosine_full': -0.027186686783889292, 'cosine_stable': -0.026877620376379755, 'balanced_dir_acc': 0.3648589065255732, 'directional_error': 1.4324626795876363, 'n_stable_dims': 27.5, 'n_dims': 28.0, 'grad_norm_hat': 0.00010391079073184082, 'grad_norm_true': 0.00029634181717179186, 'magnitude_error': 1.5018374683046687}, 'final_gradient': {'cosine_full': -0.04321896592495714, 'cosine_stable': -0.09381209720148782, 'balanced_dir_acc': 0.41480463980463983, 'directional_error': 1.4777808114233497, 'n_stable_dims': 27.0, 'n_dims': 28.0, 'grad_norm_hat': 0.00010874138381813046, 'grad_norm_true': 0.00031088955645203604, 'magnitude_error': 1.5475862584831415}}, 'base': {'nmse': 0.8514257669448853, 'command_mae': 0.01959952525794506, 'theta_sat': 0.8928571428571429, 'rho_proj': 0.30931431355342187, 'true_return': -0.015448636835407184, 'surrogate_return': -0.03187281595440937, 'true_theta0': -0.015456184877401252, 'delta': 7.548041994066082e-06, 'fail_rate': 0.16666666666666666, 'rank_correlation': 0.3142857142857143, 'theta0_gradient': {'cosine_full': 0.06878713830388666, 'cosine_stable': 0.06860388771892277, 'balanced_dir_acc': 0.5698853615520282, 'directional_error': 1.3642827667431778, 'n_stable_dims': 27.5, 'n_dims': 28.0, 'grad_norm_hat': 0.00033470098778748007, 'grad_norm_true': 0.00029634181717179186, 'magnitude_error': 2.8453292593668507}, 'final_gradient': {'cosine_full': 0.05599511622101889, 'cosine_stable': 0.06406682305545393, 'balanced_dir_acc': 0.4902659069325736, 'directional_error': 1.3678982317853994, 'n_stable_dims': 27.0, 'n_dims': 28.0, 'grad_norm_hat': 0.0003434657707974084, 'grad_norm_true': 0.0003059000695146485, 'magnitude_error': 2.789737613352228}}, 'dir_random': {'nmse': 0.9995759129524231, 'command_mae': 0.01977790892124176, 'theta_sat': 0.25, 'rho_proj': 0.24323268806245554, 'true_return': -0.015713631265686485, 'surrogate_return': -0.03142499150960298, 'true_theta0': -0.015456184877401252, 'delta': -0.0002574463882852331, 'fail_rate': 0.6666666666666666, 'rank_correlation': 0.4285714285714286, 'theta0_gradient': {'cosine_full': -0.13210224967274187, 'cosine_stable': -0.12679538594435938, 'balanced_dir_acc': 0.5094797178130511, 'directional_error': 1.4983993221946326, 'n_stable_dims': 27.5, 'n_dims': 28.0, 'grad_norm_hat': 2.1732320387352392e-05, 'grad_norm_true': 0.00029634181717179186, 'magnitude_error': 1.0580452612508655}, 'final_gradient': {'cosine_full': -0.18487276689799803, 'cosine_stable': -0.1703233736629479, 'balanced_dir_acc': 0.44702211368878036, 'directional_error': 1.5233133144969246, 'n_stable_dims': 27.166666666666668, 'n_dims': 28.0, 'grad_norm_hat': 2.1822853413484526e-05, 'grad_norm_true': 0.0003097975947550773, 'magnitude_error': 1.0644931023730118}}, 'aux': {'nmse': 3.3371541500091553, 'command_mae': 0.014616236090660095, 'theta_sat': 0.8571428571428571, 'rho_proj': 0.2977421816832061, 'true_return': -0.016022613791623945, 'surrogate_return': -0.03207142327370478, 'true_theta0': -0.015456184877401252, 'delta': -0.0005664289142226944, 'fail_rate': 0.6666666666666666, 'rank_correlation': 0.3142857142857143, 'theta0_gradient': {'cosine_full': -0.11239707266396291, 'cosine_stable': -0.11373274491055137, 'balanced_dir_acc': 0.365299823633157, 'directional_error': 1.4915791003191166, 'n_stable_dims': 27.5, 'n_dims': 28.0, 'grad_norm_hat': 7.142074146630376e-05, 'grad_norm_true': 0.00029634181717179186, 'magnitude_error': 1.3362235948432535}, 'final_gradient': {'cosine_full': -0.13221623652183748, 'cosine_stable': -0.13229291175267957, 'balanced_dir_acc': 0.35682064848731515, 'directional_error': 1.5038027947114017, 'n_stable_dims': 27.5, 'n_dims': 28.0, 'grad_norm_hat': 6.7990913513096e-05, 'grad_norm_true': 0.0003344139169302851, 'magnitude_error': 1.295151394358008}}}

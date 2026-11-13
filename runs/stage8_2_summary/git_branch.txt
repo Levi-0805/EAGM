@@ -1,0 +1,10 @@
+  main                             2fd27a8 [origin/main] Controller B snapshot fix and masked-Dir seed-0 policy experiment.
+  stage3-protocol-repair           c386ed3 [origin/stage3-protocol-repair] Stage 4 fixed-B five-seed: Dir-Matched return gain vs Mc (CI excludes 0).
+  stage5-confirm-budget            6f66823 [origin/stage5-confirm-budget] Stage 5: confirm Dir-Matched gains, budget match, fair baselines, OOD pre-exp.
+  stage6-exec-generalization       1f25a97 [origin/stage6-exec-generalization] Stage 6B.2: HistC ablation fails capacity/shuffle controls; drop for ExecState.
+  stage6c-path-aware-saturation    43cfc79 [origin/stage6c-path-aware-saturation] Stage 6C: retain Dir-Random; stop Path-Dir
+  stage7-cross-task-generalization bcdce42 [origin/stage7-cross-task-generalization] Stage 7C.1: Reach diagnosis — reward OK; Dir>Base at 3000 on seed20
+  stage7c2-true-ee-objective       bcdce42 Stage 7C.1: Reach diagnosis — reward OK; Dir>Base at 3000 on seed20
+  stage8-1-geometry-jacobian-audit bcdce42 Stage 7C.1: Reach diagnosis — reward OK; Dir>Base at 3000 on seed20
+* stage8-2-dynamics-jacobian-audit bcdce42 Stage 7C.1: Reach diagnosis — reward OK; Dir>Base at 3000 on seed20
+  stage8-research-consolidation    bcdce42 Stage 7C.1: Reach diagnosis — reward OK; Dir>Base at 3000 on seed20

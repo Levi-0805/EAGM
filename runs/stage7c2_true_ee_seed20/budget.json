@@ -1,0 +1,14 @@
+{
+  "collection_steps": 7200,
+  "fk_fit_samples": 4000,
+  "fk_fit_steps": 800,
+  "train_label_steps": 16128,
+  "train_label_queries": 2016,
+  "gradient_audit_steps": 86016,
+  "total_control_steps": 111264,
+  "evaluation_control_steps": 87936,
+  "note": "All env.step calls counted. FK/IK queries are kinematic evaluations, not control steps. All models share collection; only Dir consumes training FD labels.",
+  "gradient_audit_queries": 10752,
+  "policy_eval_queries": 192,
+  "all_fd_and_eval_queries": 12960
+}

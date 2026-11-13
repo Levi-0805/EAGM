@@ -1,0 +1,32 @@
+[
+  {
+    "q_grad_max_error": 8.673617379884035e-19,
+    "qdot_grad_max_error": 0.0,
+    "action_grad_max_error": 0.0
+  },
+  {
+    "q_grad_max_error": 8.673617379884035e-19,
+    "qdot_grad_max_error": 0.0,
+    "action_grad_max_error": 0.0
+  },
+  {
+    "q_grad_max_error": 4.336808689942018e-19,
+    "qdot_grad_max_error": 0.0,
+    "action_grad_max_error": 0.0
+  },
+  {
+    "q_grad_max_error": 1.734723475976807e-18,
+    "qdot_grad_max_error": 0.0,
+    "action_grad_max_error": 0.0
+  },
+  {
+    "q_grad_max_error": 8.673617379884035e-19,
+    "qdot_grad_max_error": 0.0,
+    "action_grad_max_error": 0.0
+  },
+  {
+    "q_grad_max_error": 8.673617379884035e-19,
+    "qdot_grad_max_error": 0.0,
+    "action_grad_max_error": 0.0
+  }
+]

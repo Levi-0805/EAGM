@@ -1,0 +1,5 @@
+{
+  "passed": true,
+  "train_reward_cosine": 0.4827165356269952,
+  "control_steps": 0
+}

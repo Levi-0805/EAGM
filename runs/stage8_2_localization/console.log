@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/aaa/桌面/汇报/11月论文/eagm_gpu/analysis/stage8_2_localize.py", line 42, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/aaa/桌面/汇报/11月论文/eagm_gpu/analysis/stage8_2_localize.py", line 17, in main
+    k=Kernel(env,s['snapshot'],ab);z=k.initial;a=np.clip(actor_raw_numpy(np.zeros(28),z[:28],z[TARGET],s['refs'][0]),-.03,.03);out=k.forward(z,a,0);u=env._last_true_command.copy();v=np.r_[z[:28],u]
+                                                                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PartialUnknownArmEnv' object has no attribute '_last_true_command'. Did you mean: 'last_true_command'?

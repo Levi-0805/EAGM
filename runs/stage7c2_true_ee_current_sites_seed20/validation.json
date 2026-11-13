@@ -1,0 +1,8 @@
+{
+  "true_fd_analytic_test": "PASS",
+  "legacy_stage6c_tests": "7 PASS",
+  "replay_and_stale_site_tests": "PASS",
+  "old_results_modified": false,
+  "execution": "CPU",
+  "primary_directory": "runs/stage7c2_true_ee_current_sites_seed20"
+}

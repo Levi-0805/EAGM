@@ -1,0 +1,19 @@
+{
+  "branch": "stage8-research-consolidation",
+  "prior_files_changed": 0,
+  "observations": 3930,
+  "contrasts": 45,
+  "figures": 12,
+  "p0": "bounded audit complete; no historical retraining",
+  "p1": "two-seed C1 screen; C2 linear screen; C3 scalar feasibility",
+  "gate": "STOP before five seeds",
+  "total_new_experiment_control_steps": 133248,
+  "excluded": "No simulator control steps in statistics/geometry-only screens; FK queries recorded separately",
+  "remaining": [
+    "exact geometry/Jacobian intervention",
+    "full literature equation/code review",
+    "external baselines",
+    "independent confirmation",
+    "visual/hardware validation"
+  ]
+}

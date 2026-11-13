@@ -1,0 +1,42 @@
+ M tasks/reach.py
+ M training/gradients.py
+ M training/rollout.py
+?? analysis/
+?? configs/stage8_protocol.json
+?? reports/figures/stage8/
+?? reports/stage7c2_model_comparison.md
+?? reports/stage7c2_model_comparison_cached_sites_preliminary.md
+?? reports/stage7c2_research_decision.md
+?? reports/stage7c2_research_decision_cached_sites_preliminary.md
+?? reports/stage7c2_reward_audit.md
+?? reports/stage7c2_reward_audit_cached_sites_preliminary.md
+?? reports/stage7c2_true_gradient_audit.md
+?? reports/stage7c2_true_gradient_audit_cached_sites_preliminary.md
+?? reports/stage8_evidence_ledger.md
+?? reports/stage8_experimental_results.md
+?? reports/stage8_failure_decomposition.md
+?? reports/stage8_historical_audit.md
+?? reports/stage8_method_candidates.md
+?? reports/stage8_method_selection.md
+?? reports/stage8_paper_outline.md
+?? reports/stage8_related_work.md
+?? reports/stage8_research_decision.md
+?? reports/stage8_venue_assessment.md
+?? runs/stage7c2_true_ee_current_sites_seed20/
+?? runs/stage7c2_true_ee_seed20/
+?? runs/stage8_c1_seed40/
+?? runs/stage8_c1_seed41/
+?? runs/stage8_failure/
+?? scripts/report_stage7c2.py
+?? scripts/run_stage7c2_true_ee.py
+?? tests/check_stage7c2_saved_replay.py
+?? tests/test_stage7c2_true_ee.py
+?? training/stage8_reliability.py
+  main                             2fd27a8 [origin/main] Controller B snapshot fix and masked-Dir seed-0 policy experiment.
+  stage3-protocol-repair           c386ed3 [origin/stage3-protocol-repair] Stage 4 fixed-B five-seed: Dir-Matched return gain vs Mc (CI excludes 0).
+  stage5-confirm-budget            6f66823 [origin/stage5-confirm-budget] Stage 5: confirm Dir-Matched gains, budget match, fair baselines, OOD pre-exp.
+  stage6-exec-generalization       1f25a97 [origin/stage6-exec-generalization] Stage 6B.2: HistC ablation fails capacity/shuffle controls; drop for ExecState.
+  stage6c-path-aware-saturation    43cfc79 [origin/stage6c-path-aware-saturation] Stage 6C: retain Dir-Random; stop Path-Dir
+  stage7-cross-task-generalization bcdce42 [origin/stage7-cross-task-generalization] Stage 7C.1: Reach diagnosis — reward OK; Dir>Base at 3000 on seed20
+  stage7c2-true-ee-objective       bcdce42 Stage 7C.1: Reach diagnosis — reward OK; Dir>Base at 3000 on seed20
+* stage8-research-consolidation    bcdce42 Stage 7C.1: Reach diagnosis — reward OK; Dir>Base at 3000 on seed20

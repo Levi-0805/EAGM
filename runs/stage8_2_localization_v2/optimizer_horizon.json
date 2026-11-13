@@ -1,0 +1,322 @@
+[
+  {
+    "group": "train",
+    "start": 0,
+    "episode": 0,
+    "condition": "theta0",
+    "return_h8": -0.006351452225388832,
+    "return_h16": -0.012279680498152003
+  },
+  {
+    "group": "train",
+    "start": 0,
+    "episode": 0,
+    "condition": "A",
+    "return_h8": -0.006351394217423661,
+    "return_h16": -0.012279624608123978
+  },
+  {
+    "group": "train",
+    "start": 0,
+    "episode": 0,
+    "condition": "B",
+    "return_h8": -0.0063513994761441395,
+    "return_h16": -0.012279628034729947
+  },
+  {
+    "group": "train",
+    "start": 0,
+    "episode": 0,
+    "condition": "C",
+    "return_h8": -0.006350561594029141,
+    "return_h16": -0.012274490111132548
+  },
+  {
+    "group": "train",
+    "start": 0,
+    "episode": 0,
+    "condition": "D",
+    "return_h8": -0.006351764299335844,
+    "return_h16": -0.012281349413986153
+  },
+  {
+    "group": "train",
+    "start": 1,
+    "episode": 2,
+    "condition": "theta0",
+    "return_h8": -0.004447112550264356,
+    "return_h16": -0.008355834936180284
+  },
+  {
+    "group": "train",
+    "start": 1,
+    "episode": 2,
+    "condition": "A",
+    "return_h8": -0.00445100601198,
+    "return_h16": -0.008393864142158675
+  },
+  {
+    "group": "train",
+    "start": 1,
+    "episode": 2,
+    "condition": "B",
+    "return_h8": -0.004450954391787487,
+    "return_h16": -0.008393486902929929
+  },
+  {
+    "group": "train",
+    "start": 1,
+    "episode": 2,
+    "condition": "C",
+    "return_h8": -0.004444444785347831,
+    "return_h16": -0.008329775522802332
+  },
+  {
+    "group": "train",
+    "start": 1,
+    "episode": 2,
+    "condition": "D",
+    "return_h8": -0.0044427753041850855,
+    "return_h16": -0.008312116816558824
+  },
+  {
+    "group": "test",
+    "start": 0,
+    "episode": 1,
+    "condition": "theta0",
+    "return_h8": -0.002694215355691991,
+    "return_h16": -0.004916315121696107
+  },
+  {
+    "group": "test",
+    "start": 0,
+    "episode": 1,
+    "condition": "A",
+    "return_h8": -0.0027023673426686957,
+    "return_h16": -0.004947740719328362
+  },
+  {
+    "group": "test",
+    "start": 0,
+    "episode": 1,
+    "condition": "B",
+    "return_h8": -0.002702165817579521,
+    "return_h16": -0.004946910444271955
+  },
+  {
+    "group": "test",
+    "start": 0,
+    "episode": 1,
+    "condition": "C",
+    "return_h8": -0.0026917595110370336,
+    "return_h16": -0.004905554087732186
+  },
+  {
+    "group": "test",
+    "start": 0,
+    "episode": 1,
+    "condition": "D",
+    "return_h8": -0.0026937665640704546,
+    "return_h16": -0.004914877022800722
+  },
+  {
+    "group": "test",
+    "start": 1,
+    "episode": 6,
+    "condition": "theta0",
+    "return_h8": -0.010267458373653535,
+    "return_h16": -0.018790476743310563
+  },
+  {
+    "group": "test",
+    "start": 1,
+    "episode": 6,
+    "condition": "A",
+    "return_h8": -0.010267001238253616,
+    "return_h16": -0.018794491622594785
+  },
+  {
+    "group": "test",
+    "start": 1,
+    "episode": 6,
+    "condition": "B",
+    "return_h8": -0.010267429401416478,
+    "return_h16": -0.018794772227200905
+  },
+  {
+    "group": "test",
+    "start": 1,
+    "episode": 6,
+    "condition": "C",
+    "return_h8": -0.010210340914163186,
+    "return_h16": -0.018637929553611817
+  },
+  {
+    "group": "test",
+    "start": 1,
+    "episode": 6,
+    "condition": "D",
+    "return_h8": -0.01026468261365097,
+    "return_h16": -0.018782393011691698
+  },
+  {
+    "group": "test",
+    "start": 2,
+    "episode": 12,
+    "condition": "theta0",
+    "return_h8": -0.007701426207488879,
+    "return_h16": -0.01456707703635122
+  },
+  {
+    "group": "test",
+    "start": 2,
+    "episode": 12,
+    "condition": "A",
+    "return_h8": -0.007701790829062415,
+    "return_h16": -0.014568608986366341
+  },
+  {
+    "group": "test",
+    "start": 2,
+    "episode": 12,
+    "condition": "B",
+    "return_h8": -0.007701844323334152,
+    "return_h16": -0.014568821711551052
+  },
+  {
+    "group": "test",
+    "start": 2,
+    "episode": 12,
+    "condition": "C",
+    "return_h8": -0.007700189189720117,
+    "return_h16": -0.014562160487574138
+  },
+  {
+    "group": "test",
+    "start": 2,
+    "episode": 12,
+    "condition": "D",
+    "return_h8": -0.007698665162992422,
+    "return_h16": -0.014557125178207782
+  },
+  {
+    "group": "test",
+    "start": 3,
+    "episode": 23,
+    "condition": "theta0",
+    "return_h8": -0.012783936212381735,
+    "return_h16": -0.024053907445636177
+  },
+  {
+    "group": "test",
+    "start": 3,
+    "episode": 23,
+    "condition": "A",
+    "return_h8": -0.012778382399129219,
+    "return_h16": -0.024013648766806464
+  },
+  {
+    "group": "test",
+    "start": 3,
+    "episode": 23,
+    "condition": "B",
+    "return_h8": -0.012778444443220151,
+    "return_h16": -0.024013899566213397
+  },
+  {
+    "group": "test",
+    "start": 3,
+    "episode": 23,
+    "condition": "C",
+    "return_h8": -0.012787797779160953,
+    "return_h16": -0.024081950134586985
+  },
+  {
+    "group": "test",
+    "start": 3,
+    "episode": 23,
+    "condition": "D",
+    "return_h8": -0.012791001968325924,
+    "return_h16": -0.024106309764745315
+  },
+  {
+    "group": "test",
+    "start": 4,
+    "episode": 25,
+    "condition": "theta0",
+    "return_h8": -0.006971132629634896,
+    "return_h16": -0.013560678047231807
+  },
+  {
+    "group": "test",
+    "start": 4,
+    "episode": 25,
+    "condition": "A",
+    "return_h8": -0.00697048942686395,
+    "return_h16": -0.013556588397721569
+  },
+  {
+    "group": "test",
+    "start": 4,
+    "episode": 25,
+    "condition": "B",
+    "return_h8": -0.006970534039593194,
+    "return_h16": -0.013557084359486672
+  },
+  {
+    "group": "test",
+    "start": 4,
+    "episode": 25,
+    "condition": "C",
+    "return_h8": -0.006967013611757681,
+    "return_h16": -0.013523873468536094
+  },
+  {
+    "group": "test",
+    "start": 4,
+    "episode": 25,
+    "condition": "D",
+    "return_h8": -0.006970792452324787,
+    "return_h16": -0.013556623707095879
+  },
+  {
+    "group": "test",
+    "start": 5,
+    "episode": 26,
+    "condition": "theta0",
+    "return_h8": -0.00920606702331275,
+    "return_h16": -0.016848654870181643
+  },
+  {
+    "group": "test",
+    "start": 5,
+    "episode": 26,
+    "condition": "A",
+    "return_h8": -0.009194145492233317,
+    "return_h16": -0.016798634972873882
+  },
+  {
+    "group": "test",
+    "start": 5,
+    "episode": 26,
+    "condition": "B",
+    "return_h8": -0.009194374100569518,
+    "return_h16": -0.01679943407748234
+  },
+  {
+    "group": "test",
+    "start": 5,
+    "episode": 26,
+    "condition": "C",
+    "return_h8": -0.00919861760066752,
+    "return_h16": -0.016814112397197753
+  },
+  {
+    "group": "test",
+    "start": 5,
+    "episode": 26,
+    "condition": "D",
+    "return_h8": -0.0092078865865857,
+    "return_h16": -0.016862102999832707
+  }
+]

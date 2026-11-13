@@ -1,0 +1,12 @@
+{
+  "control_steps": 15952,
+  "training_control_steps": 5392,
+  "evaluation_and_final_fd_steps": 10560,
+  "limit": 20000,
+  "wall_seconds": 16.57428812980652,
+  "geometry_calls": 11296,
+  "device": "cpu",
+  "cache": "shared exact state/action queries, all methods same stencils and updates",
+  "success_rate_status": "no preregistered task threshold; not fabricated",
+  "final_gradient_status": "direct true FD, single-scale; initial full/stable cosines in ABC"
+}
