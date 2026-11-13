@@ -52,6 +52,7 @@
   "tests/test_stage8_3_update.py": "165e37c2be2f2de1a10937617f1795cf4decd35f32263e525a04f694eb97d4fa",
   "configs/stage8_3_preregistered.json": "77c08a7ea121c1207d9fc56cd011f893428372fc20c690cc84c7ad226764c0bd",
   "reports/stage8_3_preregistration.md": "36494d08156bb67745ab6549d778e98834b23b3293f9376e16535d04e4ada368",
-  "reports/stage8_3_optimizer_data_alignment.md": "b75a0a0300b3acc999f286ffccd363356732e15184b12dfaa18b7c168c6a36c2",
-  "reports/stage8_3_research_decision.md": "7c0adaabd53816a957b206a87d2f18db463de8854aa202c1f4b59c2df933b212"
+  "reports/stage8_3_optimizer_data_alignment.md": "5066429b32d4021df6001a25e7ce87a10f22000656d909da5f7e9f26bcb863d9",
+  "reports/stage8_3_research_decision.md": "7c0adaabd53816a957b206a87d2f18db463de8854aa202c1f4b59c2df933b212",
+  "runs/stage8_3_alignment/execution_context.json": "33baf61939ada97038bc1cdc58274e15b9d6bc919dc92cf3dc3d0d9cf54a842c"
 }

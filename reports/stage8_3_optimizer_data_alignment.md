@@ -37,3 +37,7 @@ No Stage8.4 method promotion, no five/ten seeds, no additional optimizer/start/s
 ## Accounting and reproducibility
 
 Actual control steps: **18240/20000**, phases {'collection': 400, 'training_gradients': 10784, 'reference_fd': 5048, 'evaluation': 2008}. Worst-case preregistered plan18576; exact-query caching reduces actual counts. CPU wall time 16.72s, no GPU training. Parameter counts/checkpoint identical in all cells. Collection shared; privileged oracle query cost explicitly included, not claimed as a deployable budget-equivalent algorithm. Tests compare first Adam to torch and equal update norms without physical steps. No task success threshold is invented; FailRate is delta<0. No multi-seed CI is computed from two fresh starts.
+
+## Execution-distribution caveat
+
+Post-result descriptive inspection (not a selection rule): training nominal delays are [0,2] for K2 and [0,2,0,2] for K4; validation delays are [1,0], fresh-test delays [0,1]. K4 increases starts but does not add the missing nominal-delay1 stratum. Goals and hidden-controller draws also differ. Thus this is not a balanced coverage experiment, and its mixed outcome cannot isolate sample count from composition. No start was replaced after inspecting this fact. Exact fixed contexts: execution_context.json.
