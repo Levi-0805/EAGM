@@ -15,7 +15,7 @@ Do **not** overwrite Stage 5 frozen artifacts under `runs/stage5*`.
 - [x] Architecture doc update
 - [x] Re-eval Stage 5E with corrected metrics → `runs/stage6a_stage5e_corrected/`
 - [x] Write `reports/stage5e_corrected_stats.md`
-- [x] Push branch (`f80c69d`)
+- [x] Push branch (`f80c69d` protocol; tip `bf99aff` checklist)
 
 **Reproduce**
 ```bash
@@ -28,9 +28,10 @@ python scripts/run_stage6a_reeval_stage5e.py
 
 ## Issue 2 — Stage 6B.1 reproduce Stage 5E on seeds 10–14 (P0)
 
-- Freeze Stage 6A metrics.
-- Same models/hypers; new seeds only.
-- Deliverable: Hist+Dir vs Mc stability report.
+- [x] Freeze Stage 6A metrics; seeds 10–14; Stage 5E legacy (2 eps/config).
+- [x] Five models unchanged; no HistC/ExecState.
+- [x] Reports: `stage6b1_results.md`, `stage6b1_analysis.md`; **stop for human review** (no auto 6B.2).
+- **Outcome (Case C):** Dir−Base **5/5** interp+extrap; Hist+Dir−Mc **3/5** interp (CI includes 0). θ-sat Dir≈0.89 remains high.
 
 ## Issue 3 — Stage 6B.2 HistC ablation (P0)
 

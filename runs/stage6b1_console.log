@@ -1,0 +1,460 @@
+==== Stage6B.1 confirmatory seed 10 ====
+    mc it 200 loss 0.37460
+    mc it 400 loss 0.26831
+    mc it 600 loss 0.22893
+    mc it 800 loss 0.20570
+    mc it 1000 loss 0.24700
+    mc it 1200 loss 0.28247
+    mc it 1400 loss 0.26865
+    mc it 1600 loss 0.22191
+    mc it 1800 loss 0.20849
+    mc it 2000 loss 0.28540
+    mc it 2200 loss 0.21589
+    mc it 2400 loss 0.27404
+    mc it 2600 loss 0.25619
+    mc it 2800 loss 0.22726
+    mc it 3000 loss 0.23527
+    pair it 200 base 0.36777 dir 0.36888
+    pair it 400 base 0.35865 dir 0.35971
+    pair it 600 base 0.35739 dir 0.35962
+    pair it 800 base 0.36545 dir 0.36540
+    pair it 1000 base 0.33997 dir 0.34263
+    pair it 1200 base 0.29614 dir 0.29706
+    pair it 1400 base 0.34824 dir 0.34849
+    pair it 1600 base 0.30980 dir 0.31144
+    pair it 1800 base 0.42249 dir 0.42288
+    pair it 2000 base 0.30255 dir 0.30402
+    pair it 2200 base 0.33059 dir 0.32934
+    pair it 2400 base 0.28050 dir 0.28298
+    pair it 2600 base 0.36135 dir 0.36308
+    pair it 2800 base 0.27778 dir 0.28195
+    pair it 3000 base 0.31408 dir 0.31510
+    pair it 200 base 0.38655 dir 0.38887
+    pair it 400 base 0.31691 dir 0.31948
+    pair it 600 base 0.29910 dir 0.30327
+    pair it 800 base 0.27841 dir 0.28551
+    pair it 1000 base 0.23175 dir 0.23507
+    pair it 1200 base 0.26160 dir 0.26450
+    pair it 1400 base 0.26667 dir 0.26944
+    pair it 1600 base 0.23221 dir 0.23550
+    pair it 1800 base 0.22050 dir 0.22102
+    pair it 2000 base 0.23197 dir 0.23507
+    pair it 2200 base 0.23817 dir 0.23976
+    pair it 2400 base 0.22686 dir 0.23084
+    pair it 2600 base 0.27295 dir 0.28141
+    pair it 2800 base 0.21016 dir 0.21472
+    pair it 3000 base 0.20908 dir 0.21424
+  seed10 inter mc                     nmse 0.246 cosF 0.768 cosS 0.768 ret -0.003930 fail 0.00 θsat 0.93
+  seed10 extra mc                     nmse 0.465 cosF 0.764 cosS 0.751 ret -0.005403 fail 0.17 θsat 0.93
+  seed10 iid_h mc                     nmse 0.283 cosF 0.743 cosS 0.743 ret -0.004829 fail 0.17 θsat 0.93
+  seed10 inter eagm_base              nmse 0.233 cosF 0.246 cosS 0.268 ret -0.006595 fail 0.67 θsat 0.61
+  seed10 extra eagm_base              nmse 0.470 cosF 0.235 cosS 0.239 ret -0.008359 fail 0.83 θsat 0.61
+  seed10 iid_h eagm_base              nmse 0.295 cosF 0.264 cosS 0.264 ret -0.006816 fail 0.67 θsat 0.61
+  seed10 inter eagm_dir_matched       nmse 0.234 cosF 0.668 cosS 0.668 ret -0.003257 fail 0.00 θsat 0.96
+  seed10 extra eagm_dir_matched       nmse 0.460 cosF 0.647 cosS 0.623 ret -0.004690 fail 0.17 θsat 0.96
+  seed10 iid_h eagm_dir_matched       nmse 0.287 cosF 0.619 cosS 0.619 ret -0.004307 fail 0.17 θsat 0.96
+  seed10 inter eagm_hist              nmse 0.228 cosF 0.697 cosS 0.698 ret -0.003977 fail 0.00 θsat 0.93
+  seed10 extra eagm_hist              nmse 0.429 cosF 0.717 cosS 0.717 ret -0.005422 fail 0.17 θsat 0.93
+  seed10 iid_h eagm_hist              nmse 0.271 cosF 0.728 cosS 0.728 ret -0.004926 fail 0.17 θsat 0.93
+  seed10 inter eagm_hist_dir_matched  nmse 0.232 cosF 0.789 cosS 0.789 ret -0.003993 fail 0.00 θsat 1.00
+  seed10 extra eagm_hist_dir_matched  nmse 0.439 cosF 0.775 cosS 0.789 ret -0.005210 fail 0.00 θsat 1.00
+  seed10 iid_h eagm_hist_dir_matched  nmse 0.275 cosF 0.781 cosS 0.781 ret -0.004441 fail 0.00 θsat 1.00
+==== Stage6B.1 confirmatory seed 11 ====
+    mc it 200 loss 0.33614
+    mc it 400 loss 0.30670
+    mc it 600 loss 0.26096
+    mc it 800 loss 0.24170
+    mc it 1000 loss 0.18859
+    mc it 1200 loss 0.21085
+    mc it 1400 loss 0.23237
+    mc it 1600 loss 0.26590
+    mc it 1800 loss 0.23911
+    mc it 2000 loss 0.22569
+    mc it 2200 loss 0.23266
+    mc it 2400 loss 0.20241
+    mc it 2600 loss 0.20513
+    mc it 2800 loss 0.19695
+    mc it 3000 loss 0.21694
+    pair it 200 base 0.35523 dir 0.35694
+    pair it 400 base 0.33671 dir 0.34364
+    pair it 600 base 0.30446 dir 0.30782
+    pair it 800 base 0.27387 dir 0.27643
+    pair it 1000 base 0.24647 dir 0.25383
+    pair it 1200 base 0.25863 dir 0.26130
+    pair it 1400 base 0.24116 dir 0.24378
+    pair it 1600 base 0.25511 dir 0.25813
+    pair it 1800 base 0.23773 dir 0.23957
+    pair it 2000 base 0.28069 dir 0.28220
+    pair it 2200 base 0.24503 dir 0.25122
+    pair it 2400 base 0.24084 dir 0.24597
+    pair it 2600 base 0.25169 dir 0.25720
+    pair it 2800 base 0.22039 dir 0.22529
+    pair it 3000 base 0.27054 dir 0.27743
+    pair it 200 base 0.46651 dir 0.47372
+    pair it 400 base 0.30976 dir 0.31149
+    pair it 600 base 0.26290 dir 0.26576
+    pair it 800 base 0.26712 dir 0.26846
+    pair it 1000 base 0.21837 dir 0.22370
+    pair it 1200 base 0.21826 dir 0.22825
+    pair it 1400 base 0.24809 dir 0.25582
+    pair it 1600 base 0.19629 dir 0.20568
+    pair it 1800 base 0.22743 dir 0.23066
+    pair it 2000 base 0.21074 dir 0.22267
+    pair it 2200 base 0.22630 dir 0.23120
+    pair it 2400 base 0.21867 dir 0.22329
+    pair it 2600 base 0.23576 dir 0.24390
+    pair it 2800 base 0.19315 dir 0.20369
+    pair it 3000 base 0.22005 dir 0.22808
+  seed11 inter mc                     nmse 0.280 cosF 0.536 cosS 0.556 ret -0.005217 fail 0.00 θsat 0.96
+  seed11 extra mc                     nmse 0.534 cosF 0.555 cosS 0.556 ret -0.006538 fail 0.17 θsat 0.96
+  seed11 iid_h mc                     nmse 0.299 cosF 0.573 cosS 0.573 ret -0.004769 fail 0.17 θsat 0.96
+  seed11 inter eagm_base              nmse 0.272 cosF 0.164 cosS 0.184 ret -0.007034 fail 1.00 θsat 0.75
+  seed11 extra eagm_base              nmse 0.515 cosF 0.154 cosS 0.154 ret -0.008534 fail 1.00 θsat 0.75
+  seed11 iid_h eagm_base              nmse 0.283 cosF 0.148 cosS 0.164 ret -0.006566 fail 1.00 θsat 0.75
+  seed11 inter eagm_dir_matched       nmse 0.273 cosF 0.672 cosS 0.676 ret -0.004599 fail 0.00 θsat 0.86
+  seed11 extra eagm_dir_matched       nmse 0.519 cosF 0.671 cosS 0.684 ret -0.005888 fail 0.08 θsat 0.86
+  seed11 iid_h eagm_dir_matched       nmse 0.286 cosF 0.664 cosS 0.690 ret -0.004158 fail 0.00 θsat 0.86
+  seed11 inter eagm_hist              nmse 0.241 cosF 0.711 cosS 0.711 ret -0.004547 fail 0.00 θsat 0.89
+  seed11 extra eagm_hist              nmse 0.468 cosF 0.709 cosS 0.709 ret -0.005649 fail 0.00 θsat 0.89
+  seed11 iid_h eagm_hist              nmse 0.260 cosF 0.702 cosS 0.710 ret -0.004165 fail 0.00 θsat 0.89
+  seed11 inter eagm_hist_dir_matched  nmse 0.252 cosF 0.589 cosS 0.589 ret -0.005101 fail 0.00 θsat 0.86
+  seed11 extra eagm_hist_dir_matched  nmse 0.486 cosF 0.590 cosS 0.618 ret -0.006402 fail 0.25 θsat 0.86
+  seed11 iid_h eagm_hist_dir_matched  nmse 0.277 cosF 0.669 cosS 0.669 ret -0.004793 fail 0.17 θsat 0.86
+==== Stage6B.1 confirmatory seed 12 ====
+    mc it 200 loss 0.32141
+    mc it 400 loss 0.30437
+    mc it 600 loss 0.25693
+    mc it 800 loss 0.24388
+    mc it 1000 loss 0.23802
+    mc it 1200 loss 0.23909
+    mc it 1400 loss 0.22705
+    mc it 1600 loss 0.20326
+    mc it 1800 loss 0.20330
+    mc it 2000 loss 0.20583
+    mc it 2200 loss 0.19890
+    mc it 2400 loss 0.18764
+    mc it 2600 loss 0.21805
+    mc it 2800 loss 0.17870
+    mc it 3000 loss 0.20521
+    pair it 200 base 0.40268 dir 0.40415
+    pair it 400 base 0.40169 dir 0.41296
+    pair it 600 base 0.35904 dir 0.37031
+    pair it 800 base 0.34070 dir 0.34177
+    pair it 1000 base 0.33892 dir 0.34483
+    pair it 1200 base 0.27658 dir 0.28274
+    pair it 1400 base 0.29868 dir 0.30230
+    pair it 1600 base 0.29777 dir 0.30140
+    pair it 1800 base 0.27468 dir 0.28762
+    pair it 2000 base 0.30668 dir 0.30939
+    pair it 2200 base 0.29613 dir 0.30744
+    pair it 2400 base 0.34142 dir 0.34942
+    pair it 2600 base 0.27246 dir 0.27705
+    pair it 2800 base 0.25060 dir 0.25613
+    pair it 3000 base 0.29932 dir 0.31139
+    pair it 200 base 0.39023 dir 0.39158
+    pair it 400 base 0.28698 dir 0.30268
+    pair it 600 base 0.26510 dir 0.27699
+    pair it 800 base 0.29345 dir 0.30270
+    pair it 1000 base 0.22740 dir 0.22994
+    pair it 1200 base 0.22458 dir 0.23357
+    pair it 1400 base 0.23282 dir 0.23034
+    pair it 1600 base 0.22971 dir 0.23810
+    pair it 1800 base 0.24121 dir 0.25697
+    pair it 2000 base 0.22751 dir 0.23649
+    pair it 2200 base 0.20493 dir 0.21499
+    pair it 2400 base 0.21560 dir 0.23039
+    pair it 2600 base 0.18504 dir 0.19656
+    pair it 2800 base 0.21041 dir 0.21695
+    pair it 3000 base 0.19053 dir 0.19913
+  seed12 inter mc                     nmse 0.274 cosF 0.627 cosS 0.623 ret -0.003667 fail 0.00 θsat 0.96
+  seed12 extra mc                     nmse 0.502 cosF 0.630 cosS 0.639 ret -0.004904 fail 0.08 θsat 0.96
+  seed12 iid_h mc                     nmse 0.153 cosF 0.643 cosS 0.643 ret -0.003718 fail 0.00 θsat 0.96
+  seed12 inter eagm_base              nmse 0.265 cosF 0.215 cosS 0.211 ret -0.005395 fail 0.25 θsat 0.61
+  seed12 extra eagm_base              nmse 0.492 cosF 0.143 cosS 0.142 ret -0.006940 fail 0.33 θsat 0.61
+  seed12 iid_h eagm_base              nmse 0.150 cosF 0.158 cosS 0.161 ret -0.005425 fail 0.00 θsat 0.61
+  seed12 inter eagm_dir_matched       nmse 0.269 cosF 0.535 cosS 0.559 ret -0.004158 fail 0.00 θsat 0.93
+  seed12 extra eagm_dir_matched       nmse 0.499 cosF 0.545 cosS 0.545 ret -0.005789 fail 0.17 θsat 0.93
+  seed12 iid_h eagm_dir_matched       nmse 0.152 cosF 0.572 cosS 0.582 ret -0.004164 fail 0.00 θsat 0.93
+  seed12 inter eagm_hist              nmse 0.238 cosF 0.562 cosS 0.568 ret -0.005286 fail 0.33 θsat 0.89
+  seed12 extra eagm_hist              nmse 0.450 cosF 0.566 cosS 0.565 ret -0.006854 fail 0.50 θsat 0.89
+  seed12 iid_h eagm_hist              nmse 0.142 cosF 0.550 cosS 0.551 ret -0.005256 fail 0.00 θsat 0.89
+  seed12 inter eagm_hist_dir_matched  nmse 0.246 cosF 0.507 cosS 0.511 ret -0.005152 fail 0.00 θsat 0.86
+  seed12 extra eagm_hist_dir_matched  nmse 0.462 cosF 0.522 cosS 0.521 ret -0.006481 fail 0.17 θsat 0.86
+  seed12 iid_h eagm_hist_dir_matched  nmse 0.142 cosF 0.534 cosS 0.535 ret -0.004793 fail 0.00 θsat 0.86
+==== Stage6B.1 confirmatory seed 13 ====
+    mc it 200 loss 0.38429
+    mc it 400 loss 0.30011
+    mc it 600 loss 0.25532
+    mc it 800 loss 0.29379
+    mc it 1000 loss 0.33347
+    mc it 1200 loss 0.14777
+    mc it 1400 loss 0.20442
+    mc it 1600 loss 0.18287
+    mc it 1800 loss 0.20795
+    mc it 2000 loss 0.32723
+    mc it 2200 loss 0.22043
+    mc it 2400 loss 0.33851
+    mc it 2600 loss 0.19543
+    mc it 2800 loss 0.17683
+    mc it 3000 loss 0.18525
+    pair it 200 base 0.50415 dir 0.50789
+    pair it 400 base 0.55179 dir 0.56635
+    pair it 600 base 0.38627 dir 0.39209
+    pair it 800 base 0.33517 dir 0.33917
+    pair it 1000 base 0.33020 dir 0.33292
+    pair it 1200 base 0.37135 dir 0.37344
+    pair it 1400 base 0.33965 dir 0.34228
+    pair it 1600 base 0.34855 dir 0.35094
+    pair it 1800 base 0.29813 dir 0.30044
+    pair it 2000 base 0.33428 dir 0.33836
+    pair it 2200 base 0.36764 dir 0.42112
+    pair it 2400 base 0.36552 dir 0.37735
+    pair it 2600 base 0.34403 dir 0.35595
+    pair it 2800 base 0.31142 dir 0.31752
+    pair it 3000 base 0.35711 dir 0.39858
+    pair it 200 base 0.50549 dir 0.50489
+    pair it 400 base 0.32240 dir 0.31363
+    pair it 600 base 0.30288 dir 0.30868
+    pair it 800 base 0.27844 dir 0.29762
+    pair it 1000 base 0.38676 dir 0.41262
+    pair it 1200 base 0.26521 dir 0.26763
+    pair it 1400 base 0.30894 dir 0.30571
+    pair it 1600 base 0.24920 dir 0.25442
+    pair it 1800 base 0.21675 dir 0.22472
+    pair it 2000 base 0.22038 dir 0.22764
+    pair it 2200 base 0.20500 dir 0.21346
+    pair it 2400 base 0.28590 dir 0.29030
+    pair it 2600 base 0.20218 dir 0.20841
+    pair it 2800 base 0.26068 dir 0.26395
+    pair it 3000 base 0.17530 dir 0.18349
+  seed13 inter mc                     nmse 0.285 cosF 0.460 cosS 0.460 ret -0.005012 fail 0.00 θsat 0.86
+  seed13 extra mc                     nmse 0.545 cosF 0.399 cosS 0.399 ret -0.006292 fail 0.08 θsat 0.86
+  seed13 iid_h mc                     nmse 0.329 cosF 0.411 cosS 0.434 ret -0.005511 fail 0.00 θsat 0.86
+  seed13 inter eagm_base              nmse 0.276 cosF 0.253 cosS 0.253 ret -0.006122 fail 0.83 θsat 0.68
+  seed13 extra eagm_base              nmse 0.525 cosF 0.256 cosS 0.256 ret -0.007505 fail 0.92 θsat 0.68
+  seed13 iid_h eagm_base              nmse 0.325 cosF 0.303 cosS 0.305 ret -0.006641 fail 0.67 θsat 0.68
+  seed13 inter eagm_dir_matched       nmse 0.274 cosF 0.669 cosS 0.679 ret -0.004349 fail 0.00 θsat 0.89
+  seed13 extra eagm_dir_matched       nmse 0.531 cosF 0.650 cosS 0.650 ret -0.005731 fail 0.08 θsat 0.89
+  seed13 iid_h eagm_dir_matched       nmse 0.323 cosF 0.692 cosS 0.712 ret -0.004856 fail 0.00 θsat 0.89
+  seed13 inter eagm_hist              nmse 0.264 cosF 0.469 cosS 0.474 ret -0.004945 fail 0.00 θsat 0.68
+  seed13 extra eagm_hist              nmse 0.501 cosF 0.421 cosS 0.421 ret -0.006221 fail 0.25 θsat 0.68
+  seed13 iid_h eagm_hist              nmse 0.309 cosF 0.491 cosS 0.491 ret -0.005487 fail 0.00 θsat 0.68
+  seed13 inter eagm_hist_dir_matched  nmse 0.272 cosF 0.480 cosS 0.482 ret -0.004410 fail 0.00 θsat 0.86
+  seed13 extra eagm_hist_dir_matched  nmse 0.516 cosF 0.405 cosS 0.405 ret -0.005710 fail 0.00 θsat 0.86
+  seed13 iid_h eagm_hist_dir_matched  nmse 0.315 cosF 0.510 cosS 0.510 ret -0.004889 fail 0.00 θsat 0.86
+==== Stage6B.1 confirmatory seed 14 ====
+    mc it 200 loss 0.34913
+    mc it 400 loss 0.31563
+    mc it 600 loss 0.35230
+    mc it 800 loss 0.21991
+    mc it 1000 loss 0.24342
+    mc it 1200 loss 0.22577
+    mc it 1400 loss 0.24185
+    mc it 1600 loss 0.20923
+    mc it 1800 loss 0.22505
+    mc it 2000 loss 0.22496
+    mc it 2200 loss 0.31430
+    mc it 2400 loss 0.31413
+    mc it 2600 loss 0.22980
+    mc it 2800 loss 0.23198
+    mc it 3000 loss 0.23796
+    pair it 200 base 0.44796 dir 0.44826
+    pair it 400 base 0.38700 dir 0.39082
+    pair it 600 base 0.37316 dir 0.37605
+    pair it 800 base 0.35373 dir 0.36274
+    pair it 1000 base 0.37708 dir 0.37914
+    pair it 1200 base 0.35702 dir 0.36040
+    pair it 1400 base 0.36990 dir 0.37064
+    pair it 1600 base 0.32303 dir 0.32451
+    pair it 1800 base 0.33946 dir 0.34212
+    pair it 2000 base 0.34203 dir 0.34649
+    pair it 2200 base 0.37251 dir 0.37398
+    pair it 2400 base 0.33551 dir 0.33763
+    pair it 2600 base 0.33219 dir 0.33478
+    pair it 2800 base 0.35949 dir 0.36210
+    pair it 3000 base 0.31469 dir 0.31525
+    pair it 200 base 0.46303 dir 0.46473
+    pair it 400 base 0.32613 dir 0.34869
+    pair it 600 base 0.26924 dir 0.27599
+    pair it 800 base 0.27215 dir 0.28002
+    pair it 1000 base 0.26015 dir 0.26324
+    pair it 1200 base 0.27939 dir 0.28411
+    pair it 1400 base 0.26029 dir 0.26590
+    pair it 1600 base 0.26235 dir 0.26812
+    pair it 1800 base 0.29250 dir 0.30503
+    pair it 2000 base 0.24679 dir 0.24957
+    pair it 2200 base 0.26402 dir 0.26914
+    pair it 2400 base 0.24225 dir 0.24997
+    pair it 2600 base 0.23342 dir 0.24235
+    pair it 2800 base 0.27763 dir 0.28857
+    pair it 3000 base 0.24663 dir 0.25192
+  seed14 inter mc                     nmse 0.249 cosF 0.287 cosS 0.293 ret -0.006919 fail 1.00 θsat 1.00
+  seed14 extra mc                     nmse 0.485 cosF 0.279 cosS 0.287 ret -0.008423 fail 1.00 θsat 1.00
+  seed14 iid_h mc                     nmse 0.080 cosF 0.222 cosS 0.225 ret -0.007866 fail 0.83 θsat 1.00
+  seed14 inter eagm_base              nmse 0.239 cosF 0.192 cosS 0.192 ret -0.006113 fail 0.50 θsat 0.79
+  seed14 extra eagm_base              nmse 0.466 cosF 0.104 cosS 0.153 ret -0.007394 fail 0.83 θsat 0.79
+  seed14 iid_h eagm_base              nmse 0.078 cosF 0.200 cosS 0.200 ret -0.007391 fail 0.17 θsat 0.79
+  seed14 inter eagm_dir_matched       nmse 0.239 cosF 0.848 cosS 0.848 ret -0.003182 fail 0.00 θsat 0.79
+  seed14 extra eagm_dir_matched       nmse 0.466 cosF 0.836 cosS 0.848 ret -0.004413 fail 0.17 θsat 0.79
+  seed14 iid_h eagm_dir_matched       nmse 0.075 cosF 0.841 cosS 0.849 ret -0.005211 fail 0.00 θsat 0.79
+  seed14 inter eagm_hist              nmse 0.216 cosF 0.566 cosS 0.571 ret -0.005111 fail 0.00 θsat 0.86
+  seed14 extra eagm_hist              nmse 0.434 cosF 0.529 cosS 0.535 ret -0.006430 fail 0.17 θsat 0.86
+  seed14 iid_h eagm_hist              nmse 0.068 cosF 0.560 cosS 0.560 ret -0.006549 fail 0.00 θsat 0.86
+  seed14 inter eagm_hist_dir_matched  nmse 0.224 cosF 0.679 cosS 0.689 ret -0.003460 fail 0.00 θsat 0.82
+  seed14 extra eagm_hist_dir_matched  nmse 0.445 cosF 0.679 cosS 0.695 ret -0.004735 fail 0.08 θsat 0.82
+  seed14 iid_h eagm_hist_dir_matched  nmse 0.070 cosF 0.678 cosS 0.685 ret -0.005322 fail 0.00 θsat 0.82
+{
+  "interp_dir_minus_base": {
+    "mean": 0.0023425590684364533,
+    "std": 0.000850529855673627,
+    "median": 0.0024344786497116555,
+    "ci95": [
+      0.0016828250925428946,
+      0.0029945743716231613
+    ],
+    "n": 5,
+    "n_positive": 5,
+    "per_seed": [
+      0.0033379795228034655,
+      0.0024344786497116555,
+      0.0012368941465236635,
+      0.001772225941744871,
+      0.00293121708139861
+    ],
+    "note": "Seed-level paired bootstrap (n=5). Starts are not independent seeds."
+  },
+  "interp_dir_minus_mc": {
+    "mean": 0.0010401026690115816,
+    "std": 0.0015868715607534256,
+    "median": 0.0006627211118692446,
+    "ci95": [
+      -2.7222110081978612e-05,
+      0.0024984521912860486
+    ],
+    "n": 5,
+    "n_positive": 4,
+    "per_seed": [
+      0.0006732963283760224,
+      0.0006180379302660431,
+      -0.0004907093302183867,
+      0.0006627211118692446,
+      0.0037371673047649845
+    ],
+    "note": "Seed-level paired bootstrap (n=5). Starts are not independent seeds."
+  },
+  "interp_hist_dir_minus_mc": {
+    "mean": 0.0005257657870868651,
+    "std": 0.00181414777478821,
+    "median": 0.00011646571129477704,
+    "ci95": [
+      -0.0007474847236976455,
+      0.002085767153155369
+    ],
+    "n": 5,
+    "n_positive": 3,
+    "per_seed": [
+      -6.279319376476834e-05,
+      0.00011646571129477704,
+      -0.0014853289991358545,
+      0.0006020976676245592,
+      0.003458387749415612
+    ],
+    "note": "Seed-level paired bootstrap (n=5). Starts are not independent seeds."
+  },
+  "interp_hist_dir_minus_hist": {
+    "mean": 0.0003499739039872445,
+    "std": 0.0008249126387128484,
+    "median": 0.00013384692470568092,
+    "ci95": [
+      -0.000228314345534115,
+      0.001043693782251829
+    ],
+    "n": 5,
+    "n_positive": 3,
+    "per_seed": [
+      -1.5612167315666448e-05,
+      -0.0005536679844759277,
+      0.00013384692470568092,
+      0.0005350443930728747,
+      0.001650258353949261
+    ],
+    "note": "Seed-level paired bootstrap (n=5). Starts are not independent seeds."
+  },
+  "extrap_dir_minus_base": {
+    "mean": 0.0024440452236806384,
+    "std": 0.0009935832521377455,
+    "median": 0.0026457566432517236,
+    "ci95": [
+      0.0016494523232950691,
+      0.003188891695635683
+    ],
+    "n": 5,
+    "n_positive": 5,
+    "per_seed": [
+      0.0036685101729632963,
+      0.0026457566432517236,
+      0.0011510708714257169,
+      0.001774047686262407,
+      0.0029808407445000486
+    ],
+    "note": "Seed-level paired bootstrap (n=5). Starts are not independent seeds."
+  },
+  "extrap_dir_minus_mc": {
+    "mean": 0.001009580939425864,
+    "std": 0.0018035872709892876,
+    "median": 0.000649514788560024,
+    "ci95": [
+      -0.0002586284869800417,
+      0.0026483001842053638
+    ],
+    "n": 5,
+    "n_positive": 4,
+    "per_seed": [
+      0.0007131341522867698,
+      0.000649514788560024,
+      -0.0008852637919156674,
+      0.0005605814981104081,
+      0.004009938050087786
+    ],
+    "note": "Seed-level paired bootstrap (n=5). Starts are not independent seeds."
+  },
+  "extrap_hist_dir_minus_mc": {
+    "mean": 0.0006044216804763673,
+    "std": 0.0019142124206279019,
+    "median": 0.00019348811205321947,
+    "ci95": [
+      -0.0007914183106826538,
+      0.002278626085198721
+    ],
+    "n": 5,
+    "n_positive": 4,
+    "per_seed": [
+      0.00019348811205321947,
+      0.0001362571538992387,
+      -0.0015775738742744086,
+      0.0005821419573567377,
+      0.003687795053347049
+    ],
+    "note": "Seed-level paired bootstrap (n=5). Starts are not independent seeds."
+  },
+  "extrap_hist_dir_minus_hist": {
+    "mean": 0.00040779437542573635,
+    "std": 0.0008737018814735282,
+    "median": 0.00037287276552657074,
+    "ci95": [
+      -0.00030241751195181994,
+      0.001161732655795346
+    ],
+    "n": 5,
+    "n_positive": 4,
+    "per_seed": [
+      0.0002125299170782878,
+      -0.0007526110302707471,
+      0.00037287276552657074,
+      0.0005112036562426349,
+      0.0016949765685519355
+    ],
+    "note": "Seed-level paired bootstrap (n=5). Starts are not independent seeds."
+  }
+}
+wrote /home/aaa/桌面/汇报/11月论文/eagm_gpu/runs/stage6b1_confirm wall 3175.1
