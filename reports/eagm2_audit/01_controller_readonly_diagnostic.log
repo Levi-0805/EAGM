@@ -1,0 +1,6 @@
+extracted actual _apply_unknown: nominal=.2; u_prev= 0.0 output= 0.03
+extracted actual _apply_unknown: nominal=.2; u_prev= 0.1 output= 0.13
+algebraic FIFO check; pre-step r,f,queue= 0.2 0.15 [0.09999999999999998, 0.15]
+U0= 0.19 nominals d0,d1,d2= [0.19, 0.15, 0.09999999999999998]
+interior action Jacobian U0=.5, nominal d1/d2=0
+Synthetic function/algebra checks only: no simulator trajectory or training results.

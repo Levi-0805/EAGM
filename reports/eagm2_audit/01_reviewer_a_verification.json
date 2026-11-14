@@ -1,0 +1,73 @@
+{
+  "scope": "read-only verification; no training, simulator calls or source edits",
+  "commit": "9416b92190b5d4d97232a1850eb27ee83953fa39",
+  "manifest_count": 43,
+  "manifest_missing": [],
+  "manifest_mismatches": [],
+  "stage5a": [
+    {
+      "seed": 5,
+      "paired_starts": 12,
+      "paired_mean_delta": 0.0002532010238230608
+    },
+    {
+      "seed": 6,
+      "paired_starts": 12,
+      "paired_mean_delta": 0.00037674246922168717
+    },
+    {
+      "seed": 7,
+      "paired_starts": 12,
+      "paired_mean_delta": 0.0010238639529658057
+    },
+    {
+      "seed": 8,
+      "paired_starts": 12,
+      "paired_mean_delta": 0.0007540029128838964
+    },
+    {
+      "seed": 9,
+      "paired_starts": 12,
+      "paired_mean_delta": 0.00016296600900260846
+    }
+  ],
+  "stage5b": [
+    {
+      "seed": 5,
+      "paired_starts": 12,
+      "paired_mean_delta": 0.00027666781171338674
+    },
+    {
+      "seed": 6,
+      "paired_starts": 12,
+      "paired_mean_delta": 0.0002841823072955399
+    },
+    {
+      "seed": 7,
+      "paired_starts": 12,
+      "paired_mean_delta": 0.00019704362865699684
+    },
+    {
+      "seed": 8,
+      "paired_starts": 12,
+      "paired_mean_delta": 0.0001927975775628869
+    },
+    {
+      "seed": 9,
+      "paired_starts": 12,
+      "paired_mean_delta": 0.0003451966935377896
+    }
+  ],
+  "stage5a_mean_delta": 0.0005141552735794117,
+  "stage5b_mean_delta": 0.00025917760375332,
+  "near_boundary_analytic_example": {
+    "function": "J(theta)=theta^2",
+    "theta": 0.98,
+    "epsilon": 0.05,
+    "plus": 1,
+    "minus": 0.9299999999999999,
+    "implemented_secant": 1.93,
+    "true_derivative": 1.96,
+    "note": "Algebraic evaluation of formula in gradients.py:107-137; no assertion that historical main Stage5 uses feasible=True."
+  }
+}

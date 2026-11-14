@@ -1,0 +1,34 @@
+{
+  "source_count": 43,
+  "all_source_hashes_match": true,
+  "stage5a_per_seed": [
+    {
+      "seed": 5,
+      "paired_starts": 12,
+      "dir_minus_base": 0.00025320102382306076
+    },
+    {
+      "seed": 6,
+      "paired_starts": 12,
+      "dir_minus_base": 0.00037674246922168717
+    },
+    {
+      "seed": 7,
+      "paired_starts": 12,
+      "dir_minus_base": 0.0010238639529658057
+    },
+    {
+      "seed": 8,
+      "paired_starts": 12,
+      "dir_minus_base": 0.0007540029128838965
+    },
+    {
+      "seed": 9,
+      "paired_starts": 12,
+      "dir_minus_base": 0.00016296600900260848
+    }
+  ],
+  "stage5a_mean_difference": 0.0005141552735794117,
+  "two_sided_exact_sign_flip_p": 0.0625,
+  "note": "Descriptive historical audit; no new confirmation, no pooling of stages."
+}

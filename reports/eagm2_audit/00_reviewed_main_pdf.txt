@@ -1,0 +1,528 @@
+    Execution-Aware Gradient Supervision for Partially Observed Robot
+                               Dynamics
+                            EAGM Research Draft — author list to be ﬁnalized
+                         November 2026; exploratory analyses explicitly separated
+
+
+Abstract                                                            EAGM predicts an executed command using a nom-
+                                                                 inal observable update plus a learned residual. A dy-
+Robot world models receive policy commands, while                namics network maps the physical state and predicted
+physical transitions are driven by commands trans-               command to the next state. Directional supervision com-
+formed by execution software. Hidden controller mem-             pares a diﬀerentiated imagined return with ﬁnite diﬀer-
+ory can therefore aﬀect both prediction and the gradients        ences of a physical rollout at the same policy param-
+used for policy optimization. We study EAGM, which               eters. The implementation uses a masked, coordinate-
+combines a structured observable-command bottleneck              normalized Huber objective; it is not a pure cosine loss.
+with ﬁnite-diﬀerence policy-gradient supervision. In a              The evidence has three distinct levels. First, paired
+ﬁxed, partially unknown execution-controller setting, in-        tracking experiments and independent conﬁrmation
+dependent ﬁve-seed experiments support improved phys-            seeds support return improvements within the tested
+ical tracking returns over a matched model without di-           controller setting. Second, budget controls and archi-
+rectional supervision, including a simulator-budget con-         tectural comparisons constrain explanations based solely
+trol. These beneﬁts do not establish general robot-task          on extra interaction or an unconstrained auxiliary head.
+transfer. A true end-eﬀector reaching evaluation fails to        Third, reaching experiments expose a failure boundary
+reproduce the beneﬁt. Frozen-model interventions show            and enable frozen-gradient interventions. These inter-
+that correcting reward geometry alone is insuﬃcient,             ventions are diagnostic privileges, not deployable algo-
+whereas replacing transition derivatives restores gradient       rithms.
+alignment. Subsequent optimizer and start-distribution              Our contribution claim is the evaluated combination of
+checks nevertheless fail joint held-out improvement cri-         an execution-command bottleneck and query-accounted
+teria. The results distinguish prediction accuracy, gra-         gradient supervision in this restricted setting, together
+dient accuracy, and physical update utility, and identify        with an explicit analysis of its limitations. We do
+the scope and remaining limitations of execution-aware           not claim that gradient-aware model learning is new,
+supervision.                                                     that EAGM achieves public-benchmark state of the art,
+                                                                 or that an oracle establishes a successful new method.
+                                                                 The submitted execution-memory diagnostic is a sepa-
+1    Introduction                                                rate project; the overlap and additional algorithmic ev-
+A robot command is not necessarily the actuator in-              idence must be documented before submission of this
+put that causes the next observed transition. Control            manuscript.
+software may accumulate target positions, ﬁlter incom-
+ing commands, buﬀer actions, or limit command rates.
+Some of this execution state is observable; other param-
+eters and memories may be unavailable to a deployed
+predictor. This interface matters when a world model is
+diﬀerentiated to improve a policy, rather than used only
+to predict a state.
+   A low prediction error does not constrain all local
+derivatives. Moreover, even an accurate policy gradi-
+ent is deﬁned for a particular objective and starting-
+state distribution. The optimizer then transforms that
+gradient into an update. Our central question is con-
+sequently restricted: can command-structured model-
+ing and simulator-derived gradient supervision improve
+physical policy returns under partially observed execu-
+tion dynamics, and where does this approach fail?
+
+                                                             1
+
+2    Related Work                           and             Novelty        What remains unresolved. The present compari-
+                                                                           son identiﬁes objective-level diﬀerences for PAML and
+     Boundary                                                              GAMPS, not a completed novelty certiﬁcation. Match-
+                                                                           ing their objectives on the same command interface is
+Policy-aware model ﬁtting. PAML explicitly seeks
+                                                                           an outstanding experiment. Full implementation review
+agreement between true and model-derived policy gradi-
+                                                                           of recent execution-interface and humanoid methods is
+ents [1]. Its population discrepancy in Eqs. (7)–(8) com-
+                                                                           also pending. External results must never be inserted
+pares policy-gradient functionals, and its empirical con-
+                                                                           into EAGM tables as if evaluated on the same tasks or
+struction uses real and model trajectories with a critic
+                                                                           budgets. The cited sources are primary papers; the ref-
+estimated from real transitions. Thus, direct interest in
+                                                                           erence audit records which claims were inspected and
+policy-gradient quality predates EAGM. Our resettable
+                                                                           which remain open.
+ﬁnite-diﬀerence target and executed-command bottle-
+neck instantiate a diﬀerent experimental interface; they
+do not by themselves establish novelty over all PAML
+variants.
+   GAMPS learns a model through a weighted transition-
+likelihood objective [2]. Its Eq. (3) uses weights combin-
+ing discounting, trajectory importance ratios, and cumu-
+lative policy-score norms. In schematic notation,
+                    ∑
+             max          wti log p̂(sit+1 | sit , ait ).        (1)
+               p̂
+                    i,t
+
+
+This diﬀers from EAGM’s coordinate-level discrepancy
+between a diﬀerentiated imagined return and resettable-
+simulator ﬁnite diﬀerences. A fair empirical comparison
+still requires matching policy class, command semantics,
+observations, reset access, and interaction cost; no such
+external-baseline result is currently available.
+
+Value and gradient propagation. VaGraM weights
+model errors using value gradients [5], emphasizing that
+prediction objectives should reﬂect downstream deci-
+sions. Action-conditioned world models (AWMs) ad-
+dress the path through which policy gradients propagate,
+rather than merely changing a prediction loss [4]. Their
+results make architecture-based gradient routing a seri-
+ous alternative explanation and baseline. We use AWM
+to mean the action-conditioned models of Ma et al., not
+unrelated algorithms sharing the acronym.
+
+Execution interfaces and diﬀerentiable control.
+Mind the Execution Gap studies action-semantic mis-
+match in asynchronous world-model control and pro-
+poses interfaces for future action sequences and applied-
+action attribution [6]. This overlaps with the broad moti-
+vation of execution consistency. EAGM’s proposed dis-
+tinction is supervised gradient quality under partially
+unknown execution dynamics, not the discovery that ex-
+ecution interfaces matter.
+   SuperMimic uses a diﬀerentiable learned model and
+short imagined backpropagation for humanoid track-
+ing [3]. Its controller inputs and code-level actuator
+assumptions have not yet been fully audited here; we
+therefore make no claim that it lacks execution informa-
+tion and no numerical comparison to its reported perfor-
+mance.
+
+                                                                       2
+
+3    Problem Formulation
+Let xt ∈ R28 contain the positions and velocities of four-
+teen controlled joints. The actor emits an incremental
+command at ∈ R14 . Execution state ct = (cobs         hid
+                                                 t , ct )
+includes observable target/ﬁlter states and potentially
+hidden memory. With execution parameters ξ,
+                     ut = U (ct , at ; ξ),                   (2)
+                   ct+1 = C(ct , at ; ξ),                    (3)
+                   xt+1 = F (xt , ut ).                      (4)
+The predictor does not receive hidden controller param-
+eters as deployment inputs. Executed commands can be
+logged as training labels. This is distinct from assum-
+ing that all future executed commands are known during
+planning.
+  The actor πθ uses the physical state, observed target
+and task reference. For starting snapshot z drawn from
+distribution µ, deﬁne
+                        ∑
+                        H−1
+        Jµ (θ) = Ez∼µ         γ t r(xt+1 , at , at−1 ; z).   (5)
+                        t=0
+
+A snapshot must specify execution memory as well as
+physical state. Restoring only joint positions does not
+deﬁne the same ﬁnite-diﬀerence experiment. In the sim-
+ulator audit, integrator warm-start state is also retained;
+it is numerical context, not an additional deployable ob-
+servation.
+
+Three errors. Prediction error compares x̂t+1 to xt+1 .
+Gradient error compares ∇θ Jˆ with a reference for J. Up-
+date utility evaluates J(θ + ∆θ) − J(θ). These quantities
+are neither interchangeable nor necessarily monotone.
+Coordinate normalization and controller discontinuities
+further aﬀect their interpretation.
+  For a locally diﬀerentiable augmented transition
+zt+1 = f (zt , πθ (zt )), the complete sensitivity obeys
+       St+1 = (fz + fa πz )St + fa πθ ,          S0 = 0.     (6)
+The policy feedback term cannot be dropped when an-
+alyzing a closed-loop actor. A correct reward derivative
+can be distorted by inaccurate transition sensitivities be-
+fore it reaches policy-parameter space.
+
+A limited local statement. If the evaluation objec-
+tive has an L-Lipschitz gradient along the proposed up-
+date segment, the smoothness inequality gives
+        Jν (θ + d) − Jν (θ) ≥ ∇Jν (θ)⊤ d − L2 ∥d∥2 .         (7)
+An accurate ∇Jµ does not ensure positive alignment
+with d under another distribution ν. An optimizer may
+also rotate the update relative to its input gradient. This
+inequality is a conditional explanatory tool, not a the-
+orem of EAGM convergence: clipping and rate limits
+can violate smoothness, and we do not estimate L in the
+experiments.
+
+                                                                   3
+
+4     EAGM Method                                                   hardware gradients. Deployment uses the learned com-
+                                                                    mand/dynamics model, not the full-state Jacobian oracle
+Structured executed-command bottleneck. The                         used in later diagnostics. The current evidence does not
+command model is                                                    establish how to obtain comparable supervision safely on
+                                                                    a physical robot.
+             ût = U0 (cobs             obs
+                        t , at ) + ∆ω (ct , at ).        (8)
+
+For the tested interface, U0 adds an incremental action to
+the target, clips it to joint limits, and applies the nominal
+observable ﬁlter. The residual compensates for discrep-
+ancies left by this nominal map. It does not read hid-
+den gain, extra-lag, rate-limit or smoothing parameters.
+The physical predictor is x̂t+1 = Fϕ (xt , ût ), implemented
+as a normalized state-increment network. Passing only
+the command bottleneck to this network distinguishes it
+from a general MLP with an auxiliary command head.
+
+Targets at matched policy parameters. At a sam-
+pled policy vector θk and restored training snapshot,
+generate a physical ﬁnite-diﬀerence reference
+
+                     J(θk + ϵej ) − J(θk − ϵej )
+            gjFD =                               .       (9)
+                                  2ϵ
+Boundary-aware protocols use feasible stencils and
+record one-sided modes separately. The model gradi-
+ent ĝ = ∇θ J(θ
+            ˆ k ) must be computed at the same policy
+vector. Direction labels are not reusable across arbitrar-
+ily changed rewards: the Reach correction regenerated
+them under the true end-eﬀector objective.
+
+Implemented training objective. Normalized dy-
+namics and command losses are combined with
+
+               L = Ldyn + λu Lcmd + λd Ldir ,           (10)
+                    ∑        (                )
+                                 ĝj −gjFD
+                      j mj h1 max(|gjFD |,τ )
+             Ldir =         ∑                   ,       (11)
+                              j mj
+
+where h1 is the unit-threshold Huber loss and mj indi-
+cates ﬁnite-diﬀerence numerical stability. The scale ﬂoor
+is τ = max(0.1s0 , 10−8 ), with stored label scale s0 . This
+objective supervises normalized gradient discrepancies,
+including magnitude, rather than pure signs or a cosine.
+If no coordinate is stable, the term is skipped. Boundary
+and numerical masks have diﬀerent meanings.
+   The retained implementation applies a label every ten
+world-model updates and diﬀerentiates through the pol-
+icy gradient to train the model. The paired trainer shares
+initialization and minibatches between Base and Dir. It
+uses λu = 1 and λd = 0.1 in the frozen protocol. Base
+omits Ldir . Dir-Random retains randomly sampled pol-
+icy probes; path-conditioned probes did not yield reliable
+gains.
+
+Deployment and cost. Finite-diﬀerence labels re-
+quire resettable simulator access and consume physi-
+cal control steps. They are not free labels or online
+
+
+                                                                4
+
+5    Experimental Setup and Evi-                                   not remove this limitation or account for historical ex-
+                                                                   periment selection.
+     dence Protocol                                                   We distinguish repeated policy-return evidence within
+Platform and tasks. Experiments use a bimanual                     the tested setting; exploratory gradient/mechanism evi-
+OpenArm MuJoCo environment with fourteen actions                   dence; and failed task generalization. Starts within one
+and a 28-dimensional physical state. Controller B in-              frozen checkpoint are not independent model seeds. The
+troduces partially unknown gain, extra lag, rate limiting          new optimizer audit preregisters its start selection and
+and smoothing. Observable execution state is provided              update norm before collecting two fresh test episodes;
+consistently, while hidden parameters are unavailable to           even those episodes are only an exploratory evaluation,
+deployable predictors. Tracking is the main method-                not conﬁrmation.
+evaluation task. Reach changes the objective to two-
+arm end-eﬀector position control with a one-time inverse-
+kinematics reference; it introduces neither visual obser-
+vations nor contact manipulation.
+
+Models and budgets. Main comparisons include a
+memory-conditioned baseline Mc, EAGM-Base, EAGM-
+Dir, and ordinary/auxiliary-command MLP controls
+where available. The ﬁxed main protocol uses 3000
+world-model updates and 50 policy updates. The bud-
+get control reallocates direction-label simulator steps to
+additional dynamics data for Base. Exact stage-speciﬁc
+conﬁgurations and source CSVs are frozen; experiments
+with diﬀering controllers or pools are never merged into
+a larger nominal sample.
+
+Splits           and           pairing. Trajectory-level
+train/validation/test isolation replaces earlier transition-
+level splitting. Base/Dir pairing requires the same
+initialization, data split and minibatch stream. A later
+audit found diﬀerent Base versus Dir minibatch streams
+in Stage6C; that contrast is exploratory, whereas Ran-
+dom versus Path retains its relevant pairing. Superseded
+Stage3 protocols and surrogate-only Reach results are
+not main performance evidence.
+
+Physical reward and numerical references. Reach
+primary evaluation uses current MuJoCo end-eﬀector
+positions, with separate scratch geometry to avoid stale
+post-integration site caches. Its reward is
+
+            r = − 16 ∥pEE − p∗ ∥2 − 0.0005
+                                      14 ∥q̇∥
+                                              2
+
+                 − 0.05
+                    14 ∥at − at−1 ∥ .
+                                   2
+                                                       (12)
+
+The velocity term is joint velocity, not end-eﬀector ve-
+locity. Discount is 0.99. H8 gradient diagnostics and
+H16 physical returns are reported separately. Surrogate-
+scored physical rollouts are diagnostic only.
+
+Statistics and evidence classes. Within-seed,
+paired returns are aggregated before seed-level statistics.
+We report seed wins and percentile bootstrap intervals,
+plus cluster and leave-one-seed sensitivity. Five seeds
+are few: a two-sided exact sign-ﬂip test cannot achieve
+p < 0.05 with ﬁve observations even when every diﬀer-
+ence is positive. Bootstrap intervals excluding zero do
+
+                                                               5
+
+6       Main Tracking Results                                                   We restrict the main claim to the evaluated
+                                                                             tracking distributions. Later independent controller-
+The strongest positive evidence remains the ﬁxed Con-                        randomization seeds support Dir over Base, but compar-
+troller B tracking experiments. Table 1 is generated from                    isons with Mc remain uncertain. Reach does not support
+the independently recomputed historical statistics, with-                    the same performance claim. Neither diagnostic oracle
+out pooling stages. Its provenance ﬁle records the raw                       outcomes nor multiple starts from the same checkpoint
+per-start CSVs and hashes.                                                   enlarge the sample size of this main table.
+          Comparison        Mean           95% CI       Wins
+          4: Dir–Mc          6.75     [1.24, 14.58]       4/5
+          4: Dir–Base       10.06     [5.77, 13.03]       5/5
+          5A: Dir–Mc         8.60     [4.72, 12.20]       5/5
+          5A: Dir–Base       5.14      [2.42, 8.16]       5/5
+          5B: budget         2.59      [2.11, 3.07]       5/5
+Table 1: Paired return diﬀerences in units of 10−4 . CIs are
+within-stage seed bootstrap intervals; no cross-stage pooling.
+
+   Direction supervision improves over the matched Base
+model in all ﬁve Stage4 seeds and in all ﬁve independent
+Stage5A conﬁrmation seeds. The Stage5A mean diﬀer-
+ence is 5.14×10−4 in physical return. Against Mc, Stage4
+improves in four of ﬁve seeds, while Stage5A improves in
+ﬁve of ﬁve. The eﬀect sizes and seed variability are more
+informative than calling all of these comparisons statis-
+tically signiﬁcant.
+   The Stage5B budget comparison assigns the ﬁnite-
+diﬀerence control-step allowance to additional dynamics
+training data for Base. Dir still improves in ﬁve of ﬁve
+seeds, with mean diﬀerence 2.59 × 10−4 . This rules out
+one speciﬁc extra-data explanation under that protocol;
+it does not establish equality of wall-clock compute or
+all possible uses of the simulator budget.
+
+       4: Dir--Mc
+
+
+     4: Dir--Base
+
+
+     5A: Dir--Mc
+
+
+    5A: Dir--Base
+
+
+     5B: budget
+                    0.0   2.5     5.0      7.5     10.0    12.5   15.0
+                            Paired return difference (1e-4)
+
+
+
+Figure: Mean paired physical-return diﬀerences and seed-
+bootstrap intervals. Stage4, Stage5A and Stage5B remain
+separate experiments.
+  Architectural controls provide additional evidence for
+the command bottleneck: the Stage5C Base comparison
+improves over the auxiliary-command and observable-
+memory MLP controls in ﬁve of ﬁve seeds. These con-
+trols should be described through their actual input and
+parameter budgets, rather than called generic state-of-
+the-art baselines. The ﬁnal submission still needs an ex-
+ternally motivated objective baseline such as a matched
+PAML/GAMPS adaptation.
+
+                                                                         6
+
+7    Ablations, Distribution Shift,                              Draft status: The supplement should include stage-
+                                                                 speciﬁc OOD tables, all seed diﬀerences, capacity counts,
+     and Failure Boundaries                                      and failed-module controls. Their archived raw results
+Controller shift. Controller-randomized interpola-               are retained; no new module or cross-task success is in-
+tion and extrapolation experiments provide positive Dir–         ferred.
+Base diﬀerences across the ﬁve independent Stage6B.1
+seeds. Against Mc, however, uncertainty remains: ex-
+trapolation and interpolation bootstrap intervals can in-
+clude zero. We therefore distinguish improvement over
+an architecture-matched Base from superiority over a
+stronger memory baseline. Neither establishes arbitrary-
+controller robustness.
+
+Rejected extensions. History alone can improve
+some dynamics prediction metrics without a match-
+ing return improvement. HistC, which adds observed
+control-state history, did not show a reliable independent
+temporal-structure beneﬁt against capacity and ordering
+controls. Path-Dir did not consistently improve over Dir-
+Random; only two of ﬁve seed diﬀerences were positive.
+Reduced policy learning rates removed parameter sat-
+uration without producing a reliable performance gain.
+These are reasons to retain a smaller supported method,
+not modules to be repackaged as contributions.
+
+Reach protocol correction. The initial reaching ex-
+periments used a learned FK surrogate for both imagined
+reward and the reported physical ﬁnite-diﬀerence objec-
+tive. A surrogate-path parity check could not establish
+agreement with the actual end-eﬀector objective. The
+corrected experiment regenerated direction labels using
+true MuJoCo geometry and retrained Dir. On seed20,
+Dir’s mean true return was approximately −0.015714,
+versus Base −0.015449; Dir’s change from initialization
+was negative. This is a failed transfer experiment, not
+evidence of task generalization.
+
+Geometry decomposition. The geometry audit
+measured position RMSE around 2.24 cm, relative Ja-
+cobian error around 30%, and Jacobian cosine 0.964 on
+its held-out trajectory-state subset. These metrics use a
+diﬀerent state distribution from the earlier FK-ﬁt accep-
+tance test and must not be substituted for it. Replacing
+the position residual while retaining the FK Jacobian
+improved state-level reward-gradient cosine from 0.441
+to 0.957. Replacing the Jacobian alone did not help.
+Thus, a large relative derivative error did not imply a
+comparably large directional error.
+   Complete true-reward derivative replacement still
+left the mean policy-gradient cosine negative (about
+−0.116). It partially improved the 50-update physi-
+cal return but did not restore the initial-policy return.
+This distinguishes state-level reward geometry from full
+policy-gradient propagation and motivates the next anal-
+ysis; it does not support a Geometry-aware EAGM
+method.
+
+                                                             7
+
+8    Gradient Propagation and Up-                                one frozen checkpoint, small start sets, and privileged
+                                                                 simulator access. Local smoothness, exact reset access
+     date Utility                                                and numerical ﬁnite diﬀerences are additional assump-
+Frozen dynamics intervention. A local audit aug-                 tions. Extra model parameters are not a substitute for
+ments physical state with execution memory and solver            independent validation.
+warm-start, producing a 154-dimensional diagnostic                  The evidence supports execution-aware gradient su-
+state. The learned state Jacobian has mean cosine 0.073          pervision as a useful restricted approach and transition
+on six starts. A conditional physical-dynamics probe us-         derivatives as one causal source of gradient distortion.
+ing actual executed commands also ﬁnds poor command              It does not establish that accurate gradients guarantee
+derivatives (cosine about0.079). The full oracle replaces        useful updates across start distributions. A deployable
+both execution and physical-transition derivatives; their        method addressing that remaining gap requires new, in-
+separate causal shares are not fully identiﬁed.                  dependently validated evidence; the present oracle anal-
+  Holding forward states and reward values identical,            yses do not supply it.
+the H8 policy-gradient cosines are:
+
+       Reward derivative     Learned f     Oracle f
+       FK                       −0.132         0.795
+       True                     −0.116         0.987
+
+Local physical-chain diﬀerentiation agrees with whole-
+policy ﬁnite diﬀerences at cosine 0.999999 on the prede-
+ﬁned implementation-check start. The oracle is priv-
+ileged and diagnostic, not an implementable learned-
+policy algorithm. Its gradient recovery did not imply
+better held-out return after the budgeted one-step Adam
+update.
+
+Optimizer–data alignment. A preregistered follow-
+up compares K2/K4 training starts and raw/ﬁrst-Adam
+updates rescaled to the same L2 norm. Both gradi-
+ent sources use true reward derivatives. It collects two
+new test episodes and retains two validation episodes
+independent of training; historical test starts remain ex-
+ploratory.
+
+         Oracle update     Validation   Fresh test
+         K2 Raw                -5.410      -2.482
+         K2 Adam              +0.954       -1.255
+         K4 Raw               -14.261     +7.677
+         K4 Adam               -7.096     +4.264
+Mean true-return changes in units of 10−5 . Two starts per
+  column, one frozen checkpoint; no signiﬁcance claim.
+
+   The true aggregate training-gradient cosine with val-
+idation changes from −0.290 at K2 to −0.830 at K4,
+while alignment with the fresh test changes from −0.177
+to 0.381. Increasing coverage improves one sampled dis-
+tribution while hurting another. Both preregistered joint
+screens fail. We do not select the apparent fresh-test
+winner as a method.
+
+Limitations and conclusion. EAGM has multi-seed
+tracking evidence within a restricted execution setting,
+but no demonstrated public-benchmark SOTA result, vi-
+sual contribution, or physical-robot validation. Reach
+remains a failure boundary. The diagnostic phases use
+
+                                                             8
+
+References
+[1] Romina Abachi,       Mohammad Ghavamzadeh,
+    and Amir-massoud Farahmand.      Policy-aware
+    model learning for policy gradient methods.
+    arXiv:2003.00030, 2021.
+
+[2] Pierluca D’Oro, Alberto Maria Metelli, Andrea
+    Tirinzoni, Matteo Papini, and Marcello Restelli.
+    Gradient-aware model-based policy search. In AAAI,
+    2020.
+[3] Qiayuan Liao, Yiyang Shao, Junfeng Long, Kevin Za-
+    kka, Roberto Horowitz, Pieter Abbeel, and Koushil
+    Sreenath. Supermimic: Scaling humanoid whole-
+    body control with one diﬀerentiable world model.
+    arXiv:2610.28480, 2026.
+[4] Michel Ma, Tianwei Ni, Clement Gehring, Pierluca
+    D’Oro, and Pierre-Luc Bacon. Do transformer world
+    models give better policy gradients? In ICML, pages
+    33855–33879, 2024.
+
+[5] Claas Voelcker, Victor Liao, Animesh Garg,
+    and Amir-massoud Farahmand.        Value gradi-
+    ent weighted model-based reinforcement learning.
+    arXiv:2204.01464, 2023.
+[6] Shengtao Wen, Xiang Chen, Yu Tian, Lingbing Guo,
+    Lina Gong, and Sheng-Jun Huang. Mind the execu-
+    tion gap: Action-semantic mismatch in world-model
+    control. arXiv:2610.06582, 2026.
+
+
+
+
+                                                          9
