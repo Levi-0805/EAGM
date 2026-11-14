@@ -1,0 +1,172 @@
+\documentclass[10pt]{article}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,booktabs,hyperref}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newenvironment{proof}{\par\noindent\textit{Proof.} }{\hfill$\square$\par}
+\newcommand{\R}{\mathbb R}
+\newcommand{\norm}[1]{\left\|#1\right\|}
+\title{EAGM 2.0: Conditional Mathematical Design Notes}
+\author{Research proposal; not an implemented or validated contribution}
+\date{November 14, 2026}
+\begin{document}
+\maketitle
+\noindent\textbf{Status.} These are elementary conditional derivations for proposal review, not claims of novelty or convergence of the existing EAGM implementation. The reviewed code baseline is \texttt{9416b92}, inherited by \texttt{412cf8c}. No new training results are presented. A complete execution state and a learned latent representation must not be identified without additional assumptions. Contact switches, clipping boundaries and unknown delay schedules may invalidate differentiability assumptions.
+
+\section{Controller timing and causal nominal actions}
+Let $r_t,f_t$ denote the target and filter immediately before \texttt{step} is called. Let the nominal queue be $q_t=[f_{t-1},f_t]$ when the queue invariant holds. The actual code clips the action before clipping the new target:
+\begin{align}
+\bar a_t&=\operatorname{clip}(a_t,-a_{\max},a_{\max}),\\
+r_{t+1}&=\operatorname{clip}(r_t+\bar a_t,\ell,u),\\
+f_{t+1}&=\alpha r_{t+1}+(1-\alpha)f_t,\\
+v_t&=\begin{cases} f_{t+1},&d_t=0,\\ f_t,&d_t=1,\\f_{t-1},&d_t=2,\end{cases}\qquad
+q_{t+1}=[f_t,f_{t+1}].
+\end{align}
+Here $v_t$ is the nominal command, not the executed command $u_t$. The latter is produced by hidden gain, extra lag, rate limiting and smoothing in \texttt{controllers/partial\_unknown.py:199--226}. Queue selection occurs before queue advancement in lines 165--176.
+
+\begin{proposition}[Restricted reconstruction and immediate action path]
+For fixed known $\alpha\ne1$, if the preceding filter update holds, then
+\begin{equation}
+f_{t-1}=\frac{f_t-\alpha r_t}{1-\alpha}.
+\end{equation}
+In the interior of the action and target limits, holding the pre-step state and $d_t$ fixed, $\partial v_t/\partial a_t=\alpha I$ for $d_t=0$, and is zero for $d_t=1,2$.
+\end{proposition}
+\begin{proof}
+Rearrange $f_t=\alpha r_t+(1-\alpha)f_{t-1}$. For zero delay differentiate the new filter; for positive delay the selected old queue value does not depend on the current action. This is a partial derivative at fixed pre-step state, not a statement that future actions or policy parameters have no effect through history.
+\end{proof}
+The inverse amplifies observation perturbations: for fixed $\alpha$, a perturbation obeys
+$\norm{\delta f_{t-1}}\le(\norm{\delta f_t}+|\alpha|\norm{\delta r_t})/|1-\alpha|$.
+At $\alpha=1$ there is no such inverse. A deployable filter-history cache solves the known-history case; unobserved prehistory remains a missing-information problem. The code only accepts $d\in\{0,1,2\}$; arbitrary or unobserved delays are not covered. A time-varying $\alpha$ requires the actual previous coefficient. Reset compatibility must be checked separately.
+
+\section{Partial observation does not imply a sufficient state}
+Let $w$ be the deployable input and suppose two complete execution states with the same $w$ lead to commands $u_1,u_2$ with equal conditional probability.
+\begin{proposition}[Aliasing lower bound]
+Every deterministic predictor $m(w)$ satisfies
+\begin{equation}
+\tfrac12\norm{m-u_1}^2+\tfrac12\norm{m-u_2}^2
+=\norm{m-\tfrac12(u_1+u_2)}^2+\tfrac14\norm{u_1-u_2}^2
+\ge\tfrac14\norm{u_1-u_2}^2.
+\end{equation}
+\end{proposition}
+\begin{proof}Expand both squared norms and cancel the cross terms.\end{proof}
+This is a constructed conditional distribution, not evidence that all task states have equal aliasing probability. History can reduce uncertainty only if it distinguishes the states. A GRU cannot recover information absent from all available history. A privileged-state model is an empirical information reference, not a guaranteed performance upper bound under finite training and restricted architectures.
+
+\section{Forward accuracy alone cannot control gradients}
+\begin{proposition}[A smooth counterexample]
+Uniformly small function error alone does not imply small derivative error.
+\end{proposition}
+\begin{proof}
+Let $f(x)=0$ and $\hat f_\epsilon(x)=\epsilon\sin(x/\epsilon^2)$ for $\epsilon>0$. Then
+$\sup_x|\hat f_\epsilon(x)-f(x)|\le\epsilon\to0$, whereas
+$|\hat f_\epsilon'(0)-f'(0)|=1/\epsilon\to\infty$.
+Both functions are smooth. Derivative control needs stronger regularity assumptions, not just a small prediction loss.
+\end{proof}
+This is a mathematical non-implication, not an assertion that a fitted neural model behaves exactly like this example.
+
+\section{Finite differences: truncation, noise and boundaries}
+Consider a scalar objective $J(\theta)$, coordinate $j$, and scalar restriction $F(s)=J(\theta+s e_j)$. Assume $F\in C^3$ on the full stencil interval and $|F'''|\le M_3$. Suppose each measured value differs from the exact value by at most $\eta$. This deterministic error assumption includes bounded simulator numerical error, but does not model arbitrary stochastic rollout noise without an additional probability argument.
+
+\begin{proposition}[Symmetric central difference]
+For $h>0$, the noisy central estimate satisfies
+\begin{equation}
+\left|\frac{\widetilde F(h)-\widetilde F(-h)}{2h}-F'(0)\right|
+\le \frac{M_3h^2}{6}+\frac{\eta}{h}.
+\end{equation}
+\end{proposition}
+\begin{proof}
+Apply third-order Taylor remainders at $h$ and $-h$. The quadratic terms cancel. The two noise terms contribute at most $2\eta/(2h)$.
+\end{proof}
+For a forward difference, if $|F''|\le M_2$, the corresponding bound is $M_2h/2+2\eta/h$. Smaller $h$ is therefore not uniformly better. Multi-scale agreement is a numerical stability diagnostic; it neither proves differentiability nor certifies a confidence interval.
+
+Near a parameter bound the existing feasible code can evaluate a secant at unequal distances $h_+,h_->0$ and label it ``central'' (\texttt{training/gradients.py:107--137}). Its expansion is
+\begin{equation}
+\frac{F(h_+)-F(-h_-)}{h_++h_-}
+=F'(0)+\frac{h_+-h_-}{2}F''(0)+\rho,
+\quad |\rho|\le\frac{M_3(h_+^3+h_-^3)}{6(h_++h_-)}.
+\end{equation}
+For $J(\theta)=\theta^2$, $\theta=.98$, and clipped offsets $h_+=.02$, $h_-=.05$, it equals $1.93$, whereas $J'(.98)=1.96$. This does not affect historical runs using the non-feasible branch by itself.
+
+\begin{proposition}[A nonuniform three-point alternative]
+With $h_+,h_->0$, define
+\begin{align}
+w_-&=-\frac{h_+}{h_-(h_++h_-)},&
+w_0&=\frac{h_+-h_-}{h_+h_-},&
+w_+&=\frac{h_-}{h_+(h_++h_-)}.
+\end{align}
+The estimate $D=w_-\widetilde F(-h_-)+w_0\widetilde F(0)+w_+\widetilde F(h_+)$ obeys
+\begin{equation}
+|D-F'(0)|\le \frac{M_3h_+h_-}{6}
++\eta(|w_-|+|w_0|+|w_+|).
+\end{equation}
+\end{proposition}
+\begin{proof}
+The weights sum to zero, their weighted offsets sum to one, and their weighted squared offsets sum to zero. Taylor expansion cancels constant and quadratic terms. Bounding the two third-order remainders gives $M_3h_+h_-/6$; apply the triangle inequality to the measurement errors.
+\end{proof}
+This alternative needs a center query unless it is legitimately cached; that query must be counted. At an exact boundary use a declared one-sided stencil. Inactive clipping gradients, switch surfaces, and contact mode changes need separate diagnostics. None of these smooth estimates establishes an ordinary derivative at a discontinuity.
+
+\section{A conditional closed-loop gradient-error recurrence}
+Let $z_t\in\R^n$ be a \emph{complete} augmented state, including sufficient execution state. Define a differentiable closed-loop transition $T_\theta(z)=f(z,\pi_\theta(z))$ and a differentiable comparison model $\hat T_\theta$ on the \emph{same coordinates}. Start from $z_0$ independent of $\theta$; thus $S_0=\partial z_0/\partial\theta=0$. If a history estimator depends on the optimized parameters, its initial sensitivity must instead be included.
+
+Along each respective rollout, set
+\begin{align}
+A_t&=\partial_z T_\theta(z_t)=f_z+f_a\pi_z,&
+B_t&=\partial_\theta T_\theta(z_t)=f_a\pi_\theta,\\
+S_{t+1}&=A_tS_t+B_t,&
+\hat S_{t+1}&=\hat A_t\hat S_t+\hat B_t.
+\end{align}
+Assume $\norm{A_t},\norm{\hat A_t}\le L$, $\norm{B_t}\le B$, and
+$\norm{\hat A_t-A_t}\le\varepsilon_{A,t}$,
+$\norm{\hat B_t-B_t}\le\varepsilon_{B,t}$. Differences are evaluated along the two respective trajectories: these assumptions must include state-distribution error, not just a Jacobian evaluated at one common point.
+
+\begin{proposition}[Sensitivity error]
+Writing $E_t=\norm{\hat S_t-S_t}$, one has
+\begin{align}
+\norm{S_t}&\le B\sum_{i=0}^{t-1}L^i,\\
+E_{t+1}&\le L E_t+\varepsilon_{A,t}\norm{S_t}+\varepsilon_{B,t},\\
+E_t&\le L^tE_0+\sum_{k=0}^{t-1}L^{t-1-k}
+(\varepsilon_{A,k}\norm{S_k}+\varepsilon_{B,k}).
+\end{align}
+\end{proposition}
+\begin{proof}
+The first inequality follows by induction from the exact recurrence. Subtract the recurrences and write
+$\hat S_{t+1}-S_{t+1}=\hat A_t(\hat S_t-S_t)+(\hat A_t-A_t)S_t+(\hat B_t-B_t)$.
+Apply the triangle inequality, then unroll the scalar recurrence.
+\end{proof}
+For $J=\sum_{t=0}^{H-1}\gamma^t r_\theta(z_t)$, let $C_t=\partial_z r_\theta(z_t)$ and $D_t=\partial_\theta r_\theta(z_t)$, and define their model counterparts. Under $\norm{\hat C_t}\le C$, $\norm{\hat C_t-C_t}\le\varepsilon_{C,t}$, $\norm{\hat D_t-D_t}\le\varepsilon_{D,t}$,
+\begin{equation}
+\norm{\nabla_\theta\hat J-\nabla_\theta J}
+\le\sum_{t=0}^{H-1}\gamma^t
+\left(C E_t+\varepsilon_{C,t}\norm{S_t}+\varepsilon_{D,t}\right).
+\end{equation}
+This follows by expanding each term $\hat C_t\hat S_t+\hat D_t-(C_tS_t+D_t)$ as above. Rewards evaluated at the next state can be reindexed or absorbed into $r_\theta(z_t)$ through $T_\theta$.
+
+\paragraph{Scope.} This bound explains why unmodeled execution sensitivities and horizon can matter. It is not an error guarantee for EAGM's lower-dimensional learned latent state: that would require a sufficient representation, a differentiable lifting/alignment and bounds on their errors. Nor does a low empirical NMSE imply any of the derivative assumptions. An $L>1$ bound can grow rapidly and be uninformative. It is a conditional design guide, not a convergence theorem.
+
+\section{Gradient error and an actual update}
+Assume the \emph{evaluation} objective $J_\nu$ has an $L_J$-Lipschitz gradient on the update segment. Let $g=\nabla J_\nu(\theta)$ and suppose $\norm{\hat g-g}\le\delta$.
+\begin{proposition}[A sufficient update inequality]
+For any proposed update $d$ within that segment,
+\begin{equation}
+J_\nu(\theta+d)-J_\nu(\theta)
+\ge \hat g^T d-\delta\norm d-\frac{L_J}{2}\norm d^2.
+\end{equation}
+For $d=\eta\hat g$, this becomes
+\begin{equation}
+J_\nu(\theta+\eta\hat g)-J_\nu(\theta)
+\ge \eta\norm{\hat g}\left[(1-L_J\eta/2)\norm{\hat g}-\delta\right].
+\end{equation}
+\end{proposition}
+\begin{proof}
+The smoothness lower bound is $g^Td-L_J\norm d^2/2$. Substitute $g=\hat g+(g-\hat g)$ and use Cauchy--Schwarz, then substitute $d=\eta\hat g$.
+\end{proof}
+An Adam/preconditioned or clipped update must use its actual $d$, not the raw-gradient specialization. If labels estimate a different start distribution $\mu$, then $\delta$ also contains the unknown distribution-gradient discrepancy $\norm{\nabla J_\mu-\nabla J_\nu}$. A high cosine alone neither controls this discrepancy nor sets a safe step magnitude. No finite-data estimate of $L_J$ or certified $\delta$ is claimed here.
+
+\section{Supervision cost and a restricted visual route}
+For $P$ policy parameters, $K$ finite-difference scales, horizon $H$, and $N$ label starts, symmetric coordinate labels use $2KPHN$ control steps before additional diagnostics. With $P=28,K=3,H=8,N=12$ this is 16,128 steps. Center queries, repeated noise measurements, calibration and online relabeling are additional costs.
+
+A proposed visual route freezes a train-only visual encoder/base policy and optimizes a predeclared $P=32$ adapter through actual RGB closed-loop rollouts. This is visual-policy adapter optimization, not end-to-end training of all CNN parameters. Alternatively, $K_d$ random unit directions supervise directional derivatives $v_k^T\nabla J$ with cost $2KK_dHN$; finitely many projections do not identify an unrestricted full gradient. Test directions must be independent, and direct FD/SPSA controls must receive the same simulator-query allowance.
+
+\section{Verification obligations before use in a paper}
+Every derivation requires an independently reviewed numerical test with analytic scalar functions or actual controller steps, saved logs and exact stencil metadata. Model correctness tests must include reset, delay switches, clipping and $\alpha=1$ with observed history. Persistent latent tests must prove no future-observation or privileged-state dependency by perturbation checks. Empirical evidence must additionally distinguish nominal correctness, executed-command accuracy, gradient fidelity and physical update utility. None of these prospective requirements has been reported as completed here.
+\end{document}

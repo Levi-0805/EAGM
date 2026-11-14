@@ -1,0 +1,10 @@
+{
+  "base_commit": "412cf8c9533cde37e12e1e0b8d55fef7e19a5a80",
+  "tracked_files": 698,
+  "json_parsed": 262,
+  "parse_errors": [],
+  "historical_values_found": 37,
+  "proposed_root_seeds": 54,
+  "collision": false,
+  "scope_limit": "Static JSON seed keys, filename patterns and literal seed assignments only; not complete dynamic RNG provenance. Binary checkpoint RNG and untracked/original-Windows data not inferred. Recheck generated stream manifests before launch."
+}

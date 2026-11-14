@@ -1,0 +1,12 @@
+{
+  "required_deliverables_present": true,
+  "literature_methods": 14,
+  "matrix_method_conditions": 38,
+  "proposed_method_seed_runs": 570,
+  "complete_factorial_both_state_tasks": true,
+  "all_684_pre_audit_source_hashes_unchanged": true,
+  "seed_registry_unique": true,
+  "pdf_text_extraction_passed": true,
+  "new_training_or_simulation_experiments": false,
+  "status": "proposal awaiting author confirmation; not experiment completion"
+}

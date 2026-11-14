@@ -1,0 +1,10 @@
+note: Running TeX ...
+note: downloading t1lmtt.fd
+note: downloading ec-lmtt10.tfm
+note: Rerunning TeX because "03_mathematical_derivation.out" changed ...
+note: Running xdvipdfmx ...
+note: downloading lmtt10.pfb
+note: downloading msam10.pfb
+note: Writing `reports/eagm2_plan/03_mathematical_derivation.pdf` (71.95703125 KiB)
+note: Writing `reports/eagm2_plan/03_mathematical_derivation.log` (11.517578125 KiB)
+note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)
