@@ -1,0 +1,5 @@
+{
+  "status": "invalid_policy_evaluation",
+  "reason": "Original pick_starts(delay=2) returned no held-out starts under new seed split. Raw completed flag and NaN-derived null results retained but excluded from evidence. Training/model accuracy exist; policy result is missing, not zero or success.",
+  "repair": "Independent fresh stratified evaluation will be separately logged; no reused train/validation starts."
+}

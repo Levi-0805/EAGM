@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/home/aaa/workspace/EAGM-2.0-full-validation/scripts/eagm2/run_development.py", line 74, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/aaa/workspace/EAGM-2.0-full-validation/scripts/eagm2/run_development.py", line 44, in main
+    labels=make_labels(env,data['starts']['train'][:nlabel],a.seed,a.task,horizon,budget,'labels_train',vision_policy)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aaa/workspace/EAGM-2.0-full-validation/scripts/eagm2/run_development.py", line 20, in make_labels
+    labels.append(dict(start=s,theta=theta,**fd));print(kind,i+1,'queries',fd['queries'],flush=True)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: dict() got multiple values for keyword argument 'theta'

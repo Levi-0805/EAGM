@@ -1,0 +1,20 @@
+test_collection_budget_matches_real_step_count (test_data_pipeline.PipelineTests.test_collection_budget_matches_real_step_count) ... ok
+test_confirmatory_and_historical_roots_are_rejected (test_data_pipeline.PipelineTests.test_confirmatory_and_historical_roots_are_rejected) ... ok
+test_episodes_and_rng_streams_are_disjoint (test_data_pipeline.PipelineTests.test_episodes_and_rng_streams_are_disjoint) ... ok
+test_history_and_filter_cache_have_correct_pre_step_time (test_data_pipeline.PipelineTests.test_history_and_filter_cache_have_correct_pre_step_time) ... ok
+test_imagined_closed_loop_autograd_matches_finite_difference (test_data_pipeline.PipelineTests.test_imagined_closed_loop_autograd_matches_finite_difference) ... ok
+test_normalization_ignores_development_test (test_data_pipeline.PipelineTests.test_normalization_ignores_development_test) ... ok
+test_start_and_training_history_contract_agrees (test_data_pipeline.PipelineTests.test_start_and_training_history_contract_agrees) ... FAIL
+
+======================================================================
+FAIL: test_start_and_training_history_contract_agrees (test_data_pipeline.PipelineTests.test_start_and_training_history_contract_agrees)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/aaa/workspace/EAGM-2.0-full-validation/tests/eagm2/test_data_pipeline.py", line 73, in test_start_and_training_history_contract_agrees
+    self.assertEqual(len(s['xhist']),seq['xhist'].shape[1])
+AssertionError: 33 != 32
+
+----------------------------------------------------------------------
+Ran 7 tests in 3.085s
+
+FAILED (failures=1)

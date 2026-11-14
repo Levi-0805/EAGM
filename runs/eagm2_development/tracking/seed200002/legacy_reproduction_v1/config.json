@@ -1,0 +1,10 @@
+{
+  "phase": "exploratory_legacy_reproduction",
+  "seed": 200002,
+  "updates": 3000,
+  "policy_updates": 50,
+  "imagined_horizon": 8,
+  "evaluation_horizon": 16,
+  "original_protocol": "configs/stage5_frozen.json",
+  "note": "new development seed; not historical confirmation; original code unchanged"
+}

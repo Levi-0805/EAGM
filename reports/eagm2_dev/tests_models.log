@@ -1,0 +1,11 @@
+test_alignment_observe_window_and_checkpoint (test_models.ModelTests.test_alignment_observe_window_and_checkpoint) ... ok
+test_causal_prefix_future_perturbation (test_models.ModelTests.test_causal_prefix_future_perturbation) ... ok
+test_privileged_explicit_separation (test_models.ModelTests.test_privileged_explicit_separation) ... ok
+test_second_derivative_and_chain_fd (test_models.ModelTests.test_second_derivative_and_chain_fd) ... ok
+test_visual_latent_dimension_and_capacity (test_models.ModelTests.test_visual_latent_dimension_and_capacity) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 1.469s
+
+OK
+capacity match 33322 140 33434

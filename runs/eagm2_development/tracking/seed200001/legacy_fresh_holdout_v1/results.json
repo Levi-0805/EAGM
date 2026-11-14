@@ -1,0 +1,355 @@
+{
+  "status": "completed",
+  "phase": "exploratory_frozen_policy_holdout",
+  "per_start": [
+    {
+      "episode_id": "development_test:0",
+      "delay": 0,
+      "frame": 32,
+      "returns": {
+        "theta0": -0.0013631456052141553,
+        "legacy_base": -0.002272118912127636,
+        "legacy_dir": -0.0022142892821244422
+      }
+    },
+    {
+      "episode_id": "development_test:1",
+      "delay": 1,
+      "frame": 32,
+      "returns": {
+        "theta0": -0.0014871356410121055,
+        "legacy_base": -0.0022300994300175334,
+        "legacy_dir": -0.0021514424700240955
+      }
+    },
+    {
+      "episode_id": "development_test:2",
+      "delay": 2,
+      "frame": 32,
+      "returns": {
+        "theta0": -0.0017390373146422306,
+        "legacy_base": -0.0023014529238859945,
+        "legacy_dir": -0.0021664360442400555
+      }
+    },
+    {
+      "episode_id": "development_test:3",
+      "delay": 0,
+      "frame": 32,
+      "returns": {
+        "theta0": -0.001302931178304326,
+        "legacy_base": -0.0022596464168697463,
+        "legacy_dir": -0.0021639103793704884
+      }
+    },
+    {
+      "episode_id": "development_test:4",
+      "delay": 1,
+      "frame": 32,
+      "returns": {
+        "theta0": -0.0014935682009288664,
+        "legacy_base": -0.002219306596871367,
+        "legacy_dir": -0.0021234069876406394
+      }
+    },
+    {
+      "episode_id": "development_test:5",
+      "delay": 2,
+      "frame": 32,
+      "returns": {
+        "theta0": -0.0017185017424140197,
+        "legacy_base": -0.002281485933166707,
+        "legacy_dir": -0.002208569463340568
+      }
+    },
+    {
+      "episode_id": "development_test:6",
+      "delay": 0,
+      "frame": 32,
+      "returns": {
+        "theta0": -0.001297122841070606,
+        "legacy_base": -0.002253470063897555,
+        "legacy_dir": -0.002190393894129979
+      }
+    },
+    {
+      "episode_id": "development_test:7",
+      "delay": 1,
+      "frame": 32,
+      "returns": {
+        "theta0": -0.0015856566230743184,
+        "legacy_base": -0.0023088122143784997,
+        "legacy_dir": -0.002225873281691888
+      }
+    },
+    {
+      "episode_id": "development_test:8",
+      "delay": 2,
+      "frame": 32,
+      "returns": {
+        "theta0": -0.0017840088239981405,
+        "legacy_base": -0.002329488044653159,
+        "legacy_dir": -0.0021670292128837735
+      }
+    },
+    {
+      "episode_id": "development_test:9",
+      "delay": 0,
+      "frame": 32,
+      "returns": {
+        "theta0": -0.0012425456904314133,
+        "legacy_base": -0.002252025799969063,
+        "legacy_dir": -0.0021188628907303575
+      }
+    },
+    {
+      "episode_id": "development_test:10",
+      "delay": 1,
+      "frame": 32,
+      "returns": {
+        "theta0": -0.001518487723853373,
+        "legacy_base": -0.0023054092622683633,
+        "legacy_dir": -0.0021726369685311415
+      }
+    },
+    {
+      "episode_id": "development_test:11",
+      "delay": 2,
+      "frame": 32,
+      "returns": {
+        "theta0": -0.001687976469735024,
+        "legacy_base": -0.002277972616144157,
+        "legacy_dir": -0.002155740443235884
+      }
+    },
+    {
+      "episode_id": "development_test:12",
+      "delay": 0,
+      "frame": 32,
+      "returns": {
+        "theta0": -0.0013046493656301156,
+        "legacy_base": -0.0022649774795662834,
+        "legacy_dir": -0.0021904499457802836
+      }
+    },
+    {
+      "episode_id": "development_test:13",
+      "delay": 1,
+      "frame": 32,
+      "returns": {
+        "theta0": -0.0014250962074498935,
+        "legacy_base": -0.0021910250230855357,
+        "legacy_dir": -0.0020607011338352656
+      }
+    },
+    {
+      "episode_id": "development_test:14",
+      "delay": 2,
+      "frame": 32,
+      "returns": {
+        "theta0": -0.0017577800728689058,
+        "legacy_base": -0.002365972191348125,
+        "legacy_dir": -0.0021781087216369032
+      }
+    },
+    {
+      "episode_id": "development_test:15",
+      "delay": 0,
+      "frame": 32,
+      "returns": {
+        "theta0": -0.0013354211909121566,
+        "legacy_base": -0.002311431969070953,
+        "legacy_dir": -0.002210419275131498
+      }
+    },
+    {
+      "episode_id": "development_test:16",
+      "delay": 1,
+      "frame": 32,
+      "returns": {
+        "theta0": -0.0015354016261465396,
+        "legacy_base": -0.002213827839261465,
+        "legacy_dir": -0.0021490771382388025
+      }
+    },
+    {
+      "episode_id": "development_test:17",
+      "delay": 2,
+      "frame": 32,
+      "returns": {
+        "theta0": -0.0018025310174755633,
+        "legacy_base": -0.0024299913335848362,
+        "legacy_dir": -0.002186523145482283
+      }
+    },
+    {
+      "episode_id": "development_test:18",
+      "delay": 0,
+      "frame": 32,
+      "returns": {
+        "theta0": -0.00137705999863744,
+        "legacy_base": -0.0023083261796584113,
+        "legacy_dir": -0.002209416414857095
+      }
+    },
+    {
+      "episode_id": "development_test:19",
+      "delay": 1,
+      "frame": 32,
+      "returns": {
+        "theta0": -0.0014499435235995725,
+        "legacy_base": -0.002141364724708672,
+        "legacy_dir": -0.0021180464422290496
+      }
+    },
+    {
+      "episode_id": "development_test:20",
+      "delay": 2,
+      "frame": 32,
+      "returns": {
+        "theta0": -0.001790881619340818,
+        "legacy_base": -0.002417605359488747,
+        "legacy_dir": -0.002228645207884742
+      }
+    },
+    {
+      "episode_id": "development_test:21",
+      "delay": 0,
+      "frame": 32,
+      "returns": {
+        "theta0": -0.0012425125044056792,
+        "legacy_base": -0.0021968320316485697,
+        "legacy_dir": -0.002136819817557722
+      }
+    },
+    {
+      "episode_id": "development_test:22",
+      "delay": 1,
+      "frame": 32,
+      "returns": {
+        "theta0": -0.0016455005598877425,
+        "legacy_base": -0.002398750919366337,
+        "legacy_dir": -0.0022601302337930417
+      }
+    },
+    {
+      "episode_id": "development_test:23",
+      "delay": 2,
+      "frame": 32,
+      "returns": {
+        "theta0": -0.0017117137711868502,
+        "legacy_base": -0.0022248447311841576,
+        "legacy_dir": -0.0021434441921228033
+      }
+    },
+    {
+      "episode_id": "development_test:24",
+      "delay": 0,
+      "frame": 32,
+      "returns": {
+        "theta0": -0.0013012788671052777,
+        "legacy_base": -0.0022074260099345386,
+        "legacy_dir": -0.0021743954811432975
+      }
+    },
+    {
+      "episode_id": "development_test:25",
+      "delay": 1,
+      "frame": 32,
+      "returns": {
+        "theta0": -0.0016454668826770518,
+        "legacy_base": -0.002355476896338273,
+        "legacy_dir": -0.002239199538601728
+      }
+    },
+    {
+      "episode_id": "development_test:26",
+      "delay": 2,
+      "frame": 32,
+      "returns": {
+        "theta0": -0.0018834099539795249,
+        "legacy_base": -0.0023599774042687752,
+        "legacy_dir": -0.002242562560012262
+      }
+    },
+    {
+      "episode_id": "development_test:27",
+      "delay": 0,
+      "frame": 32,
+      "returns": {
+        "theta0": -0.0013059492547897772,
+        "legacy_base": -0.002257717004311543,
+        "legacy_dir": -0.0021584504903203695
+      }
+    },
+    {
+      "episode_id": "development_test:28",
+      "delay": 1,
+      "frame": 32,
+      "returns": {
+        "theta0": -0.0014318284389087449,
+        "legacy_base": -0.0022090661781468133,
+        "legacy_dir": -0.002066287976720412
+      }
+    },
+    {
+      "episode_id": "development_test:29",
+      "delay": 2,
+      "frame": 32,
+      "returns": {
+        "theta0": -0.0017554853836920423,
+        "legacy_base": -0.0022684715477575227,
+        "legacy_dir": -0.0022312000982795564
+      }
+    }
+  ],
+  "summary": {
+    "all": {
+      "theta0": {
+        "n": 30,
+        "mean": -0.0015307342697790762,
+        "paired_delta_vs_theta0": 0.0
+      },
+      "legacy_base": {
+        "n": 30,
+        "mean": -0.0022804791012326444,
+        "paired_delta_vs_theta0": -0.000749744831453569
+      },
+      "legacy_dir": {
+        "n": 30,
+        "mean": -0.0021747489710523473,
+        "paired_delta_vs_theta0": -0.0006440147012732717
+      }
+    },
+    "delay2": {
+      "theta0": {
+        "n": 10,
+        "mean": -0.0017631326169333119,
+        "paired_delta_vs_theta0": 0.0
+      },
+      "legacy_base": {
+        "n": 10,
+        "mean": -0.002325726208548218,
+        "paired_delta_vs_theta0": -0.0005625935916149062
+      },
+      "legacy_dir": {
+        "n": 10,
+        "mean": -0.0021908259089118832,
+        "paired_delta_vs_theta0": -0.0004276932919785712
+      }
+    }
+  },
+  "budget": {
+    "control_steps": {
+      "collection_development_test": 2880,
+      "frozen_policy_holdout": 1440
+    },
+    "simulator_wall_seconds": {
+      "collection_development_test": 1.6215161110085319,
+      "frozen_policy_holdout": 0.8009033290072693
+    },
+    "total_control_steps": 4320
+  },
+  "wall_seconds": 2.816064714003005,
+  "source_unchanged": true
+}

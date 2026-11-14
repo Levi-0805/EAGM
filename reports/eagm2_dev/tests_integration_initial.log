@@ -1,0 +1,43 @@
+test_neural_critic_and_actor_model_second_derivative (test_baselines.BaselineTests.test_neural_critic_and_actor_model_second_derivative) ... ok
+test_paml_matches_analytic_gradient_difference (test_baselines.BaselineTests.test_paml_matches_analytic_gradient_difference) ... ok
+test_paml_zero_for_equal_states (test_baselines.BaselineTests.test_paml_zero_for_equal_states) ... ok
+test_vagram_coordinatewise_not_squared_dot_product (test_baselines.BaselineTests.test_vagram_coordinatewise_not_squared_dot_product) ... ok
+test_vagram_units_and_detached_weights (test_baselines.BaselineTests.test_vagram_units_and_detached_weights) ... ok
+test_exact_fk_and_reward (test_contact.ContactTests.test_exact_fk_and_reward) ... ok
+test_fk_autograd_finite_difference (test_contact.ContactTests.test_fk_autograd_finite_difference) ... ok
+test_scripted_contact_success (test_contact.ContactTests.test_scripted_contact_success) ... ok
+test_snapshot_replay_and_hash (test_contact.ContactTests.test_snapshot_replay_and_hash) ... ok
+test_direction_scale_invariance_norm_detects_scale (test_gradients.CalibrationTests.test_direction_scale_invariance_norm_detects_scale) ... ok
+test_empty_mask_and_target_detached (test_gradients.CalibrationTests.test_empty_mask_and_target_detached) ... ok
+test_higher_order_model_gradients_all_modes (test_gradients.CalibrationTests.test_higher_order_model_gradients_all_modes) ... ok
+test_legacy_equals_historical_formula (test_gradients.CalibrationTests.test_legacy_equals_historical_formula) ... ok
+test_cache_accounting_and_scalar_bounds (test_gradients.FiniteDifferenceTests.test_cache_accounting_and_scalar_bounds) ... ok
+test_exp_converges_and_position_is_not_clipped (test_gradients.FiniteDifferenceTests.test_exp_converges_and_position_is_not_clipped) ... ok
+test_quadratic_all_stencils_exact_and_accounted (test_gradients.FiniteDifferenceTests.test_quadratic_all_stencils_exact_and_accounted) ... ok
+test_spsa_reproducible_and_query_count (test_gradients.FiniteDifferenceTests.test_spsa_reproducible_and_query_count) ... ok
+test_stability_and_nonfinite_are_not_success (test_gradients.FiniteDifferenceTests.test_stability_and_nonfinite_are_not_success) ... ok
+test_class_balance_differs_from_accuracy (test_gradients.MetricsTests.test_class_balance_differs_from_accuracy) ... ok
+test_undefined_metrics_are_null (test_gradients.MetricsTests.test_undefined_metrics_are_null) ... ok
+test_alignment_observe_window_and_checkpoint (test_models.ModelTests.test_alignment_observe_window_and_checkpoint) ... ok
+test_causal_prefix_future_perturbation (test_models.ModelTests.test_causal_prefix_future_perturbation) ... ok
+test_privileged_explicit_separation (test_models.ModelTests.test_privileged_explicit_separation) ... ok
+test_second_derivative_and_chain_fd (test_models.ModelTests.test_second_derivative_and_chain_fd) ... ok
+test_visual_latent_dimension_and_capacity (test_models.ModelTests.test_visual_latent_dimension_and_capacity) ... ok
+test_interior_jacobian_and_invalid_delay (test_prior.PriorControllerTests.test_interior_jacobian_and_invalid_delay) ... ok
+test_joint_boundary_reset_and_inverse (test_prior.PriorControllerTests.test_joint_boundary_reset_and_inverse) ... ok
+test_real_controller_full_cartesian (test_prior.PriorControllerTests.test_real_controller_full_cartesian)
+True MuJoCo/controller steps, independent scalar B stack reference. ... ok
+test_confirm_locked (test_runtime.RuntimeTests.test_confirm_locked) ... ok
+test_development_only (test_runtime.RuntimeTests.test_development_only) ... ok
+test_streams (test_runtime.RuntimeTests.test_streams) ... ok
+test_actual_rgb_dependency_and_adapter (test_vision.VisionTests.test_actual_rgb_dependency_and_adapter) ... ok
+test_deployment_has_no_privileged_argument (test_vision.VisionTests.test_deployment_has_no_privileged_argument) ... ok
+test_latent_forward_equal (test_vision.VisionTests.test_latent_forward_equal) ... ok
+test_rgb_only (test_vision.VisionTests.test_rgb_only) ... ok
+
+----------------------------------------------------------------------
+Ran 35 tests in 35.301s
+
+OK
+capacity match 33322 140 33434
+controller matrix: 972 actual control steps; nominal max=0, executed-stack max=0

@@ -1,0 +1,27 @@
+{
+  "log": [
+    {
+      "update": 1,
+      "loss": 2.2184817790985107,
+      "dynamics_loss": 0.77092444896698,
+      "command_loss": 0.18100997805595398,
+      "objective_loss": 0.0
+    },
+    {
+      "update": 20,
+      "loss": 0.45931142568588257,
+      "dynamics_loss": 0.3393746018409729,
+      "command_loss": 0.11993680894374847,
+      "objective_loss": 0.0
+    }
+  ],
+  "resource": {
+    "cuda_elapsed_seconds": 0.1764773712158203,
+    "peak_allocated_bytes": 109038080,
+    "peak_reserved_bytes": 132120576,
+    "wall_seconds": 0.17683561500234646,
+    "device": "cuda:0"
+  },
+  "batch_seed": 367421940,
+  "updates": 20
+}

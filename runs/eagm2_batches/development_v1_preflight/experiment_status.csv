@@ -1,0 +1,10 @@
+task,seed,attempt,status,worker_pid,exit_code,wall_seconds
+tracking,200001,development_v1,planned,,,
+tracking,200002,development_v1,planned,,,
+tracking,200003,development_v1,planned,,,
+contact,201001,development_v1,planned,,,
+contact,201002,development_v1,planned,,,
+contact,201003,development_v1,planned,,,
+vision,202001,development_v1,planned,,,
+vision,202002,development_v1,planned,,,
+vision,202003,development_v1,planned,,,

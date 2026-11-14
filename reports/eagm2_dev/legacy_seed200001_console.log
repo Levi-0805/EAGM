@@ -1,0 +1,19 @@
+    pair it 200 base 0.31905 dir 0.32249
+    pair it 400 base 0.27940 dir 0.29138
+    pair it 600 base 0.24568 dir 0.24929
+    pair it 800 base 0.24239 dir 0.24508
+    pair it 1000 base 0.24492 dir 0.24752
+    pair it 1200 base 0.25215 dir 0.25701
+    pair it 1400 base 0.24163 dir 0.24436
+    pair it 1600 base 0.24640 dir 0.25116
+    pair it 1800 base 0.23463 dir 0.24145
+    pair it 2000 base 0.22833 dir 0.23377
+    pair it 2200 base 0.22318 dir 0.22918
+    pair it 2400 base 0.21712 dir 0.22517
+    pair it 2600 base 0.21148 dir 0.22018
+    pair it 2800 base 0.20410 dir 0.21070
+    pair it 3000 base 0.19942 dir 0.20915
+/home/aaa/miniconda3/envs/eagm_gpu/lib/python3.11/site-packages/numpy/_core/fromnumeric.py:3904: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/home/aaa/miniconda3/envs/eagm_gpu/lib/python3.11/site-packages/numpy/_core/_methods.py:147: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)

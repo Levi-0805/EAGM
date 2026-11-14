@@ -1,0 +1,13 @@
+labels_train 1 queries 168
+labels_train 2 queries 168
+labels_diagnostic 1 queries 168
+labels_diagnostic 2 queries 168
+ff_base 1 2.113016
+ff_base 20 0.441658
+COMPLETED ff_base return -0.001478671541695872 cos 0.049348391446905254
+delay_dir 1 2.135398
+delay_dir 20 0.423714
+COMPLETED delay_dir return -0.0014785619266061854 cos 0.021014687811242508
+recurrent_dir 1 2.159565
+recurrent_dir 20 0.38627
+COMPLETED recurrent_dir return -0.0014610102687341072 cos 0.05697752438839518

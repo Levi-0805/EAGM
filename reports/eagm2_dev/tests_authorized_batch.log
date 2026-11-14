@@ -1,0 +1,12 @@
+test_drift_stops_before_worker (test_authorized_batch.AuthorizedBatchTests.test_drift_stops_before_worker) ... ok
+test_dry_run_starts_no_worker (test_authorized_batch.AuthorizedBatchTests.test_dry_run_starts_no_worker) ... ok
+test_first_failure_stops_remaining_roots (test_authorized_batch.AuthorizedBatchTests.test_first_failure_stops_remaining_roots) ... ok
+test_plan_exactly_nine_exploratory_roots_and_defaults (test_authorized_batch.AuthorizedBatchTests.test_plan_exactly_nine_exploratory_roots_and_defaults) ... ok
+test_smoke_and_full_suite_log_gates (test_authorized_batch.AuthorizedBatchTests.test_smoke_and_full_suite_log_gates) ... ok
+test_source_hash_detects_change_and_new_code (test_authorized_batch.AuthorizedBatchTests.test_source_hash_detects_change_and_new_code) ... ok
+test_unsafe_attempt_and_excess_updates_rejected (test_authorized_batch.AuthorizedBatchTests.test_unsafe_attempt_and_excess_updates_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.011s
+
+OK

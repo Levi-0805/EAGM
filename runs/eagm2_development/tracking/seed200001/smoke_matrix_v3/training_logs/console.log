@@ -1,0 +1,65 @@
+labels_train 1 queries 168
+labels_train 2 queries 168
+labels_validation 1 queries 168
+labels_validation 2 queries 168
+labels_diagnostic 1 queries 168
+labels_diagnostic 2 queries 168
+legacy_base 1 0.90677
+legacy_base 20 0.343453
+COMPLETED legacy_base return -0.0015092158074589753 cos -0.037617022903015794
+legacy_dir 1 0.953302
+legacy_dir 20 0.343888
+COMPLETED legacy_dir return -0.0014869437608326175 cos 0.05658484076207096
+ff_base 1 2.113016
+ff_base 20 0.441658
+COMPLETED ff_base return -0.001478671541695872 cos 0.049348391446905254
+ff_dir 1 2.159565
+ff_dir 20 0.441505
+COMPLETED ff_dir return -0.0014785421646462994 cos 0.05457809875965397
+delay_base 1 2.08885
+delay_base 20 0.423821
+COMPLETED delay_base return -0.0014787594979795982 cos 0.015347316969041413
+delay_dir 1 2.135398
+delay_dir 20 0.423714
+COMPLETED delay_dir return -0.0014785619266061854 cos 0.021014687811242508
+recurrent_base 1 2.113016
+recurrent_base 20 0.386298
+COMPLETED recurrent_base return -0.0014783911794774816 cos 0.05157033058108507
+recurrent_dir 1 2.159565
+recurrent_dir 20 0.38627
+COMPLETED recurrent_dir return -0.0014610102687341072 cos 0.05697752438839518
+combined_base 1 2.08885
+combined_base 20 0.377191
+COMPLETED combined_base return -0.0014970292038859433 cos 0.014401869710429803
+combined_dir 1 2.135398
+combined_dir 20 0.377158
+COMPLETED combined_dir return -0.0014622543393426127 cos 0.02018827023221196
+capacity_mlp 1 2.138186
+capacity_mlp 20 0.439758
+COMPLETED capacity_mlp return -0.0014746058505289057 cos 0.1124312932367168
+capacity_gru 1 2.172003
+capacity_gru 20 0.387872
+COMPLETED capacity_gru return -0.0014867444573548672 cos 0.2042770870586733
+free_command 1 2.63553
+free_command 20 1.016089
+COMPLETED free_command return -0.001456530229646917 cos 0.022566818362897544
+direction_only 1 2.195251
+direction_only 20 0.442621
+COMPLETED direction_only return -0.0014115786083786818 cos 0.5941020029345341
+norm_only 1 2.405045
+norm_only 20 0.433345
+COMPLETED norm_only return -0.0014828826816634631 cos 0.11554601912014606
+joint_calibration 1 2.511446
+joint_calibration 20 0.447002
+COMPLETED joint_calibration return -0.0014118257718101228 cos 0.44510475131962907
+paml_adaptation 1 2.08885
+paml_adaptation 20 0.423821
+COMPLETED paml_adaptation return -0.0014787594979795982 cos 0.015347316969041413
+vagram_adaptation 1 2.08885
+vagram_adaptation 20 0.423821
+COMPLETED vagram_adaptation return -0.0014787594979795982 cos 0.015347316969041413
+ff_base 1 2.218482
+ff_base 20 0.459311
+COMPLETED base_extra_data return -0.0014787664718020554 cos 0.04163908845128637
+COMPLETED direct_fd return -0.0012845689226940104 training_steps 2688
+COMPLETED spsa return -0.0011123207734587803 training_steps 3072

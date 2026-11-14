@@ -1,0 +1,13 @@
+{
+  "python": "3.11.18",
+  "numpy": "2.1.3",
+  "torch": "2.11.0+cu128",
+  "mujoco": "3.5.0",
+  "cuda_available": true,
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 4060, 580.178.04, 8188 MiB, 5990 MiB",
+  "gpu_probe_error": "",
+  "git_commit": "81ecd5f3ad1727c86fb8bc67f140e5def6e500c6",
+  "git_status": "?? configs/eagm2/\n?? eagm2/\n?? reports/eagm2_dev/\n?? runs/eagm2_development/\n?? scripts/eagm2/\n?? tests/eagm2/\n",
+  "cpu_threads": 1
+}

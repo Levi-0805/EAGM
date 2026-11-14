@@ -1,0 +1,46 @@
+{
+  "training_updates": 50,
+  "target": "continuing discounted fixed theta0 FQE TD; frozen Polyak target",
+  "gamma": 0.99,
+  "target_tau": 0.01,
+  "context": [
+    "x",
+    "observable_c",
+    "reference"
+  ],
+  "context_dimension": 71,
+  "reward_scale": 0.01703690178692341,
+  "actor_parameter_dimension": 28,
+  "behavior_to_theta0_action_rmse": 0.0030104464385658503,
+  "validation": {
+    "td_rmse": 0.005044395104050636,
+    "transitions": 102,
+    "used_for_selection": false
+  },
+  "log": [
+    {
+      "update": 1,
+      "normalized_td_mse": 1.089220643043518
+    },
+    {
+      "update": 50,
+      "normalized_td_mse": 0.07402877509593964
+    }
+  ],
+  "parameter_count": 9729,
+  "checkpoint_attribute": "training_checkpoint",
+  "limitations": [
+    "Off-policy behavior coverage is not guaranteed; action RMSE is only a descriptive diagnostic.",
+    "Observable context omits hidden Controller B state; FQE has state aliasing and is not an exact POMDP value.",
+    "Continuing discounted proxy, not exact finite horizon return; heldout TD residual is not true value error.",
+    "Actor fixed at theta0; does not evaluate all policy parameter positions."
+  ],
+  "extra_simulator_queries": 0,
+  "resource": {
+    "cuda_elapsed_seconds": 0.6611651611328125,
+    "peak_allocated_bytes": 80465408,
+    "peak_reserved_bytes": 81788928,
+    "wall_seconds": 0.6643144330009818,
+    "device": "cuda"
+  }
+}

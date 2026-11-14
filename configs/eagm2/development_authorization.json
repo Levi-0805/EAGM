@@ -1,0 +1,11 @@
+{
+  "baseline_commit": "81ecd5f3ad1727c86fb8bc67f140e5def6e500c6",
+  "branch": "EAGM-2.0-full-validation",
+  "phase": "development_exploratory_only",
+  "authorized_root_seeds": {"tracking": [200001,200002,200003], "contact": [201001,201002,201003], "vision": [202001,202002,202003]},
+  "confirmation_authorized": false,
+  "confirmation_requires_second_author_approval": true,
+  "historical_paper_and_data_changes_authorized": false,
+  "development_budget_worker_hours": {"implementation_cpu":8,"implementation_gpu":2,"tracking_cpu":24,"tracking_gpu":8,"contact_cpu":48,"contact_gpu":16,"vision_cpu":48,"vision_gpu":24},
+  "acceptance": "Actual controller parity, causal deployable state, gradient/return evidence including negatives, capacity/budget controls, PAML/VaGraM adaptations, full logs/config/checkpoints. No promise of positive effects."
+}

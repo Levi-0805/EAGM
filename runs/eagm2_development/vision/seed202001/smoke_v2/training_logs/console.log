@@ -1,0 +1,15 @@
+labels_train 1 queries 192
+labels_train 2 queries 192
+labels_validation 1 queries 192
+labels_validation 2 queries 192
+labels_diagnostic 1 queries 192
+labels_diagnostic 2 queries 192
+ff_base 1 9.35746
+ff_base 20 8.33791
+COMPLETED ff_base return -1.6328851950755794 cos -0.4108970932538072
+delay_dir 1 9.743895
+delay_dir 20 7.752415
+COMPLETED delay_dir return -1.2074999107230537 cos 0.08340780953817585
+combined_dir 1 9.743895
+combined_dir 20 7.261476
+COMPLETED combined_dir return -1.2061375628129658 cos 0.0854892861681355

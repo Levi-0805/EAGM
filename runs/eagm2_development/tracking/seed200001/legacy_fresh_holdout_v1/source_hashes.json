@@ -1,0 +1,23 @@
+{
+  "eagm2/vision.py": "fad09231594086b464b33963061856c2aefcefc3b9f03e9a5674eb944ce3ca9d",
+  "eagm2/budget_controls.py": "7107c7999d5cb820d226bd695d731fa2156d88aaa4dd3a96e1b74705910f998b",
+  "eagm2/data.py": "0c3011985d7417f41e70c3056f82eebb8d4477c988bfa64f6b3d4f772eb10b14",
+  "eagm2/legacy_adapter.py": "63c19b88b9b93b381fb2e8dab37a206af3b2f3850693998b3290d630f9c1bc14",
+  "eagm2/__init__.py": "7b0a210446add5ba05c36a1d82efa12cae1a1942e0448d7d0ef0794834629f56",
+  "eagm2/training.py": "216fa21a77187d346388e4969f96b040409e7f2b840f8ad88176c5ad31211212",
+  "eagm2/runtime.py": "41bd732b02d3616b225104f1177a880dcf8a83f829e1458936fc37a1ecc8724c",
+  "eagm2/gradients.py": "3798c421a3782916eafc6420055dc40a3ac33d4acdc0dca727eb687d1ba19e93",
+  "eagm2/evaluation.py": "2e2ef58cfa8c983eb44fa3176120a9c5597ec25eb689fbc143b3b02a0a07f52c",
+  "eagm2/visual_training.py": "86f4ecfe2084749e8a1e5a6adcf0213ad418c6249ba4d29e896126c949682bac",
+  "eagm2/prior.py": "0fd2ee33793e99f4914ab583a96a0323b0ee0246d1bb4eadfd1fe4c661f3e7c9",
+  "eagm2/models.py": "0fce8e353a3a4d292778c1e3581e9f44457abd4c532ac0b46b206e9a24d8453e",
+  "eagm2/extra_data.py": "37b9bb4ef533d1d3f4d1fa58a412c0f7f49c7e206fc759dd90a2ebe719d9b6ec",
+  "eagm2/baselines.py": "7e86cdd0076da3a473c65855f8b789ee6325dc5d0c079d7fbfab5511e7fbdaaf",
+  "eagm2/contact.py": "625ce448fe3b881d82ea672e042a670ee896f6cd9b030cb539d60a3b6f61b0e0",
+  "eagm2/rollout.py": "27e0a8af44c386d68d4ea58034116971fb545083708e779e0a19f072337e0859",
+  "scripts/eagm2/analyze_development.py": "2a2a09b7a2fba5b182316e08edccf461325fa6c171c5a655d243820b118448a7",
+  "scripts/eagm2/evaluate_legacy_holdout.py": "e65ec4d428e34dbee3df5d7c29e9ea11cb631c3d63a0d9503184c2f893c17f18",
+  "scripts/eagm2/run_legacy_reproduction.py": "08e4a52483cc7d03af95e9a3ccecae2c3e270adecb7983e203a7abdc1190aebe",
+  "scripts/eagm2/run_development.py": "dd442dcc362b5d480f625f4e64c68f38ed156a7860a549ecdc37ee1192817ac8",
+  "configs/eagm2/development_authorization.json": "7c4b773e76119b4433e1c51c8433709500d858ecf31e6d7d2ba3f62b5b2f00e4"
+}

@@ -1,0 +1,10 @@
+test_explicit_subset_preserved (test_runner_controls.RunnerControlTests.test_explicit_subset_preserved) ... ok
+test_explicit_vision_legacy_rejected (test_runner_controls.RunnerControlTests.test_explicit_vision_legacy_rejected) ... ok
+test_invalid_requests_rejected_before_run (test_runner_controls.RunnerControlTests.test_invalid_requests_rejected_before_run) ... ok
+test_physical_defaults_include_budget_controls (test_runner_controls.RunnerControlTests.test_physical_defaults_include_budget_controls) ... ok
+test_vision_default_excludes_incompatible_models (test_runner_controls.RunnerControlTests.test_vision_default_excludes_incompatible_models) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK

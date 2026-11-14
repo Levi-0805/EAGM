@@ -1,0 +1,36 @@
+{
+  "all": {
+    "theta0": {
+      "n": 30,
+      "mean": -0.0015307342697790762,
+      "paired_delta_vs_theta0": 0.0
+    },
+    "legacy_base": {
+      "n": 30,
+      "mean": -0.0022804791012326444,
+      "paired_delta_vs_theta0": -0.000749744831453569
+    },
+    "legacy_dir": {
+      "n": 30,
+      "mean": -0.0021747489710523473,
+      "paired_delta_vs_theta0": -0.0006440147012732717
+    }
+  },
+  "delay2": {
+    "theta0": {
+      "n": 10,
+      "mean": -0.0017631326169333119,
+      "paired_delta_vs_theta0": 0.0
+    },
+    "legacy_base": {
+      "n": 10,
+      "mean": -0.002325726208548218,
+      "paired_delta_vs_theta0": -0.0005625935916149062
+    },
+    "legacy_dir": {
+      "n": 10,
+      "mean": -0.0021908259089118832,
+      "paired_delta_vs_theta0": -0.0004276932919785712
+    }
+  }
+}

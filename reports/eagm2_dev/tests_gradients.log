@@ -1,0 +1,16 @@
+test_direction_scale_invariance_norm_detects_scale (test_gradients.CalibrationTests.test_direction_scale_invariance_norm_detects_scale) ... ok
+test_empty_mask_and_target_detached (test_gradients.CalibrationTests.test_empty_mask_and_target_detached) ... ok
+test_higher_order_model_gradients_all_modes (test_gradients.CalibrationTests.test_higher_order_model_gradients_all_modes) ... ok
+test_legacy_equals_historical_formula (test_gradients.CalibrationTests.test_legacy_equals_historical_formula) ... ok
+test_cache_accounting_and_scalar_bounds (test_gradients.FiniteDifferenceTests.test_cache_accounting_and_scalar_bounds) ... ok
+test_exp_converges_and_position_is_not_clipped (test_gradients.FiniteDifferenceTests.test_exp_converges_and_position_is_not_clipped) ... ok
+test_quadratic_all_stencils_exact_and_accounted (test_gradients.FiniteDifferenceTests.test_quadratic_all_stencils_exact_and_accounted) ... ok
+test_spsa_reproducible_and_query_count (test_gradients.FiniteDifferenceTests.test_spsa_reproducible_and_query_count) ... ok
+test_stability_and_nonfinite_are_not_success (test_gradients.FiniteDifferenceTests.test_stability_and_nonfinite_are_not_success) ... ok
+test_class_balance_differs_from_accuracy (test_gradients.MetricsTests.test_class_balance_differs_from_accuracy) ... ok
+test_undefined_metrics_are_null (test_gradients.MetricsTests.test_undefined_metrics_are_null) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.036s
+
+OK

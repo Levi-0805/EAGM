@@ -1,0 +1,9 @@
+test_actual_rgb_dependency_and_adapter (test_vision.VisionTests.test_actual_rgb_dependency_and_adapter) ... ok
+test_deployment_has_no_privileged_argument (test_vision.VisionTests.test_deployment_has_no_privileged_argument) ... ok
+test_latent_forward_equal (test_vision.VisionTests.test_latent_forward_equal) ... ok
+test_rgb_only (test_vision.VisionTests.test_rgb_only) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.033s
+
+OK

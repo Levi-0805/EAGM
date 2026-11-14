@@ -1,0 +1,22 @@
+[
+  {
+    "method": "ff_base",
+    "status": "completed",
+    "wall_seconds": 7.23517694900147
+  },
+  {
+    "method": "combined_dir",
+    "status": "completed",
+    "wall_seconds": 18.7182019139982
+  },
+  {
+    "method": "paml_adaptation",
+    "status": "completed",
+    "wall_seconds": 7.5866479680007615
+  },
+  {
+    "method": "vagram_adaptation",
+    "status": "completed",
+    "wall_seconds": 7.451894273999642
+  }
+]

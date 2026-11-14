@@ -1,0 +1,10 @@
+test_neural_critic_and_actor_model_second_derivative (test_baselines.BaselineTests.test_neural_critic_and_actor_model_second_derivative) ... ok
+test_paml_matches_analytic_gradient_difference (test_baselines.BaselineTests.test_paml_matches_analytic_gradient_difference) ... ok
+test_paml_zero_for_equal_states (test_baselines.BaselineTests.test_paml_zero_for_equal_states) ... ok
+test_vagram_coordinatewise_not_squared_dot_product (test_baselines.BaselineTests.test_vagram_coordinatewise_not_squared_dot_product) ... ok
+test_vagram_units_and_detached_weights (test_baselines.BaselineTests.test_vagram_units_and_detached_weights) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.018s
+
+OK

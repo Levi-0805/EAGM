@@ -1,0 +1,16 @@
+labels_train 1 queries 168
+labels_train 2 queries 168
+labels_diagnostic 1 queries 168
+labels_diagnostic 2 queries 168
+ff_base 1 10.380423
+ff_base 20 8.363578
+COMPLETED ff_base return -1.940639652607497 cos -0.26680293707037417
+combined_dir 1 2574.105957
+combined_dir 20 7.690225
+COMPLETED combined_dir return -1.914073895498568 cos -0.136109035847282
+paml_adaptation 1 9.961558
+paml_adaptation 20 8.007905
+COMPLETED paml_adaptation return -1.9404278360563065 cos -0.2654893895005089
+vagram_adaptation 1 9.961558
+vagram_adaptation 20 8.007905
+COMPLETED vagram_adaptation return -1.9404579203384387 cos -0.2654893909901888

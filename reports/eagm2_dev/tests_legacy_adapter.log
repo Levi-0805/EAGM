@@ -1,0 +1,7 @@
+test_buffer_forwarding_and_checkpoint (test_legacy_adapter.LegacyAdapterTests.test_buffer_forwarding_and_checkpoint) ... ok
+test_exact_forward_input_and_parameter_gradients (test_legacy_adapter.LegacyAdapterTests.test_exact_forward_input_and_parameter_gradients) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.028s
+
+OK

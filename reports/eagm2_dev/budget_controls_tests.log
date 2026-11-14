@@ -1,0 +1,12 @@
+test_boundary_fd_cost_and_no_partial_coordinate (test_budget_controls.BudgetControlTests.test_boundary_fd_cost_and_no_partial_coordinate) ... ok
+test_complete_iteration_cost_and_unused (test_budget_controls.BudgetControlTests.test_complete_iteration_cost_and_unused) ... ok
+test_confirmation_rejected_before_any_environment_access (test_budget_controls.BudgetControlTests.test_confirmation_rejected_before_any_environment_access) ... ok
+test_existing_output_not_overwritten (test_budget_controls.BudgetControlTests.test_existing_output_not_overwritten) ... ok
+test_failure_keeps_reserved_cost_and_checkpoint (test_budget_controls.BudgetControlTests.test_failure_keeps_reserved_cost_and_checkpoint) ... ok
+test_insufficient_full_fd_iteration_uses_no_simulator (test_budget_controls.BudgetControlTests.test_insufficient_full_fd_iteration_uses_no_simulator) ... ok
+test_spsa_deterministic (test_budget_controls.BudgetControlTests.test_spsa_deterministic) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 1.229s
+
+OK

@@ -1,0 +1,17 @@
+[
+  {
+    "method": "ff_base",
+    "status": "completed",
+    "wall_seconds": 1.280447320001258
+  },
+  {
+    "method": "delay_dir",
+    "status": "completed",
+    "wall_seconds": 0.9978880620001291
+  },
+  {
+    "method": "recurrent_dir",
+    "status": "completed",
+    "wall_seconds": 4.187953455002571
+  }
+]

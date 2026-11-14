@@ -1,0 +1,10 @@
+test_interior_jacobian_and_invalid_delay (test_prior.PriorControllerTests.test_interior_jacobian_and_invalid_delay) ... ok
+test_joint_boundary_reset_and_inverse (test_prior.PriorControllerTests.test_joint_boundary_reset_and_inverse) ... ok
+test_real_controller_full_cartesian (test_prior.PriorControllerTests.test_real_controller_full_cartesian)
+True MuJoCo/controller steps, independent scalar B stack reference. ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 28.828s
+
+OK
+controller matrix: 972 actual control steps; nominal max=0, executed-stack max=0

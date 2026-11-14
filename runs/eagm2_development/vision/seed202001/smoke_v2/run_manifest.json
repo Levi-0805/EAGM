@@ -1,0 +1,26 @@
+{
+  "status": "completed",
+  "config": {
+    "task": "vision",
+    "seed": 202001,
+    "attempt": "smoke_v2",
+    "device": "cuda",
+    "updates": 20,
+    "policy_updates": 2,
+    "methods": "ff_base,delay_dir,combined_dir",
+    "smoke": true,
+    "resolved_methods": [
+      "ff_base",
+      "delay_dir",
+      "combined_dir"
+    ],
+    "phase": "development_exploratory",
+    "confirmation_authorized": false,
+    "history": 32,
+    "training_gradient_labels": 12,
+    "diagnostic_gradient_labels": 6,
+    "model_batch_size": 64,
+    "selection": "development only; no confirmatory interpretation"
+  },
+  "wall_seconds": 158.65696546600157
+}

@@ -1,0 +1,21 @@
+{
+  "status": "completed",
+  "config": {
+    "task": "contact",
+    "seed": 201001,
+    "attempt": "smoke_v1",
+    "device": "cuda",
+    "updates": 20,
+    "policy_updates": 2,
+    "methods": "ff_base,combined_dir,paml_adaptation,vagram_adaptation",
+    "smoke": true,
+    "phase": "development_exploratory",
+    "confirmation_authorized": false,
+    "history": 32,
+    "training_gradient_labels": 12,
+    "diagnostic_gradient_labels": 6,
+    "model_batch_size": 64,
+    "selection": "development only; no confirmatory interpretation"
+  },
+  "wall_seconds": 63.310930159001146
+}

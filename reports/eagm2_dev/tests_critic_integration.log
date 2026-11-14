@@ -1,0 +1,8 @@
+test_named_init_shares_common_shapes_and_preserves_prior
+test_fqe_checkpoint_context_and_heldout_isolation
+paml_adaptation 1 0.014842
+vagram_adaptation 1 0.014844
+test_vision_32_adapter_context
+paml_adaptation 1 0.01717
+vagram_adaptation 1 0.017172
+3 tests passed

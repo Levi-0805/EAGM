@@ -1,0 +1,15 @@
+{
+  "unit": "simulator_control_steps",
+  "common_train_collection_steps": 384,
+  "training_fd_label_steps": 2688,
+  "direct_control_cap_each": 3072,
+  "base_extra_data_increment_cap": 2688,
+  "excluded": [
+    "validation collection",
+    "test collection",
+    "validation FD",
+    "diagnostic FD",
+    "final evaluation"
+  ],
+  "note": "Direct controls do not consume or pay for unused model data; they receive the same total cap. Extra-data uses ff_base loss, same model update count and original policy starts."
+}

@@ -1,0 +1,19 @@
+{
+  "traceback": "Traceback (most recent call last):\n  File \"/home/aaa/workspace/EAGM-2.0-full-validation/scripts/eagm2/run_development.py\", line 44, in main\n    labels=make_labels(env,data['starts']['train'][:nlabel],a.seed,a.task,horizon,budget,'labels_train',vision_policy)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/aaa/workspace/EAGM-2.0-full-validation/scripts/eagm2/run_development.py\", line 20, in make_labels\n    labels.append(dict(start=s,theta=theta,**fd));print(kind,i+1,'queries',fd['queries'],flush=True)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: dict() got multiple values for keyword argument 'theta'\n",
+  "wall_seconds": 2.2064118790003704,
+  "budget": {
+    "control_steps": {
+      "collection_train": 384,
+      "collection_validation": 288,
+      "collection_development_test": 288,
+      "labels_train": 1344
+    },
+    "simulator_wall_seconds": {
+      "collection_train": 0.24912157400103752,
+      "collection_validation": 0.18142272000113735,
+      "collection_development_test": 0.17708906400002888,
+      "labels_train": 0.9307831469996017
+    },
+    "total_control_steps": 2304
+  }
+}

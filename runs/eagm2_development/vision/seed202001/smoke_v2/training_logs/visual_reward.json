@@ -1,0 +1,19 @@
+{
+  "log": [
+    {
+      "update": 1,
+      "normalized_feature_mse": 0.6763091087341309
+    },
+    {
+      "update": 50,
+      "normalized_feature_mse": 0.559511125087738
+    }
+  ],
+  "resource": {
+    "cuda_elapsed_seconds": 0.15012342834472656,
+    "peak_allocated_bytes": 68954112,
+    "peak_reserved_bytes": 115343360,
+    "wall_seconds": 0.15041550399837433,
+    "device": "cuda"
+  }
+}
