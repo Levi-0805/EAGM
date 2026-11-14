@@ -1,0 +1,24 @@
+{
+  "smokes": {
+    "tracking": {
+      "path": "/home/aaa/workspace/EAGM-2.0-full-validation/runs/eagm2_development/tracking/seed200001/smoke_matrix_v3",
+      "config_hash": "911edfc0e42fd714bd1e12d1290ac7030e78bd090ee0e72b7cecaf2022b82ce7",
+      "manifest_hash": "9c0c0ba88ae2b25089d8bd646a506aa019570a51efae7519230ff2ceba1eb689",
+      "result_hash": "8f13a1c89352cedc337f16fe80b684999ea964c8765e7dc86913e6da18c25f92"
+    },
+    "contact": {
+      "path": "/home/aaa/workspace/EAGM-2.0-full-validation/runs/eagm2_development/contact/seed201001/smoke_v1",
+      "config_hash": "2ea8efbe3d4daf8fc42753067a8a7f48cb4fb7dfdd4bd2586f832fc460620979",
+      "manifest_hash": "d5042642fb363661f9da14a93ba3c92affba51d9e4190f872eeb7346979a1807",
+      "result_hash": "679719f9ffe04985584a588f4f37f29e157ec324bd72dc3f8e8038a8f9e62c57"
+    },
+    "vision": {
+      "path": "/home/aaa/workspace/EAGM-2.0-full-validation/runs/eagm2_development/vision/seed202001/smoke_v2",
+      "config_hash": "1e3f8df35322862ea632a5c23c525782de6d33e6c0b16a1ed02b8171fba85a21",
+      "manifest_hash": "8a3b57695a1c7d08c8de85f09b004a1ab6b6aa23a9ac3ed5a203c794fcbc4920",
+      "result_hash": "6f65307529bd1c3df35265032af5fde0d3237d9e1be87d8c2c1ae7a59474a819"
+    }
+  },
+  "tests_log": "/home/aaa/workspace/EAGM-2.0-full-validation/reports/eagm2_dev/tests_full_discovery_final.log",
+  "tests_log_sha256": "0384e43970ac22ca3920450b5fd966731868949fec11a1abf42ced529ce64060"
+}

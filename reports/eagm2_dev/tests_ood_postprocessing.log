@@ -1,0 +1,8 @@
+test_cap (__main__.OODTests.test_cap) ... ok
+test_checkpoint_load_and_complete_orchestration (__main__.OODTests.test_checkpoint_load_and_complete_orchestration) ... ok
+test_wrong_attempt_rejected (__main__.OODTests.test_wrong_attempt_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 1.146s
+
+OK

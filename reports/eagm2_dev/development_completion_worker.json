@@ -1,0 +1,9 @@
+{
+  "status": "waiting_for_batch",
+  "pid": 50346,
+  "confirmation_authorized": false,
+  "started_unix": 1794665861.412301,
+  "implementation_sha256": "2f186a89e22621a577356b8083e800178eef8f51bbffb75dbcb5eba23cc25461",
+  "completed_roots": 0,
+  "checked_unix": 1794665921.413864
+}

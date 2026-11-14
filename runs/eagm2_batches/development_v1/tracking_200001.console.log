@@ -1,0 +1,121 @@
+labels_train 1 queries 168
+labels_train 2 queries 168
+labels_train 3 queries 168
+labels_train 4 queries 168
+labels_train 5 queries 168
+labels_train 6 queries 168
+labels_train 7 queries 168
+labels_train 8 queries 168
+labels_train 9 queries 168
+labels_train 10 queries 168
+labels_train 11 queries 168
+labels_train 12 queries 168
+labels_validation 1 queries 168
+labels_validation 2 queries 168
+labels_validation 3 queries 168
+labels_validation 4 queries 168
+labels_validation 5 queries 168
+labels_validation 6 queries 168
+labels_diagnostic 1 queries 168
+labels_diagnostic 2 queries 168
+labels_diagnostic 3 queries 168
+labels_diagnostic 4 queries 168
+labels_diagnostic 5 queries 168
+labels_diagnostic 6 queries 168
+legacy_base 1 0.784045
+legacy_base 101 0.352711
+legacy_base 201 0.30974
+legacy_base 301 0.284679
+legacy_base 401 0.262288
+legacy_base 501 0.255782
+legacy_base 601 0.245387
+legacy_base 701 0.267832
+legacy_base 801 0.250559
+legacy_base 901 0.252175
+legacy_base 1000 0.243295
+COMPLETED legacy_base return -0.0032819267961537095 cos 0.2273638487375124
+legacy_dir 1 0.830014
+legacy_dir 101 0.396411
+legacy_dir 201 0.33426
+legacy_dir 301 0.315246
+legacy_dir 401 0.316539
+legacy_dir 501 0.285045
+legacy_dir 601 0.269185
+legacy_dir 701 0.293607
+legacy_dir 801 0.260069
+legacy_dir 901 0.283312
+legacy_dir 1000 0.245302
+COMPLETED legacy_dir return -0.00163124816005851 cos 0.9000777596585108
+ff_base 1 1.92587
+ff_base 101 0.566654
+ff_base 201 0.506549
+ff_base 301 0.459012
+ff_base 401 0.432145
+ff_base 501 0.418429
+ff_base 601 0.401147
+ff_base 701 0.411624
+ff_base 801 0.387046
+ff_base 901 0.388845
+ff_base 1000 0.240136
+COMPLETED ff_base return -0.002490447832771537 cos 0.24115823007772452
+ff_dir 1 1.972702
+ff_dir 101 0.611615
+ff_dir 201 0.543312
+ff_dir 301 0.498489
+ff_dir 401 0.489359
+ff_dir 501 0.450695
+ff_dir 601 0.442124
+ff_dir 701 0.438499
+ff_dir 801 0.408
+ff_dir 901 0.41579
+ff_dir 1000 0.24229
+COMPLETED ff_dir return -0.001932466302630376 cos 0.7497306712224522
+delay_base 1 1.912512
+delay_base 101 0.561852
+delay_base 201 0.505053
+delay_base 301 0.457627
+delay_base 401 0.429654
+delay_base 501 0.417031
+delay_base 601 0.398547
+delay_base 701 0.408338
+delay_base 801 0.382687
+delay_base 901 0.384195
+delay_base 1000 0.236875
+COMPLETED delay_base return -0.0024929705460663715 cos 0.20851421147579188
+delay_dir 1 1.959343
+delay_dir 101 0.606542
+delay_dir 201 0.547582
+delay_dir 301 0.495907
+delay_dir 401 0.483799
+delay_dir 501 0.448971
+delay_dir 601 0.437018
+delay_dir 701 0.453524
+delay_dir 801 0.409576
+delay_dir 901 0.418409
+delay_dir 1000 0.238796
+COMPLETED delay_dir return -0.0017572576437209545 cos 0.8571268697276376
+recurrent_base 1 1.92587
+recurrent_base 101 0.557359
+recurrent_base 201 0.502715
+recurrent_base 301 0.456633
+recurrent_base 401 0.43054
+recurrent_base 501 0.417683
+recurrent_base 601 0.401416
+recurrent_base 701 0.409562
+recurrent_base 801 0.385013
+recurrent_base 901 0.385772
+recurrent_base 1000 0.235575
+COMPLETED recurrent_base return -0.0025974883176385936 cos 0.3794582806117921
+recurrent_dir 1 1.972702
+recurrent_dir 101 0.598722
+recurrent_dir 201 0.529495
+recurrent_dir 301 0.492599
+recurrent_dir 401 0.457772
+recurrent_dir 501 0.445182
+recurrent_dir 601 0.44096
+recurrent_dir 701 0.433358
+recurrent_dir 801 0.39675
+recurrent_dir 901 0.41475
+recurrent_dir 1000 0.238824
+COMPLETED recurrent_dir return -0.001902524547681572 cos 0.8768997073202422
+combined_base 1 1.912512
