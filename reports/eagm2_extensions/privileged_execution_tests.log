@@ -1,0 +1,8 @@
+test_cartesian_true_controller_and_midtrajectory_hidden_restore (__main__.PrivilegedExecutionTests.test_cartesian_true_controller_and_midtrajectory_hidden_restore) ... ok
+test_multistep_autograd_against_real_controller_fd (__main__.PrivilegedExecutionTests.test_multistep_autograd_against_real_controller_fd) ... ok
+test_privileged_requirement_and_input_immutability (__main__.PrivilegedExecutionTests.test_privileged_requirement_and_input_immutability) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 42.507s
+
+OK

@@ -1,0 +1,11 @@
+test_baseline_ambiguity_kept_and_nonfinite_pending (__main__.SelectionTests.test_baseline_ambiguity_kept_and_nonfinite_pending) ... ok
+test_contact_success_rule_and_gate_failure (__main__.SelectionTests.test_contact_success_rule_and_gate_failure) ... ok
+test_fixed_order_and_heldout_invariance (__main__.SelectionTests.test_fixed_order_and_heldout_invariance) ... ok
+test_missing_field_pending_and_gate_evidence_required (__main__.SelectionTests.test_missing_field_pending_and_gate_evidence_required) ... ok
+test_missing_root_pending (__main__.SelectionTests.test_missing_root_pending) ... ok
+test_negative_return_counts_and_ties (__main__.SelectionTests.test_negative_return_counts_and_ties) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.199s
+
+OK

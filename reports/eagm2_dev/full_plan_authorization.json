@@ -1,0 +1,15 @@
+{
+  "authority": "Latest explicit author instruction in this conversation",
+  "author_instruction": "按照计划执行吧，授权所有",
+  "recorded_date": "2026-11-14",
+  "full_research_plan_authorized": true,
+  "scope": ["development extensions", "method selection and engineering corrections", "45-root confirmation plan after scientific gates", "generalization and mechanism experiments", "theoretical analysis", "paper reconstruction after locating official sources", "independent review", "GitHub branch publication and reproducibility archives"],
+  "additional_author_approval_required_for_this_plan": false,
+  "confirmation_execution_ready": false,
+  "pending_scientific_gates": ["complete nine-root development audit", "validation-only candidate selection or explicit no-go", "complete required missing development controls", "freeze exact baseline identities and visual comparison", "verify task and input-isolation criteria", "freeze configuration, seeds, statistics, failure rules and measured budget with 25 percent reserve"],
+  "frozen_development_snapshot_policy": "Do not change running training code or historical authorization snapshots. Their false flags describe the old runtime guard, not the latest author permission. Implement a new versioned execution gate after the current batch and validation.",
+  "no_go_policy": "If no candidate meets the scientific criteria, redesign under exploratory seeds. Broad permission does not make a failed method suitable for confirmation.",
+  "paper_source_gate": "Locate and verify designated Final manuscript and correct supplementary with LaTeX before restructuring. Missing sources remain an evidence dependency.",
+  "historical_evidence": "Preserve historical branches, raw logs, failed attempts and exploratory/confirmatory classifications. Paper revisions must be versioned independently.",
+  "submission": "Prepare and review submission artifacts; no conference account submission or third-party messaging is implied."
+}

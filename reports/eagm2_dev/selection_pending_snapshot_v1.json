@@ -1,0 +1,1188 @@
+{
+  "phase": "exploratory_validation_selection",
+  "permission_is_scientific_pass": false,
+  "attempt": "development_v1",
+  "candidate_order": [
+    "delay_dir",
+    "recurrent_dir",
+    "combined_dir"
+  ],
+  "baseline_resolution": "parallel fixed reports; no automatic choice between ff_dir and legacy_dir",
+  "tasks": {
+    "tracking": {
+      "ff_dir": {
+        "status": "pending",
+        "selected": null,
+        "candidates": {
+          "delay_dir": {
+            "status": "pending",
+            "scientific_status": "pending",
+            "external_gate_status": "pending",
+            "external_gates": {
+              "capacity": null,
+              "budget": null,
+              "tests": null
+            },
+            "missing": [
+              {
+                "seed": 200002,
+                "metric": "return"
+              },
+              {
+                "seed": 200002,
+                "metric": "cosine"
+              },
+              {
+                "seed": 200003,
+                "metric": "return"
+              },
+              {
+                "seed": 200003,
+                "metric": "cosine"
+              }
+            ],
+            "seed_rows": [
+              {
+                "seed": 200001,
+                "candidate_validation": {
+                  "return": -0.0017988007198878563,
+                  "cosine": 0.8491284361893117
+                },
+                "baseline_validation": {
+                  "return": -0.0019614524525501504,
+                  "cosine": 0.7525445613438598
+                },
+                "difference": {
+                  "return": 0.0001626517326622941,
+                  "cosine": 0.09658387484545183
+                }
+              },
+              {
+                "seed": 200002,
+                "candidate_validation": null,
+                "baseline_validation": null,
+                "difference": {
+                  "return": null,
+                  "cosine": null
+                }
+              },
+              {
+                "seed": 200003,
+                "candidate_validation": null,
+                "baseline_validation": null,
+                "difference": {
+                  "return": null,
+                  "cosine": null
+                }
+              }
+            ],
+            "summary": {},
+            "criteria": {}
+          },
+          "recurrent_dir": {
+            "status": "pending",
+            "scientific_status": "pending",
+            "external_gate_status": "pending",
+            "external_gates": {
+              "capacity": null,
+              "budget": null,
+              "tests": null
+            },
+            "missing": [
+              {
+                "seed": 200002,
+                "metric": "return"
+              },
+              {
+                "seed": 200002,
+                "metric": "cosine"
+              },
+              {
+                "seed": 200003,
+                "metric": "return"
+              },
+              {
+                "seed": 200003,
+                "metric": "cosine"
+              }
+            ],
+            "seed_rows": [
+              {
+                "seed": 200001,
+                "candidate_validation": {
+                  "return": -0.001937777459938551,
+                  "cosine": 0.8814920391720545
+                },
+                "baseline_validation": {
+                  "return": -0.0019614524525501504,
+                  "cosine": 0.7525445613438598
+                },
+                "difference": {
+                  "return": 2.3674992611599473e-05,
+                  "cosine": 0.1289474778281947
+                }
+              },
+              {
+                "seed": 200002,
+                "candidate_validation": null,
+                "baseline_validation": null,
+                "difference": {
+                  "return": null,
+                  "cosine": null
+                }
+              },
+              {
+                "seed": 200003,
+                "candidate_validation": null,
+                "baseline_validation": null,
+                "difference": {
+                  "return": null,
+                  "cosine": null
+                }
+              }
+            ],
+            "summary": {},
+            "criteria": {}
+          },
+          "combined_dir": {
+            "status": "pending",
+            "scientific_status": "pending",
+            "external_gate_status": "pending",
+            "external_gates": {
+              "capacity": null,
+              "budget": null,
+              "tests": null
+            },
+            "missing": [
+              {
+                "seed": 200002,
+                "metric": "return"
+              },
+              {
+                "seed": 200002,
+                "metric": "cosine"
+              },
+              {
+                "seed": 200003,
+                "metric": "return"
+              },
+              {
+                "seed": 200003,
+                "metric": "cosine"
+              }
+            ],
+            "seed_rows": [
+              {
+                "seed": 200001,
+                "candidate_validation": {
+                  "return": -0.0018488690746560562,
+                  "cosine": 0.9081622760500148
+                },
+                "baseline_validation": {
+                  "return": -0.0019614524525501504,
+                  "cosine": 0.7525445613438598
+                },
+                "difference": {
+                  "return": 0.00011258337789409414,
+                  "cosine": 0.15561771470615493
+                }
+              },
+              {
+                "seed": 200002,
+                "candidate_validation": null,
+                "baseline_validation": null,
+                "difference": {
+                  "return": null,
+                  "cosine": null
+                }
+              },
+              {
+                "seed": 200003,
+                "candidate_validation": null,
+                "baseline_validation": null,
+                "difference": {
+                  "return": null,
+                  "cosine": null
+                }
+              }
+            ],
+            "summary": {},
+            "criteria": {}
+          }
+        }
+      },
+      "legacy_dir": {
+        "status": "pending",
+        "selected": null,
+        "candidates": {
+          "delay_dir": {
+            "status": "pending",
+            "scientific_status": "pending",
+            "external_gate_status": "pending",
+            "external_gates": {
+              "capacity": null,
+              "budget": null,
+              "tests": null
+            },
+            "missing": [
+              {
+                "seed": 200002,
+                "metric": "return"
+              },
+              {
+                "seed": 200002,
+                "metric": "cosine"
+              },
+              {
+                "seed": 200003,
+                "metric": "return"
+              },
+              {
+                "seed": 200003,
+                "metric": "cosine"
+              }
+            ],
+            "seed_rows": [
+              {
+                "seed": 200001,
+                "candidate_validation": {
+                  "return": -0.0017988007198878563,
+                  "cosine": 0.8491284361893117
+                },
+                "baseline_validation": {
+                  "return": -0.0016638724471875076,
+                  "cosine": 0.894354106959415
+                },
+                "difference": {
+                  "return": -0.00013492827270034872,
+                  "cosine": -0.04522567077010331
+                }
+              },
+              {
+                "seed": 200002,
+                "candidate_validation": null,
+                "baseline_validation": null,
+                "difference": {
+                  "return": null,
+                  "cosine": null
+                }
+              },
+              {
+                "seed": 200003,
+                "candidate_validation": null,
+                "baseline_validation": null,
+                "difference": {
+                  "return": null,
+                  "cosine": null
+                }
+              }
+            ],
+            "summary": {},
+            "criteria": {}
+          },
+          "recurrent_dir": {
+            "status": "pending",
+            "scientific_status": "pending",
+            "external_gate_status": "pending",
+            "external_gates": {
+              "capacity": null,
+              "budget": null,
+              "tests": null
+            },
+            "missing": [
+              {
+                "seed": 200002,
+                "metric": "return"
+              },
+              {
+                "seed": 200002,
+                "metric": "cosine"
+              },
+              {
+                "seed": 200003,
+                "metric": "return"
+              },
+              {
+                "seed": 200003,
+                "metric": "cosine"
+              }
+            ],
+            "seed_rows": [
+              {
+                "seed": 200001,
+                "candidate_validation": {
+                  "return": -0.001937777459938551,
+                  "cosine": 0.8814920391720545
+                },
+                "baseline_validation": {
+                  "return": -0.0016638724471875076,
+                  "cosine": 0.894354106959415
+                },
+                "difference": {
+                  "return": -0.00027390501275104335,
+                  "cosine": -0.012862067787360432
+                }
+              },
+              {
+                "seed": 200002,
+                "candidate_validation": null,
+                "baseline_validation": null,
+                "difference": {
+                  "return": null,
+                  "cosine": null
+                }
+              },
+              {
+                "seed": 200003,
+                "candidate_validation": null,
+                "baseline_validation": null,
+                "difference": {
+                  "return": null,
+                  "cosine": null
+                }
+              }
+            ],
+            "summary": {},
+            "criteria": {}
+          },
+          "combined_dir": {
+            "status": "pending",
+            "scientific_status": "pending",
+            "external_gate_status": "pending",
+            "external_gates": {
+              "capacity": null,
+              "budget": null,
+              "tests": null
+            },
+            "missing": [
+              {
+                "seed": 200002,
+                "metric": "return"
+              },
+              {
+                "seed": 200002,
+                "metric": "cosine"
+              },
+              {
+                "seed": 200003,
+                "metric": "return"
+              },
+              {
+                "seed": 200003,
+                "metric": "cosine"
+              }
+            ],
+            "seed_rows": [
+              {
+                "seed": 200001,
+                "candidate_validation": {
+                  "return": -0.0018488690746560562,
+                  "cosine": 0.9081622760500148
+                },
+                "baseline_validation": {
+                  "return": -0.0016638724471875076,
+                  "cosine": 0.894354106959415
+                },
+                "difference": {
+                  "return": -0.00018499662746854868,
+                  "cosine": 0.013808169090599787
+                }
+              },
+              {
+                "seed": 200002,
+                "candidate_validation": null,
+                "baseline_validation": null,
+                "difference": {
+                  "return": null,
+                  "cosine": null
+                }
+              },
+              {
+                "seed": 200003,
+                "candidate_validation": null,
+                "baseline_validation": null,
+                "difference": {
+                  "return": null,
+                  "cosine": null
+                }
+              }
+            ],
+            "summary": {},
+            "criteria": {}
+          }
+        }
+      }
+    },
+    "contact": {
+      "ff_dir": {
+        "status": "pending",
+        "selected": null,
+        "candidates": {
+          "delay_dir": {
+            "status": "pending",
+            "scientific_status": "pending",
+            "external_gate_status": "pending",
+            "external_gates": {
+              "capacity": null,
+              "budget": null,
+              "tests": null
+            },
+            "missing": [
+              {
+                "seed": 201001,
+                "metric": "return"
+              },
+              {
+                "seed": 201001,
+                "metric": "cosine"
+              },
+              {
+                "seed": 201001,
+                "metric": "success"
+              },
+              {
+                "seed": 201002,
+                "metric": "return"
+              },
+              {
+                "seed": 201002,
+                "metric": "cosine"
+              },
+              {
+                "seed": 201002,
+                "metric": "success"
+              },
+              {
+                "seed": 201003,
+                "metric": "return"
+              },
+              {
+                "seed": 201003,
+                "metric": "cosine"
+              },
+              {
+                "seed": 201003,
+                "metric": "success"
+              }
+            ],
+            "seed_rows": [
+              {
+                "seed": 201001,
+                "candidate_validation": null,
+                "baseline_validation": null,
+                "difference": {
+                  "return": null,
+                  "cosine": null,
+                  "success": null
+                }
+              },
+              {
+                "seed": 201002,
+                "candidate_validation": null,
+                "baseline_validation": null,
+                "difference": {
+                  "return": null,
+                  "cosine": null,
+                  "success": null
+                }
+              },
+              {
+                "seed": 201003,
+                "candidate_validation": null,
+                "baseline_validation": null,
+                "difference": {
+                  "return": null,
+                  "cosine": null,
+                  "success": null
+                }
+              }
+            ],
+            "summary": {},
+            "criteria": {}
+          },
+          "recurrent_dir": {
+            "status": "pending",
+            "scientific_status": "pending",
+            "external_gate_status": "pending",
+            "external_gates": {
+              "capacity": null,
+              "budget": null,
+              "tests": null
+            },
+            "missing": [
+              {
+                "seed": 201001,
+                "metric": "return"
+              },
+              {
+                "seed": 201001,
+                "metric": "cosine"
+              },
+              {
+                "seed": 201001,
+                "metric": "success"
+              },
+              {
+                "seed": 201002,
+                "metric": "return"
+              },
+              {
+                "seed": 201002,
+                "metric": "cosine"
+              },
+              {
+                "seed": 201002,
+                "metric": "success"
+              },
+              {
+                "seed": 201003,
+                "metric": "return"
+              },
+              {
+                "seed": 201003,
+                "metric": "cosine"
+              },
+              {
+                "seed": 201003,
+                "metric": "success"
+              }
+            ],
+            "seed_rows": [
+              {
+                "seed": 201001,
+                "candidate_validation": null,
+                "baseline_validation": null,
+                "difference": {
+                  "return": null,
+                  "cosine": null,
+                  "success": null
+                }
+              },
+              {
+                "seed": 201002,
+                "candidate_validation": null,
+                "baseline_validation": null,
+                "difference": {
+                  "return": null,
+                  "cosine": null,
+                  "success": null
+                }
+              },
+              {
+                "seed": 201003,
+                "candidate_validation": null,
+                "baseline_validation": null,
+                "difference": {
+                  "return": null,
+                  "cosine": null,
+                  "success": null
+                }
+              }
+            ],
+            "summary": {},
+            "criteria": {}
+          },
+          "combined_dir": {
+            "status": "pending",
+            "scientific_status": "pending",
+            "external_gate_status": "pending",
+            "external_gates": {
+              "capacity": null,
+              "budget": null,
+              "tests": null
+            },
+            "missing": [
+              {
+                "seed": 201001,
+                "metric": "return"
+              },
+              {
+                "seed": 201001,
+                "metric": "cosine"
+              },
+              {
+                "seed": 201001,
+                "metric": "success"
+              },
+              {
+                "seed": 201002,
+                "metric": "return"
+              },
+              {
+                "seed": 201002,
+                "metric": "cosine"
+              },
+              {
+                "seed": 201002,
+                "metric": "success"
+              },
+              {
+                "seed": 201003,
+                "metric": "return"
+              },
+              {
+                "seed": 201003,
+                "metric": "cosine"
+              },
+              {
+                "seed": 201003,
+                "metric": "success"
+              }
+            ],
+            "seed_rows": [
+              {
+                "seed": 201001,
+                "candidate_validation": null,
+                "baseline_validation": null,
+                "difference": {
+                  "return": null,
+                  "cosine": null,
+                  "success": null
+                }
+              },
+              {
+                "seed": 201002,
+                "candidate_validation": null,
+                "baseline_validation": null,
+                "difference": {
+                  "return": null,
+                  "cosine": null,
+                  "success": null
+                }
+              },
+              {
+                "seed": 201003,
+                "candidate_validation": null,
+                "baseline_validation": null,
+                "difference": {
+                  "return": null,
+                  "cosine": null,
+                  "success": null
+                }
+              }
+            ],
+            "summary": {},
+            "criteria": {}
+          }
+        }
+      },
+      "legacy_dir": {
+        "status": "pending",
+        "selected": null,
+        "candidates": {
+          "delay_dir": {
+            "status": "pending",
+            "scientific_status": "pending",
+            "external_gate_status": "pending",
+            "external_gates": {
+              "capacity": null,
+              "budget": null,
+              "tests": null
+            },
+            "missing": [
+              {
+                "seed": 201001,
+                "metric": "return"
+              },
+              {
+                "seed": 201001,
+                "metric": "cosine"
+              },
+              {
+                "seed": 201001,
+                "metric": "success"
+              },
+              {
+                "seed": 201002,
+                "metric": "return"
+              },
+              {
+                "seed": 201002,
+                "metric": "cosine"
+              },
+              {
+                "seed": 201002,
+                "metric": "success"
+              },
+              {
+                "seed": 201003,
+                "metric": "return"
+              },
+              {
+                "seed": 201003,
+                "metric": "cosine"
+              },
+              {
+                "seed": 201003,
+                "metric": "success"
+              }
+            ],
+            "seed_rows": [
+              {
+                "seed": 201001,
+                "candidate_validation": null,
+                "baseline_validation": null,
+                "difference": {
+                  "return": null,
+                  "cosine": null,
+                  "success": null
+                }
+              },
+              {
+                "seed": 201002,
+                "candidate_validation": null,
+                "baseline_validation": null,
+                "difference": {
+                  "return": null,
+                  "cosine": null,
+                  "success": null
+                }
+              },
+              {
+                "seed": 201003,
+                "candidate_validation": null,
+                "baseline_validation": null,
+                "difference": {
+                  "return": null,
+                  "cosine": null,
+                  "success": null
+                }
+              }
+            ],
+            "summary": {},
+            "criteria": {}
+          },
+          "recurrent_dir": {
+            "status": "pending",
+            "scientific_status": "pending",
+            "external_gate_status": "pending",
+            "external_gates": {
+              "capacity": null,
+              "budget": null,
+              "tests": null
+            },
+            "missing": [
+              {
+                "seed": 201001,
+                "metric": "return"
+              },
+              {
+                "seed": 201001,
+                "metric": "cosine"
+              },
+              {
+                "seed": 201001,
+                "metric": "success"
+              },
+              {
+                "seed": 201002,
+                "metric": "return"
+              },
+              {
+                "seed": 201002,
+                "metric": "cosine"
+              },
+              {
+                "seed": 201002,
+                "metric": "success"
+              },
+              {
+                "seed": 201003,
+                "metric": "return"
+              },
+              {
+                "seed": 201003,
+                "metric": "cosine"
+              },
+              {
+                "seed": 201003,
+                "metric": "success"
+              }
+            ],
+            "seed_rows": [
+              {
+                "seed": 201001,
+                "candidate_validation": null,
+                "baseline_validation": null,
+                "difference": {
+                  "return": null,
+                  "cosine": null,
+                  "success": null
+                }
+              },
+              {
+                "seed": 201002,
+                "candidate_validation": null,
+                "baseline_validation": null,
+                "difference": {
+                  "return": null,
+                  "cosine": null,
+                  "success": null
+                }
+              },
+              {
+                "seed": 201003,
+                "candidate_validation": null,
+                "baseline_validation": null,
+                "difference": {
+                  "return": null,
+                  "cosine": null,
+                  "success": null
+                }
+              }
+            ],
+            "summary": {},
+            "criteria": {}
+          },
+          "combined_dir": {
+            "status": "pending",
+            "scientific_status": "pending",
+            "external_gate_status": "pending",
+            "external_gates": {
+              "capacity": null,
+              "budget": null,
+              "tests": null
+            },
+            "missing": [
+              {
+                "seed": 201001,
+                "metric": "return"
+              },
+              {
+                "seed": 201001,
+                "metric": "cosine"
+              },
+              {
+                "seed": 201001,
+                "metric": "success"
+              },
+              {
+                "seed": 201002,
+                "metric": "return"
+              },
+              {
+                "seed": 201002,
+                "metric": "cosine"
+              },
+              {
+                "seed": 201002,
+                "metric": "success"
+              },
+              {
+                "seed": 201003,
+                "metric": "return"
+              },
+              {
+                "seed": 201003,
+                "metric": "cosine"
+              },
+              {
+                "seed": 201003,
+                "metric": "success"
+              }
+            ],
+            "seed_rows": [
+              {
+                "seed": 201001,
+                "candidate_validation": null,
+                "baseline_validation": null,
+                "difference": {
+                  "return": null,
+                  "cosine": null,
+                  "success": null
+                }
+              },
+              {
+                "seed": 201002,
+                "candidate_validation": null,
+                "baseline_validation": null,
+                "difference": {
+                  "return": null,
+                  "cosine": null,
+                  "success": null
+                }
+              },
+              {
+                "seed": 201003,
+                "candidate_validation": null,
+                "baseline_validation": null,
+                "difference": {
+                  "return": null,
+                  "cosine": null,
+                  "success": null
+                }
+              }
+            ],
+            "summary": {},
+            "criteria": {}
+          }
+        }
+      }
+    },
+    "vision": {
+      "ff_dir": {
+        "status": "pending",
+        "selected": null,
+        "candidates": {
+          "delay_dir": {
+            "status": "pending",
+            "scientific_status": "pending",
+            "external_gate_status": "pending",
+            "external_gates": {
+              "capacity": null,
+              "budget": null,
+              "tests": null
+            },
+            "missing": [
+              {
+                "seed": 202001,
+                "metric": "return"
+              },
+              {
+                "seed": 202001,
+                "metric": "cosine"
+              },
+              {
+                "seed": 202001,
+                "metric": "success"
+              },
+              {
+                "seed": 202002,
+                "metric": "return"
+              },
+              {
+                "seed": 202002,
+                "metric": "cosine"
+              },
+              {
+                "seed": 202002,
+                "metric": "success"
+              },
+              {
+                "seed": 202003,
+                "metric": "return"
+              },
+              {
+                "seed": 202003,
+                "metric": "cosine"
+              },
+              {
+                "seed": 202003,
+                "metric": "success"
+              }
+            ],
+            "seed_rows": [
+              {
+                "seed": 202001,
+                "candidate_validation": null,
+                "baseline_validation": null,
+                "difference": {
+                  "return": null,
+                  "cosine": null,
+                  "success": null
+                }
+              },
+              {
+                "seed": 202002,
+                "candidate_validation": null,
+                "baseline_validation": null,
+                "difference": {
+                  "return": null,
+                  "cosine": null,
+                  "success": null
+                }
+              },
+              {
+                "seed": 202003,
+                "candidate_validation": null,
+                "baseline_validation": null,
+                "difference": {
+                  "return": null,
+                  "cosine": null,
+                  "success": null
+                }
+              }
+            ],
+            "summary": {},
+            "criteria": {}
+          },
+          "recurrent_dir": {
+            "status": "pending",
+            "scientific_status": "pending",
+            "external_gate_status": "pending",
+            "external_gates": {
+              "capacity": null,
+              "budget": null,
+              "tests": null
+            },
+            "missing": [
+              {
+                "seed": 202001,
+                "metric": "return"
+              },
+              {
+                "seed": 202001,
+                "metric": "cosine"
+              },
+              {
+                "seed": 202001,
+                "metric": "success"
+              },
+              {
+                "seed": 202002,
+                "metric": "return"
+              },
+              {
+                "seed": 202002,
+                "metric": "cosine"
+              },
+              {
+                "seed": 202002,
+                "metric": "success"
+              },
+              {
+                "seed": 202003,
+                "metric": "return"
+              },
+              {
+                "seed": 202003,
+                "metric": "cosine"
+              },
+              {
+                "seed": 202003,
+                "metric": "success"
+              }
+            ],
+            "seed_rows": [
+              {
+                "seed": 202001,
+                "candidate_validation": null,
+                "baseline_validation": null,
+                "difference": {
+                  "return": null,
+                  "cosine": null,
+                  "success": null
+                }
+              },
+              {
+                "seed": 202002,
+                "candidate_validation": null,
+                "baseline_validation": null,
+                "difference": {
+                  "return": null,
+                  "cosine": null,
+                  "success": null
+                }
+              },
+              {
+                "seed": 202003,
+                "candidate_validation": null,
+                "baseline_validation": null,
+                "difference": {
+                  "return": null,
+                  "cosine": null,
+                  "success": null
+                }
+              }
+            ],
+            "summary": {},
+            "criteria": {}
+          },
+          "combined_dir": {
+            "status": "pending",
+            "scientific_status": "pending",
+            "external_gate_status": "pending",
+            "external_gates": {
+              "capacity": null,
+              "budget": null,
+              "tests": null
+            },
+            "missing": [
+              {
+                "seed": 202001,
+                "metric": "return"
+              },
+              {
+                "seed": 202001,
+                "metric": "cosine"
+              },
+              {
+                "seed": 202001,
+                "metric": "success"
+              },
+              {
+                "seed": 202002,
+                "metric": "return"
+              },
+              {
+                "seed": 202002,
+                "metric": "cosine"
+              },
+              {
+                "seed": 202002,
+                "metric": "success"
+              },
+              {
+                "seed": 202003,
+                "metric": "return"
+              },
+              {
+                "seed": 202003,
+                "metric": "cosine"
+              },
+              {
+                "seed": 202003,
+                "metric": "success"
+              }
+            ],
+            "seed_rows": [
+              {
+                "seed": 202001,
+                "candidate_validation": null,
+                "baseline_validation": null,
+                "difference": {
+                  "return": null,
+                  "cosine": null,
+                  "success": null
+                }
+              },
+              {
+                "seed": 202002,
+                "candidate_validation": null,
+                "baseline_validation": null,
+                "difference": {
+                  "return": null,
+                  "cosine": null,
+                  "success": null
+                }
+              },
+              {
+                "seed": 202003,
+                "candidate_validation": null,
+                "baseline_validation": null,
+                "difference": {
+                  "return": null,
+                  "cosine": null,
+                  "success": null
+                }
+              }
+            ],
+            "summary": {},
+            "criteria": {}
+          }
+        }
+      },
+      "legacy_dir": {
+        "status": "not_applicable",
+        "reason": "legacy physical-state model unavailable for vision",
+        "selected": null
+      }
+    }
+  },
+  "limitations": [
+    "Three roots are exploratory, not a significance test.",
+    "Both baselines are reported without resolving the protocol ambiguity by observed outcomes.",
+    "Gate evidence is an explicit external attestation; this script does not certify the evidence contents.",
+    "No confirmation runner or authorization file is modified."
+  ]
+}

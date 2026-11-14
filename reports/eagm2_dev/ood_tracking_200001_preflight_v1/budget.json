@@ -1,0 +1,14 @@
+{
+  "control_steps": {
+    "collection_validation": 1152,
+    "ood_returns": 768
+  },
+  "simulator_wall_seconds": {
+    "collection_validation": 0.7206428769968625,
+    "ood_returns": 0.44477494200327783
+  },
+  "total_control_steps": 1920,
+  "issued_control_steps": 1920,
+  "wall_seconds": 2.251840491000621,
+  "training_updates": 0
+}

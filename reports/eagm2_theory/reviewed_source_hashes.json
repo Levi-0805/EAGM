@@ -1,0 +1,9 @@
+{
+  "eagm2/prior.py": "0fd2ee33793e99f4914ab583a96a0323b0ee0246d1bb4eadfd1fe4c661f3e7c9",
+  "eagm2/models.py": "0fce8e353a3a4d292778c1e3581e9f44457abd4c532ac0b46b206e9a24d8453e",
+  "eagm2/rollout.py": "27e0a8af44c386d68d4ea58034116971fb545083708e779e0a19f072337e0859",
+  "eagm2/gradients.py": "3798c421a3782916eafc6420055dc40a3ac33d4acdc0dca727eb687d1ba19e93",
+  "eagm2/contact.py": "625ce448fe3b881d82ea672e042a670ee896f6cd9b030cb539d60a3b6f61b0e0",
+  "controllers/partial_unknown.py": "85769ea84fef4adc1bba1294679e7e4d34aa5ce276de1b617a25c853979f119a",
+  "reports/eagm2_plan/03_mathematical_derivation.tex": "5aa9f462524157b05b91770f18492fd7a01dc2a857e5aa32221c2a4006ef440f"
+}

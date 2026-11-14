@@ -1,0 +1,326 @@
+[
+  {
+    "configuration": "gain",
+    "start": 0,
+    "delay": 0,
+    "method": "ff_base",
+    "theta0_return": -0.010938278881126171,
+    "final_return": -0.01908918639481429,
+    "paired_delta": -0.008150907513688119
+  },
+  {
+    "configuration": "gain",
+    "start": 0,
+    "delay": 0,
+    "method": "combined_dir",
+    "theta0_return": -0.010938278881126171,
+    "final_return": -0.013466441178923736,
+    "paired_delta": -0.002528162297797565
+  },
+  {
+    "configuration": "gain",
+    "start": 0,
+    "delay": 0,
+    "method": "joint_calibration",
+    "theta0_return": -0.010938278881126171,
+    "final_return": -0.008083425134127745,
+    "paired_delta": 0.002854853746998426
+  },
+  {
+    "configuration": "gain",
+    "start": 1,
+    "delay": 1,
+    "method": "ff_base",
+    "theta0_return": -0.01107720221260991,
+    "final_return": -0.01822946413237673,
+    "paired_delta": -0.007152261919766818
+  },
+  {
+    "configuration": "gain",
+    "start": 1,
+    "delay": 1,
+    "method": "combined_dir",
+    "theta0_return": -0.01107720221260991,
+    "final_return": -0.013068924760990686,
+    "paired_delta": -0.001991722548380776
+  },
+  {
+    "configuration": "gain",
+    "start": 1,
+    "delay": 1,
+    "method": "joint_calibration",
+    "theta0_return": -0.01107720221260991,
+    "final_return": -0.008389085354198765,
+    "paired_delta": 0.002688116858411145
+  },
+  {
+    "configuration": "gain",
+    "start": 2,
+    "delay": 2,
+    "method": "ff_base",
+    "theta0_return": -0.010772439699552296,
+    "final_return": -0.01665626070225144,
+    "paired_delta": -0.005883821002699144
+  },
+  {
+    "configuration": "gain",
+    "start": 2,
+    "delay": 2,
+    "method": "combined_dir",
+    "theta0_return": -0.010772439699552296,
+    "final_return": -0.01239031248825812,
+    "paired_delta": -0.001617872788705824
+  },
+  {
+    "configuration": "gain",
+    "start": 2,
+    "delay": 2,
+    "method": "joint_calibration",
+    "theta0_return": -0.010772439699552296,
+    "final_return": -0.008334860026123811,
+    "paired_delta": 0.0024375796734284853
+  },
+  {
+    "configuration": "smoothing",
+    "start": 0,
+    "delay": 0,
+    "method": "ff_base",
+    "theta0_return": -0.0010969464570998015,
+    "final_return": -0.0036109158845239672,
+    "paired_delta": -0.002513969427424166
+  },
+  {
+    "configuration": "smoothing",
+    "start": 0,
+    "delay": 0,
+    "method": "combined_dir",
+    "theta0_return": -0.0010969464570998015,
+    "final_return": -0.0026689305367270317,
+    "paired_delta": -0.0015719840796272302
+  },
+  {
+    "configuration": "smoothing",
+    "start": 0,
+    "delay": 0,
+    "method": "joint_calibration",
+    "theta0_return": -0.0010969464570998015,
+    "final_return": -0.0016743778682866306,
+    "paired_delta": -0.0005774314111868292
+  },
+  {
+    "configuration": "smoothing",
+    "start": 1,
+    "delay": 1,
+    "method": "ff_base",
+    "theta0_return": -0.0011448871430923364,
+    "final_return": -0.003176334679691557,
+    "paired_delta": -0.0020314475365992204
+  },
+  {
+    "configuration": "smoothing",
+    "start": 1,
+    "delay": 1,
+    "method": "combined_dir",
+    "theta0_return": -0.0011448871430923364,
+    "final_return": -0.0023882116546676798,
+    "paired_delta": -0.0012433245115753434
+  },
+  {
+    "configuration": "smoothing",
+    "start": 1,
+    "delay": 1,
+    "method": "joint_calibration",
+    "theta0_return": -0.0011448871430923364,
+    "final_return": -0.0015851369562304757,
+    "paired_delta": -0.00044024981313813927
+  },
+  {
+    "configuration": "smoothing",
+    "start": 2,
+    "delay": 2,
+    "method": "ff_base",
+    "theta0_return": -0.0012280624743077838,
+    "final_return": -0.002876905951528191,
+    "paired_delta": -0.001648843477220407
+  },
+  {
+    "configuration": "smoothing",
+    "start": 2,
+    "delay": 2,
+    "method": "combined_dir",
+    "theta0_return": -0.0012280624743077838,
+    "final_return": -0.0022089672163495477,
+    "paired_delta": -0.0009809047420417639
+  },
+  {
+    "configuration": "smoothing",
+    "start": 2,
+    "delay": 2,
+    "method": "joint_calibration",
+    "theta0_return": -0.0012280624743077838,
+    "final_return": -0.001622032712555082,
+    "paired_delta": -0.0003939702382472982
+  },
+  {
+    "configuration": "rate",
+    "start": 0,
+    "delay": 0,
+    "method": "ff_base",
+    "theta0_return": -0.0013381752034614047,
+    "final_return": -0.0026162259029968156,
+    "paired_delta": -0.001278050699535411
+  },
+  {
+    "configuration": "rate",
+    "start": 0,
+    "delay": 0,
+    "method": "combined_dir",
+    "theta0_return": -0.0013381752034614047,
+    "final_return": -0.0018812946565010102,
+    "paired_delta": -0.0005431194530396055
+  },
+  {
+    "configuration": "rate",
+    "start": 0,
+    "delay": 0,
+    "method": "joint_calibration",
+    "theta0_return": -0.0013381752034614047,
+    "final_return": -0.0013241243430251936,
+    "paired_delta": 1.405086043621104e-05
+  },
+  {
+    "configuration": "rate",
+    "start": 1,
+    "delay": 1,
+    "method": "ff_base",
+    "theta0_return": -0.0014043612007926995,
+    "final_return": -0.002379929235296344,
+    "paired_delta": -0.0009755680345036443
+  },
+  {
+    "configuration": "rate",
+    "start": 1,
+    "delay": 1,
+    "method": "combined_dir",
+    "theta0_return": -0.0014043612007926995,
+    "final_return": -0.0017469890503384504,
+    "paired_delta": -0.0003426278495457509
+  },
+  {
+    "configuration": "rate",
+    "start": 1,
+    "delay": 1,
+    "method": "joint_calibration",
+    "theta0_return": -0.0014043612007926995,
+    "final_return": -0.001318970317056636,
+    "paired_delta": 8.539088373606357e-05
+  },
+  {
+    "configuration": "rate",
+    "start": 2,
+    "delay": 2,
+    "method": "ff_base",
+    "theta0_return": -0.0017302862613565854,
+    "final_return": -0.00233562139407301,
+    "paired_delta": -0.0006053351327164245
+  },
+  {
+    "configuration": "rate",
+    "start": 2,
+    "delay": 2,
+    "method": "combined_dir",
+    "theta0_return": -0.0017302862613565854,
+    "final_return": -0.0017728584672296805,
+    "paired_delta": -4.25722058730951e-05
+  },
+  {
+    "configuration": "rate",
+    "start": 2,
+    "delay": 2,
+    "method": "joint_calibration",
+    "theta0_return": -0.0017302862613565854,
+    "final_return": -0.0015293646280170486,
+    "paired_delta": 0.0002009216333395368
+  },
+  {
+    "configuration": "extra_lag",
+    "start": 0,
+    "delay": 0,
+    "method": "ff_base",
+    "theta0_return": -0.001467784462354358,
+    "final_return": -0.0024656782417796334,
+    "paired_delta": -0.0009978937794252755
+  },
+  {
+    "configuration": "extra_lag",
+    "start": 0,
+    "delay": 0,
+    "method": "combined_dir",
+    "theta0_return": -0.001467784462354358,
+    "final_return": -0.0017722455478257216,
+    "paired_delta": -0.0003044610854713637
+  },
+  {
+    "configuration": "extra_lag",
+    "start": 0,
+    "delay": 0,
+    "method": "joint_calibration",
+    "theta0_return": -0.001467784462354358,
+    "final_return": -0.00134402168257179,
+    "paired_delta": 0.00012376277978256786
+  },
+  {
+    "configuration": "extra_lag",
+    "start": 1,
+    "delay": 1,
+    "method": "ff_base",
+    "theta0_return": -0.001855929736364364,
+    "final_return": -0.0025123124999963365,
+    "paired_delta": -0.0006563827636319724
+  },
+  {
+    "configuration": "extra_lag",
+    "start": 1,
+    "delay": 1,
+    "method": "combined_dir",
+    "theta0_return": -0.001855929736364364,
+    "final_return": -0.0018791661341890926,
+    "paired_delta": -2.32363978247285e-05
+  },
+  {
+    "configuration": "extra_lag",
+    "start": 1,
+    "delay": 1,
+    "method": "joint_calibration",
+    "theta0_return": -0.001855929736364364,
+    "final_return": -0.0015651345985044896,
+    "paired_delta": 0.0002907951378598745
+  },
+  {
+    "configuration": "extra_lag",
+    "start": 2,
+    "delay": 2,
+    "method": "ff_base",
+    "theta0_return": -0.001952006838088873,
+    "final_return": -0.0023794994503403494,
+    "paired_delta": -0.0004274926122514763
+  },
+  {
+    "configuration": "extra_lag",
+    "start": 2,
+    "delay": 2,
+    "method": "combined_dir",
+    "theta0_return": -0.001952006838088873,
+    "final_return": -0.0018292790547803305,
+    "paired_delta": 0.0001227277833085426
+  },
+  {
+    "configuration": "extra_lag",
+    "start": 2,
+    "delay": 2,
+    "method": "joint_calibration",
+    "theta0_return": -0.001952006838088873,
+    "final_return": -0.0016947998468221281,
+    "paired_delta": 0.00025720699126674496
+  }
+]

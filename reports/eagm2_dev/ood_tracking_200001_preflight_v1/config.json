@@ -1,0 +1,39 @@
+{
+  "source": "runs/eagm2_development/tracking/seed200001/development_v1",
+  "root_seed": 200001,
+  "task": "tracking",
+  "methods": [
+    "ff_base",
+    "combined_dir",
+    "joint_calibration"
+  ],
+  "shifts": {
+    "gain": {
+      "gain": 1.15
+    },
+    "smoothing": {
+      "smooth_beta": 0.5
+    },
+    "rate": {
+      "rate_limit": 0.025
+    },
+    "extra_lag": {
+      "extra_lag": 2
+    }
+  },
+  "fd": false,
+  "fd_configuration": "gain only",
+  "fd_start": 0,
+  "fd_positions": [
+    "theta0",
+    "final"
+  ],
+  "fd_scales": [
+    0.5,
+    1.0
+  ],
+  "max_control_steps": 50000,
+  "starts_per_config": 3,
+  "training_updates": 0,
+  "note": "Sparse exploratory diagnosis only; not sufficient OOD evidence, not independent confirmation. Fixed methods/configurations before results. Fresh naturally evolved hidden states; no snapshot editing."
+}

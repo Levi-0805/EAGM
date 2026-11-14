@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "test": "nonuniform_cubic_bound_tight",
+      "a": 0.1,
+      "b": 0.2
+    },
+    {
+      "test": "nonuniform_cubic_bound_tight",
+      "a": 0.01,
+      "b": 0.8
+    },
+    {
+      "test": "nonuniform_cubic_bound_tight",
+      "a": 0.2,
+      "b": 0.2
+    },
+    {
+      "test": "one_sided_cubic_bound_tight",
+      "h": 0.01
+    },
+    {
+      "test": "one_sided_cubic_bound_tight",
+      "h": 0.1
+    },
+    {
+      "test": "one_sided_cubic_bound_tight",
+      "h": 0.5
+    },
+    {
+      "test": "closed_loop_initial_error_recurrence",
+      "gradient_error": 0.3445730786199762,
+      "bound": 2.9687967699741216
+    }
+  ],
+  "note": "Arithmetic consistency only; does not verify simulator smoothness or learned latent sufficiency."
+}

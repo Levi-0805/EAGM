@@ -1,7 +1,13 @@
 # EAGM 2.0 authorized development
 
-Current scope: nine exploratory roots; **45 confirmation roots are not authorized**.
-No historical paper or raw experiment data is modified.
+Latest author instruction: “按照计划执行吧，授权所有”. Full-plan permission is
+recorded in `full_plan_authorization.json`; it supersedes earlier second-approval
+requirements below. Confirmation execution still requires scientific selection,
+validation and configuration/budget freezing. Existing batch flags remain frozen.
+
+Active execution: nine exploratory roots; confirmation permission has been
+granted, and its scientific execution gates remain pending. No historical paper
+or raw experiment data is modified by this batch.
 
 Start with:
 

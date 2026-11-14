@@ -1,0 +1,55 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\newtheorem{proposition}{Proposition}
+\title{Causal execution Jacobians: conditional implementation audit}
+\author{EAGM 2.0 research notes; no novelty claim}
+\date{November 2026}
+\begin{document}\maketitle
+\section{Timing and observable cache}
+At the beginning of a controller call write $c_t=(r_t,f_t,d_t)$ and $b_t=f_{t-1}$. The implemented update is
+\begin{align}
+\bar a_t&=\operatorname{clip}(a_t,-a_{\max},a_{\max}),&
+r_{t+1}&=\operatorname{clip}(r_t+\bar a_t,\ell,u),\\
+f_{t+1}&=\alpha r_{t+1}+(1-\alpha)f_t,& b_{t+1}&=f_t,\\
+v_t&=\chi_{d_t=0}f_{t+1}+\chi_{d_t=1}f_t+\chi_{d_t=2}b_t.
+\end{align}
+Here $\chi$ denotes an indicator. The two-slot FIFO before the call is $[b_t,f_t]$; selection precedes advancement. Reset fills both slots with the reset target. Delay is a discrete external input, not a differentiable variable. This identity remains valid under changes between declared delays0/1/2 because the queue advances independently of delay. The imagined implementation keeps delay fixed; it does not implement an anticipated changing-delay schedule.
+
+For fixed known $0<\alpha<1$ and valid preceding updates, $b_t=(f_t-\alpha r_t)/(1-\alpha)$. This is singular at $\alpha=1$ and ill-conditioned near it. The implemented public history cache avoids that division, but requires a valid reset or actual preceding observed filter. Arbitrary initial pairs do not imply a valid FIFO.
+
+\section{Partial and propagated derivatives}
+On an open clipping regime let $D_a$ and $D_r$ be diagonal matrices of zeros/ones indicating unsaturated action and target coordinates. Set $M=D_rD_a$.
+\begin{proposition}
+At fixed pre-call state, $\partial v_t/\partial a_t=\chi_{d_t=0}\alpha M$. Nevertheless a previous action can influence later positive-delay commands.
+\end{proposition}
+\noindent\textit{Proof.} Differentiate the update at fixed old states. Positive-delay selection reads only those old states. For propagation, differentiating with respect to any fixed policy parameter vector gives
+\begin{align}
+R_{t+1}&=D_r(R_t+D_a A_t),\\
+F_{t+1}&=\alpha R_{t+1}+(1-\alpha)F_t,\qquad B_{t+1}=F_t,\\
+V_t&=\chi_{d_t=0}F_{t+1}+\chi_{d_t=1}F_t+\chi_{d_t=2}B_t,
+\end{align}
+where capitals denote total parameter sensitivities. Thus $V_t$ need not vanish at positive delay. No derivative is asserted at a clipping boundary. $\square$
+
+\section{Controller B is a different executed-command map}
+Gain multiplies $v_t$ by $g$. Extra lag appends $gv_t$ to an independent hidden queue, popping its oldest entry only once its length exceeds the configured lag $L$; during queue fill it uses the previous executed command. Denote this selection by $w_t$. Then
+\begin{align}
+\lambda_t&=u_{t-1}+\operatorname{clip}(w_t-u_{t-1},-\rho,\rho),\\
+s_t&=\beta\lambda_t+(1-\beta)s_{t-1} &&(\beta>0),\\
+u_t&=\operatorname{clip}(s_t,\ell,u) &&(\beta>0),
+\end{align}
+while for $\beta\le0$ the code bypasses smoothing and clips $\lambda_t$. In particular the bypass at zero is not the mathematical limit of the positive-$\beta$ recurrence.
+On a fixed rate-limit/output-clipping regime, with diagonal masks $D_\rho,D_u$,
+\begin{align}
+\Lambda_t&=D_\rho W_t+(I-D_\rho)U_{t-1},\\
+S_t&=\beta\Lambda_t+(1-\beta)S_{t-1},\quad U_t=D_uS_t &&(\beta>0),\\
+U_t&=D_u\Lambda_t &&(\beta\le0).
+\end{align}
+The queued sensitivity $W_t$ is $gV_{t-L}$ after fill for constant gain/lag, with the specified startup exception. These formulas hold for policy-parameter derivatives with execution parameters fixed. They do not differentiate integer lag or the branching condition in beta. They show exactly which hidden sensitivities a memoryless nominal prior omits. A learned residual can approximate them; its success is an empirical question.
+
+\section{Code correspondence and scope}
+These equations follow \texttt{controllers/partial\_unknown.py:step,\_apply\_unknown} and \texttt{eagm2/prior.py:observable\_step,nominal\_command}. The recurrent model's posterior uses observations during burn-in; imagination advances its learned transition without future physical observations. Its latent vector is not proven equivalent to the smoothing state, previous command and extra queue.
+
+Contact dynamics are outside this algebraic controller identity. A finite-horizon gradient through physical dynamics requires differentiability of the actual discrete simulator rollout along the parameter perturbations. Remaining within one fixed active set is a sufficient local modeling restriction only when the solver map there is smooth; contact-event changes, solver branches, and clipping surfaces are not covered by this assertion. Being piecewise smooth does not justify applying a single smooth derivative across a switch. An autograd-selected subgradient at a tie is not a certified physical derivative.
+\end{document}

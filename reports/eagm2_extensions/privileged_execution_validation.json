@@ -1,0 +1,26 @@
+{
+  "parity": {
+    "configurations": 108,
+    "actual_control_steps": 1296,
+    "max_abs_error": 0.0,
+    "delays": [
+      0,
+      1,
+      2
+    ],
+    "alphas": [
+      0.2,
+      0.5,
+      1.0
+    ],
+    "midtrajectory_reinitialization": true
+  },
+  "gradient": {
+    "probes": 54,
+    "nonzero_jacobians": 54,
+    "max_abs_error": 7.627137810217732e-11,
+    "fd_radius": 1e-06,
+    "first_action_to_final_executed_command": true
+  },
+  "passed": true
+}

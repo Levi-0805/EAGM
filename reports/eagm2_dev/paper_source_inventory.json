@@ -1,0 +1,27 @@
+{
+  "designated_windows_Final_path_verified": false,
+  "candidate_directory_is_official_Final": null,
+  "candidate_files": [
+    {
+      "path": "/home/aaa/桌面/汇报/11月论文/CVPR2027/main.tex",
+      "exists": true,
+      "sha256": "5b61ba8143687e2f046e88064c3beb78a6e491f8629657ab0bdb81ee09b5092b"
+    },
+    {
+      "path": "/home/aaa/桌面/汇报/11月论文/CVPR2027/main.pdf",
+      "exists": true,
+      "sha256": "745d7ffeae410acf8d8f4dd0c1adb260779e7b31316efd8f59e417950968b916"
+    },
+    {
+      "path": "/home/aaa/桌面/汇报/11月论文/CVPR2027/supplementary.tex",
+      "exists": true,
+      "sha256": "8b0641c904689d64ae6f49105b65c51870a9e2b3a0a9cec8fd5929158dcea352"
+    },
+    {
+      "path": "/home/aaa/桌面/汇报/11月论文/CVPR2027/supplementary.pdf",
+      "exists": true,
+      "sha256": "e8f92a19ab758eadbd7b7550300f9c0398e3791be1fd6436c5afafae7bbc249a"
+    }
+  ],
+  "decision": "Do not substitute candidate for designated Final without source/provenance verification."
+}

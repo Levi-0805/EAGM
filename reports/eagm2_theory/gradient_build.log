@@ -1,0 +1,50 @@
+note: Running TeX ...
+note: downloading lmroman17-regular.otf
+warning: failure fetching "lmroman17-regular.otf" from network (1/3)
+caused by: error sending request for url (https://relay.fullyjustified.net/default_bundle_v33.tar)
+caused by: client error (Connect)
+caused by: tunnel error: failed to create underlying connection
+caused by: tcp open error
+caused by: Operation not permitted (os error 1)
+warning: failure fetching "lmroman17-regular.otf" from network (2/3)
+caused by: error sending request for url (https://relay.fullyjustified.net/default_bundle_v33.tar)
+caused by: client error (Connect)
+caused by: tunnel error: failed to create underlying connection
+caused by: tcp open error
+caused by: Operation not permitted (os error 1)
+warning: failure fetching "lmroman17-regular.otf" from network (3/3)
+caused by: error sending request for url (https://relay.fullyjustified.net/default_bundle_v33.tar)
+caused by: client error (Connect)
+caused by: tunnel error: failed to create underlying connection
+caused by: tcp open error
+caused by: Operation not permitted (os error 1)
+warning: open of input lmroman17-regular failed
+caused by: failed to download "lmroman17-regular.otf"; please check your network connection.
+error: gradient_error_bound.tex:9: Font TU/lmr/m/n/17.28=[lmroman17-regular]:mapping=tex-text; at 17.28pt not loadable: Metric (TFM) file or installed font not found
+note: Writing `reports/eagm2_theory/gradient_error_bound.log` (5.5751953125 KiB)
+error: something bad happened inside XeTeX; its output follows:
+
+===============================================================================
+(gradient_error_bound.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-02-24> (article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(size10.clo)) (geometry.sty (keyval.sty) (ifvtex.sty (iftex.sty))) (amsmath.sty
+For additional information on amsmath, use the `?' option.
+(amstext.sty (amsgen.sty)) (amsbsy.sty) (amsopn.sty)) (amssymb.sty
+(amsfonts.sty)) (l3backend-xetex.def)
+No file gradient_error_bound.aux.
+(ts1cmr.fd)
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+! Font TU/lmr/m/n/17.28=[lmroman17-regular]:mapping=tex-text; at 17.28pt not lo
+adable: Metric (TFM) file or installed font not found.
+<to be read again> 
+                   relax 
+l.9 \begin{document}\maketitle
+                              
+No pages of output.
+Transcript written on gradient_error_bound.log.
+===============================================================================
+error: the XeTeX engine had an unrecoverable error
+caused by: halted on potentially-recoverable error as specified
