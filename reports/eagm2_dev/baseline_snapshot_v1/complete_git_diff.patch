@@ -1,0 +1,95 @@
+diff --git a/reports/eagm2_dev/development_completion_worker.json b/reports/eagm2_dev/development_completion_worker.json
+index bdfbb9e..5d675e9 100644
+--- a/reports/eagm2_dev/development_completion_worker.json
++++ b/reports/eagm2_dev/development_completion_worker.json
+@@ -5,5 +5,5 @@
+   "started_unix": 1794665861.412301,
+   "implementation_sha256": "2f186a89e22621a577356b8083e800178eef8f51bbffb75dbcb5eba23cc25461",
+   "completed_roots": 0,
+-  "checked_unix": 1794665921.413864
++  "checked_unix": 1794666521.4264421
+ }
+diff --git a/runs/eagm2_batches/development_v1/tracking_200001.console.log b/runs/eagm2_batches/development_v1/tracking_200001.console.log
+index ac020be..ccde834 100644
+--- a/runs/eagm2_batches/development_v1/tracking_200001.console.log
++++ b/runs/eagm2_batches/development_v1/tracking_200001.console.log
+@@ -119,3 +119,79 @@ recurrent_dir 901 0.41475
+ recurrent_dir 1000 0.238824
+ COMPLETED recurrent_dir return -0.001902524547681572 cos 0.8768997073202422
+ combined_base 1 1.912512
++combined_base 101 0.556357
++combined_base 201 0.502361
++combined_base 301 0.455873
++combined_base 401 0.428972
++combined_base 501 0.416634
++combined_base 601 0.398795
++combined_base 701 0.407062
++combined_base 801 0.380774
++combined_base 901 0.380123
++combined_base 1000 0.232398
++COMPLETED combined_base return -0.0026462872490570478 cos 0.3861851045275571
++combined_dir 1 1.959343
++combined_dir 101 0.597726
++combined_dir 201 0.53514
++combined_dir 301 0.489366
++combined_dir 401 0.470179
++combined_dir 501 0.442657
++combined_dir 601 0.418125
++combined_dir 701 0.438849
++combined_dir 801 0.400741
++combined_dir 901 0.406133
++combined_dir 1000 0.237064
++COMPLETED combined_dir return -0.0018166021280829987 cos 0.9041364263802345
++capacity_mlp 1 2.02755
++capacity_mlp 101 0.59841
++capacity_mlp 201 0.53172
++capacity_mlp 301 0.489875
++capacity_mlp 401 0.451802
++capacity_mlp 501 0.44246
++capacity_mlp 601 0.420369
++capacity_mlp 701 0.428779
++capacity_mlp 801 0.403804
++capacity_mlp 901 0.406023
++capacity_mlp 1000 0.233705
++COMPLETED capacity_mlp return -0.0015600314330960281 cos 0.7693469354080172
++capacity_gru 1 2.021579
++capacity_gru 101 0.595425
++capacity_gru 201 0.526816
++capacity_gru 301 0.484616
++capacity_gru 401 0.450515
++capacity_gru 501 0.425743
++capacity_gru 601 0.405534
++capacity_gru 701 0.421256
++capacity_gru 801 0.392885
++capacity_gru 901 0.397939
++capacity_gru 1000 0.230257
++COMPLETED capacity_gru return -0.001573541844749419 cos 0.896814879419912
++free_command 1 3.12933
++free_command 101 1.265925
++free_command 201 0.712384
++free_command 301 0.625012
++free_command 401 0.548932
++free_command 501 0.521228
++free_command 601 0.508855
++free_command 701 0.506607
++free_command 801 0.462016
++free_command 901 0.465055
++free_command 1000 0.260603
++COMPLETED free_command return -0.0036586708720956532 cos 0.027793190807911785
++direction_only 1 2.027568
++direction_only 101 0.572073
++direction_only 201 0.520407
++direction_only 301 0.467427
++direction_only 401 0.439653
++direction_only 501 0.432429
++direction_only 601 0.405769
++direction_only 701 0.415869
++direction_only 801 0.387614
++direction_only 901 0.389074
++direction_only 1000 0.239664
++COMPLETED direction_only return -0.0015270635210121197 cos 0.9562165298535592
++norm_only 1 2.274439
++norm_only 101 0.641035
++norm_only 201 0.517889
++norm_only 301 0.475515
++norm_only 401 0.450162

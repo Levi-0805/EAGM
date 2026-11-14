@@ -1,0 +1,409 @@
+{
+  "training_sources": {
+    "assets/pilot_effective_model.linux.xml": "71397caedd35b044f3390d836ef2f1735cdbb950f9b7bf3810e0c05befc71b53",
+    "configs/eagm2/development_authorization.json": "7c4b773e76119b4433e1c51c8433709500d858ecf31e6d7d2ba3f62b5b2f00e4",
+    "controllers/__init__.py": "e37c2f62b238df2c7944a37f761fafcfb5a1bfc9aa0c387aa63a5900a9e07ffe",
+    "controllers/compatible_arm_env.py": "de29e1e72a8b567be94a9110002a807a3fa82d377aa4892756ea67c7d0ceecab",
+    "controllers/history_interface.py": "7bea286b4420f3c839c4dbf5fcb9338aab1be12b33d028a7e179d2788c093e28",
+    "controllers/partial_unknown.py": "85769ea84fef4adc1bba1294679e7e4d34aa5ce276de1b617a25c853979f119a",
+    "eagm2/__init__.py": "7b0a210446add5ba05c36a1d82efa12cae1a1942e0448d7d0ef0794834629f56",
+    "eagm2/assets/contact_16cd06f97d46f022.xml": "16cd06f97d46f022fa8256136509e495fbe6abec2377bdb7cddbd9275d351cd7",
+    "eagm2/assets/contact_771ac2afaecc6ae1.xml": "771ac2afaecc6ae1083cfc92b5e229600752d6a935b9ff8e5048b0f3d389c307",
+    "eagm2/baselines.py": "7e86cdd0076da3a473c65855f8b789ee6325dc5d0c079d7fbfab5511e7fbdaaf",
+    "eagm2/budget_controls.py": "7107c7999d5cb820d226bd695d731fa2156d88aaa4dd3a96e1b74705910f998b",
+    "eagm2/contact.py": "625ce448fe3b881d82ea672e042a670ee896f6cd9b030cb539d60a3b6f61b0e0",
+    "eagm2/data.py": "45e79b65b86bc33c2b4f66d8772557dbc3fe56570696d8fa873bc374269d24d3",
+    "eagm2/evaluation.py": "2e2ef58cfa8c983eb44fa3176120a9c5597ec25eb689fbc143b3b02a0a07f52c",
+    "eagm2/extra_data.py": "0c91198cd77ec62c193bcbf92735e20eccf7ee101ddb2f563d70db3818dae8fc",
+    "eagm2/gradients.py": "3798c421a3782916eafc6420055dc40a3ac33d4acdc0dca727eb687d1ba19e93",
+    "eagm2/legacy_adapter.py": "63c19b88b9b93b381fb2e8dab37a206af3b2f3850693998b3290d630f9c1bc14",
+    "eagm2/models.py": "0fce8e353a3a4d292778c1e3581e9f44457abd4c532ac0b46b206e9a24d8453e",
+    "eagm2/prior.py": "0fd2ee33793e99f4914ab583a96a0323b0ee0246d1bb4eadfd1fe4c661f3e7c9",
+    "eagm2/rollout.py": "27e0a8af44c386d68d4ea58034116971fb545083708e779e0a19f072337e0859",
+    "eagm2/runtime.py": "41bd732b02d3616b225104f1177a880dcf8a83f829e1458936fc37a1ecc8724c",
+    "eagm2/training.py": "216fa21a77187d346388e4969f96b040409e7f2b840f8ad88176c5ad31211212",
+    "eagm2/vision.py": "fad09231594086b464b33963061856c2aefcefc3b9f03e9a5674eb944ce3ca9d",
+    "eagm2/visual_training.py": "86f4ecfe2084749e8a1e5a6adcf0213ad418c6249ba4d29e896126c949682bac",
+    "scripts/eagm2/analyze_development.py": "2a2a09b7a2fba5b182316e08edccf461325fa6c171c5a655d243820b118448a7",
+    "scripts/eagm2/evaluate_legacy_holdout.py": "e65ec4d428e34dbee3df5d7c29e9ea11cb631c3d63a0d9503184c2f893c17f18",
+    "scripts/eagm2/run_authorized_batch.py": "64e1f9478c563c9b3122f709d751dd178660b304482cd0b1f6fc7c653572b4d4",
+    "scripts/eagm2/run_development.py": "dd442dcc362b5d480f625f4e64c68f38ed156a7860a549ecdc37ee1192817ac8",
+    "scripts/eagm2/run_legacy_reproduction.py": "08e4a52483cc7d03af95e9a3ccecae2c3e270adecb7983e203a7abdc1190aebe",
+    "tests/eagm2/test_authorized_batch.py": "2de4befa255ab39e592c47c3c8a0c1f09efd4db3f1267ee88f5d784437d78e79",
+    "tests/eagm2/test_baselines.py": "1f1800f2630a8f647bd546c0ac7bb9043f11fe20e6651719d330d34b0439d010",
+    "tests/eagm2/test_budget_controls.py": "83f4aef8fc8bb763e7646425f3bc0ff8974b3cd4f7521fae3ed60ce34fd0eeb1",
+    "tests/eagm2/test_contact.py": "cc2b9bac389330c8a578b475f12c1845f388351d68301e4601fd15064ddef263",
+    "tests/eagm2/test_critic_integration.py": "0a58e138f1f524d46b5543d694c24cc942c4de3113f918a52f1f895ca69059ef",
+    "tests/eagm2/test_data_pipeline.py": "a02adecad8e0f185966c72072a94183db9c0ab00e7892ffb5a7cf20b24fd849b",
+    "tests/eagm2/test_extra_data.py": "a22d19a0fef6ab01497230ce1295ed10e494fcf16c372092767dab263dc5ae2f",
+    "tests/eagm2/test_gradients.py": "a80494f3b78e9b6495e744be1551a4a3d81195353f21587bff391e28ccc92564",
+    "tests/eagm2/test_legacy_adapter.py": "fe0b35e3a5a3ea5c223556affe4ddd1b0ba044f294bfef2e12e174f3cdf01504",
+    "tests/eagm2/test_models.py": "83f567b07787e86d940c9952581a952d5c454d9cbda2019f03ce022eb3f36e13",
+    "tests/eagm2/test_phase_starts.py": "1450639ea1d416995b1ddac28b0c7df8916219f21abd9a93e0a9330780d5eed5",
+    "tests/eagm2/test_prior.py": "69433ae38a3178a15f047ca697b7d67d8d01da30c3934b45c8c8897be60d6575",
+    "tests/eagm2/test_runner_controls.py": "6be91666aec51b3083f5d79b821e057fd97748e576f7814eac1908eb7e79849d",
+    "tests/eagm2/test_runtime.py": "34d2592b09e9f201681a675fe4389956a34ae714815c94e08a38b089c1f36d0c",
+    "tests/eagm2/test_vision.py": "c3b34507f8f2dc62d1f254134d9301d1a0d363ac73b44d6a0bf2c51111c4e722",
+    "tests/eagm2/test_visual_training.py": "1cc4f6d3f5315a2ccc9ad972ca12d6dc56a39ed2da4e8c243ee04d1cce0d67c7",
+    "training/__init__.py": "3bba6cb40f4a2b8e9e085745ccc6c1d8a4cde2ac7f556dfea4091db30d1ce9d8",
+    "training/dataset.py": "c23a162275a4de9fc1bcf7bc66a961f1ba7d050fbbdd127562fefbd75a7f989b",
+    "training/dir_loss.py": "7fac8e74c9d78ba705ddaff7885727b4b38e819810e460eac651f9e3814f84c6",
+    "training/eval_metrics.py": "6b0c1d4c17307b0034c038b59fdd4e5571736919b045d3183d0ec00aff85bdc8",
+    "training/exec_state_probe.py": "8fd1984e5321f7e75fb4b4b8ee78c6e8680dfdfe91835dde77915dcec79d3437",
+    "training/gradients.py": "4b5c67828afda41a9f1a24f34230ff85a969a07d1c0d97386491ab06306bf080",
+    "training/paired_train.py": "0a59ef217c0d73f8320f3c531a4dfdf73e8a9a57560ed5780f6e4a620a0509b7",
+    "training/policy_opt.py": "afda59bca816a170869931f1b3feca56245c84f9fe3808617d9482cf819d050b",
+    "training/reward.py": "1cf2eef6a63cf4321a777779bd29ab38ebee7f8146aa6c9e0f8403596663280d",
+    "training/rollout.py": "0745ad48b72f81feca2a7fc15cb39991eef6d676711e385c034053ad2aa71fdc",
+    "training/seeds.py": "f7290c1bdc7a40730accd27a58eab8f2aa585010ce8aa3b08bc9e036aa7b7044",
+    "training/stage5_common.py": "f795032b55b13a6e36b07b7cd56df25076bee661c84b89489be4f53a404aeeca",
+    "training/stage6c_common.py": "af8a51ae6b90f4d675eb648de1d673d848924dc1856dec48cd349f27c85cd62c",
+    "training/stage8_1_geometry.py": "fedad2827251536d183daf4cb37517efe33d5b71d34dc4d2152e7d162c3909cd",
+    "training/stage8_2_dynamics.py": "579e4a5dc45c264d4b16001025876a9b4f473000d666b3b2e37f36015ef56aaf",
+    "training/stage8_reliability.py": "64df56a67963cffe9bb91f7e9b762a268ad9856292c405352b0bda253b2ff1f4"
+  },
+  "frozen_batch_match": true,
+  "assets": {
+    "/home/aaa/workspace/EAGM-2.0-full-validation/assets/pilot_effective_model.linux.xml": {
+      "bytes": 35467,
+      "sha256": "71397caedd35b044f3390d836ef2f1735cdbb950f9b7bf3810e0c05befc71b53"
+    },
+    "/home/aaa/workspace/EAGM-2.0-full-validation/eagm2/assets/contact_16cd06f97d46f022.xml": {
+      "bytes": 39484,
+      "sha256": "16cd06f97d46f022fa8256136509e495fbe6abec2377bdb7cddbd9275d351cd7"
+    },
+    "/home/aaa/workspace/EAGM-2.0-full-validation/eagm2/assets/contact_771ac2afaecc6ae1.xml": {
+      "bytes": 39563,
+      "sha256": "771ac2afaecc6ae1083cfc92b5e229600752d6a935b9ff8e5048b0f3d389c307"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/collision/base_link.stl": {
+      "bytes": 20084,
+      "sha256": "795f96ece4db1f896ba2962314c6bda5a876eac2c3cb578b018b21985b57c158"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/collision/body_link0_symp.stl": {
+      "bytes": 293284,
+      "sha256": "6c18bbf7e86b03e3faf802e61e8eb438b38dcbcf146d97cffe6e808c65e9a72a"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/collision/ee_base_link.stl": {
+      "bytes": 22784,
+      "sha256": "b7e0bfdc8377cf12e793752f7b65ec97dcc3f6b65a5db6b70d1c605a65e12b23"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/collision/finger_inner_part_00.stl": {
+      "bytes": 59084,
+      "sha256": "32bd78820acf74834b1c218cf07b714b006963cdc35a2a75ea31e54d1daf0671"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/collision/finger_inner_part_01.stl": {
+      "bytes": 47084,
+      "sha256": "517d11a987273d7693382aaa4c84026a734950fdc4b52a7ca8989e8416fb80d1"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/collision/finger_inner_part_02.stl": {
+      "bytes": 46684,
+      "sha256": "7c3c4ed509c682e07c5bf0945d271dd7792b6175ce2778f927c54de25a42120a"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/collision/finger_inner_part_03.stl": {
+      "bytes": 148584,
+      "sha256": "dcbfef75fb9dc29b56e6a8873b0b537436fd4af5eb086b1d16bc747e511f53c6"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/collision/finger_outer_part_00.stl": {
+      "bytes": 79284,
+      "sha256": "b6526e60a29686561ce9c9408aca810767cf3ff1cece9e1aaba6d5e752b6613c"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/collision/finger_outer_part_01.stl": {
+      "bytes": 55484,
+      "sha256": "b8028798ac2cac27634fa0a9808ed413449a5cfd6caa9becab423293f7b089ef"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/collision/finger_outer_part_02.stl": {
+      "bytes": 53284,
+      "sha256": "b5997e97a1d9524fada8c5d375e8f3077f9a9249bbb792be4cbed303edb02588"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/collision/finger_outer_part_03.stl": {
+      "bytes": 154484,
+      "sha256": "330545b4932648afb504ff275d90fb066018a939091ad58b8041e1baf7fb12c4"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/collision/link1.stl": {
+      "bytes": 69684,
+      "sha256": "5fcc7bd6900fd115004f6d4553fae0602aa4b29d132b354728cca9510f701803"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/collision/link2.stl": {
+      "bytes": 41584,
+      "sha256": "381f0c51a4d2bacb40a9782ecd9901877d5b32b9083329d39b741fc63a73a483"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/collision/link3.stl": {
+      "bytes": 42584,
+      "sha256": "72ce0a23e5e65803c9a5d08d8bd915f5ccb4c5a285119183d461f73ab2f535b7"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/collision/link4.stl": {
+      "bytes": 62484,
+      "sha256": "3eb42e669449020c05d5b17152fd22ea8d5737c831619d0f026cfeb2cf28e735"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/collision/link5_part_00.stl": {
+      "bytes": 7584,
+      "sha256": "bf2eb3d231354403709ce31a5e009753610b925cc180fef5e7ccf9dcfe3ce456"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/collision/link5_part_01.stl": {
+      "bytes": 7584,
+      "sha256": "989ec91e242bb847c186a35c2fae7c3b4079cc03f20b6149f67444fd6d4f0334"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/collision/link5_part_02.stl": {
+      "bytes": 8484,
+      "sha256": "eaa0ded332c76f97bdf857e6e2e6a521011722d3db2ff169a96420f3126d5b1f"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/collision/link6.stl": {
+      "bytes": 50684,
+      "sha256": "2f474d557a6f442922f1e4ffa4e78365c011c01f33207108da13b79e53e18f39"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/arm/base_link_00.mtl": {
+      "bytes": 236,
+      "sha256": "4188543f0c56428ee558b3637c62afeb1771359aca61fa7364683d1f81fd0327"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/arm/base_link_00.obj": {
+      "bytes": 502881,
+      "sha256": "8121aefe063cb3524618f9a7831e9562ab9b0dca61600a6a843aed85989e4cba"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/arm/base_link_01.mtl": {
+      "bytes": 236,
+      "sha256": "fa9b54d4a136fe362081302b8425d8b4fa2cf8f745cc244e013fb9f7cdb48388"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/arm/base_link_01.obj": {
+      "bytes": 29003,
+      "sha256": "4d66f436adbbe66c3c9eb9753ea084cae8254cace1fb559a7b20a2bba28ee39a"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/arm/link1_00.mtl": {
+      "bytes": 236,
+      "sha256": "4188543f0c56428ee558b3637c62afeb1771359aca61fa7364683d1f81fd0327"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/arm/link1_00.obj": {
+      "bytes": 605384,
+      "sha256": "88634d86cab2e96cac501a2f4737be32ebae33d2a3e209847f76fe06d1a2fa6f"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/arm/link1_01.mtl": {
+      "bytes": 236,
+      "sha256": "fa9b54d4a136fe362081302b8425d8b4fa2cf8f745cc244e013fb9f7cdb48388"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/arm/link1_01.obj": {
+      "bytes": 39918,
+      "sha256": "0087c74c99d1e73fa58d64a48fc868ab428300af7d6ecde2fb2561c6cf45fb84"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/arm/link1_02.mtl": {
+      "bytes": 237,
+      "sha256": "56c07d42834a0aff45be124dc6a5be47b4427fba8622b9fceb3a6e8583c1e8da"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/arm/link1_02.obj": {
+      "bytes": 38198,
+      "sha256": "5237cd1aaff673944a25cef65ea4aa3ab9fe43e7f4b1e1c749d6fc126ce961e8"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/arm/link2_00.mtl": {
+      "bytes": 236,
+      "sha256": "4188543f0c56428ee558b3637c62afeb1771359aca61fa7364683d1f81fd0327"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/arm/link2_00.obj": {
+      "bytes": 269410,
+      "sha256": "0e0acc486fb35c6676580b28ccf214faef71d0026b85c95586f3ed9dde7e3d06"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/arm/link2_01.mtl": {
+      "bytes": 237,
+      "sha256": "56c07d42834a0aff45be124dc6a5be47b4427fba8622b9fceb3a6e8583c1e8da"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/arm/link2_01.obj": {
+      "bytes": 69114,
+      "sha256": "65fad2b72b8143c7bec0a46cf1ca338829f446b526130c756233cb0700c3ad5b"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/arm/link2_02.mtl": {
+      "bytes": 236,
+      "sha256": "fa9b54d4a136fe362081302b8425d8b4fa2cf8f745cc244e013fb9f7cdb48388"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/arm/link2_02.obj": {
+      "bytes": 41782,
+      "sha256": "de76944dc0aa4845457c76d2d3eb66e5baa6ff9fb5e26fac81215a157de9be79"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/arm/link3_00.mtl": {
+      "bytes": 236,
+      "sha256": "4188543f0c56428ee558b3637c62afeb1771359aca61fa7364683d1f81fd0327"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/arm/link3_00.obj": {
+      "bytes": 756953,
+      "sha256": "ea98a309b5ff1aef90dd1d6457b9fecd445f98590117308a37c60969fcfcef0c"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/arm/link3_01.mtl": {
+      "bytes": 237,
+      "sha256": "56c07d42834a0aff45be124dc6a5be47b4427fba8622b9fceb3a6e8583c1e8da"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/arm/link3_01.obj": {
+      "bytes": 139216,
+      "sha256": "36e02051a0d7aaa06ff23b78982bbbdd25182b4fc6160f92c7eee2d8822183c2"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/arm/link3_02.mtl": {
+      "bytes": 236,
+      "sha256": "fa9b54d4a136fe362081302b8425d8b4fa2cf8f745cc244e013fb9f7cdb48388"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/arm/link3_02.obj": {
+      "bytes": 56534,
+      "sha256": "276a291d4174cf14b8b6edfa1f71ff838de2312ab15953809cd13ad0055f0bd2"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/arm/link4_00.mtl": {
+      "bytes": 236,
+      "sha256": "4188543f0c56428ee558b3637c62afeb1771359aca61fa7364683d1f81fd0327"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/arm/link4_00.obj": {
+      "bytes": 725868,
+      "sha256": "0b04d3be1bbabdcab89c44ecce0959fb8105e3e8044a2aed598ccea1d0bda43c"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/arm/link4_01.mtl": {
+      "bytes": 236,
+      "sha256": "fa9b54d4a136fe362081302b8425d8b4fa2cf8f745cc244e013fb9f7cdb48388"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/arm/link4_01.obj": {
+      "bytes": 49708,
+      "sha256": "7d2b126121a794aea3e23ff669871873f70d4d02b4c7b1b99708030ae8a43bc4"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/arm/link4_02.mtl": {
+      "bytes": 237,
+      "sha256": "56c07d42834a0aff45be124dc6a5be47b4427fba8622b9fceb3a6e8583c1e8da"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/arm/link4_02.obj": {
+      "bytes": 86858,
+      "sha256": "3f34012ceef299dd09fe9e2f347e02b61005af22e66d7d99587931c835484950"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/arm/link5_00.mtl": {
+      "bytes": 236,
+      "sha256": "4188543f0c56428ee558b3637c62afeb1771359aca61fa7364683d1f81fd0327"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/arm/link5_00.obj": {
+      "bytes": 773870,
+      "sha256": "15f53aa7e9ca5fe5e31c379970a901c8e56f1c9eb82e31b743e76e5e36d3e9e6"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/arm/link5_01.mtl": {
+      "bytes": 236,
+      "sha256": "fa9b54d4a136fe362081302b8425d8b4fa2cf8f745cc244e013fb9f7cdb48388"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/arm/link5_01.obj": {
+      "bytes": 51021,
+      "sha256": "f3300ca1f51f10f9fc949b6ab821bf69e3a43d0ba88048c3ad2051016c05ca0e"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/arm/link5_02.mtl": {
+      "bytes": 237,
+      "sha256": "56c07d42834a0aff45be124dc6a5be47b4427fba8622b9fceb3a6e8583c1e8da"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/arm/link5_02.obj": {
+      "bytes": 131838,
+      "sha256": "ae3d53f2a9b7d715d36dfe16905257eea590d0025cf3834e67f7f628cb3874bd"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/arm/link6_00.mtl": {
+      "bytes": 236,
+      "sha256": "4188543f0c56428ee558b3637c62afeb1771359aca61fa7364683d1f81fd0327"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/arm/link6_00.obj": {
+      "bytes": 212499,
+      "sha256": "9cde8f6bf6593122030cfcd2744060d41bb6cc249af6ec2320e6deba1ddb2582"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/arm/link6_01.mtl": {
+      "bytes": 237,
+      "sha256": "56c07d42834a0aff45be124dc6a5be47b4427fba8622b9fceb3a6e8583c1e8da"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/arm/link6_01.obj": {
+      "bytes": 89971,
+      "sha256": "642a33b2b4440013efe8ed831af43ef560ca7d122fefe0cca42831ee59bac06c"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/arm/link6_02.mtl": {
+      "bytes": 236,
+      "sha256": "fa9b54d4a136fe362081302b8425d8b4fa2cf8f745cc244e013fb9f7cdb48388"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/arm/link6_02.obj": {
+      "bytes": 91699,
+      "sha256": "2d475e274c767b2b41772f331234e74e8fb68fff3fdbfe15cd0720e4667aeb9a"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/body/body_link0.stl": {
+      "bytes": 7955034,
+      "sha256": "7ab0afa9a26bebbf5c6149894c41d96622caa649555ae7c5f0f2548f86148d91"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/body/body_link0_5.obj": {
+      "bytes": 2363667,
+      "sha256": "af61bd9a223c2eade53074cd4ee4c7dc8a87bee8ca6555eb9fd470e81aefa2f0"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/cell/cell.obj": {
+      "bytes": 228801,
+      "sha256": "607e1109ada00d3a536cc7cbe27b939f7b57d6b4e69747bfe23bb45216e24782"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/cell/cover.obj": {
+      "bytes": 2485197,
+      "sha256": "a3cf8faf153b13326e0a67d0d8ae8966ed8598593deb5fde028563ab8bfbe148"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/cell/sheet.obj": {
+      "bytes": 25683,
+      "sha256": "e7a12b4b5cac629424578286e9331896365ab695be722ba03b7d245f1551dcfd"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/gripper/ee_base_link_00.mtl": {
+      "bytes": 236,
+      "sha256": "4188543f0c56428ee558b3637c62afeb1771359aca61fa7364683d1f81fd0327"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/gripper/ee_base_link_00.obj": {
+      "bytes": 1532399,
+      "sha256": "9bc93f69d2e693e62c5ba602158ec5a515841e6764f3fc8deea526cf0cf9d9cc"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/gripper/ee_base_link_01.mtl": {
+      "bytes": 237,
+      "sha256": "56c07d42834a0aff45be124dc6a5be47b4427fba8622b9fceb3a6e8583c1e8da"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/gripper/ee_base_link_01.obj": {
+      "bytes": 35026,
+      "sha256": "eb7c8ba2ac387dd4a68689c519d1cc4fba832931fb0c1de7fee1ae0684613ef2"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/gripper/ee_base_link_02.mtl": {
+      "bytes": 236,
+      "sha256": "fa9b54d4a136fe362081302b8425d8b4fa2cf8f745cc244e013fb9f7cdb48388"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/gripper/ee_base_link_02.obj": {
+      "bytes": 249126,
+      "sha256": "aa5d1948f08d764d0f585ca93041d6732112c9ec2e6278fa3a9d780abbd91bb6"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/gripper/finger_inner_00.mtl": {
+      "bytes": 236,
+      "sha256": "4188543f0c56428ee558b3637c62afeb1771359aca61fa7364683d1f81fd0327"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/gripper/finger_inner_00.obj": {
+      "bytes": 121982,
+      "sha256": "af021d37d61971417bc9f57f051d855d61859cd304a2e5a6a12fd05c85dca60b"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/gripper/finger_inner_01.mtl": {
+      "bytes": 236,
+      "sha256": "4188543f0c56428ee558b3637c62afeb1771359aca61fa7364683d1f81fd0327"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/gripper/finger_inner_01.obj": {
+      "bytes": 171483,
+      "sha256": "dd6f997d77ca86956cc3798614e877a4efa3bab8e112ead74c5c8381621d546b"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/gripper/finger_inner_02.mtl": {
+      "bytes": 236,
+      "sha256": "fa9b54d4a136fe362081302b8425d8b4fa2cf8f745cc244e013fb9f7cdb48388"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/gripper/finger_inner_02.obj": {
+      "bytes": 64498,
+      "sha256": "95fad3566bcc110e3c27c19d599b4f2de950dab830270b076480e7dc9c70b64b"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/gripper/finger_outer_00.mtl": {
+      "bytes": 236,
+      "sha256": "4188543f0c56428ee558b3637c62afeb1771359aca61fa7364683d1f81fd0327"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/gripper/finger_outer_00.obj": {
+      "bytes": 121778,
+      "sha256": "ec237af8498effa0e4c6310a1248d16185473fb5cb82b2f360952ac48b5e285f"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/gripper/finger_outer_01.mtl": {
+      "bytes": 236,
+      "sha256": "4188543f0c56428ee558b3637c62afeb1771359aca61fa7364683d1f81fd0327"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/gripper/finger_outer_01.obj": {
+      "bytes": 172956,
+      "sha256": "6fbb535869ec80738eaea0c9cf08d0094375645651b7be618e668ae0fbb0355b"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/gripper/finger_outer_02.mtl": {
+      "bytes": 236,
+      "sha256": "fa9b54d4a136fe362081302b8425d8b4fa2cf8f745cc244e013fb9f7cdb48388"
+    },
+    "/home/aaa/HIL-OpenArm/third_party/openarm_mujoco/v2/assets/visual/gripper/finger_outer_02.obj": {
+      "bytes": 69311,
+      "sha256": "66a6ce28f644d795d2b687713a2d12178451490054286539a24819471e3905fd"
+    }
+  },
+  "external_asset_scope": "Entire existing OpenArm v2 assets tree, plus repository assets and contact MJCFs"
+}
