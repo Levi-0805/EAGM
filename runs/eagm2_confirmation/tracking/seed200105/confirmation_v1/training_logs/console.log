@@ -1,0 +1,48 @@
+labels_train 1 queries 168
+labels_train 2 queries 168
+labels_train 3 queries 168
+labels_train 4 queries 168
+labels_train 5 queries 168
+labels_train 6 queries 168
+labels_train 7 queries 168
+labels_train 8 queries 168
+labels_train 9 queries 168
+labels_train 10 queries 168
+labels_train 11 queries 168
+labels_train 12 queries 168
+labels_validation 1 queries 168
+labels_validation 2 queries 168
+labels_validation 3 queries 168
+labels_validation 4 queries 168
+labels_validation 5 queries 168
+labels_validation 6 queries 168
+labels_diagnostic 1 queries 168
+labels_diagnostic 2 queries 168
+labels_diagnostic 3 queries 168
+labels_diagnostic 4 queries 168
+labels_diagnostic 5 queries 168
+labels_diagnostic 6 queries 168
+delay_dir 1 2.132561
+delay_dir 101 0.496263
+delay_dir 201 0.518017
+delay_dir 301 0.479897
+delay_dir 401 0.438091
+delay_dir 501 0.428746
+delay_dir 601 0.422567
+delay_dir 701 0.415024
+delay_dir 801 0.4646
+delay_dir 901 0.41127
+delay_dir 1000 0.256976
+COMPLETED delay_dir return -0.0014368962275456525 cos 0.825061163078919
+ff_dir 1 2.14543
+ff_dir 101 0.50469
+ff_dir 201 0.50352
+ff_dir 301 0.481973
+ff_dir 401 0.440085
+ff_dir 501 0.425087
+ff_dir 601 0.427872
+ff_dir 701 0.412366
+ff_dir 801 0.484101
+ff_dir 901 0.430075
+ff_dir 1000 0.260953
+COMPLETED ff_dir return -0.001515191602442903 cos 0.8398794445478998

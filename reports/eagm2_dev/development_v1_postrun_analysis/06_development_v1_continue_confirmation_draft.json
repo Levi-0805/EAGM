@@ -1,0 +1,17 @@
+{
+  "status": "not_authorized",
+  "confirmation_authorized": false,
+  "selected_candidate": null,
+  "primary_comparison": null,
+  "freeze_complete": false,
+  "required_before_authorization": [
+    "validation-only selection record or explicit no-go",
+    "full protocol and comparison family freeze",
+    "failure floor and exclusion rules",
+    "capacity/FLOPs and complete query budgets",
+    "environment/code/config/data hashes",
+    "task feasibility and input-isolation acceptance",
+    "second author approval"
+  ],
+  "confirmation_roots_accessed": false
+}

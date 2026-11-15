@@ -1,0 +1,23 @@
+{
+  "control_steps": {
+    "collection_train": 3456,
+    "collection_validation": 576,
+    "collection_development_test": 2880,
+    "labels_train": 16128,
+    "labels_validation": 8064,
+    "labels_diagnostic": 8064,
+    "evaluation": 1440,
+    "validation_evaluation": 192
+  },
+  "simulator_wall_seconds": {
+    "collection_train": 1.8173049490142148,
+    "collection_validation": 0.2959548490034649,
+    "collection_development_test": 1.514549422012351,
+    "labels_train": 8.462801448942628,
+    "labels_validation": 4.305476065041148,
+    "labels_diagnostic": 4.110726849037746,
+    "evaluation": 0.7292655859710067,
+    "validation_evaluation": 0.10019148300489178
+  },
+  "total_control_steps": 40800
+}

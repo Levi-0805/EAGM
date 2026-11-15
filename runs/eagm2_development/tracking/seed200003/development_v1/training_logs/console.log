@@ -1,0 +1,254 @@
+labels_train 1 queries 168
+labels_train 2 queries 168
+labels_train 3 queries 168
+labels_train 4 queries 168
+labels_train 5 queries 168
+labels_train 6 queries 168
+labels_train 7 queries 168
+labels_train 8 queries 168
+labels_train 9 queries 168
+labels_train 10 queries 168
+labels_train 11 queries 168
+labels_train 12 queries 168
+labels_validation 1 queries 168
+labels_validation 2 queries 168
+labels_validation 3 queries 168
+labels_validation 4 queries 168
+labels_validation 5 queries 168
+labels_validation 6 queries 168
+labels_diagnostic 1 queries 168
+labels_diagnostic 2 queries 168
+labels_diagnostic 3 queries 168
+labels_diagnostic 4 queries 168
+labels_diagnostic 5 queries 168
+labels_diagnostic 6 queries 168
+legacy_base 1 0.794392
+legacy_base 101 0.336675
+legacy_base 201 0.301458
+legacy_base 301 0.278754
+legacy_base 401 0.253743
+legacy_base 501 0.248983
+legacy_base 601 0.259133
+legacy_base 701 0.248629
+legacy_base 801 0.22189
+legacy_base 901 0.242872
+legacy_base 1000 0.2326
+COMPLETED legacy_base return -0.003880594743764709 cos -0.042566720135837344
+legacy_dir 1 0.836324
+legacy_dir 101 0.374538
+legacy_dir 201 0.329045
+legacy_dir 301 0.333376
+legacy_dir 401 0.296213
+legacy_dir 501 0.266136
+legacy_dir 601 0.288239
+legacy_dir 701 0.267047
+legacy_dir 801 0.230314
+legacy_dir 901 0.288867
+legacy_dir 1000 0.232799
+COMPLETED legacy_dir return -0.0013893629378964297 cos 0.9027805367002304
+ff_base 1 1.900181
+ff_base 101 0.538089
+ff_base 201 0.497115
+ff_base 301 0.449237
+ff_base 401 0.408779
+ff_base 501 0.389555
+ff_base 601 0.398385
+ff_base 701 0.395776
+ff_base 801 0.354578
+ff_base 901 0.375613
+ff_base 1000 0.234162
+COMPLETED ff_base return -0.002840471941995057 cos 0.43314121084164375
+ff_dir 1 1.945749
+ff_dir 101 0.574775
+ff_dir 201 0.528357
+ff_dir 301 0.4983
+ff_dir 401 0.456838
+ff_dir 501 0.412408
+ff_dir 601 0.426687
+ff_dir 701 0.417439
+ff_dir 801 0.376204
+ff_dir 901 0.413525
+ff_dir 1000 0.235104
+COMPLETED ff_dir return -0.0015106633298921633 cos 0.8355841082936672
+delay_base 1 1.892569
+delay_base 101 0.533793
+delay_base 201 0.495279
+delay_base 301 0.447055
+delay_base 401 0.406642
+delay_base 501 0.386543
+delay_base 601 0.3952
+delay_base 701 0.39256
+delay_base 801 0.349447
+delay_base 901 0.369957
+delay_base 1000 0.230143
+COMPLETED delay_base return -0.002821507543254165 cos 0.3466939957490552
+delay_dir 1 1.938137
+delay_dir 101 0.573101
+delay_dir 201 0.537805
+delay_dir 301 0.487999
+delay_dir 401 0.460999
+delay_dir 501 0.415846
+delay_dir 601 0.421985
+delay_dir 701 0.414733
+delay_dir 801 0.372521
+delay_dir 901 0.406327
+delay_dir 1000 0.23171
+COMPLETED delay_dir return -0.0013437306147826235 cos 0.8087656307351118
+recurrent_base 1 1.900181
+recurrent_base 101 0.528633
+recurrent_base 201 0.492984
+recurrent_base 301 0.446468
+recurrent_base 401 0.405943
+recurrent_base 501 0.386745
+recurrent_base 601 0.39592
+recurrent_base 701 0.393964
+recurrent_base 801 0.350752
+recurrent_base 901 0.365215
+recurrent_base 1000 0.223135
+COMPLETED recurrent_base return -0.0026567673283779277 cos 0.4291446149715526
+recurrent_dir 1 1.945749
+recurrent_dir 101 0.563646
+recurrent_dir 201 0.52024
+recurrent_dir 301 0.497456
+recurrent_dir 401 0.443299
+recurrent_dir 501 0.40319
+recurrent_dir 601 0.420455
+recurrent_dir 701 0.409874
+recurrent_dir 801 0.364758
+recurrent_dir 901 0.417776
+recurrent_dir 1000 0.228183
+COMPLETED recurrent_dir return -0.0016215614566971305 cos 0.9386238964695949
+combined_base 1 1.892569
+combined_base 101 0.527675
+combined_base 201 0.492103
+combined_base 301 0.445245
+combined_base 401 0.40507
+combined_base 501 0.38523
+combined_base 601 0.394048
+combined_base 701 0.391452
+combined_base 801 0.346852
+combined_base 901 0.36371
+combined_base 1000 0.221935
+COMPLETED combined_base return -0.0023290119437939048 cos 0.42618467765493273
+combined_dir 1 1.938137
+combined_dir 101 0.565374
+combined_dir 201 0.527611
+combined_dir 301 0.496428
+combined_dir 401 0.439171
+combined_dir 501 0.399423
+combined_dir 601 0.415084
+combined_dir 701 0.402765
+combined_dir 801 0.357954
+combined_dir 901 0.397289
+combined_dir 1000 0.222406
+COMPLETED combined_dir return -0.0015222236538784703 cos 0.9529614793727066
+capacity_mlp 1 1.945797
+capacity_mlp 101 0.562327
+capacity_mlp 201 0.519745
+capacity_mlp 301 0.461091
+capacity_mlp 401 0.438451
+capacity_mlp 501 0.41108
+capacity_mlp 601 0.410578
+capacity_mlp 701 0.403559
+capacity_mlp 801 0.35523
+capacity_mlp 901 0.39628
+capacity_mlp 1000 0.224469
+COMPLETED capacity_mlp return -0.001647552456074346 cos 0.8485397209190214
+capacity_gru 1 1.950868
+capacity_gru 101 0.555534
+capacity_gru 201 0.522173
+capacity_gru 301 0.493214
+capacity_gru 401 0.435934
+capacity_gru 501 0.401635
+capacity_gru 601 0.40532
+capacity_gru 701 0.402888
+capacity_gru 801 0.348786
+capacity_gru 901 0.373542
+capacity_gru 1000 0.218557
+COMPLETED capacity_gru return -0.0015916816642304633 cos 0.9473696066524281
+free_command 1 2.973636
+free_command 101 1.161141
+free_command 201 0.714366
+free_command 301 0.616644
+free_command 401 0.518437
+free_command 501 0.478677
+free_command 601 0.493031
+free_command 701 0.477852
+free_command 801 0.42517
+free_command 901 0.460391
+free_command 1000 0.251414
+COMPLETED free_command return -0.0031440591896042783 cos 0.20288250410671047
+direction_only 1 1.997731
+direction_only 101 0.541604
+direction_only 201 0.512538
+direction_only 301 0.457461
+direction_only 401 0.414311
+direction_only 501 0.393159
+direction_only 601 0.400083
+direction_only 701 0.399218
+direction_only 801 0.355639
+direction_only 901 0.373961
+direction_only 1000 0.232199
+COMPLETED direction_only return -0.0013278600983753289 cos 0.9658146060239033
+norm_only 1 2.300381
+norm_only 101 0.616705
+norm_only 201 0.509823
+norm_only 301 0.478292
+norm_only 401 0.419395
+norm_only 501 0.392664
+norm_only 601 0.405901
+norm_only 701 0.399131
+norm_only 801 0.355661
+norm_only 901 0.3794
+norm_only 1000 0.231607
+COMPLETED norm_only return -0.003837744741594757 cos 0.2937829344399026
+joint_calibration 1 2.405542
+joint_calibration 101 0.633639
+joint_calibration 201 0.526085
+joint_calibration 301 0.493022
+joint_calibration 401 0.431065
+joint_calibration 501 0.401921
+joint_calibration 601 0.411214
+joint_calibration 701 0.405806
+joint_calibration 801 0.357057
+joint_calibration 901 0.383402
+joint_calibration 1000 0.232611
+COMPLETED joint_calibration return -0.001643550325221276 cos 0.9676707584290186
+paml_adaptation 1 1.892569
+paml_adaptation 101 0.533793
+paml_adaptation 201 0.495279
+paml_adaptation 301 0.447055
+paml_adaptation 401 0.406642
+paml_adaptation 501 0.386543
+paml_adaptation 601 0.3952
+paml_adaptation 701 0.39256
+paml_adaptation 801 0.349447
+paml_adaptation 901 0.369957
+paml_adaptation 1000 0.230143
+COMPLETED paml_adaptation return -0.002821507543254165 cos 0.3466939957490552
+vagram_adaptation 1 1.892569
+vagram_adaptation 101 0.533793
+vagram_adaptation 201 0.495279
+vagram_adaptation 301 0.447055
+vagram_adaptation 401 0.406642
+vagram_adaptation 501 0.386543
+vagram_adaptation 601 0.3952
+vagram_adaptation 701 0.39256
+vagram_adaptation 801 0.349447
+vagram_adaptation 901 0.369957
+vagram_adaptation 1000 0.230143
+COMPLETED vagram_adaptation return -0.002821507543254165 cos 0.3466939957490552
+ff_base 1 1.899565
+ff_base 101 0.513599
+ff_base 201 0.482376
+ff_base 301 0.463566
+ff_base 401 0.413311
+ff_base 501 0.37965
+ff_base 601 0.41115
+ff_base 701 0.415802
+ff_base 801 0.387846
+ff_base 901 0.395987
+ff_base 1000 0.251002
+COMPLETED base_extra_data return -0.002838843975344655 cos 0.45038252195019624
+COMPLETED direct_fd return -0.0011811730764714292 training_steps 18816
+COMPLETED spsa return -0.0008965959026993601 training_steps 19200

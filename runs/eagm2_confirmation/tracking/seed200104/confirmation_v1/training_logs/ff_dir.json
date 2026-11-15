@@ -1,0 +1,90 @@
+{
+  "log": [
+    {
+      "update": 1,
+      "loss": 2.2182364463806152,
+      "dynamics_loss": 0.8014451861381531,
+      "command_loss": 0.08518258482217789,
+      "objective_loss": 0.4576627314090729
+    },
+    {
+      "update": 101,
+      "loss": 0.593157947063446,
+      "dynamics_loss": 0.3395227789878845,
+      "command_loss": 0.011707770638167858,
+      "objective_loss": 0.5243326425552368
+    },
+    {
+      "update": 201,
+      "loss": 0.5055664777755737,
+      "dynamics_loss": 0.2910282611846924,
+      "command_loss": 0.006220246199518442,
+      "objective_loss": 0.3187757134437561
+    },
+    {
+      "update": 301,
+      "loss": 0.5044984221458435,
+      "dynamics_loss": 0.2893267571926117,
+      "command_loss": 0.004741983022540808,
+      "objective_loss": 0.3750062584877014
+    },
+    {
+      "update": 401,
+      "loss": 0.43815165758132935,
+      "dynamics_loss": 0.25486326217651367,
+      "command_loss": 0.003901308635249734,
+      "objective_loss": 0.32169991731643677
+    },
+    {
+      "update": 501,
+      "loss": 0.4325707256793976,
+      "dynamics_loss": 0.25985991954803467,
+      "command_loss": 0.004095358774065971,
+      "objective_loss": 0.16461117565631866
+    },
+    {
+      "update": 601,
+      "loss": 0.4120851457118988,
+      "dynamics_loss": 0.23830971121788025,
+      "command_loss": 0.0038185163866728544,
+      "objective_loss": 0.3195907771587372
+    },
+    {
+      "update": 701,
+      "loss": 0.41287705302238464,
+      "dynamics_loss": 0.23646338284015656,
+      "command_loss": 0.004618676844984293,
+      "objective_loss": 0.32014113664627075
+    },
+    {
+      "update": 801,
+      "loss": 0.3627244830131531,
+      "dynamics_loss": 0.21795716881752014,
+      "command_loss": 0.0046506584621965885,
+      "objective_loss": 0.09891343861818314
+    },
+    {
+      "update": 901,
+      "loss": 0.43109259009361267,
+      "dynamics_loss": 0.26948922872543335,
+      "command_loss": 0.003572797868400812,
+      "objective_loss": 0.25840890407562256
+    },
+    {
+      "update": 1000,
+      "loss": 0.2523002624511719,
+      "dynamics_loss": 0.24860693514347076,
+      "command_loss": 0.0036933375522494316,
+      "objective_loss": 0.0
+    }
+  ],
+  "resource": {
+    "cuda_elapsed_seconds": 19.75783203125,
+    "peak_allocated_bytes": 142292992,
+    "peak_reserved_bytes": 163577856,
+    "wall_seconds": 19.758095017001324,
+    "device": "cuda:0"
+  },
+  "batch_seed": 263015551,
+  "updates": 1000
+}

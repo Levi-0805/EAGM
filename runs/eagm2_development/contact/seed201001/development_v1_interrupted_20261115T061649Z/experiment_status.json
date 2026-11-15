@@ -1,0 +1,47 @@
+[
+  {
+    "method": "legacy_base",
+    "status": "completed",
+    "wall_seconds": 188.7366879559995
+  },
+  {
+    "method": "legacy_dir",
+    "status": "completed",
+    "wall_seconds": 313.0032811320016
+  },
+  {
+    "method": "ff_base",
+    "status": "completed",
+    "wall_seconds": 209.8455513230001
+  },
+  {
+    "method": "ff_dir",
+    "status": "completed",
+    "wall_seconds": 340.8817931369995
+  },
+  {
+    "method": "delay_base",
+    "status": "completed",
+    "wall_seconds": 218.15172834600162
+  },
+  {
+    "method": "delay_dir",
+    "status": "completed",
+    "wall_seconds": 354.83566055400297
+  },
+  {
+    "method": "recurrent_base",
+    "status": "completed",
+    "wall_seconds": 380.98464693900314
+  },
+  {
+    "method": "recurrent_dir",
+    "status": "completed",
+    "wall_seconds": 533.0955348339994
+  },
+  {
+    "method": "combined_base",
+    "status": "completed",
+    "wall_seconds": 411.4589965250052
+  }
+]

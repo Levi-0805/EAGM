@@ -1,0 +1,92 @@
+[
+  {
+    "method": "ff_base",
+    "status": "completed",
+    "wall_seconds": 130.91049050300353
+  },
+  {
+    "method": "ff_dir",
+    "status": "completed",
+    "wall_seconds": 183.3670773490012
+  },
+  {
+    "method": "delay_base",
+    "status": "completed",
+    "wall_seconds": 140.32182221599942
+  },
+  {
+    "method": "delay_dir",
+    "status": "completed",
+    "wall_seconds": 197.05852056499862
+  },
+  {
+    "method": "recurrent_base",
+    "status": "completed",
+    "wall_seconds": 307.0247085439987
+  },
+  {
+    "method": "recurrent_dir",
+    "status": "completed",
+    "wall_seconds": 380.8384747750024
+  },
+  {
+    "method": "combined_base",
+    "status": "completed",
+    "wall_seconds": 335.25673730299604
+  },
+  {
+    "method": "combined_dir",
+    "status": "completed",
+    "wall_seconds": 414.07188557599875
+  },
+  {
+    "method": "capacity_mlp",
+    "status": "completed",
+    "wall_seconds": 197.21495547999803
+  },
+  {
+    "method": "capacity_gru",
+    "status": "completed",
+    "wall_seconds": 379.88636491000216
+  },
+  {
+    "method": "free_command",
+    "status": "completed",
+    "wall_seconds": 164.24925514100323
+  },
+  {
+    "method": "direction_only",
+    "status": "completed",
+    "wall_seconds": 199.10551551200479
+  },
+  {
+    "method": "norm_only",
+    "status": "completed",
+    "wall_seconds": 196.84049943800346
+  },
+  {
+    "method": "joint_calibration",
+    "status": "completed",
+    "wall_seconds": 198.2163188859995
+  },
+  {
+    "method": "paml_adaptation",
+    "status": "completed",
+    "wall_seconds": 140.18517131800036
+  },
+  {
+    "method": "vagram_adaptation",
+    "status": "completed",
+    "wall_seconds": 140.7888296759993
+  },
+  {
+    "method": "direct_fd",
+    "status": "completed",
+    "wall_seconds": 217.261120176001
+  },
+  {
+    "method": "spsa",
+    "status": "completed",
+    "wall_seconds": 227.13883972199983
+  }
+]

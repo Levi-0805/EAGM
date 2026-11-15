@@ -1,0 +1,107 @@
+[
+  {
+    "method": "legacy_base",
+    "status": "completed",
+    "wall_seconds": 17.088421210999513
+  },
+  {
+    "method": "legacy_dir",
+    "status": "completed",
+    "wall_seconds": 25.98563539799943
+  },
+  {
+    "method": "ff_base",
+    "status": "completed",
+    "wall_seconds": 23.543140166999365
+  },
+  {
+    "method": "ff_dir",
+    "status": "completed",
+    "wall_seconds": 32.827519755999674
+  },
+  {
+    "method": "delay_base",
+    "status": "completed",
+    "wall_seconds": 26.019721135002328
+  },
+  {
+    "method": "delay_dir",
+    "status": "completed",
+    "wall_seconds": 35.83912489499926
+  },
+  {
+    "method": "recurrent_base",
+    "status": "completed",
+    "wall_seconds": 183.85191715600013
+  },
+  {
+    "method": "recurrent_dir",
+    "status": "completed",
+    "wall_seconds": 198.2764898230016
+  },
+  {
+    "method": "combined_base",
+    "status": "completed",
+    "wall_seconds": 200.24580866399992
+  },
+  {
+    "method": "combined_dir",
+    "status": "completed",
+    "wall_seconds": 216.90649362399927
+  },
+  {
+    "method": "capacity_mlp",
+    "status": "completed",
+    "wall_seconds": 34.90808946600009
+  },
+  {
+    "method": "capacity_gru",
+    "status": "completed",
+    "wall_seconds": 87.90401097500217
+  },
+  {
+    "method": "free_command",
+    "status": "completed",
+    "wall_seconds": 26.508966392997536
+  },
+  {
+    "method": "direction_only",
+    "status": "completed",
+    "wall_seconds": 36.03248683499987
+  },
+  {
+    "method": "norm_only",
+    "status": "completed",
+    "wall_seconds": 36.642703281999275
+  },
+  {
+    "method": "joint_calibration",
+    "status": "completed",
+    "wall_seconds": 36.77308345199708
+  },
+  {
+    "method": "paml_adaptation",
+    "status": "completed",
+    "wall_seconds": 26.51610182100194
+  },
+  {
+    "method": "vagram_adaptation",
+    "status": "completed",
+    "wall_seconds": 26.7202820670027
+  },
+  {
+    "method": "base_extra_data",
+    "status": "completed",
+    "wall_seconds": 22.333608310000272
+  },
+  {
+    "method": "direct_fd",
+    "status": "completed",
+    "wall_seconds": 9.670608157997776
+  },
+  {
+    "method": "spsa",
+    "status": "completed",
+    "wall_seconds": 10.517367744003423
+  }
+]

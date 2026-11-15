@@ -1,0 +1,7 @@
+{
+  "cuda_elapsed_seconds": 509.11125,
+  "peak_allocated_bytes": 179079168,
+  "peak_reserved_bytes": 251658240,
+  "wall_seconds": 509.1026548619993,
+  "device": "cuda"
+}

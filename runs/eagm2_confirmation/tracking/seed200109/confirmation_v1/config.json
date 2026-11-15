@@ -1,0 +1,21 @@
+{
+  "task": "tracking",
+  "seed": 200109,
+  "attempt": "confirmation_v1",
+  "device": "cuda",
+  "updates": 1000,
+  "policy_updates": 50,
+  "methods": "delay_dir,ff_dir",
+  "smoke": false,
+  "resolved_methods": [
+    "delay_dir",
+    "ff_dir"
+  ],
+  "phase": "development_exploratory",
+  "confirmation_authorized": false,
+  "history": 32,
+  "training_gradient_labels": 12,
+  "diagnostic_gradient_labels": 6,
+  "model_batch_size": 64,
+  "selection": "development only; no confirmatory interpretation"
+}

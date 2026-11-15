@@ -1,0 +1,39 @@
+{
+  "phase": "confirmation_frozen",
+  "confirmation_authorized": true,
+  "no_go": false,
+  "attempt_source": "development_v1",
+  "selection_path": "/home/aaa/workspace/EAGM-2.0-full-validation/reports/eagm2_dev/development_method_selection.json",
+  "updates": 1000,
+  "policy_updates": 50,
+  "primary_rule": "selected vs Dir baseline on confirmatory seeds; validation-only selection already applied",
+  "author_authorization": "/home/aaa/workspace/EAGM-2.0-full-validation/reports/eagm2_dev/author_continue_authorization.json",
+  "tasks": {
+    "tracking": {
+      "status": "authorized",
+      "selected": "delay_dir",
+      "baseline": "ff_dir",
+      "methods": [
+        "delay_dir",
+        "ff_dir"
+      ],
+      "selection_status": "pass"
+    },
+    "contact": {
+      "status": "no_go",
+      "selected": null,
+      "baseline": "ff_dir",
+      "methods": [],
+      "selection_status": "no_go"
+    },
+    "vision": {
+      "status": "no_go",
+      "selected": null,
+      "baseline": "ff_dir",
+      "methods": [],
+      "selection_status": "no_go"
+    }
+  },
+  "created_unix": 1794757889.6181357,
+  "freeze_path": "/home/aaa/workspace/EAGM-2.0-full-validation/reports/eagm2_dev/confirmation_freeze_v1.json"
+}

@@ -1,0 +1,380 @@
+[
+  {
+    "id": "train:0",
+    "split": "train",
+    "episode_seed": 1004669363,
+    "delay": 0,
+    "frames": 192
+  },
+  {
+    "id": "train:1",
+    "split": "train",
+    "episode_seed": 2526703998,
+    "delay": 1,
+    "frames": 192
+  },
+  {
+    "id": "train:2",
+    "split": "train",
+    "episode_seed": 1252191815,
+    "delay": 2,
+    "frames": 192
+  },
+  {
+    "id": "train:3",
+    "split": "train",
+    "episode_seed": 4922871,
+    "delay": 0,
+    "frames": 192
+  },
+  {
+    "id": "train:4",
+    "split": "train",
+    "episode_seed": 2187739792,
+    "delay": 1,
+    "frames": 192
+  },
+  {
+    "id": "train:5",
+    "split": "train",
+    "episode_seed": 3272564672,
+    "delay": 2,
+    "frames": 192
+  },
+  {
+    "id": "train:6",
+    "split": "train",
+    "episode_seed": 856619523,
+    "delay": 0,
+    "frames": 192
+  },
+  {
+    "id": "train:7",
+    "split": "train",
+    "episode_seed": 236389573,
+    "delay": 1,
+    "frames": 192
+  },
+  {
+    "id": "train:8",
+    "split": "train",
+    "episode_seed": 1850491596,
+    "delay": 2,
+    "frames": 192
+  },
+  {
+    "id": "train:9",
+    "split": "train",
+    "episode_seed": 913147834,
+    "delay": 0,
+    "frames": 192
+  },
+  {
+    "id": "train:10",
+    "split": "train",
+    "episode_seed": 1030050961,
+    "delay": 1,
+    "frames": 192
+  },
+  {
+    "id": "train:11",
+    "split": "train",
+    "episode_seed": 406067574,
+    "delay": 2,
+    "frames": 192
+  },
+  {
+    "id": "train:12",
+    "split": "train",
+    "episode_seed": 2871169510,
+    "delay": 0,
+    "frames": 192
+  },
+  {
+    "id": "train:13",
+    "split": "train",
+    "episode_seed": 918927113,
+    "delay": 1,
+    "frames": 192
+  },
+  {
+    "id": "train:14",
+    "split": "train",
+    "episode_seed": 1790773575,
+    "delay": 2,
+    "frames": 192
+  },
+  {
+    "id": "train:15",
+    "split": "train",
+    "episode_seed": 1808424420,
+    "delay": 0,
+    "frames": 192
+  },
+  {
+    "id": "train:16",
+    "split": "train",
+    "episode_seed": 995527979,
+    "delay": 1,
+    "frames": 192
+  },
+  {
+    "id": "train:17",
+    "split": "train",
+    "episode_seed": 4178089226,
+    "delay": 2,
+    "frames": 192
+  },
+  {
+    "id": "validation:0",
+    "split": "validation",
+    "episode_seed": 3007910298,
+    "delay": 0,
+    "frames": 96
+  },
+  {
+    "id": "validation:1",
+    "split": "validation",
+    "episode_seed": 2346067002,
+    "delay": 1,
+    "frames": 96
+  },
+  {
+    "id": "validation:2",
+    "split": "validation",
+    "episode_seed": 119817571,
+    "delay": 2,
+    "frames": 96
+  },
+  {
+    "id": "validation:3",
+    "split": "validation",
+    "episode_seed": 3505585606,
+    "delay": 0,
+    "frames": 96
+  },
+  {
+    "id": "validation:4",
+    "split": "validation",
+    "episode_seed": 1491723430,
+    "delay": 1,
+    "frames": 96
+  },
+  {
+    "id": "validation:5",
+    "split": "validation",
+    "episode_seed": 2185818821,
+    "delay": 2,
+    "frames": 96
+  },
+  {
+    "id": "development_test:0",
+    "split": "development_test",
+    "episode_seed": 3171950324,
+    "delay": 0,
+    "frames": 96
+  },
+  {
+    "id": "development_test:1",
+    "split": "development_test",
+    "episode_seed": 1625282399,
+    "delay": 1,
+    "frames": 96
+  },
+  {
+    "id": "development_test:2",
+    "split": "development_test",
+    "episode_seed": 3660454180,
+    "delay": 2,
+    "frames": 96
+  },
+  {
+    "id": "development_test:3",
+    "split": "development_test",
+    "episode_seed": 4079286997,
+    "delay": 0,
+    "frames": 96
+  },
+  {
+    "id": "development_test:4",
+    "split": "development_test",
+    "episode_seed": 3292569501,
+    "delay": 1,
+    "frames": 96
+  },
+  {
+    "id": "development_test:5",
+    "split": "development_test",
+    "episode_seed": 2810664557,
+    "delay": 2,
+    "frames": 96
+  },
+  {
+    "id": "development_test:6",
+    "split": "development_test",
+    "episode_seed": 2010800120,
+    "delay": 0,
+    "frames": 96
+  },
+  {
+    "id": "development_test:7",
+    "split": "development_test",
+    "episode_seed": 2846570416,
+    "delay": 1,
+    "frames": 96
+  },
+  {
+    "id": "development_test:8",
+    "split": "development_test",
+    "episode_seed": 3331993785,
+    "delay": 2,
+    "frames": 96
+  },
+  {
+    "id": "development_test:9",
+    "split": "development_test",
+    "episode_seed": 3116031459,
+    "delay": 0,
+    "frames": 96
+  },
+  {
+    "id": "development_test:10",
+    "split": "development_test",
+    "episode_seed": 2361056868,
+    "delay": 1,
+    "frames": 96
+  },
+  {
+    "id": "development_test:11",
+    "split": "development_test",
+    "episode_seed": 3019267086,
+    "delay": 2,
+    "frames": 96
+  },
+  {
+    "id": "development_test:12",
+    "split": "development_test",
+    "episode_seed": 2109319571,
+    "delay": 0,
+    "frames": 96
+  },
+  {
+    "id": "development_test:13",
+    "split": "development_test",
+    "episode_seed": 1799794534,
+    "delay": 1,
+    "frames": 96
+  },
+  {
+    "id": "development_test:14",
+    "split": "development_test",
+    "episode_seed": 1586481766,
+    "delay": 2,
+    "frames": 96
+  },
+  {
+    "id": "development_test:15",
+    "split": "development_test",
+    "episode_seed": 571726591,
+    "delay": 0,
+    "frames": 96
+  },
+  {
+    "id": "development_test:16",
+    "split": "development_test",
+    "episode_seed": 1480992245,
+    "delay": 1,
+    "frames": 96
+  },
+  {
+    "id": "development_test:17",
+    "split": "development_test",
+    "episode_seed": 376645252,
+    "delay": 2,
+    "frames": 96
+  },
+  {
+    "id": "development_test:18",
+    "split": "development_test",
+    "episode_seed": 1781983781,
+    "delay": 0,
+    "frames": 96
+  },
+  {
+    "id": "development_test:19",
+    "split": "development_test",
+    "episode_seed": 636736273,
+    "delay": 1,
+    "frames": 96
+  },
+  {
+    "id": "development_test:20",
+    "split": "development_test",
+    "episode_seed": 624671541,
+    "delay": 2,
+    "frames": 96
+  },
+  {
+    "id": "development_test:21",
+    "split": "development_test",
+    "episode_seed": 1779801454,
+    "delay": 0,
+    "frames": 96
+  },
+  {
+    "id": "development_test:22",
+    "split": "development_test",
+    "episode_seed": 3870727808,
+    "delay": 1,
+    "frames": 96
+  },
+  {
+    "id": "development_test:23",
+    "split": "development_test",
+    "episode_seed": 1842469337,
+    "delay": 2,
+    "frames": 96
+  },
+  {
+    "id": "development_test:24",
+    "split": "development_test",
+    "episode_seed": 3798483834,
+    "delay": 0,
+    "frames": 96
+  },
+  {
+    "id": "development_test:25",
+    "split": "development_test",
+    "episode_seed": 4139391825,
+    "delay": 1,
+    "frames": 96
+  },
+  {
+    "id": "development_test:26",
+    "split": "development_test",
+    "episode_seed": 4268376452,
+    "delay": 2,
+    "frames": 96
+  },
+  {
+    "id": "development_test:27",
+    "split": "development_test",
+    "episode_seed": 1102212418,
+    "delay": 0,
+    "frames": 96
+  },
+  {
+    "id": "development_test:28",
+    "split": "development_test",
+    "episode_seed": 1160750842,
+    "delay": 1,
+    "frames": 96
+  },
+  {
+    "id": "development_test:29",
+    "split": "development_test",
+    "episode_seed": 839252650,
+    "delay": 2,
+    "frames": 96
+  }
+]

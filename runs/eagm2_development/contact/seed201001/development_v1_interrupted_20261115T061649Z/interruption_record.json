@@ -1,0 +1,8 @@
+{
+  "status": "interrupted",
+  "reason": "resume after status=running pid=54694",
+  "archived_from": "/home/aaa/workspace/EAGM-2.0-full-validation/runs/eagm2_development/contact/seed201001/development_v1",
+  "archived_to": "/home/aaa/workspace/EAGM-2.0-full-validation/runs/eagm2_development/contact/seed201001/development_v1_interrupted_20261115T061649Z",
+  "archived_unix": 1794723409.7926047,
+  "note": "Partial exploratory attempt retained; not a confirmation result."
+}

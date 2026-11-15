@@ -1,0 +1,82 @@
+{
+  "training_updates": 1000,
+  "target": "continuing discounted fixed theta0 FQE TD; frozen Polyak target",
+  "gamma": 0.99,
+  "target_tau": 0.01,
+  "context": [
+    "x",
+    "observable_c",
+    "reference"
+  ],
+  "context_dimension": 71,
+  "reward_scale": 0.014947867020964622,
+  "actor_parameter_dimension": 28,
+  "behavior_to_theta0_action_rmse": 0.0029984235297888517,
+  "validation": {
+    "td_rmse": 0.0042195748537778854,
+    "transitions": 204,
+    "used_for_selection": false
+  },
+  "log": [
+    {
+      "update": 1,
+      "normalized_td_mse": 1.1220378875732422
+    },
+    {
+      "update": 101,
+      "normalized_td_mse": 0.015662316232919693
+    },
+    {
+      "update": 201,
+      "normalized_td_mse": 0.007029907312244177
+    },
+    {
+      "update": 301,
+      "normalized_td_mse": 0.005708401091396809
+    },
+    {
+      "update": 401,
+      "normalized_td_mse": 0.007704122457653284
+    },
+    {
+      "update": 501,
+      "normalized_td_mse": 0.008439768105745316
+    },
+    {
+      "update": 601,
+      "normalized_td_mse": 0.01683228462934494
+    },
+    {
+      "update": 701,
+      "normalized_td_mse": 0.012170420959591866
+    },
+    {
+      "update": 801,
+      "normalized_td_mse": 0.019869491457939148
+    },
+    {
+      "update": 901,
+      "normalized_td_mse": 0.022138863801956177
+    },
+    {
+      "update": 1000,
+      "normalized_td_mse": 0.02469324693083763
+    }
+  ],
+  "parameter_count": 9729,
+  "checkpoint_attribute": "training_checkpoint",
+  "limitations": [
+    "Off-policy behavior coverage is not guaranteed; action RMSE is only a descriptive diagnostic.",
+    "Observable context omits hidden Controller B state; FQE has state aliasing and is not an exact POMDP value.",
+    "Continuing discounted proxy, not exact finite horizon return; heldout TD residual is not true value error.",
+    "Actor fixed at theta0; does not evaluate all policy parameter positions."
+  ],
+  "extra_simulator_queries": 0,
+  "resource": {
+    "cuda_elapsed_seconds": 3.43523876953125,
+    "peak_allocated_bytes": 1513138688,
+    "peak_reserved_bytes": 1526726656,
+    "wall_seconds": 3.4356785679992754,
+    "device": "cuda"
+  }
+}

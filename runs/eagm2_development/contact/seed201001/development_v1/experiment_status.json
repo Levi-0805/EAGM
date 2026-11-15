@@ -1,0 +1,107 @@
+[
+  {
+    "method": "legacy_base",
+    "status": "completed",
+    "wall_seconds": 190.34532020599727
+  },
+  {
+    "method": "legacy_dir",
+    "status": "completed",
+    "wall_seconds": 319.04230126199764
+  },
+  {
+    "method": "ff_base",
+    "status": "completed",
+    "wall_seconds": 228.6179104310031
+  },
+  {
+    "method": "ff_dir",
+    "status": "completed",
+    "wall_seconds": 412.83559798699935
+  },
+  {
+    "method": "delay_base",
+    "status": "completed",
+    "wall_seconds": 257.2488012069989
+  },
+  {
+    "method": "delay_dir",
+    "status": "completed",
+    "wall_seconds": 411.26721530699797
+  },
+  {
+    "method": "recurrent_base",
+    "status": "completed",
+    "wall_seconds": 413.9958396940019
+  },
+  {
+    "method": "recurrent_dir",
+    "status": "completed",
+    "wall_seconds": 542.9802511810012
+  },
+  {
+    "method": "combined_base",
+    "status": "completed",
+    "wall_seconds": 415.68730996199884
+  },
+  {
+    "method": "combined_dir",
+    "status": "completed",
+    "wall_seconds": 573.7822758820002
+  },
+  {
+    "method": "capacity_mlp",
+    "status": "completed",
+    "wall_seconds": 359.5959486920001
+  },
+  {
+    "method": "capacity_gru",
+    "status": "completed",
+    "wall_seconds": 541.3257165760006
+  },
+  {
+    "method": "free_command",
+    "status": "completed",
+    "wall_seconds": 325.7645966659984
+  },
+  {
+    "method": "direction_only",
+    "status": "completed",
+    "wall_seconds": 359.8204369369996
+  },
+  {
+    "method": "norm_only",
+    "status": "completed",
+    "wall_seconds": 358.88538962299936
+  },
+  {
+    "method": "joint_calibration",
+    "status": "completed",
+    "wall_seconds": 359.45703194199814
+  },
+  {
+    "method": "paml_adaptation",
+    "status": "completed",
+    "wall_seconds": 222.71412549199886
+  },
+  {
+    "method": "vagram_adaptation",
+    "status": "completed",
+    "wall_seconds": 223.37055336699996
+  },
+  {
+    "method": "base_extra_data",
+    "status": "completed",
+    "wall_seconds": 215.6752547420001
+  },
+  {
+    "method": "direct_fd",
+    "status": "completed",
+    "wall_seconds": 45.63436648800052
+  },
+  {
+    "method": "spsa",
+    "status": "completed",
+    "wall_seconds": 49.904256335001264
+  }
+]

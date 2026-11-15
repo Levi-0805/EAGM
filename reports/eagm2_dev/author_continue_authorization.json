@@ -1,0 +1,11 @@
+{
+  "authority": "Latest explicit author instruction in this conversation",
+  "author_instruction": "审核通过，继续完成所有的后续训练与实验",
+  "recorded_date": "2026-11-15",
+  "part01_review_approved": true,
+  "full_research_plan_authorized": true,
+  "confirmation_authorized_after_scientific_gates": true,
+  "no_go_policy": "If validation-only selection fails, do not launch confirmation roots. Redesign under exploratory seeds and keep negative results.",
+  "paper_gate": "Paper reconstruction still requires locating designated Final manuscript and correct supplementary before claim certification.",
+  "historical_preservation": "Do not overwrite historical Stage8 experiments, raw logs, or exploratory/confirmatory classifications."
+}

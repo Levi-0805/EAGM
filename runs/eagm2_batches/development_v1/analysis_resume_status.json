@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/home/aaa/miniconda3/envs/eagm_gpu/bin/python",
+    "/home/aaa/workspace/EAGM-2.0-full-validation/scripts/eagm2/analyze_development.py",
+    "--attempt",
+    "development_v1",
+    "--output-dir",
+    "/home/aaa/workspace/EAGM-2.0-full-validation/runs/eagm2_batches/development_v1/analysis",
+    "--report-tag",
+    "authorized_batch_resume"
+  ],
+  "exit_code": 1
+}

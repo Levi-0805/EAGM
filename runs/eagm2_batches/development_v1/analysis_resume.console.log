@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/home/aaa/workspace/EAGM-2.0-full-validation/scripts/eagm2/analyze_development.py", line 210, in <module>
+    main()
+  File "/home/aaa/workspace/EAGM-2.0-full-validation/scripts/eagm2/analyze_development.py", line 125, in main
+    methods = methods.split(',') if isinstance(methods, str) else list(methods)
+                                                                  ^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable

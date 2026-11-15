@@ -3,7 +3,7 @@
     "task": "tracking",
     "seed": 200001,
     "attempt": "development_v1",
-    "status": "running",
+    "status": "completed",
     "worker_pid": 49407,
     "command": [
       "/home/aaa/miniconda3/envs/eagm_gpu/bin/python",
@@ -21,14 +21,16 @@
       "--policy-updates",
       "50"
     ],
-    "run_dir": "/home/aaa/workspace/EAGM-2.0-full-validation/runs/eagm2_development/tracking/seed200001/development_v1"
+    "run_dir": "/home/aaa/workspace/EAGM-2.0-full-validation/runs/eagm2_development/tracking/seed200001/development_v1",
+    "exit_code": 0,
+    "wall_seconds": 1353.731423448
   },
   {
     "task": "tracking",
     "seed": 200002,
     "attempt": "development_v1",
-    "status": "planned",
-    "worker_pid": null,
+    "status": "completed",
+    "worker_pid": 51226,
     "command": [
       "/home/aaa/miniconda3/envs/eagm_gpu/bin/python",
       "/home/aaa/workspace/EAGM-2.0-full-validation/scripts/eagm2/run_development.py",
@@ -45,14 +47,16 @@
       "--policy-updates",
       "50"
     ],
-    "run_dir": "/home/aaa/workspace/EAGM-2.0-full-validation/runs/eagm2_development/tracking/seed200002/development_v1"
+    "run_dir": "/home/aaa/workspace/EAGM-2.0-full-validation/runs/eagm2_development/tracking/seed200002/development_v1",
+    "exit_code": 0,
+    "wall_seconds": 1359.5655623340026
   },
   {
     "task": "tracking",
     "seed": 200003,
     "attempt": "development_v1",
-    "status": "planned",
-    "worker_pid": null,
+    "status": "completed",
+    "worker_pid": 53613,
     "command": [
       "/home/aaa/miniconda3/envs/eagm_gpu/bin/python",
       "/home/aaa/workspace/EAGM-2.0-full-validation/scripts/eagm2/run_development.py",
@@ -69,14 +73,16 @@
       "--policy-updates",
       "50"
     ],
-    "run_dir": "/home/aaa/workspace/EAGM-2.0-full-validation/runs/eagm2_development/tracking/seed200003/development_v1"
+    "run_dir": "/home/aaa/workspace/EAGM-2.0-full-validation/runs/eagm2_development/tracking/seed200003/development_v1",
+    "exit_code": 0,
+    "wall_seconds": 1316.814793783
   },
   {
     "task": "contact",
     "seed": 201001,
     "attempt": "development_v1",
-    "status": "planned",
-    "worker_pid": null,
+    "status": "completed",
+    "worker_pid": 19686,
     "command": [
       "/home/aaa/miniconda3/envs/eagm_gpu/bin/python",
       "/home/aaa/workspace/EAGM-2.0-full-validation/scripts/eagm2/run_development.py",
@@ -93,14 +99,17 @@
       "--policy-updates",
       "50"
     ],
-    "run_dir": "/home/aaa/workspace/EAGM-2.0-full-validation/runs/eagm2_development/contact/seed201001/development_v1"
+    "run_dir": "/home/aaa/workspace/EAGM-2.0-full-validation/runs/eagm2_development/contact/seed201001/development_v1",
+    "archived_incomplete": "/home/aaa/workspace/EAGM-2.0-full-validation/runs/eagm2_development/contact/seed201001/development_v1_interrupted_20261115T061649Z",
+    "exit_code": 0,
+    "wall_seconds": 7016.805828781002
   },
   {
     "task": "contact",
     "seed": 201002,
     "attempt": "development_v1",
-    "status": "planned",
-    "worker_pid": null,
+    "status": "completed",
+    "worker_pid": 45458,
     "command": [
       "/home/aaa/miniconda3/envs/eagm_gpu/bin/python",
       "/home/aaa/workspace/EAGM-2.0-full-validation/scripts/eagm2/run_development.py",
@@ -117,14 +126,16 @@
       "--policy-updates",
       "50"
     ],
-    "run_dir": "/home/aaa/workspace/EAGM-2.0-full-validation/runs/eagm2_development/contact/seed201002/development_v1"
+    "run_dir": "/home/aaa/workspace/EAGM-2.0-full-validation/runs/eagm2_development/contact/seed201002/development_v1",
+    "exit_code": 0,
+    "wall_seconds": 6768.989707312001
   },
   {
     "task": "contact",
     "seed": 201003,
     "attempt": "development_v1",
-    "status": "planned",
-    "worker_pid": null,
+    "status": "completed",
+    "worker_pid": 70101,
     "command": [
       "/home/aaa/miniconda3/envs/eagm_gpu/bin/python",
       "/home/aaa/workspace/EAGM-2.0-full-validation/scripts/eagm2/run_development.py",
@@ -141,14 +152,16 @@
       "--policy-updates",
       "50"
     ],
-    "run_dir": "/home/aaa/workspace/EAGM-2.0-full-validation/runs/eagm2_development/contact/seed201003/development_v1"
+    "run_dir": "/home/aaa/workspace/EAGM-2.0-full-validation/runs/eagm2_development/contact/seed201003/development_v1",
+    "exit_code": 0,
+    "wall_seconds": 6494.892711831999
   },
   {
     "task": "vision",
     "seed": 202001,
     "attempt": "development_v1",
-    "status": "planned",
-    "worker_pid": null,
+    "status": "completed",
+    "worker_pid": 91955,
     "command": [
       "/home/aaa/miniconda3/envs/eagm_gpu/bin/python",
       "/home/aaa/workspace/EAGM-2.0-full-validation/scripts/eagm2/run_development.py",
@@ -165,14 +178,16 @@
       "--policy-updates",
       "50"
     ],
-    "run_dir": "/home/aaa/workspace/EAGM-2.0-full-validation/runs/eagm2_development/vision/seed202001/development_v1"
+    "run_dir": "/home/aaa/workspace/EAGM-2.0-full-validation/runs/eagm2_development/vision/seed202001/development_v1",
+    "exit_code": 0,
+    "wall_seconds": 4601.985882371002
   },
   {
     "task": "vision",
     "seed": 202002,
     "attempt": "development_v1",
-    "status": "planned",
-    "worker_pid": null,
+    "status": "completed",
+    "worker_pid": 112927,
     "command": [
       "/home/aaa/miniconda3/envs/eagm_gpu/bin/python",
       "/home/aaa/workspace/EAGM-2.0-full-validation/scripts/eagm2/run_development.py",
@@ -189,14 +204,16 @@
       "--policy-updates",
       "50"
     ],
-    "run_dir": "/home/aaa/workspace/EAGM-2.0-full-validation/runs/eagm2_development/vision/seed202002/development_v1"
+    "run_dir": "/home/aaa/workspace/EAGM-2.0-full-validation/runs/eagm2_development/vision/seed202002/development_v1",
+    "exit_code": 0,
+    "wall_seconds": 4854.546655473001
   },
   {
     "task": "vision",
     "seed": 202003,
     "attempt": "development_v1",
-    "status": "planned",
-    "worker_pid": null,
+    "status": "completed",
+    "worker_pid": 132701,
     "command": [
       "/home/aaa/miniconda3/envs/eagm_gpu/bin/python",
       "/home/aaa/workspace/EAGM-2.0-full-validation/scripts/eagm2/run_development.py",
@@ -213,6 +230,8 @@
       "--policy-updates",
       "50"
     ],
-    "run_dir": "/home/aaa/workspace/EAGM-2.0-full-validation/runs/eagm2_development/vision/seed202003/development_v1"
+    "run_dir": "/home/aaa/workspace/EAGM-2.0-full-validation/runs/eagm2_development/vision/seed202003/development_v1",
+    "exit_code": 0,
+    "wall_seconds": 4694.448359001006
   }
 ]

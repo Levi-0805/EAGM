@@ -1,0 +1,218 @@
+labels_train 1 queries 192
+labels_train 2 queries 192
+labels_train 3 queries 192
+labels_train 4 queries 192
+labels_train 5 queries 192
+labels_train 6 queries 192
+labels_train 7 queries 192
+labels_train 8 queries 192
+labels_train 9 queries 192
+labels_train 10 queries 192
+labels_train 11 queries 192
+labels_train 12 queries 192
+labels_validation 1 queries 192
+labels_validation 2 queries 192
+labels_validation 3 queries 192
+labels_validation 4 queries 192
+labels_validation 5 queries 192
+labels_validation 6 queries 192
+labels_diagnostic 1 queries 192
+labels_diagnostic 2 queries 192
+labels_diagnostic 3 queries 192
+labels_diagnostic 4 queries 192
+labels_diagnostic 5 queries 192
+labels_diagnostic 6 queries 192
+ff_base 1 10.991651
+ff_base 101 3.302267
+ff_base 201 1.536184
+ff_base 301 1.612474
+ff_base 401 1.634979
+ff_base 501 1.423778
+ff_base 601 1.470352
+ff_base 701 1.264694
+ff_base 801 1.344955
+ff_base 901 1.671332
+ff_base 1000 1.103775
+COMPLETED ff_base return -0.7547385472473753 cos 0.11835199419591273
+ff_dir 1 10.991651
+ff_dir 101 3.806257
+ff_dir 201 11.268932
+ff_dir 301 1.84818
+ff_dir 401 2.891233
+ff_dir 501 1.683267
+ff_dir 601 1.516825
+ff_dir 701 1.516515
+ff_dir 801 2.725889
+ff_dir 901 1.433909
+ff_dir 1000 1.123294
+COMPLETED ff_dir return -12.105653818059263 cos 0.3480039504349734
+delay_base 1 10.769279
+delay_base 101 2.954142
+delay_base 201 1.328326
+delay_base 301 1.429426
+delay_base 401 1.3225
+delay_base 501 1.321087
+delay_base 601 1.244346
+delay_base 701 1.039376
+delay_base 801 1.123345
+delay_base 901 1.234455
+delay_base 1000 0.84419
+COMPLETED delay_base return -1.483625074924627 cos 0.11434093121986473
+delay_dir 1 10.769279
+delay_dir 101 3.447303
+delay_dir 201 9.369869
+delay_dir 301 1.641339
+delay_dir 401 1.878026
+delay_dir 501 1.657374
+delay_dir 601 1.280125
+delay_dir 701 1.270272
+delay_dir 801 2.598492
+delay_dir 901 1.23244
+delay_dir 1000 0.857365
+COMPLETED delay_dir return -27.84560484695663 cos -0.4982891368001036
+recurrent_base 1 10.991651
+recurrent_base 101 1.735399
+recurrent_base 201 1.731112
+recurrent_base 301 1.506935
+recurrent_base 401 1.59404
+recurrent_base 501 1.497169
+recurrent_base 601 1.45979
+recurrent_base 701 1.169904
+recurrent_base 801 1.407628
+recurrent_base 901 1.255738
+recurrent_base 1000 0.936817
+COMPLETED recurrent_base return -3.815012213564321 cos 0.01382103171978083
+recurrent_dir 1 10.991651
+recurrent_dir 101 2.003198
+recurrent_dir 201 6.689758
+recurrent_dir 301 1.84413
+recurrent_dir 401 3.795851
+recurrent_dir 501 2.174517
+recurrent_dir 601 1.54107
+recurrent_dir 701 1.35335
+recurrent_dir 801 2.95398
+recurrent_dir 901 1.177613
+recurrent_dir 1000 0.952306
+COMPLETED recurrent_dir return -6.157881438345441 cos -0.0731291582732266
+combined_base 1 10.769279
+combined_base 101 1.429973
+combined_base 201 1.393537
+combined_base 301 1.328625
+combined_base 401 1.301282
+combined_base 501 1.320776
+combined_base 601 1.273185
+combined_base 701 0.996454
+combined_base 801 1.139366
+combined_base 901 1.132605
+combined_base 1000 0.82604
+COMPLETED combined_base return -1.3392554782696124 cos 0.09430982196852088
+combined_dir 1 10.769279
+combined_dir 101 1.713039
+combined_dir 201 5.578496
+combined_dir 301 1.631712
+combined_dir 401 3.12781
+combined_dir 501 1.941008
+combined_dir 601 1.365197
+combined_dir 701 1.114285
+combined_dir 801 2.387161
+combined_dir 901 1.351528
+combined_dir 1000 0.836698
+COMPLETED combined_dir return -19.18816461334096 cos 0.24373307621555487
+capacity_mlp 1 10.724506
+capacity_mlp 101 3.275263
+capacity_mlp 201 5.484848
+capacity_mlp 301 1.982622
+capacity_mlp 401 3.144301
+capacity_mlp 501 1.637274
+capacity_mlp 601 1.307371
+capacity_mlp 701 1.17819
+capacity_mlp 801 2.505406
+capacity_mlp 901 1.544152
+capacity_mlp 1000 0.866357
+COMPLETED capacity_mlp return -6.366175103664863 cos -0.01978937226879307
+capacity_gru 1 10.879045
+capacity_gru 101 1.737548
+capacity_gru 201 13.49629
+capacity_gru 301 1.586515
+capacity_gru 401 1.456031
+capacity_gru 501 1.782573
+capacity_gru 601 1.382059
+capacity_gru 701 1.155499
+capacity_gru 801 3.574162
+capacity_gru 901 1.447501
+capacity_gru 1000 0.859106
+COMPLETED capacity_gru return -2.2380043744860787 cos -0.44573612631027704
+free_command 1 2.619929
+free_command 101 1.918014
+free_command 201 1.531425
+free_command 301 2.043408
+free_command 401 1.45718
+free_command 501 1.381194
+free_command 601 1.641036
+free_command 701 1.012846
+free_command 801 1.005819
+free_command 901 1.003954
+free_command 1000 0.645969
+COMPLETED free_command return -23.64152285279487 cos 0.12471300033017689
+direction_only 1 10.769279
+direction_only 101 3.05927
+direction_only 201 1.350404
+direction_only 301 1.372143
+direction_only 401 1.700638
+direction_only 501 1.408015
+direction_only 601 1.24942
+direction_only 701 1.167495
+direction_only 801 1.16171
+direction_only 901 1.113002
+direction_only 1000 0.856286
+COMPLETED direction_only return -0.9277092156794943 cos 0.5074481527412443
+norm_only 1 10.769279
+norm_only 101 3.176123
+norm_only 201 1.734953
+norm_only 301 1.360928
+norm_only 401 1.527266
+norm_only 501 1.292239
+norm_only 601 1.281185
+norm_only 701 1.124332
+norm_only 801 1.336414
+norm_only 901 1.339948
+norm_only 1000 0.857763
+COMPLETED norm_only return -8.964842441596558 cos -0.526726645283293
+joint_calibration 1 10.769279
+joint_calibration 101 3.051852
+joint_calibration 201 1.771165
+joint_calibration 301 1.584386
+joint_calibration 401 1.82135
+joint_calibration 501 1.42689
+joint_calibration 601 1.275761
+joint_calibration 701 1.09657
+joint_calibration 801 1.646263
+joint_calibration 901 1.231438
+joint_calibration 1000 0.86323
+COMPLETED joint_calibration return -5.087524701857105 cos 0.19572666673571135
+paml_adaptation 1 10.769279
+paml_adaptation 101 2.954142
+paml_adaptation 201 1.328326
+paml_adaptation 301 1.429426
+paml_adaptation 401 1.3225
+paml_adaptation 501 1.321087
+paml_adaptation 601 1.244346
+paml_adaptation 701 1.039376
+paml_adaptation 801 1.123345
+paml_adaptation 901 1.234455
+paml_adaptation 1000 0.84419
+COMPLETED paml_adaptation return -1.483625074924627 cos 0.11434093121986473
+vagram_adaptation 1 10.769279
+vagram_adaptation 101 2.954142
+vagram_adaptation 201 1.328326
+vagram_adaptation 301 1.429428
+vagram_adaptation 401 1.322498
+vagram_adaptation 501 1.321105
+vagram_adaptation 601 1.244361
+vagram_adaptation 701 1.039343
+vagram_adaptation 801 1.123371
+vagram_adaptation 901 1.23452
+vagram_adaptation 1000 0.84419
+COMPLETED vagram_adaptation return -1.4834129366799413 cos 0.11435075591828152
+COMPLETED direct_fd return -0.8707250236950801 training_steps 73728
+COMPLETED spsa return -0.784247268823223 training_steps 76800

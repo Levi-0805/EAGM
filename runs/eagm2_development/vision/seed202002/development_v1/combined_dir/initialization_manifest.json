@@ -1,0 +1,159 @@
+{
+  "protocol": "named parameter and shape keyed streams v1",
+  "root_seed": 202002,
+  "parameters": {
+    "posterior.weight_ih": {
+      "shape": [
+        96,
+        75
+      ],
+      "seed": 1650385913,
+      "initialization": "uniform",
+      "bound": 0.1767766952966369
+    },
+    "posterior.weight_hh": {
+      "shape": [
+        96,
+        32
+      ],
+      "seed": 1558907717,
+      "initialization": "uniform",
+      "bound": 0.1767766952966369
+    },
+    "posterior.bias_ih": {
+      "shape": [
+        96
+      ],
+      "seed": 1775338130,
+      "initialization": "uniform",
+      "bound": 0.1767766952966369
+    },
+    "posterior.bias_hh": {
+      "shape": [
+        96
+      ],
+      "seed": 1728762725,
+      "initialization": "uniform",
+      "bound": 0.1767766952966369
+    },
+    "transition.weight_ih": {
+      "shape": [
+        96,
+        57
+      ],
+      "seed": 1514117867,
+      "initialization": "uniform",
+      "bound": 0.1767766952966369
+    },
+    "transition.weight_hh": {
+      "shape": [
+        96,
+        32
+      ],
+      "seed": 606836304,
+      "initialization": "uniform",
+      "bound": 0.1767766952966369
+    },
+    "transition.bias_ih": {
+      "shape": [
+        96
+      ],
+      "seed": 3153475459,
+      "initialization": "uniform",
+      "bound": 0.1767766952966369
+    },
+    "transition.bias_hh": {
+      "shape": [
+        96
+      ],
+      "seed": 628644092,
+      "initialization": "uniform",
+      "bound": 0.1767766952966369
+    },
+    "command_net.0.weight": {
+      "shape": [
+        64,
+        75
+      ],
+      "seed": 2878035251,
+      "initialization": "uniform",
+      "bound": 0.11547005383792515
+    },
+    "command_net.0.bias": {
+      "shape": [
+        64
+      ],
+      "seed": 274853649,
+      "initialization": "uniform",
+      "bound": 0.125
+    },
+    "command_net.2.weight": {
+      "shape": [
+        14,
+        64
+      ],
+      "seed": 1664973010,
+      "initialization": "zero residual",
+      "bound": 0.125
+    },
+    "command_net.2.bias": {
+      "shape": [
+        14
+      ],
+      "seed": 731607583,
+      "initialization": "zero residual",
+      "bound": 0.2672612419124244
+    },
+    "dynamics.0.weight": {
+      "shape": [
+        160,
+        46
+      ],
+      "seed": 576701059,
+      "initialization": "uniform",
+      "bound": 0.14744195615489714
+    },
+    "dynamics.0.bias": {
+      "shape": [
+        160
+      ],
+      "seed": 1837991247,
+      "initialization": "uniform",
+      "bound": 0.07905694150420949
+    },
+    "dynamics.2.weight": {
+      "shape": [
+        160,
+        160
+      ],
+      "seed": 4199680404,
+      "initialization": "uniform",
+      "bound": 0.07905694150420949
+    },
+    "dynamics.2.bias": {
+      "shape": [
+        160
+      ],
+      "seed": 685227068,
+      "initialization": "uniform",
+      "bound": 0.07905694150420949
+    },
+    "dynamics.4.weight": {
+      "shape": [
+        32,
+        160
+      ],
+      "seed": 3528223925,
+      "initialization": "uniform",
+      "bound": 0.07905694150420949
+    },
+    "dynamics.4.bias": {
+      "shape": [
+        32
+      ],
+      "seed": 552140641,
+      "initialization": "uniform",
+      "bound": 0.1767766952966369
+    }
+  }
+}

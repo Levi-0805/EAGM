@@ -1,0 +1,228 @@
+{
+  "tracking": {
+    "ff_dir": {
+      "delay_dir": {
+        "capacity": {
+          "status": "pass",
+          "evidence": "trainable cand=40874 baseline=40874 relative_diff=0.000000 threshold=0.05 | trainable cand=40874 baseline=40874 relative_diff=0.000000 threshold=0.05 | trainable cand=40874 baseline=40874 relative_diff=0.000000 threshold=0.05"
+        },
+        "budget": {
+          "status": "pass",
+          "evidence": "training_query_units cand=19584 baseline=19584 (collection+gradient_labels) | training_query_units cand=19584 baseline=19584 (collection+gradient_labels) | training_query_units cand=19584 baseline=19584 (collection+gradient_labels)"
+        },
+        "tests": {
+          "status": "pass",
+          "evidence": "/home/aaa/workspace/EAGM-2.0-full-validation/reports/eagm2_dev/tests_full_discovery_final.log"
+        }
+      },
+      "recurrent_dir": {
+        "capacity": {
+          "status": "fail",
+          "evidence": "trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05 | trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05 | trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05"
+        },
+        "budget": {
+          "status": "pass",
+          "evidence": "training_query_units cand=19584 baseline=19584 (collection+gradient_labels) | training_query_units cand=19584 baseline=19584 (collection+gradient_labels) | training_query_units cand=19584 baseline=19584 (collection+gradient_labels)"
+        },
+        "tests": {
+          "status": "pass",
+          "evidence": "/home/aaa/workspace/EAGM-2.0-full-validation/reports/eagm2_dev/tests_full_discovery_final.log"
+        }
+      },
+      "combined_dir": {
+        "capacity": {
+          "status": "fail",
+          "evidence": "trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05 | trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05 | trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05"
+        },
+        "budget": {
+          "status": "pass",
+          "evidence": "training_query_units cand=19584 baseline=19584 (collection+gradient_labels) | training_query_units cand=19584 baseline=19584 (collection+gradient_labels) | training_query_units cand=19584 baseline=19584 (collection+gradient_labels)"
+        },
+        "tests": {
+          "status": "pass",
+          "evidence": "/home/aaa/workspace/EAGM-2.0-full-validation/reports/eagm2_dev/tests_full_discovery_final.log"
+        }
+      }
+    },
+    "legacy_dir": {
+      "delay_dir": {
+        "capacity": {
+          "status": "pass",
+          "evidence": "trainable cand=40874 baseline=40874 relative_diff=0.000000 threshold=0.05 | trainable cand=40874 baseline=40874 relative_diff=0.000000 threshold=0.05 | trainable cand=40874 baseline=40874 relative_diff=0.000000 threshold=0.05"
+        },
+        "budget": {
+          "status": "pass",
+          "evidence": "training_query_units cand=19584 baseline=19584 (collection+gradient_labels) | training_query_units cand=19584 baseline=19584 (collection+gradient_labels) | training_query_units cand=19584 baseline=19584 (collection+gradient_labels)"
+        },
+        "tests": {
+          "status": "pass",
+          "evidence": "/home/aaa/workspace/EAGM-2.0-full-validation/reports/eagm2_dev/tests_full_discovery_final.log"
+        }
+      },
+      "recurrent_dir": {
+        "capacity": {
+          "status": "fail",
+          "evidence": "trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05 | trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05 | trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05"
+        },
+        "budget": {
+          "status": "pass",
+          "evidence": "training_query_units cand=19584 baseline=19584 (collection+gradient_labels) | training_query_units cand=19584 baseline=19584 (collection+gradient_labels) | training_query_units cand=19584 baseline=19584 (collection+gradient_labels)"
+        },
+        "tests": {
+          "status": "pass",
+          "evidence": "/home/aaa/workspace/EAGM-2.0-full-validation/reports/eagm2_dev/tests_full_discovery_final.log"
+        }
+      },
+      "combined_dir": {
+        "capacity": {
+          "status": "fail",
+          "evidence": "trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05 | trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05 | trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05"
+        },
+        "budget": {
+          "status": "pass",
+          "evidence": "training_query_units cand=19584 baseline=19584 (collection+gradient_labels) | training_query_units cand=19584 baseline=19584 (collection+gradient_labels) | training_query_units cand=19584 baseline=19584 (collection+gradient_labels)"
+        },
+        "tests": {
+          "status": "pass",
+          "evidence": "/home/aaa/workspace/EAGM-2.0-full-validation/reports/eagm2_dev/tests_full_discovery_final.log"
+        }
+      }
+    }
+  },
+  "contact": {
+    "ff_dir": {
+      "delay_dir": {
+        "capacity": {
+          "status": "pass",
+          "evidence": "trainable cand=40874 baseline=40874 relative_diff=0.000000 threshold=0.05 | trainable cand=40874 baseline=40874 relative_diff=0.000000 threshold=0.05 | trainable cand=40874 baseline=40874 relative_diff=0.000000 threshold=0.05"
+        },
+        "budget": {
+          "status": "pass",
+          "evidence": "training_query_units cand=67968 baseline=67968 (collection+gradient_labels) | training_query_units cand=67968 baseline=67968 (collection+gradient_labels) | training_query_units cand=67968 baseline=67968 (collection+gradient_labels)"
+        },
+        "tests": {
+          "status": "pass",
+          "evidence": "/home/aaa/workspace/EAGM-2.0-full-validation/reports/eagm2_dev/tests_full_discovery_final.log"
+        }
+      },
+      "recurrent_dir": {
+        "capacity": {
+          "status": "fail",
+          "evidence": "trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05 | trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05 | trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05"
+        },
+        "budget": {
+          "status": "pass",
+          "evidence": "training_query_units cand=67968 baseline=67968 (collection+gradient_labels) | training_query_units cand=67968 baseline=67968 (collection+gradient_labels) | training_query_units cand=67968 baseline=67968 (collection+gradient_labels)"
+        },
+        "tests": {
+          "status": "pass",
+          "evidence": "/home/aaa/workspace/EAGM-2.0-full-validation/reports/eagm2_dev/tests_full_discovery_final.log"
+        }
+      },
+      "combined_dir": {
+        "capacity": {
+          "status": "fail",
+          "evidence": "trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05 | trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05 | trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05"
+        },
+        "budget": {
+          "status": "pass",
+          "evidence": "training_query_units cand=67968 baseline=67968 (collection+gradient_labels) | training_query_units cand=67968 baseline=67968 (collection+gradient_labels) | training_query_units cand=67968 baseline=67968 (collection+gradient_labels)"
+        },
+        "tests": {
+          "status": "pass",
+          "evidence": "/home/aaa/workspace/EAGM-2.0-full-validation/reports/eagm2_dev/tests_full_discovery_final.log"
+        }
+      }
+    },
+    "legacy_dir": {
+      "delay_dir": {
+        "capacity": {
+          "status": "pass",
+          "evidence": "trainable cand=40874 baseline=40874 relative_diff=0.000000 threshold=0.05 | trainable cand=40874 baseline=40874 relative_diff=0.000000 threshold=0.05 | trainable cand=40874 baseline=40874 relative_diff=0.000000 threshold=0.05"
+        },
+        "budget": {
+          "status": "pass",
+          "evidence": "training_query_units cand=67968 baseline=67968 (collection+gradient_labels) | training_query_units cand=67968 baseline=67968 (collection+gradient_labels) | training_query_units cand=67968 baseline=67968 (collection+gradient_labels)"
+        },
+        "tests": {
+          "status": "pass",
+          "evidence": "/home/aaa/workspace/EAGM-2.0-full-validation/reports/eagm2_dev/tests_full_discovery_final.log"
+        }
+      },
+      "recurrent_dir": {
+        "capacity": {
+          "status": "fail",
+          "evidence": "trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05 | trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05 | trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05"
+        },
+        "budget": {
+          "status": "pass",
+          "evidence": "training_query_units cand=67968 baseline=67968 (collection+gradient_labels) | training_query_units cand=67968 baseline=67968 (collection+gradient_labels) | training_query_units cand=67968 baseline=67968 (collection+gradient_labels)"
+        },
+        "tests": {
+          "status": "pass",
+          "evidence": "/home/aaa/workspace/EAGM-2.0-full-validation/reports/eagm2_dev/tests_full_discovery_final.log"
+        }
+      },
+      "combined_dir": {
+        "capacity": {
+          "status": "fail",
+          "evidence": "trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05 | trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05 | trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05"
+        },
+        "budget": {
+          "status": "pass",
+          "evidence": "training_query_units cand=67968 baseline=67968 (collection+gradient_labels) | training_query_units cand=67968 baseline=67968 (collection+gradient_labels) | training_query_units cand=67968 baseline=67968 (collection+gradient_labels)"
+        },
+        "tests": {
+          "status": "pass",
+          "evidence": "/home/aaa/workspace/EAGM-2.0-full-validation/reports/eagm2_dev/tests_full_discovery_final.log"
+        }
+      }
+    }
+  },
+  "vision": {
+    "ff_dir": {
+      "delay_dir": {
+        "capacity": {
+          "status": "pass",
+          "evidence": "trainable cand=42158 baseline=42158 relative_diff=0.000000 threshold=0.05 | trainable cand=42158 baseline=42158 relative_diff=0.000000 threshold=0.05 | trainable cand=42158 baseline=42158 relative_diff=0.000000 threshold=0.05"
+        },
+        "budget": {
+          "status": "pass",
+          "evidence": "training_query_units cand=77184 baseline=77184 (collection+gradient_labels) | training_query_units cand=77184 baseline=77184 (collection+gradient_labels) | training_query_units cand=77184 baseline=77184 (collection+gradient_labels)"
+        },
+        "tests": {
+          "status": "pass",
+          "evidence": "/home/aaa/workspace/EAGM-2.0-full-validation/reports/eagm2_dev/tests_full_discovery_final.log"
+        }
+      },
+      "recurrent_dir": {
+        "capacity": {
+          "status": "fail",
+          "evidence": "trainable cand=63406 baseline=42158 relative_diff=0.504009 threshold=0.05 | trainable cand=63406 baseline=42158 relative_diff=0.504009 threshold=0.05 | trainable cand=63406 baseline=42158 relative_diff=0.504009 threshold=0.05"
+        },
+        "budget": {
+          "status": "pass",
+          "evidence": "training_query_units cand=77184 baseline=77184 (collection+gradient_labels) | training_query_units cand=77184 baseline=77184 (collection+gradient_labels) | training_query_units cand=77184 baseline=77184 (collection+gradient_labels)"
+        },
+        "tests": {
+          "status": "pass",
+          "evidence": "/home/aaa/workspace/EAGM-2.0-full-validation/reports/eagm2_dev/tests_full_discovery_final.log"
+        }
+      },
+      "combined_dir": {
+        "capacity": {
+          "status": "fail",
+          "evidence": "trainable cand=63406 baseline=42158 relative_diff=0.504009 threshold=0.05 | trainable cand=63406 baseline=42158 relative_diff=0.504009 threshold=0.05 | trainable cand=63406 baseline=42158 relative_diff=0.504009 threshold=0.05"
+        },
+        "budget": {
+          "status": "pass",
+          "evidence": "training_query_units cand=77184 baseline=77184 (collection+gradient_labels) | training_query_units cand=77184 baseline=77184 (collection+gradient_labels) | training_query_units cand=77184 baseline=77184 (collection+gradient_labels)"
+        },
+        "tests": {
+          "status": "pass",
+          "evidence": "/home/aaa/workspace/EAGM-2.0-full-validation/reports/eagm2_dev/tests_full_discovery_final.log"
+        }
+      }
+    }
+  }
+}

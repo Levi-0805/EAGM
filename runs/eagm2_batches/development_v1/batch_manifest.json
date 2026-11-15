@@ -1,7 +1,10 @@
 {
-  "status": "running",
+  "status": "analysis_failed",
   "scheduler_pid": 49405,
   "phase": "exploratory_development",
   "confirmation_authorized": false,
-  "dry_run": false
+  "dry_run": false,
+  "resume_scheduler_pid": 19684,
+  "resume_started_unix": 1794723432.9234607,
+  "resume_finished_unix": 1794757864.6479466
 }

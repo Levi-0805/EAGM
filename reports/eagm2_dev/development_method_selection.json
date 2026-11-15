@@ -1,0 +1,1503 @@
+{
+  "phase": "exploratory_validation_selection",
+  "permission_is_scientific_pass": false,
+  "attempt": "development_v1",
+  "candidate_order": [
+    "delay_dir",
+    "recurrent_dir",
+    "combined_dir"
+  ],
+  "baseline_resolution": "parallel fixed reports; no automatic choice between ff_dir and legacy_dir",
+  "tasks": {
+    "tracking": {
+      "ff_dir": {
+        "status": "pass",
+        "selected": "delay_dir",
+        "candidates": {
+          "delay_dir": {
+            "status": "pass",
+            "scientific_status": "pass",
+            "external_gate_status": "pass",
+            "external_gates": {
+              "capacity": {
+                "status": "pass",
+                "evidence": "trainable cand=40874 baseline=40874 relative_diff=0.000000 threshold=0.05 | trainable cand=40874 baseline=40874 relative_diff=0.000000 threshold=0.05 | trainable cand=40874 baseline=40874 relative_diff=0.000000 threshold=0.05"
+              },
+              "budget": {
+                "status": "pass",
+                "evidence": "training_query_units cand=19584 baseline=19584 (collection+gradient_labels) | training_query_units cand=19584 baseline=19584 (collection+gradient_labels) | training_query_units cand=19584 baseline=19584 (collection+gradient_labels)"
+              },
+              "tests": {
+                "status": "pass",
+                "evidence": "/home/aaa/workspace/EAGM-2.0-full-validation/reports/eagm2_dev/tests_full_discovery_final.log"
+              }
+            },
+            "missing": [],
+            "seed_rows": [
+              {
+                "seed": 200001,
+                "candidate_validation": {
+                  "return": -0.0017988007198878563,
+                  "cosine": 0.8491284361893117
+                },
+                "baseline_validation": {
+                  "return": -0.0019614524525501504,
+                  "cosine": 0.7525445613438598
+                },
+                "difference": {
+                  "return": 0.0001626517326622941,
+                  "cosine": 0.09658387484545183
+                }
+              },
+              {
+                "seed": 200002,
+                "candidate_validation": {
+                  "return": -0.0016055778063701128,
+                  "cosine": 0.8263807538485931
+                },
+                "baseline_validation": {
+                  "return": -0.0016428573472230827,
+                  "cosine": 0.8536169941347019
+                },
+                "difference": {
+                  "return": 3.727954085296992e-05,
+                  "cosine": -0.027236240286108826
+                }
+              },
+              {
+                "seed": 200003,
+                "candidate_validation": {
+                  "return": -0.0013392509059327769,
+                  "cosine": 0.7672303676216897
+                },
+                "baseline_validation": {
+                  "return": -0.0015183197498321855,
+                  "cosine": 0.7950783541081513
+                },
+                "difference": {
+                  "return": 0.00017906884389940858,
+                  "cosine": -0.027847986486461584
+                }
+              }
+            ],
+            "summary": {
+              "return": {
+                "mean_difference": 0.00012633337247155754,
+                "positive": 3,
+                "nonnegative": 3,
+                "n_roots": 3
+              },
+              "cosine": {
+                "mean_difference": 0.013833216024293807,
+                "positive": 1,
+                "nonnegative": 1,
+                "n_roots": 3
+              }
+            },
+            "criteria": {
+              "return_mean_positive": true,
+              "return_at_least_two_positive": true,
+              "cosine_mean_positive": true
+            }
+          },
+          "recurrent_dir": {
+            "status": "fail",
+            "scientific_status": "pass",
+            "external_gate_status": "fail",
+            "external_gates": {
+              "capacity": {
+                "status": "fail",
+                "evidence": "trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05 | trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05 | trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05"
+              },
+              "budget": {
+                "status": "pass",
+                "evidence": "training_query_units cand=19584 baseline=19584 (collection+gradient_labels) | training_query_units cand=19584 baseline=19584 (collection+gradient_labels) | training_query_units cand=19584 baseline=19584 (collection+gradient_labels)"
+              },
+              "tests": {
+                "status": "pass",
+                "evidence": "/home/aaa/workspace/EAGM-2.0-full-validation/reports/eagm2_dev/tests_full_discovery_final.log"
+              }
+            },
+            "missing": [],
+            "seed_rows": [
+              {
+                "seed": 200001,
+                "candidate_validation": {
+                  "return": -0.001937777459938551,
+                  "cosine": 0.8814920391720545
+                },
+                "baseline_validation": {
+                  "return": -0.0019614524525501504,
+                  "cosine": 0.7525445613438598
+                },
+                "difference": {
+                  "return": 2.3674992611599473e-05,
+                  "cosine": 0.1289474778281947
+                }
+              },
+              {
+                "seed": 200002,
+                "candidate_validation": {
+                  "return": -0.0015569511504466619,
+                  "cosine": 0.9372661603500676
+                },
+                "baseline_validation": {
+                  "return": -0.0016428573472230827,
+                  "cosine": 0.8536169941347019
+                },
+                "difference": {
+                  "return": 8.590619677642086e-05,
+                  "cosine": 0.08364916621536567
+                }
+              },
+              {
+                "seed": 200003,
+                "candidate_validation": {
+                  "return": -0.001620442103222812,
+                  "cosine": 0.90649469223032
+                },
+                "baseline_validation": {
+                  "return": -0.0015183197498321855,
+                  "cosine": 0.7950783541081513
+                },
+                "difference": {
+                  "return": -0.0001021223533906265,
+                  "cosine": 0.11141633812216867
+                }
+              }
+            ],
+            "summary": {
+              "return": {
+                "mean_difference": 2.4862786657979413e-06,
+                "positive": 2,
+                "nonnegative": 2,
+                "n_roots": 3
+              },
+              "cosine": {
+                "mean_difference": 0.10800432738857635,
+                "positive": 3,
+                "nonnegative": 3,
+                "n_roots": 3
+              }
+            },
+            "criteria": {
+              "return_mean_positive": true,
+              "return_at_least_two_positive": true,
+              "cosine_mean_positive": true
+            }
+          },
+          "combined_dir": {
+            "status": "fail",
+            "scientific_status": "pass",
+            "external_gate_status": "fail",
+            "external_gates": {
+              "capacity": {
+                "status": "fail",
+                "evidence": "trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05 | trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05 | trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05"
+              },
+              "budget": {
+                "status": "pass",
+                "evidence": "training_query_units cand=19584 baseline=19584 (collection+gradient_labels) | training_query_units cand=19584 baseline=19584 (collection+gradient_labels) | training_query_units cand=19584 baseline=19584 (collection+gradient_labels)"
+              },
+              "tests": {
+                "status": "pass",
+                "evidence": "/home/aaa/workspace/EAGM-2.0-full-validation/reports/eagm2_dev/tests_full_discovery_final.log"
+              }
+            },
+            "missing": [],
+            "seed_rows": [
+              {
+                "seed": 200001,
+                "candidate_validation": {
+                  "return": -0.0018488690746560562,
+                  "cosine": 0.9081622760500148
+                },
+                "baseline_validation": {
+                  "return": -0.0019614524525501504,
+                  "cosine": 0.7525445613438598
+                },
+                "difference": {
+                  "return": 0.00011258337789409414,
+                  "cosine": 0.15561771470615493
+                }
+              },
+              {
+                "seed": 200002,
+                "candidate_validation": {
+                  "return": -0.001556529362787862,
+                  "cosine": 0.9400513363605091
+                },
+                "baseline_validation": {
+                  "return": -0.0016428573472230827,
+                  "cosine": 0.8536169941347019
+                },
+                "difference": {
+                  "return": 8.63279844352206e-05,
+                  "cosine": 0.08643434222580715
+                }
+              },
+              {
+                "seed": 200003,
+                "candidate_validation": {
+                  "return": -0.0015134262457872601,
+                  "cosine": 0.9301154546377143
+                },
+                "baseline_validation": {
+                  "return": -0.0015183197498321855,
+                  "cosine": 0.7950783541081513
+                },
+                "difference": {
+                  "return": 4.893504044925327e-06,
+                  "cosine": 0.13503710052956297
+                }
+              }
+            ],
+            "summary": {
+              "return": {
+                "mean_difference": 6.793495545808002e-05,
+                "positive": 3,
+                "nonnegative": 3,
+                "n_roots": 3
+              },
+              "cosine": {
+                "mean_difference": 0.12569638582050835,
+                "positive": 3,
+                "nonnegative": 3,
+                "n_roots": 3
+              }
+            },
+            "criteria": {
+              "return_mean_positive": true,
+              "return_at_least_two_positive": true,
+              "cosine_mean_positive": true
+            }
+          }
+        }
+      },
+      "legacy_dir": {
+        "status": "no_go",
+        "selected": null,
+        "candidates": {
+          "delay_dir": {
+            "status": "fail",
+            "scientific_status": "fail",
+            "external_gate_status": "pass",
+            "external_gates": {
+              "capacity": {
+                "status": "pass",
+                "evidence": "trainable cand=40874 baseline=40874 relative_diff=0.000000 threshold=0.05 | trainable cand=40874 baseline=40874 relative_diff=0.000000 threshold=0.05 | trainable cand=40874 baseline=40874 relative_diff=0.000000 threshold=0.05"
+              },
+              "budget": {
+                "status": "pass",
+                "evidence": "training_query_units cand=19584 baseline=19584 (collection+gradient_labels) | training_query_units cand=19584 baseline=19584 (collection+gradient_labels) | training_query_units cand=19584 baseline=19584 (collection+gradient_labels)"
+              },
+              "tests": {
+                "status": "pass",
+                "evidence": "/home/aaa/workspace/EAGM-2.0-full-validation/reports/eagm2_dev/tests_full_discovery_final.log"
+              }
+            },
+            "missing": [],
+            "seed_rows": [
+              {
+                "seed": 200001,
+                "candidate_validation": {
+                  "return": -0.0017988007198878563,
+                  "cosine": 0.8491284361893117
+                },
+                "baseline_validation": {
+                  "return": -0.0016638724471875076,
+                  "cosine": 0.894354106959415
+                },
+                "difference": {
+                  "return": -0.00013492827270034872,
+                  "cosine": -0.04522567077010331
+                }
+              },
+              {
+                "seed": 200002,
+                "candidate_validation": {
+                  "return": -0.0016055778063701128,
+                  "cosine": 0.8263807538485931
+                },
+                "baseline_validation": {
+                  "return": -0.0016379192371624091,
+                  "cosine": 0.8902819970821912
+                },
+                "difference": {
+                  "return": 3.2341430792296334e-05,
+                  "cosine": -0.06390124323359814
+                }
+              },
+              {
+                "seed": 200003,
+                "candidate_validation": {
+                  "return": -0.0013392509059327769,
+                  "cosine": 0.7672303676216897
+                },
+                "baseline_validation": {
+                  "return": -0.0013929665204421464,
+                  "cosine": 0.8706125527198258
+                },
+                "difference": {
+                  "return": 5.3715614509369574e-05,
+                  "cosine": -0.10338218509813613
+                }
+              }
+            ],
+            "summary": {
+              "return": {
+                "mean_difference": -1.629040913289427e-05,
+                "positive": 2,
+                "nonnegative": 2,
+                "n_roots": 3
+              },
+              "cosine": {
+                "mean_difference": -0.07083636636727919,
+                "positive": 0,
+                "nonnegative": 0,
+                "n_roots": 3
+              }
+            },
+            "criteria": {
+              "return_mean_positive": false,
+              "return_at_least_two_positive": true,
+              "cosine_mean_positive": false
+            }
+          },
+          "recurrent_dir": {
+            "status": "fail",
+            "scientific_status": "fail",
+            "external_gate_status": "fail",
+            "external_gates": {
+              "capacity": {
+                "status": "fail",
+                "evidence": "trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05 | trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05 | trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05"
+              },
+              "budget": {
+                "status": "pass",
+                "evidence": "training_query_units cand=19584 baseline=19584 (collection+gradient_labels) | training_query_units cand=19584 baseline=19584 (collection+gradient_labels) | training_query_units cand=19584 baseline=19584 (collection+gradient_labels)"
+              },
+              "tests": {
+                "status": "pass",
+                "evidence": "/home/aaa/workspace/EAGM-2.0-full-validation/reports/eagm2_dev/tests_full_discovery_final.log"
+              }
+            },
+            "missing": [],
+            "seed_rows": [
+              {
+                "seed": 200001,
+                "candidate_validation": {
+                  "return": -0.001937777459938551,
+                  "cosine": 0.8814920391720545
+                },
+                "baseline_validation": {
+                  "return": -0.0016638724471875076,
+                  "cosine": 0.894354106959415
+                },
+                "difference": {
+                  "return": -0.00027390501275104335,
+                  "cosine": -0.012862067787360432
+                }
+              },
+              {
+                "seed": 200002,
+                "candidate_validation": {
+                  "return": -0.0015569511504466619,
+                  "cosine": 0.9372661603500676
+                },
+                "baseline_validation": {
+                  "return": -0.0016379192371624091,
+                  "cosine": 0.8902819970821912
+                },
+                "difference": {
+                  "return": 8.096808671574727e-05,
+                  "cosine": 0.046984163267876355
+                }
+              },
+              {
+                "seed": 200003,
+                "candidate_validation": {
+                  "return": -0.001620442103222812,
+                  "cosine": 0.90649469223032
+                },
+                "baseline_validation": {
+                  "return": -0.0013929665204421464,
+                  "cosine": 0.8706125527198258
+                },
+                "difference": {
+                  "return": -0.0002274755827806655,
+                  "cosine": 0.03588213951049413
+                }
+              }
+            ],
+            "summary": {
+              "return": {
+                "mean_difference": -0.00014013750293865386,
+                "positive": 1,
+                "nonnegative": 1,
+                "n_roots": 3
+              },
+              "cosine": {
+                "mean_difference": 0.02333474499700335,
+                "positive": 2,
+                "nonnegative": 2,
+                "n_roots": 3
+              }
+            },
+            "criteria": {
+              "return_mean_positive": false,
+              "return_at_least_two_positive": false,
+              "cosine_mean_positive": true
+            }
+          },
+          "combined_dir": {
+            "status": "fail",
+            "scientific_status": "fail",
+            "external_gate_status": "fail",
+            "external_gates": {
+              "capacity": {
+                "status": "fail",
+                "evidence": "trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05 | trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05 | trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05"
+              },
+              "budget": {
+                "status": "pass",
+                "evidence": "training_query_units cand=19584 baseline=19584 (collection+gradient_labels) | training_query_units cand=19584 baseline=19584 (collection+gradient_labels) | training_query_units cand=19584 baseline=19584 (collection+gradient_labels)"
+              },
+              "tests": {
+                "status": "pass",
+                "evidence": "/home/aaa/workspace/EAGM-2.0-full-validation/reports/eagm2_dev/tests_full_discovery_final.log"
+              }
+            },
+            "missing": [],
+            "seed_rows": [
+              {
+                "seed": 200001,
+                "candidate_validation": {
+                  "return": -0.0018488690746560562,
+                  "cosine": 0.9081622760500148
+                },
+                "baseline_validation": {
+                  "return": -0.0016638724471875076,
+                  "cosine": 0.894354106959415
+                },
+                "difference": {
+                  "return": -0.00018499662746854868,
+                  "cosine": 0.013808169090599787
+                }
+              },
+              {
+                "seed": 200002,
+                "candidate_validation": {
+                  "return": -0.001556529362787862,
+                  "cosine": 0.9400513363605091
+                },
+                "baseline_validation": {
+                  "return": -0.0016379192371624091,
+                  "cosine": 0.8902819970821912
+                },
+                "difference": {
+                  "return": 8.138987437454701e-05,
+                  "cosine": 0.04976933927831784
+                }
+              },
+              {
+                "seed": 200003,
+                "candidate_validation": {
+                  "return": -0.0015134262457872601,
+                  "cosine": 0.9301154546377143
+                },
+                "baseline_validation": {
+                  "return": -0.0013929665204421464,
+                  "cosine": 0.8706125527198258
+                },
+                "difference": {
+                  "return": -0.00012045972534511368,
+                  "cosine": 0.05950290191788843
+                }
+              }
+            ],
+            "summary": {
+              "return": {
+                "mean_difference": -7.468882614637179e-05,
+                "positive": 1,
+                "nonnegative": 1,
+                "n_roots": 3
+              },
+              "cosine": {
+                "mean_difference": 0.04102680342893535,
+                "positive": 3,
+                "nonnegative": 3,
+                "n_roots": 3
+              }
+            },
+            "criteria": {
+              "return_mean_positive": false,
+              "return_at_least_two_positive": false,
+              "cosine_mean_positive": true
+            }
+          }
+        }
+      }
+    },
+    "contact": {
+      "ff_dir": {
+        "status": "no_go",
+        "selected": null,
+        "candidates": {
+          "delay_dir": {
+            "status": "fail",
+            "scientific_status": "fail",
+            "external_gate_status": "pass",
+            "external_gates": {
+              "capacity": {
+                "status": "pass",
+                "evidence": "trainable cand=40874 baseline=40874 relative_diff=0.000000 threshold=0.05 | trainable cand=40874 baseline=40874 relative_diff=0.000000 threshold=0.05 | trainable cand=40874 baseline=40874 relative_diff=0.000000 threshold=0.05"
+              },
+              "budget": {
+                "status": "pass",
+                "evidence": "training_query_units cand=67968 baseline=67968 (collection+gradient_labels) | training_query_units cand=67968 baseline=67968 (collection+gradient_labels) | training_query_units cand=67968 baseline=67968 (collection+gradient_labels)"
+              },
+              "tests": {
+                "status": "pass",
+                "evidence": "/home/aaa/workspace/EAGM-2.0-full-validation/reports/eagm2_dev/tests_full_discovery_final.log"
+              }
+            },
+            "missing": [],
+            "seed_rows": [
+              {
+                "seed": 201001,
+                "candidate_validation": {
+                  "return": -3.3283091278649164,
+                  "cosine": -0.14947240598913067,
+                  "success": 0.0
+                },
+                "baseline_validation": {
+                  "return": -2.3124625249186965,
+                  "cosine": 0.2595917905504163,
+                  "success": 0.0
+                },
+                "difference": {
+                  "return": -1.0158466029462199,
+                  "cosine": -0.40906419653954695,
+                  "success": 0.0
+                }
+              },
+              {
+                "seed": 201002,
+                "candidate_validation": {
+                  "return": -1.941512009415013,
+                  "cosine": -0.11399924470503904,
+                  "success": 0.0
+                },
+                "baseline_validation": {
+                  "return": -2.1112455635698786,
+                  "cosine": 0.11707213271117776,
+                  "success": 0.0
+                },
+                "difference": {
+                  "return": 0.16973355415486568,
+                  "cosine": -0.2310713774162168,
+                  "success": 0.0
+                }
+              },
+              {
+                "seed": 201003,
+                "candidate_validation": {
+                  "return": -2.309537841732924,
+                  "cosine": 0.07091952253400137,
+                  "success": 0.0
+                },
+                "baseline_validation": {
+                  "return": -2.171530887560086,
+                  "cosine": 0.012811740306859928,
+                  "success": 0.0
+                },
+                "difference": {
+                  "return": -0.13800695417283793,
+                  "cosine": 0.05810778222714144,
+                  "success": 0.0
+                }
+              }
+            ],
+            "summary": {
+              "return": {
+                "mean_difference": -0.328040000988064,
+                "positive": 1,
+                "nonnegative": 1,
+                "n_roots": 3
+              },
+              "cosine": {
+                "mean_difference": -0.19400926390954076,
+                "positive": 1,
+                "nonnegative": 1,
+                "n_roots": 3
+              },
+              "success": {
+                "mean_difference": 0.0,
+                "positive": 0,
+                "nonnegative": 3,
+                "n_roots": 3
+              }
+            },
+            "criteria": {
+              "return_mean_positive": false,
+              "return_at_least_two_positive": false,
+              "cosine_mean_positive": false,
+              "success_mean_positive": false,
+              "success_at_least_two_nonnegative": true
+            }
+          },
+          "recurrent_dir": {
+            "status": "fail",
+            "scientific_status": "fail",
+            "external_gate_status": "fail",
+            "external_gates": {
+              "capacity": {
+                "status": "fail",
+                "evidence": "trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05 | trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05 | trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05"
+              },
+              "budget": {
+                "status": "pass",
+                "evidence": "training_query_units cand=67968 baseline=67968 (collection+gradient_labels) | training_query_units cand=67968 baseline=67968 (collection+gradient_labels) | training_query_units cand=67968 baseline=67968 (collection+gradient_labels)"
+              },
+              "tests": {
+                "status": "pass",
+                "evidence": "/home/aaa/workspace/EAGM-2.0-full-validation/reports/eagm2_dev/tests_full_discovery_final.log"
+              }
+            },
+            "missing": [],
+            "seed_rows": [
+              {
+                "seed": 201001,
+                "candidate_validation": {
+                  "return": -1.177471264251934,
+                  "cosine": 0.04503948725292822,
+                  "success": 1.0
+                },
+                "baseline_validation": {
+                  "return": -2.3124625249186965,
+                  "cosine": 0.2595917905504163,
+                  "success": 0.0
+                },
+                "difference": {
+                  "return": 1.1349912606667625,
+                  "cosine": -0.2145523032974881,
+                  "success": 1.0
+                }
+              },
+              {
+                "seed": 201002,
+                "candidate_validation": {
+                  "return": -2.3440762672984286,
+                  "cosine": 0.02029596187922283,
+                  "success": 0.0
+                },
+                "baseline_validation": {
+                  "return": -2.1112455635698786,
+                  "cosine": 0.11707213271117776,
+                  "success": 0.0
+                },
+                "difference": {
+                  "return": -0.23283070372854997,
+                  "cosine": -0.09677617083195493,
+                  "success": 0.0
+                }
+              },
+              {
+                "seed": 201003,
+                "candidate_validation": {
+                  "return": -2.8111638794192433,
+                  "cosine": -0.03390717226802591,
+                  "success": 0.0
+                },
+                "baseline_validation": {
+                  "return": -2.171530887560086,
+                  "cosine": 0.012811740306859928,
+                  "success": 0.0
+                },
+                "difference": {
+                  "return": -0.6396329918591572,
+                  "cosine": -0.04671891257488584,
+                  "success": 0.0
+                }
+              }
+            ],
+            "summary": {
+              "return": {
+                "mean_difference": 0.08750918835968509,
+                "positive": 1,
+                "nonnegative": 1,
+                "n_roots": 3
+              },
+              "cosine": {
+                "mean_difference": -0.11934912890144296,
+                "positive": 0,
+                "nonnegative": 0,
+                "n_roots": 3
+              },
+              "success": {
+                "mean_difference": 0.3333333333333333,
+                "positive": 1,
+                "nonnegative": 3,
+                "n_roots": 3
+              }
+            },
+            "criteria": {
+              "return_mean_positive": true,
+              "return_at_least_two_positive": false,
+              "cosine_mean_positive": false,
+              "success_mean_positive": true,
+              "success_at_least_two_nonnegative": true
+            }
+          },
+          "combined_dir": {
+            "status": "fail",
+            "scientific_status": "fail",
+            "external_gate_status": "fail",
+            "external_gates": {
+              "capacity": {
+                "status": "fail",
+                "evidence": "trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05 | trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05 | trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05"
+              },
+              "budget": {
+                "status": "pass",
+                "evidence": "training_query_units cand=67968 baseline=67968 (collection+gradient_labels) | training_query_units cand=67968 baseline=67968 (collection+gradient_labels) | training_query_units cand=67968 baseline=67968 (collection+gradient_labels)"
+              },
+              "tests": {
+                "status": "pass",
+                "evidence": "/home/aaa/workspace/EAGM-2.0-full-validation/reports/eagm2_dev/tests_full_discovery_final.log"
+              }
+            },
+            "missing": [],
+            "seed_rows": [
+              {
+                "seed": 201001,
+                "candidate_validation": {
+                  "return": -2.00869884600281,
+                  "cosine": -0.016519141266652437,
+                  "success": 0.0
+                },
+                "baseline_validation": {
+                  "return": -2.3124625249186965,
+                  "cosine": 0.2595917905504163,
+                  "success": 0.0
+                },
+                "difference": {
+                  "return": 0.3037636789158866,
+                  "cosine": -0.27611093181706875,
+                  "success": 0.0
+                }
+              },
+              {
+                "seed": 201002,
+                "candidate_validation": {
+                  "return": -2.2866996564282633,
+                  "cosine": -0.11109373905344944,
+                  "success": 0.0
+                },
+                "baseline_validation": {
+                  "return": -2.1112455635698786,
+                  "cosine": 0.11707213271117776,
+                  "success": 0.0
+                },
+                "difference": {
+                  "return": -0.17545409285838476,
+                  "cosine": -0.22816587176462721,
+                  "success": 0.0
+                }
+              },
+              {
+                "seed": 201003,
+                "candidate_validation": {
+                  "return": -1.971782728861162,
+                  "cosine": 0.08566339242082287,
+                  "success": 0.0
+                },
+                "baseline_validation": {
+                  "return": -2.171530887560086,
+                  "cosine": 0.012811740306859928,
+                  "success": 0.0
+                },
+                "difference": {
+                  "return": 0.19974815869892404,
+                  "cosine": 0.07285165211396294,
+                  "success": 0.0
+                }
+              }
+            ],
+            "summary": {
+              "return": {
+                "mean_difference": 0.1093525815854753,
+                "positive": 2,
+                "nonnegative": 2,
+                "n_roots": 3
+              },
+              "cosine": {
+                "mean_difference": -0.14380838382257768,
+                "positive": 1,
+                "nonnegative": 1,
+                "n_roots": 3
+              },
+              "success": {
+                "mean_difference": 0.0,
+                "positive": 0,
+                "nonnegative": 3,
+                "n_roots": 3
+              }
+            },
+            "criteria": {
+              "return_mean_positive": true,
+              "return_at_least_two_positive": true,
+              "cosine_mean_positive": false,
+              "success_mean_positive": false,
+              "success_at_least_two_nonnegative": true
+            }
+          }
+        }
+      },
+      "legacy_dir": {
+        "status": "no_go",
+        "selected": null,
+        "candidates": {
+          "delay_dir": {
+            "status": "fail",
+            "scientific_status": "fail",
+            "external_gate_status": "pass",
+            "external_gates": {
+              "capacity": {
+                "status": "pass",
+                "evidence": "trainable cand=40874 baseline=40874 relative_diff=0.000000 threshold=0.05 | trainable cand=40874 baseline=40874 relative_diff=0.000000 threshold=0.05 | trainable cand=40874 baseline=40874 relative_diff=0.000000 threshold=0.05"
+              },
+              "budget": {
+                "status": "pass",
+                "evidence": "training_query_units cand=67968 baseline=67968 (collection+gradient_labels) | training_query_units cand=67968 baseline=67968 (collection+gradient_labels) | training_query_units cand=67968 baseline=67968 (collection+gradient_labels)"
+              },
+              "tests": {
+                "status": "pass",
+                "evidence": "/home/aaa/workspace/EAGM-2.0-full-validation/reports/eagm2_dev/tests_full_discovery_final.log"
+              }
+            },
+            "missing": [],
+            "seed_rows": [
+              {
+                "seed": 201001,
+                "candidate_validation": {
+                  "return": -3.3283091278649164,
+                  "cosine": -0.14947240598913067,
+                  "success": 0.0
+                },
+                "baseline_validation": {
+                  "return": -2.2465156096574637,
+                  "cosine": 0.00338568089127865,
+                  "success": 0.0
+                },
+                "difference": {
+                  "return": -1.0817935182074527,
+                  "cosine": -0.1528580868804093,
+                  "success": 0.0
+                }
+              },
+              {
+                "seed": 201002,
+                "candidate_validation": {
+                  "return": -1.941512009415013,
+                  "cosine": -0.11399924470503904,
+                  "success": 0.0
+                },
+                "baseline_validation": {
+                  "return": -1.7120951785315064,
+                  "cosine": 0.11977097136645748,
+                  "success": 0.16666666666666666
+                },
+                "difference": {
+                  "return": -0.2294168308835065,
+                  "cosine": -0.2337702160714965,
+                  "success": -0.16666666666666666
+                }
+              },
+              {
+                "seed": 201003,
+                "candidate_validation": {
+                  "return": -2.309537841732924,
+                  "cosine": 0.07091952253400137,
+                  "success": 0.0
+                },
+                "baseline_validation": {
+                  "return": -2.7568567898622214,
+                  "cosine": 0.10796433054514432,
+                  "success": 0.0
+                },
+                "difference": {
+                  "return": 0.4473189481292974,
+                  "cosine": -0.037044808011142946,
+                  "success": 0.0
+                }
+              }
+            ],
+            "summary": {
+              "return": {
+                "mean_difference": -0.28796380032055396,
+                "positive": 1,
+                "nonnegative": 1,
+                "n_roots": 3
+              },
+              "cosine": {
+                "mean_difference": -0.14122437032101626,
+                "positive": 0,
+                "nonnegative": 0,
+                "n_roots": 3
+              },
+              "success": {
+                "mean_difference": -0.05555555555555555,
+                "positive": 0,
+                "nonnegative": 2,
+                "n_roots": 3
+              }
+            },
+            "criteria": {
+              "return_mean_positive": false,
+              "return_at_least_two_positive": false,
+              "cosine_mean_positive": false,
+              "success_mean_positive": false,
+              "success_at_least_two_nonnegative": true
+            }
+          },
+          "recurrent_dir": {
+            "status": "fail",
+            "scientific_status": "fail",
+            "external_gate_status": "fail",
+            "external_gates": {
+              "capacity": {
+                "status": "fail",
+                "evidence": "trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05 | trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05 | trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05"
+              },
+              "budget": {
+                "status": "pass",
+                "evidence": "training_query_units cand=67968 baseline=67968 (collection+gradient_labels) | training_query_units cand=67968 baseline=67968 (collection+gradient_labels) | training_query_units cand=67968 baseline=67968 (collection+gradient_labels)"
+              },
+              "tests": {
+                "status": "pass",
+                "evidence": "/home/aaa/workspace/EAGM-2.0-full-validation/reports/eagm2_dev/tests_full_discovery_final.log"
+              }
+            },
+            "missing": [],
+            "seed_rows": [
+              {
+                "seed": 201001,
+                "candidate_validation": {
+                  "return": -1.177471264251934,
+                  "cosine": 0.04503948725292822,
+                  "success": 1.0
+                },
+                "baseline_validation": {
+                  "return": -2.2465156096574637,
+                  "cosine": 0.00338568089127865,
+                  "success": 0.0
+                },
+                "difference": {
+                  "return": 1.0690443454055296,
+                  "cosine": 0.04165380636164957,
+                  "success": 1.0
+                }
+              },
+              {
+                "seed": 201002,
+                "candidate_validation": {
+                  "return": -2.3440762672984286,
+                  "cosine": 0.02029596187922283,
+                  "success": 0.0
+                },
+                "baseline_validation": {
+                  "return": -1.7120951785315064,
+                  "cosine": 0.11977097136645748,
+                  "success": 0.16666666666666666
+                },
+                "difference": {
+                  "return": -0.6319810887669222,
+                  "cosine": -0.09947500948723464,
+                  "success": -0.16666666666666666
+                }
+              },
+              {
+                "seed": 201003,
+                "candidate_validation": {
+                  "return": -2.8111638794192433,
+                  "cosine": -0.03390717226802591,
+                  "success": 0.0
+                },
+                "baseline_validation": {
+                  "return": -2.7568567898622214,
+                  "cosine": 0.10796433054514432,
+                  "success": 0.0
+                },
+                "difference": {
+                  "return": -0.054307089557021904,
+                  "cosine": -0.14187150281317024,
+                  "success": 0.0
+                }
+              }
+            ],
+            "summary": {
+              "return": {
+                "mean_difference": 0.12758538902719518,
+                "positive": 1,
+                "nonnegative": 1,
+                "n_roots": 3
+              },
+              "cosine": {
+                "mean_difference": -0.06656423531291844,
+                "positive": 1,
+                "nonnegative": 1,
+                "n_roots": 3
+              },
+              "success": {
+                "mean_difference": 0.2777777777777778,
+                "positive": 1,
+                "nonnegative": 2,
+                "n_roots": 3
+              }
+            },
+            "criteria": {
+              "return_mean_positive": true,
+              "return_at_least_two_positive": false,
+              "cosine_mean_positive": false,
+              "success_mean_positive": true,
+              "success_at_least_two_nonnegative": true
+            }
+          },
+          "combined_dir": {
+            "status": "fail",
+            "scientific_status": "fail",
+            "external_gate_status": "fail",
+            "external_gates": {
+              "capacity": {
+                "status": "fail",
+                "evidence": "trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05 | trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05 | trainable cand=61738 baseline=40874 relative_diff=0.510447 threshold=0.05"
+              },
+              "budget": {
+                "status": "pass",
+                "evidence": "training_query_units cand=67968 baseline=67968 (collection+gradient_labels) | training_query_units cand=67968 baseline=67968 (collection+gradient_labels) | training_query_units cand=67968 baseline=67968 (collection+gradient_labels)"
+              },
+              "tests": {
+                "status": "pass",
+                "evidence": "/home/aaa/workspace/EAGM-2.0-full-validation/reports/eagm2_dev/tests_full_discovery_final.log"
+              }
+            },
+            "missing": [],
+            "seed_rows": [
+              {
+                "seed": 201001,
+                "candidate_validation": {
+                  "return": -2.00869884600281,
+                  "cosine": -0.016519141266652437,
+                  "success": 0.0
+                },
+                "baseline_validation": {
+                  "return": -2.2465156096574637,
+                  "cosine": 0.00338568089127865,
+                  "success": 0.0
+                },
+                "difference": {
+                  "return": 0.23781676365465376,
+                  "cosine": -0.019904822157931087,
+                  "success": 0.0
+                }
+              },
+              {
+                "seed": 201002,
+                "candidate_validation": {
+                  "return": -2.2866996564282633,
+                  "cosine": -0.11109373905344944,
+                  "success": 0.0
+                },
+                "baseline_validation": {
+                  "return": -1.7120951785315064,
+                  "cosine": 0.11977097136645748,
+                  "success": 0.16666666666666666
+                },
+                "difference": {
+                  "return": -0.574604477896757,
+                  "cosine": -0.23086471041990692,
+                  "success": -0.16666666666666666
+                }
+              },
+              {
+                "seed": 201003,
+                "candidate_validation": {
+                  "return": -1.971782728861162,
+                  "cosine": 0.08566339242082287,
+                  "success": 0.0
+                },
+                "baseline_validation": {
+                  "return": -2.7568567898622214,
+                  "cosine": 0.10796433054514432,
+                  "success": 0.0
+                },
+                "difference": {
+                  "return": 0.7850740610010594,
+                  "cosine": -0.02230093812432145,
+                  "success": 0.0
+                }
+              }
+            ],
+            "summary": {
+              "return": {
+                "mean_difference": 0.1494287822529854,
+                "positive": 2,
+                "nonnegative": 2,
+                "n_roots": 3
+              },
+              "cosine": {
+                "mean_difference": -0.09102349023405315,
+                "positive": 0,
+                "nonnegative": 0,
+                "n_roots": 3
+              },
+              "success": {
+                "mean_difference": -0.05555555555555555,
+                "positive": 0,
+                "nonnegative": 2,
+                "n_roots": 3
+              }
+            },
+            "criteria": {
+              "return_mean_positive": true,
+              "return_at_least_two_positive": true,
+              "cosine_mean_positive": false,
+              "success_mean_positive": false,
+              "success_at_least_two_nonnegative": true
+            }
+          }
+        }
+      }
+    },
+    "vision": {
+      "ff_dir": {
+        "status": "no_go",
+        "selected": null,
+        "candidates": {
+          "delay_dir": {
+            "status": "fail",
+            "scientific_status": "fail",
+            "external_gate_status": "pass",
+            "external_gates": {
+              "capacity": {
+                "status": "pass",
+                "evidence": "trainable cand=42158 baseline=42158 relative_diff=0.000000 threshold=0.05 | trainable cand=42158 baseline=42158 relative_diff=0.000000 threshold=0.05 | trainable cand=42158 baseline=42158 relative_diff=0.000000 threshold=0.05"
+              },
+              "budget": {
+                "status": "pass",
+                "evidence": "training_query_units cand=77184 baseline=77184 (collection+gradient_labels) | training_query_units cand=77184 baseline=77184 (collection+gradient_labels) | training_query_units cand=77184 baseline=77184 (collection+gradient_labels)"
+              },
+              "tests": {
+                "status": "pass",
+                "evidence": "/home/aaa/workspace/EAGM-2.0-full-validation/reports/eagm2_dev/tests_full_discovery_final.log"
+              }
+            },
+            "missing": [],
+            "seed_rows": [
+              {
+                "seed": 202001,
+                "candidate_validation": {
+                  "return": -2.321108830731425,
+                  "cosine": 0.33615700193849457,
+                  "success": 0.3333333333333333
+                },
+                "baseline_validation": {
+                  "return": -29.19946928270103,
+                  "cosine": 0.3562740334807841,
+                  "success": 0.0
+                },
+                "difference": {
+                  "return": 26.878360451969606,
+                  "cosine": -0.020117031542289554,
+                  "success": 0.3333333333333333
+                }
+              },
+              {
+                "seed": 202002,
+                "candidate_validation": {
+                  "return": -0.72735089171274,
+                  "cosine": 0.1216188414939093,
+                  "success": 1.0
+                },
+                "baseline_validation": {
+                  "return": -10.252053141741248,
+                  "cosine": 0.0029086197958430406,
+                  "success": 0.6666666666666666
+                },
+                "difference": {
+                  "return": 9.524702250028508,
+                  "cosine": 0.11871022169806625,
+                  "success": 0.33333333333333337
+                }
+              },
+              {
+                "seed": 202003,
+                "candidate_validation": {
+                  "return": -27.726046013205046,
+                  "cosine": -0.17573712657234106,
+                  "success": 0.0
+                },
+                "baseline_validation": {
+                  "return": -10.175089476633632,
+                  "cosine": 0.06391421594811146,
+                  "success": 0.0
+                },
+                "difference": {
+                  "return": -17.550956536571412,
+                  "cosine": -0.2396513425204525,
+                  "success": 0.0
+                }
+              }
+            ],
+            "summary": {
+              "return": {
+                "mean_difference": 6.284035388475566,
+                "positive": 2,
+                "nonnegative": 2,
+                "n_roots": 3
+              },
+              "cosine": {
+                "mean_difference": -0.0470193841215586,
+                "positive": 1,
+                "nonnegative": 1,
+                "n_roots": 3
+              },
+              "success": {
+                "mean_difference": 0.22222222222222224,
+                "positive": 2,
+                "nonnegative": 3,
+                "n_roots": 3
+              }
+            },
+            "criteria": {
+              "return_mean_positive": true,
+              "return_at_least_two_positive": true,
+              "cosine_mean_positive": false,
+              "success_mean_positive": true,
+              "success_at_least_two_nonnegative": true
+            }
+          },
+          "recurrent_dir": {
+            "status": "fail",
+            "scientific_status": "fail",
+            "external_gate_status": "fail",
+            "external_gates": {
+              "capacity": {
+                "status": "fail",
+                "evidence": "trainable cand=63406 baseline=42158 relative_diff=0.504009 threshold=0.05 | trainable cand=63406 baseline=42158 relative_diff=0.504009 threshold=0.05 | trainable cand=63406 baseline=42158 relative_diff=0.504009 threshold=0.05"
+              },
+              "budget": {
+                "status": "pass",
+                "evidence": "training_query_units cand=77184 baseline=77184 (collection+gradient_labels) | training_query_units cand=77184 baseline=77184 (collection+gradient_labels) | training_query_units cand=77184 baseline=77184 (collection+gradient_labels)"
+              },
+              "tests": {
+                "status": "pass",
+                "evidence": "/home/aaa/workspace/EAGM-2.0-full-validation/reports/eagm2_dev/tests_full_discovery_final.log"
+              }
+            },
+            "missing": [],
+            "seed_rows": [
+              {
+                "seed": 202001,
+                "candidate_validation": {
+                  "return": -4.429409148237686,
+                  "cosine": -0.2001321756826356,
+                  "success": 0.0
+                },
+                "baseline_validation": {
+                  "return": -29.19946928270103,
+                  "cosine": 0.3562740334807841,
+                  "success": 0.0
+                },
+                "difference": {
+                  "return": 24.770060134463346,
+                  "cosine": -0.5564062091634198,
+                  "success": 0.0
+                }
+              },
+              {
+                "seed": 202002,
+                "candidate_validation": {
+                  "return": -19.476880979851188,
+                  "cosine": -0.015644111397297808,
+                  "success": 0.0
+                },
+                "baseline_validation": {
+                  "return": -10.252053141741248,
+                  "cosine": 0.0029086197958430406,
+                  "success": 0.6666666666666666
+                },
+                "difference": {
+                  "return": -9.22482783810994,
+                  "cosine": -0.01855273119314085,
+                  "success": -0.6666666666666666
+                }
+              },
+              {
+                "seed": 202003,
+                "candidate_validation": {
+                  "return": -5.555713616884847,
+                  "cosine": -0.02210960295347816,
+                  "success": 0.3333333333333333
+                },
+                "baseline_validation": {
+                  "return": -10.175089476633632,
+                  "cosine": 0.06391421594811146,
+                  "success": 0.0
+                },
+                "difference": {
+                  "return": 4.619375859748785,
+                  "cosine": -0.08602381890158962,
+                  "success": 0.3333333333333333
+                }
+              }
+            ],
+            "summary": {
+              "return": {
+                "mean_difference": 6.721536052034064,
+                "positive": 2,
+                "nonnegative": 2,
+                "n_roots": 3
+              },
+              "cosine": {
+                "mean_difference": -0.2203275864193834,
+                "positive": 0,
+                "nonnegative": 0,
+                "n_roots": 3
+              },
+              "success": {
+                "mean_difference": -0.1111111111111111,
+                "positive": 1,
+                "nonnegative": 2,
+                "n_roots": 3
+              }
+            },
+            "criteria": {
+              "return_mean_positive": true,
+              "return_at_least_two_positive": true,
+              "cosine_mean_positive": false,
+              "success_mean_positive": false,
+              "success_at_least_two_nonnegative": true
+            }
+          },
+          "combined_dir": {
+            "status": "fail",
+            "scientific_status": "fail",
+            "external_gate_status": "fail",
+            "external_gates": {
+              "capacity": {
+                "status": "fail",
+                "evidence": "trainable cand=63406 baseline=42158 relative_diff=0.504009 threshold=0.05 | trainable cand=63406 baseline=42158 relative_diff=0.504009 threshold=0.05 | trainable cand=63406 baseline=42158 relative_diff=0.504009 threshold=0.05"
+              },
+              "budget": {
+                "status": "pass",
+                "evidence": "training_query_units cand=77184 baseline=77184 (collection+gradient_labels) | training_query_units cand=77184 baseline=77184 (collection+gradient_labels) | training_query_units cand=77184 baseline=77184 (collection+gradient_labels)"
+              },
+              "tests": {
+                "status": "pass",
+                "evidence": "/home/aaa/workspace/EAGM-2.0-full-validation/reports/eagm2_dev/tests_full_discovery_final.log"
+              }
+            },
+            "missing": [],
+            "seed_rows": [
+              {
+                "seed": 202001,
+                "candidate_validation": {
+                  "return": -0.6269143562697946,
+                  "cosine": 0.165241617207443,
+                  "success": 1.0
+                },
+                "baseline_validation": {
+                  "return": -29.19946928270103,
+                  "cosine": 0.3562740334807841,
+                  "success": 0.0
+                },
+                "difference": {
+                  "return": 28.572554926431238,
+                  "cosine": -0.19103241627334114,
+                  "success": 1.0
+                }
+              },
+              {
+                "seed": 202002,
+                "candidate_validation": {
+                  "return": -11.119730424630786,
+                  "cosine": -0.02393064398646035,
+                  "success": 0.0
+                },
+                "baseline_validation": {
+                  "return": -10.252053141741248,
+                  "cosine": 0.0029086197958430406,
+                  "success": 0.6666666666666666
+                },
+                "difference": {
+                  "return": -0.867677282889538,
+                  "cosine": -0.02683926378230339,
+                  "success": -0.6666666666666666
+                }
+              },
+              {
+                "seed": 202003,
+                "candidate_validation": {
+                  "return": -19.13513750220457,
+                  "cosine": 0.10444590124344155,
+                  "success": 0.0
+                },
+                "baseline_validation": {
+                  "return": -10.175089476633632,
+                  "cosine": 0.06391421594811146,
+                  "success": 0.0
+                },
+                "difference": {
+                  "return": -8.96004802557094,
+                  "cosine": 0.04053168529533009,
+                  "success": 0.0
+                }
+              }
+            ],
+            "summary": {
+              "return": {
+                "mean_difference": 6.248276539323586,
+                "positive": 1,
+                "nonnegative": 1,
+                "n_roots": 3
+              },
+              "cosine": {
+                "mean_difference": -0.05911333158677148,
+                "positive": 1,
+                "nonnegative": 1,
+                "n_roots": 3
+              },
+              "success": {
+                "mean_difference": 0.11111111111111112,
+                "positive": 1,
+                "nonnegative": 2,
+                "n_roots": 3
+              }
+            },
+            "criteria": {
+              "return_mean_positive": true,
+              "return_at_least_two_positive": false,
+              "cosine_mean_positive": false,
+              "success_mean_positive": true,
+              "success_at_least_two_nonnegative": true
+            }
+          }
+        }
+      },
+      "legacy_dir": {
+        "status": "not_applicable",
+        "reason": "legacy physical-state model unavailable for vision",
+        "selected": null
+      }
+    }
+  },
+  "limitations": [
+    "Three roots are exploratory, not a significance test.",
+    "Both baselines are reported without resolving the protocol ambiguity by observed outcomes.",
+    "Gate evidence is an explicit external attestation; this script does not certify the evidence contents.",
+    "No confirmation runner or authorization file is modified."
+  ]
+}

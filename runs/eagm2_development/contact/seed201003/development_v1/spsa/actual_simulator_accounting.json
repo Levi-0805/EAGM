@@ -1,0 +1,5 @@
+{
+  "training_control_steps": 67584,
+  "training_simulator_wall_seconds": 48.16177452287229,
+  "query_cap_control_steps": 67968
+}

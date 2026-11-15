@@ -1,0 +1,15 @@
+{
+  "status": "confirmation_completed",
+  "pid": 25346,
+  "author_authorization": "/home/aaa/workspace/EAGM-2.0-full-validation/reports/eagm2_dev/author_continue_authorization.json",
+  "started_unix": 1794724462.8572724,
+  "completed_roots": 9,
+  "batch_status": "analysis_failed",
+  "checked_unix": 1794757883.2109728,
+  "postrun_exit_code": 0,
+  "selection_exit_code": 0,
+  "freeze_path": "/home/aaa/workspace/EAGM-2.0-full-validation/reports/eagm2_dev/confirmation_freeze_v1.json",
+  "confirmation_authorized": true,
+  "no_go": false,
+  "confirmation_exit_code": 0
+}

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/aaa/workspace/EAGM-2.0-full-validation/reports/eagm2_dev/resume_authorized_batch.py", line 194, in <module>
+    main()
+  File "/home/aaa/workspace/EAGM-2.0-full-validation/reports/eagm2_dev/resume_authorized_batch.py", line 190, in main
+    resume(args.batch_dir.resolve(), python=sys.executable, dry_run=args.dry_run)
+  File "/home/aaa/workspace/EAGM-2.0-full-validation/reports/eagm2_dev/resume_authorized_batch.py", line 182, in resume
+    raise RuntimeError("analysis failed; raw experiments retained")
+RuntimeError: analysis failed; raw experiments retained

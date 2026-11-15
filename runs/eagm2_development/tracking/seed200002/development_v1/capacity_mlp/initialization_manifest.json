@@ -1,0 +1,91 @@
+{
+  "protocol": "named parameter and shape keyed streams v1",
+  "root_seed": 200002,
+  "parameters": {
+    "command_net.0.weight": {
+      "shape": [
+        64,
+        43
+      ],
+      "seed": 1641485910,
+      "initialization": "uniform",
+      "bound": 0.15249857033260467
+    },
+    "command_net.0.bias": {
+      "shape": [
+        64
+      ],
+      "seed": 3241685451,
+      "initialization": "uniform",
+      "bound": 0.125
+    },
+    "command_net.2.weight": {
+      "shape": [
+        14,
+        64
+      ],
+      "seed": 4254309794,
+      "initialization": "zero residual",
+      "bound": 0.125
+    },
+    "command_net.2.bias": {
+      "shape": [
+        14
+      ],
+      "seed": 1946522511,
+      "initialization": "zero residual",
+      "bound": 0.2672612419124244
+    },
+    "dynamics.0.weight": {
+      "shape": [
+        207,
+        42
+      ],
+      "seed": 345711339,
+      "initialization": "uniform",
+      "bound": 0.1543033499620919
+    },
+    "dynamics.0.bias": {
+      "shape": [
+        207
+      ],
+      "seed": 2623034520,
+      "initialization": "uniform",
+      "bound": 0.06950480468569159
+    },
+    "dynamics.2.weight": {
+      "shape": [
+        207,
+        207
+      ],
+      "seed": 1883096889,
+      "initialization": "uniform",
+      "bound": 0.06950480468569159
+    },
+    "dynamics.2.bias": {
+      "shape": [
+        207
+      ],
+      "seed": 2616139994,
+      "initialization": "uniform",
+      "bound": 0.06950480468569159
+    },
+    "dynamics.4.weight": {
+      "shape": [
+        28,
+        207
+      ],
+      "seed": 3489030422,
+      "initialization": "uniform",
+      "bound": 0.06950480468569159
+    },
+    "dynamics.4.bias": {
+      "shape": [
+        28
+      ],
+      "seed": 2597841264,
+      "initialization": "uniform",
+      "bound": 0.18898223650461363
+    }
+  }
+}

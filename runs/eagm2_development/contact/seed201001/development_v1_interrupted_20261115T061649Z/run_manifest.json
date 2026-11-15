@@ -1,0 +1,51 @@
+{
+  "status": "interrupted",
+  "config": {
+    "task": "contact",
+    "seed": 201001,
+    "attempt": "development_v1",
+    "device": "cuda",
+    "updates": 1000,
+    "policy_updates": 50,
+    "methods": null,
+    "smoke": false,
+    "resolved_methods": [
+      "legacy_base",
+      "legacy_dir",
+      "ff_base",
+      "ff_dir",
+      "delay_base",
+      "delay_dir",
+      "recurrent_base",
+      "recurrent_dir",
+      "combined_base",
+      "combined_dir",
+      "capacity_mlp",
+      "capacity_gru",
+      "free_command",
+      "direction_only",
+      "norm_only",
+      "joint_calibration",
+      "paml_adaptation",
+      "vagram_adaptation",
+      "base_extra_data",
+      "direct_fd",
+      "spsa"
+    ],
+    "phase": "development_exploratory",
+    "confirmation_authorized": false,
+    "history": 32,
+    "training_gradient_labels": 12,
+    "diagnostic_gradient_labels": 6,
+    "model_batch_size": 64,
+    "selection": "development only; no confirmatory interpretation"
+  },
+  "interruption": {
+    "status": "interrupted",
+    "reason": "resume after status=running pid=54694",
+    "archived_from": "/home/aaa/workspace/EAGM-2.0-full-validation/runs/eagm2_development/contact/seed201001/development_v1",
+    "archived_to": "/home/aaa/workspace/EAGM-2.0-full-validation/runs/eagm2_development/contact/seed201001/development_v1_interrupted_20261115T061649Z",
+    "archived_unix": 1794723409.7926047,
+    "note": "Partial exploratory attempt retained; not a confirmation result."
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "status": "completed",
+  "phase": "exploratory",
+  "task": "tracking",
+  "seed": 200105,
+  "methods": [
+    {
+      "method": "delay_dir",
+      "status": "completed",
+      "wall_seconds": 39.29421017099958
+    },
+    {
+      "method": "ff_dir",
+      "status": "completed",
+      "wall_seconds": 35.36660095299885
+    }
+  ],
+  "wall_seconds": 96.0956260660023,
+  "budget": {
+    "control_steps": {
+      "collection_train": 3456,
+      "collection_validation": 576,
+      "collection_development_test": 2880,
+      "labels_train": 16128,
+      "labels_validation": 8064,
+      "labels_diagnostic": 8064,
+      "evaluation": 1440,
+      "validation_evaluation": 192
+    },
+    "simulator_wall_seconds": {
+      "collection_train": 1.8187169419688871,
+      "collection_validation": 0.29626823099533794,
+      "collection_development_test": 1.4723742099740775,
+      "labels_train": 8.271600536885671,
+      "labels_validation": 4.248376125979121,
+      "labels_diagnostic": 4.1165001319823205,
+      "evaluation": 0.735573776975798,
+      "validation_evaluation": 0.09896582899818895
+    },
+    "total_control_steps": 40800
+  },
+  "confirmation_authorized": false
+}

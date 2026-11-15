@@ -1,0 +1,114 @@
+{
+  "status": "trained_exploratory",
+  "single_frame_deviation": true,
+  "policy": "frozen CNN/base with trainable external 32D adapter; not full-network policy optimization",
+  "reward": "train-only learned latent geometry/velocity head; exact physical reward used for simulator FD/evaluation",
+  "deployment_inputs": [
+    "RGB",
+    "observable target/filter/delay"
+  ],
+  "privileged_state": "training/diagnostic labels and physical simulator snapshots only; never imagined reward inputs",
+  "target_features": [
+    "local_tip_x",
+    "local_tip_y",
+    "depth",
+    "one_minus_axis_dot",
+    "mean_joint_velocity_squared"
+  ],
+  "split_metrics": {
+    "train": {
+      "episodes": 18,
+      "frames": 3456,
+      "bc_action_mae": 0.002738534938544035,
+      "feature_rmse": [
+        0.000516170053742826,
+        0.00044732214882969856,
+        0.0014173192903399467,
+        0.00024003117869142443,
+        0.0007669872138649225
+      ],
+      "reward_mae": 0.000983484678190588,
+      "reward_rmse": 0.002062070926455536
+    },
+    "validation": {
+      "episodes": 6,
+      "frames": 576,
+      "bc_action_mae": 0.002753959037363529,
+      "feature_rmse": [
+        0.0005787771660834551,
+        0.0005382667295634747,
+        0.0015899811405688524,
+        0.0001209464026032947,
+        0.0008532043430022895
+      ],
+      "reward_mae": 0.0013682317590447339,
+      "reward_rmse": 0.0021285700471382427
+    },
+    "development_test": {
+      "episodes": 30,
+      "frames": 2880,
+      "bc_action_mae": 0.0027142760809510946,
+      "feature_rmse": [
+        0.0005855515482835472,
+        0.0004353963886387646,
+        0.0019599662628024817,
+        0.0001424999354640022,
+        0.0008249286329373717
+      ],
+      "reward_mae": 0.0016187085316746162,
+      "reward_rmse": 0.0032933430130797155
+    }
+  },
+  "data_sha256": "99e9b3399f24a72a16827a0d55a7202c045e459fe45436c14d613d6e0f647db7",
+  "training_episode_ids": [
+    "train:0",
+    "train:1",
+    "train:10",
+    "train:11",
+    "train:12",
+    "train:13",
+    "train:14",
+    "train:15",
+    "train:16",
+    "train:17",
+    "train:2",
+    "train:3",
+    "train:4",
+    "train:5",
+    "train:6",
+    "train:7",
+    "train:8",
+    "train:9"
+  ],
+  "selection": "final fixed update; no held-out checkpoint selection",
+  "resources": {
+    "bc": {
+      "cuda_elapsed_seconds": 4.435478515625,
+      "peak_allocated_bytes": 136899584,
+      "peak_reserved_bytes": 159383552,
+      "wall_seconds": 4.435792330004915,
+      "device": "cuda"
+    },
+    "encoding": {
+      "cuda_elapsed_seconds": 0.478666748046875,
+      "peak_allocated_bytes": 105622016,
+      "peak_reserved_bytes": 159383552,
+      "wall_seconds": 0.47929110800032504,
+      "device": "cuda"
+    },
+    "reward": {
+      "cuda_elapsed_seconds": 2.14738720703125,
+      "peak_allocated_bytes": 69468672,
+      "peak_reserved_bytes": 159383552,
+      "wall_seconds": 2.147679376997985,
+      "device": "cuda"
+    }
+  },
+  "simulator_steps_added_by_prepare_visual": 0,
+  "demonstration_cost": "already counted in collection_train by runner; no uncounted demonstration interaction",
+  "parameter_counts": {
+    "visual_policy": 47974,
+    "reward": 12965
+  },
+  "normalization": "train-only means/stds stored in reward state_dict"
+}

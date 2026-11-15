@@ -1,0 +1,16 @@
+task,seed,attempt,methods,status,worker_pid,exit_code,wall_seconds
+tracking,200101,confirmation_v1,"delay_dir,ff_dir",completed,152045,0,97.78057811799954
+tracking,200102,confirmation_v1,"delay_dir,ff_dir",completed,153295,0,96.48736630000349
+tracking,200103,confirmation_v1,"delay_dir,ff_dir",completed,154504,0,99.56247737699596
+tracking,200104,confirmation_v1,"delay_dir,ff_dir",completed,155785,0,100.72403200799454
+tracking,200105,confirmation_v1,"delay_dir,ff_dir",completed,156978,0,99.12316868999915
+tracking,200106,confirmation_v1,"delay_dir,ff_dir",completed,158215,0,97.45970448900334
+tracking,200107,confirmation_v1,"delay_dir,ff_dir",completed,159431,0,100.38695534500584
+tracking,200108,confirmation_v1,"delay_dir,ff_dir",completed,160614,0,102.88879385100154
+tracking,200109,confirmation_v1,"delay_dir,ff_dir",completed,161831,0,102.27295393799432
+tracking,200110,confirmation_v1,"delay_dir,ff_dir",completed,163217,0,99.74929642299685
+tracking,200111,confirmation_v1,"delay_dir,ff_dir",completed,164381,0,100.28158142499888
+tracking,200112,confirmation_v1,"delay_dir,ff_dir",completed,165166,0,101.06723947400315
+tracking,200113,confirmation_v1,"delay_dir,ff_dir",completed,165838,0,100.8686684350032
+tracking,200114,confirmation_v1,"delay_dir,ff_dir",completed,166450,0,100.81187788899842
+tracking,200115,confirmation_v1,"delay_dir,ff_dir",completed,167110,0,100.82442437999998

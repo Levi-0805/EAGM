@@ -1,0 +1,125 @@
+{
+  "protocol": "named parameter and shape keyed streams v1",
+  "root_seed": 200001,
+  "parameters": {
+    "posterior.weight_ih": {
+      "shape": [
+        96,
+        71
+      ],
+      "seed": 3465925337,
+      "initialization": "uniform",
+      "bound": 0.1767766952966369
+    },
+    "posterior.weight_hh": {
+      "shape": [
+        96,
+        32
+      ],
+      "seed": 2500922534,
+      "initialization": "uniform",
+      "bound": 0.1767766952966369
+    },
+    "posterior.bias_ih": {
+      "shape": [
+        96
+      ],
+      "seed": 3730642574,
+      "initialization": "uniform",
+      "bound": 0.1767766952966369
+    },
+    "posterior.bias_hh": {
+      "shape": [
+        96
+      ],
+      "seed": 29021264,
+      "initialization": "uniform",
+      "bound": 0.1767766952966369
+    },
+    "command_net.0.weight": {
+      "shape": [
+        64,
+        75
+      ],
+      "seed": 1890805286,
+      "initialization": "uniform",
+      "bound": 0.11547005383792515
+    },
+    "command_net.0.bias": {
+      "shape": [
+        64
+      ],
+      "seed": 2871001037,
+      "initialization": "uniform",
+      "bound": 0.125
+    },
+    "command_net.2.weight": {
+      "shape": [
+        14,
+        64
+      ],
+      "seed": 2856409687,
+      "initialization": "zero residual",
+      "bound": 0.125
+    },
+    "command_net.2.bias": {
+      "shape": [
+        14
+      ],
+      "seed": 3550450353,
+      "initialization": "zero residual",
+      "bound": 0.2672612419124244
+    },
+    "dynamics.0.weight": {
+      "shape": [
+        181,
+        42
+      ],
+      "seed": 823366718,
+      "initialization": "uniform",
+      "bound": 0.1543033499620919
+    },
+    "dynamics.0.bias": {
+      "shape": [
+        181
+      ],
+      "seed": 2694177152,
+      "initialization": "uniform",
+      "bound": 0.07432941462471664
+    },
+    "dynamics.2.weight": {
+      "shape": [
+        181,
+        181
+      ],
+      "seed": 2749664756,
+      "initialization": "uniform",
+      "bound": 0.07432941462471664
+    },
+    "dynamics.2.bias": {
+      "shape": [
+        181
+      ],
+      "seed": 1693297501,
+      "initialization": "uniform",
+      "bound": 0.07432941462471664
+    },
+    "dynamics.4.weight": {
+      "shape": [
+        28,
+        181
+      ],
+      "seed": 2321674228,
+      "initialization": "uniform",
+      "bound": 0.07432941462471664
+    },
+    "dynamics.4.bias": {
+      "shape": [
+        28
+      ],
+      "seed": 2698755276,
+      "initialization": "uniform",
+      "bound": 0.18898223650461363
+    }
+  }
+}

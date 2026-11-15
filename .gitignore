@@ -12,3 +12,8 @@ runs/**/*.pt
 !runs/**/seed*_learning.json
 vendor/CVPR2027_READONLY/
 third_party/openarm_mujoco/v2/
+
+# Large local postrun dumps (gzip copies are committed)
+reports/eagm2_dev/development_v1_postrun_analysis/06_development_v1_continue_audit.json
+reports/eagm2_dev/development_v1_postrun_analysis/06_development_v1_continue_episodes.csv
+reports/eagm2_dev/__pycache__/

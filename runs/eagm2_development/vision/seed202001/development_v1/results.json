@@ -1,0 +1,131 @@
+{
+  "status": "completed",
+  "phase": "exploratory",
+  "task": "vision",
+  "seed": 202001,
+  "methods": [
+    {
+      "method": "ff_base",
+      "status": "completed",
+      "wall_seconds": 127.6105112410005
+    },
+    {
+      "method": "ff_dir",
+      "status": "completed",
+      "wall_seconds": 177.5559682739986
+    },
+    {
+      "method": "delay_base",
+      "status": "completed",
+      "wall_seconds": 135.4720080879997
+    },
+    {
+      "method": "delay_dir",
+      "status": "completed",
+      "wall_seconds": 190.13240612699883
+    },
+    {
+      "method": "recurrent_base",
+      "status": "completed",
+      "wall_seconds": 291.3993675689999
+    },
+    {
+      "method": "recurrent_dir",
+      "status": "completed",
+      "wall_seconds": 374.46738483900117
+    },
+    {
+      "method": "combined_base",
+      "status": "completed",
+      "wall_seconds": 328.50106724299985
+    },
+    {
+      "method": "combined_dir",
+      "status": "completed",
+      "wall_seconds": 402.84780329599744
+    },
+    {
+      "method": "capacity_mlp",
+      "status": "completed",
+      "wall_seconds": 192.91434214999754
+    },
+    {
+      "method": "capacity_gru",
+      "status": "completed",
+      "wall_seconds": 367.87923839299765
+    },
+    {
+      "method": "free_command",
+      "status": "completed",
+      "wall_seconds": 158.57501404800132
+    },
+    {
+      "method": "direction_only",
+      "status": "completed",
+      "wall_seconds": 193.3857915940025
+    },
+    {
+      "method": "norm_only",
+      "status": "completed",
+      "wall_seconds": 190.37521734199981
+    },
+    {
+      "method": "joint_calibration",
+      "status": "completed",
+      "wall_seconds": 194.898030974
+    },
+    {
+      "method": "paml_adaptation",
+      "status": "completed",
+      "wall_seconds": 138.7370897550063
+    },
+    {
+      "method": "vagram_adaptation",
+      "status": "completed",
+      "wall_seconds": 141.4468875379971
+    },
+    {
+      "method": "direct_fd",
+      "status": "completed",
+      "wall_seconds": 221.67604725699493
+    },
+    {
+      "method": "spsa",
+      "status": "completed",
+      "wall_seconds": 234.6433616159993
+    }
+  ],
+  "wall_seconds": 4598.664320210999,
+  "budget": {
+    "control_steps": {
+      "collection_train": 3456,
+      "collection_validation": 576,
+      "collection_development_test": 2880,
+      "labels_train": 73728,
+      "labels_validation": 36864,
+      "labels_diagnostic": 36864,
+      "evaluation": 134130,
+      "validation_evaluation": 25248,
+      "direct_fd_training": 73728,
+      "direct_fd_final_evaluation": 7890,
+      "spsa_training": 76800,
+      "spsa_final_evaluation": 7890
+    },
+    "simulator_wall_seconds": {
+      "collection_train": 5.198958346009022,
+      "collection_validation": 0.8098652489861706,
+      "collection_development_test": 3.9803951710127876,
+      "labels_train": 219.3586829519918,
+      "labels_validation": 107.86942866695608,
+      "labels_diagnostic": 108.89981645513762,
+      "evaluation": 399.6600816780556,
+      "validation_evaluation": 75.4206522600216,
+      "direct_fd_training": 221.48678586906317,
+      "direct_fd_final_evaluation": 24.80441407601029,
+      "spsa_training": 234.00796277506743,
+      "spsa_final_evaluation": 24.688228612991225
+    },
+    "total_control_steps": 480054
+  },
+  "confirmation_authorized": false
+}

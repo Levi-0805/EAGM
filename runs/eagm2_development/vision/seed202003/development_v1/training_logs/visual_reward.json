@@ -1,0 +1,95 @@
+{
+  "log": [
+    {
+      "update": 1,
+      "normalized_feature_mse": 0.9140321016311646
+    },
+    {
+      "update": 51,
+      "normalized_feature_mse": 0.6498652696609497
+    },
+    {
+      "update": 101,
+      "normalized_feature_mse": 0.31106066703796387
+    },
+    {
+      "update": 151,
+      "normalized_feature_mse": 0.3810528814792633
+    },
+    {
+      "update": 201,
+      "normalized_feature_mse": 0.1905626505613327
+    },
+    {
+      "update": 251,
+      "normalized_feature_mse": 0.07792653143405914
+    },
+    {
+      "update": 301,
+      "normalized_feature_mse": 0.14471958577632904
+    },
+    {
+      "update": 351,
+      "normalized_feature_mse": 0.2754281163215637
+    },
+    {
+      "update": 401,
+      "normalized_feature_mse": 0.20259521901607513
+    },
+    {
+      "update": 451,
+      "normalized_feature_mse": 0.2858332395553589
+    },
+    {
+      "update": 501,
+      "normalized_feature_mse": 0.2039254754781723
+    },
+    {
+      "update": 551,
+      "normalized_feature_mse": 0.09353554248809814
+    },
+    {
+      "update": 601,
+      "normalized_feature_mse": 0.09974770992994308
+    },
+    {
+      "update": 651,
+      "normalized_feature_mse": 0.06843774765729904
+    },
+    {
+      "update": 701,
+      "normalized_feature_mse": 0.13800637423992157
+    },
+    {
+      "update": 751,
+      "normalized_feature_mse": 0.12479645013809204
+    },
+    {
+      "update": 801,
+      "normalized_feature_mse": 0.1335182636976242
+    },
+    {
+      "update": 851,
+      "normalized_feature_mse": 0.15173876285552979
+    },
+    {
+      "update": 901,
+      "normalized_feature_mse": 0.06423516571521759
+    },
+    {
+      "update": 951,
+      "normalized_feature_mse": 0.07174381613731384
+    },
+    {
+      "update": 1000,
+      "normalized_feature_mse": 0.07585930079221725
+    }
+  ],
+  "resource": {
+    "cuda_elapsed_seconds": 2.18323486328125,
+    "peak_allocated_bytes": 69468672,
+    "peak_reserved_bytes": 159383552,
+    "wall_seconds": 2.1834994360033306,
+    "device": "cuda"
+  }
+}

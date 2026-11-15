@@ -1,0 +1,254 @@
+labels_train 1 queries 168
+labels_train 2 queries 168
+labels_train 3 queries 168
+labels_train 4 queries 168
+labels_train 5 queries 168
+labels_train 6 queries 168
+labels_train 7 queries 168
+labels_train 8 queries 168
+labels_train 9 queries 168
+labels_train 10 queries 168
+labels_train 11 queries 168
+labels_train 12 queries 168
+labels_validation 1 queries 168
+labels_validation 2 queries 168
+labels_validation 3 queries 168
+labels_validation 4 queries 168
+labels_validation 5 queries 168
+labels_validation 6 queries 168
+labels_diagnostic 1 queries 168
+labels_diagnostic 2 queries 168
+labels_diagnostic 3 queries 168
+labels_diagnostic 4 queries 168
+labels_diagnostic 5 queries 168
+labels_diagnostic 6 queries 168
+legacy_base 1 9.525031
+legacy_base 101 1.158434
+legacy_base 201 1.139284
+legacy_base 301 1.043022
+legacy_base 401 0.883031
+legacy_base 501 0.782497
+legacy_base 601 0.606722
+legacy_base 701 0.619772
+legacy_base 801 0.616097
+legacy_base 901 0.655451
+legacy_base 1000 0.546385
+COMPLETED legacy_base return -1.2634806290184075 cos 0.3545435630295735
+legacy_dir 1 3378.293945
+legacy_dir 101 3185.340088
+legacy_dir 201 1739.812378
+legacy_dir 301 324.610168
+legacy_dir 401 428.37326
+legacy_dir 501 166.331543
+legacy_dir 601 526.33905
+legacy_dir 701 633.896423
+legacy_dir 801 214.100128
+legacy_dir 901 40.21085
+legacy_dir 1000 0.678954
+COMPLETED legacy_dir return -2.759403463127626 cos 0.2423259920279132
+ff_base 1 12.176499
+ff_base 101 3.546796
+ff_base 201 1.80999
+ff_base 301 1.697204
+ff_base 401 1.739315
+ff_base 501 1.566039
+ff_base 601 1.437375
+ff_base 701 1.319021
+ff_base 801 1.397417
+ff_base 901 1.391263
+ff_base 1000 1.002261
+COMPLETED ff_base return -1.9358384398989519 cos 0.12428979800925355
+ff_dir 1 3156.571777
+ff_dir 101 8401.751953
+ff_dir 201 1340.136108
+ff_dir 301 250.89537
+ff_dir 401 968.632874
+ff_dir 501 140.556061
+ff_dir 601 699.120728
+ff_dir 701 1179.214355
+ff_dir 801 348.657623
+ff_dir 901 33.98951
+ff_dir 1000 1.062994
+COMPLETED ff_dir return -2.175193067471368 cos -0.009228444471298782
+delay_base 1 11.864194
+delay_base 101 3.347796
+delay_base 201 1.570918
+delay_base 301 1.608978
+delay_base 401 1.453653
+delay_base 501 1.202559
+delay_base 601 1.247786
+delay_base 701 1.050308
+delay_base 801 1.142427
+delay_base 901 1.101117
+delay_base 1000 0.754112
+COMPLETED delay_base return -1.8915178966930248 cos 0.12062268175801914
+delay_dir 1 3156.259521
+delay_dir 101 7988.249512
+delay_dir 201 1545.804688
+delay_dir 301 125.377411
+delay_dir 401 360.234436
+delay_dir 501 199.733597
+delay_dir 601 404.28772
+delay_dir 701 764.938354
+delay_dir 801 319.010559
+delay_dir 901 48.520576
+delay_dir 1000 0.818633
+COMPLETED delay_dir return -2.3133928450142287 cos 0.006449966322757646
+recurrent_base 1 12.176499
+recurrent_base 101 1.879532
+recurrent_base 201 1.855699
+recurrent_base 301 1.624066
+recurrent_base 401 1.709444
+recurrent_base 501 1.489021
+recurrent_base 601 1.423929
+recurrent_base 701 1.248158
+recurrent_base 801 1.278841
+recurrent_base 901 1.301545
+recurrent_base 1000 0.647695
+COMPLETED recurrent_base return -1.8808740496218561 cos 0.14915766636723962
+recurrent_dir 1 3156.571777
+recurrent_dir 101 3108.392822
+recurrent_dir 201 1081.647461
+recurrent_dir 301 98.394005
+recurrent_dir 401 442.058167
+recurrent_dir 501 272.715942
+recurrent_dir 601 596.02301
+recurrent_dir 701 1483.199097
+recurrent_dir 801 586.385071
+recurrent_dir 901 86.907539
+recurrent_dir 1000 0.743481
+COMPLETED recurrent_dir return -2.821704091415006 cos -0.13264678846338626
+combined_base 1 11.864194
+combined_base 101 1.631333
+combined_base 201 1.597387
+combined_base 301 1.455674
+combined_base 401 1.428803
+combined_base 501 1.166806
+combined_base 601 1.230207
+combined_base 701 1.068691
+combined_base 801 1.085811
+combined_base 901 1.067763
+combined_base 1000 0.731738
+COMPLETED combined_base return -1.6786409202983115 cos 0.13855729568856937
+combined_dir 1 3156.259521
+combined_dir 101 9275.5625
+combined_dir 201 1773.801514
+combined_dir 301 282.238708
+combined_dir 401 595.892334
+combined_dir 501 55.668919
+combined_dir 601 439.968018
+combined_dir 701 715.420471
+combined_dir 801 678.711304
+combined_dir 901 34.836845
+combined_dir 1000 0.796027
+COMPLETED combined_dir return -1.9265807392335654 cos 0.045293981831513064
+capacity_mlp 1 1797.603149
+capacity_mlp 101 2741.894043
+capacity_mlp 201 3197.155762
+capacity_mlp 301 303.868042
+capacity_mlp 401 148.056229
+capacity_mlp 501 268.994965
+capacity_mlp 601 510.158936
+capacity_mlp 701 1076.158569
+capacity_mlp 801 1295.52063
+capacity_mlp 901 80.158813
+capacity_mlp 1000 0.808451
+COMPLETED capacity_mlp return -2.326952267475661 cos 0.006688893410321756
+capacity_gru 1 1336.251343
+capacity_gru 101 5502.754883
+capacity_gru 201 2137.093018
+capacity_gru 301 44.264751
+capacity_gru 401 1281.983643
+capacity_gru 501 112.994118
+capacity_gru 601 552.793823
+capacity_gru 701 851.419189
+capacity_gru 801 471.35675
+capacity_gru 901 115.572342
+capacity_gru 1000 0.802419
+COMPLETED capacity_gru return -2.2734253838969996 cos 0.028604981162210996
+free_command 1 4.124768
+free_command 101 3.977617
+free_command 201 2.221288
+free_command 301 1.742705
+free_command 401 1.834124
+free_command 501 1.48815
+free_command 601 1.520171
+free_command 701 1.76485
+free_command 801 1.76674
+free_command 901 1.351903
+free_command 1000 0.785514
+COMPLETED free_command return -2.565281414857895 cos -0.4557482660862539
+direction_only 1 11.960561
+direction_only 101 3.452867
+direction_only 201 1.693115
+direction_only 301 1.552439
+direction_only 401 1.357432
+direction_only 501 1.294106
+direction_only 601 1.406259
+direction_only 701 1.112974
+direction_only 801 1.229919
+direction_only 901 1.115837
+direction_only 1000 0.757207
+COMPLETED direction_only return -0.6390198785119019 cos 0.31853264989519076
+norm_only 1 11.871524
+norm_only 101 3.359395
+norm_only 201 1.567839
+norm_only 301 1.566015
+norm_only 401 1.358807
+norm_only 501 1.246019
+norm_only 601 1.294627
+norm_only 701 1.044307
+norm_only 801 1.143511
+norm_only 901 1.221156
+norm_only 1000 0.762228
+COMPLETED norm_only return -1.7853119192661693 cos 0.09661760367937451
+joint_calibration 1 11.967892
+joint_calibration 101 3.461737
+joint_calibration 201 1.871732
+joint_calibration 301 1.646483
+joint_calibration 401 1.452134
+joint_calibration 501 1.432703
+joint_calibration 601 1.403376
+joint_calibration 701 1.161277
+joint_calibration 801 1.229168
+joint_calibration 901 1.181879
+joint_calibration 1000 0.761764
+COMPLETED joint_calibration return -1.879943204199642 cos 0.28097360419436057
+paml_adaptation 1 11.864194
+paml_adaptation 101 3.347796
+paml_adaptation 201 1.570924
+paml_adaptation 301 1.616436
+paml_adaptation 401 1.451784
+paml_adaptation 501 1.201906
+paml_adaptation 601 1.244198
+paml_adaptation 701 1.056136
+paml_adaptation 801 1.136692
+paml_adaptation 901 1.098777
+paml_adaptation 1000 0.754136
+COMPLETED paml_adaptation return -1.8906324694441434 cos 0.11994417261117805
+vagram_adaptation 1 11.864194
+vagram_adaptation 101 3.347796
+vagram_adaptation 201 1.570922
+vagram_adaptation 301 1.613656
+vagram_adaptation 401 1.45244
+vagram_adaptation 501 1.202148
+vagram_adaptation 601 1.24565
+vagram_adaptation 701 1.053672
+vagram_adaptation 801 1.139307
+vagram_adaptation 901 1.099708
+vagram_adaptation 1000 0.754131
+COMPLETED vagram_adaptation return -1.8908562068973793 cos 0.12021687073339561
+ff_base 1 12.183328
+ff_base 101 3.659019
+ff_base 201 1.841498
+ff_base 301 1.747405
+ff_base 401 1.482218
+ff_base 501 1.526461
+ff_base 601 1.433347
+ff_base 701 1.407648
+ff_base 801 1.623316
+ff_base 901 1.49079
+ff_base 1000 1.188474
+COMPLETED base_extra_data return -2.039944259341174 cos 0.3039168414555933
+COMPLETED direct_fd return -0.5897334613215188 training_steps 64512
+COMPLETED spsa return -0.5120249028369908 training_steps 67584
