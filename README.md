@@ -5,6 +5,8 @@ GitHub: https://github.com/Levi-0805/EAGM
 
 This tree does **not** contain the CVPR paper sources. Legacy OpenArm diagnostic code/data needed for Stage-1 reproduction live under `vendor/`.
 
+[仓库导航与研究分支索引](docs/repository-map.md)
+
 ## Environment
 
 Use the dedicated conda env `eagm_gpu` (NumPy 2.x is required to load legacy `starts.pt` pickles; `isaaclab50` has NumPy 1.26 and cannot).
